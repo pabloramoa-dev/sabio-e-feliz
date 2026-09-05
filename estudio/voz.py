@@ -30,7 +30,7 @@ from pathlib import Path
 
 import numpy as np
 
-VOZ_PADRAO = "pm_alex"
+VOZ_PADRAO = "pf_dora"   # a mesma voz da Dona Maria no canal do tempo
 VELOCIDADE = 0.92          # 125-145 palavras por minuto, sem pressa
 PRE_ROLL = 0.6             # respiro no começo
 CAUDA = 1.4                # silêncio no fim: o encerramento não pode ser cortado
@@ -105,6 +105,7 @@ def gerar(segmentos: list[dict], destino_wav: Path, voz: str = VOZ_PADRAO,
 
     trilha: list[np.ndarray] = []
     palavras: list[Palavra] = []
+    mapa_frases: list[dict] = []
     mapa_segmentos: list[dict] = []
     t = PRE_ROLL
     trilha.append(np.zeros(int(PRE_ROLL * taxa), dtype=np.float32))
@@ -128,6 +129,8 @@ def gerar(segmentos: list[dict], destino_wav: Path, voz: str = VOZ_PADRAO,
                 dur = len(audio) / taxa
             trilha.append(audio)
             palavras.extend(_tempos_das_palavras(frase, t, t + dur))
+            mapa_frases.append({"texto": frase, "inicio": round(t, 3),
+                                "fim": round(t + dur, 3), "papel": seg["papel"]})
             t += dur
             pausa = PAUSA_FRASE
             trilha.append(np.zeros(int(pausa * taxa), dtype=np.float32))
@@ -155,6 +158,7 @@ def gerar(segmentos: list[dict], destino_wav: Path, voz: str = VOZ_PADRAO,
         "voz": "mudo" if mudo else voz,
         "duracao_s": duracao(destino_wav),
         "palavras": [asdict(p) for p in palavras],
+        "frases": mapa_frases,
         "segmentos": mapa_segmentos,
     }
     destino_wav.with_suffix(".tempos.json").write_text(
