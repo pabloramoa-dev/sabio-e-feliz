@@ -1,7 +1,7 @@
-# publicação (workflow diário)
+# publicação (workflow diário) — leve de propósito
 requests==2.32.3
 
 # estúdio (produção dos Reels)
 pillow==11.0.0
 numpy==2.1.3
-edge-tts==6.1.19
+kokoro-onnx==0.4.9

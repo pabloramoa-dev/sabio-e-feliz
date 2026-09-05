@@ -4,3 +4,4 @@ __pycache__/
 output/
 !output/.gitkeep
 *.bruto.mp3
+modelos/

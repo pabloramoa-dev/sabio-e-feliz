@@ -98,6 +98,20 @@ DRY_RUN=true python -m src.main            # ensaio de publicação
 pytest -q
 ```
 
+## Voz
+
+Narração neural local com **Kokoro** (`pm_alex`), a mesma família de voz dos
+outros canais. Roda dentro do próprio runner: sem chave, sem cota e sem
+depender de serviço de terceiro no ar. Serviços de TTS na nuvem foram
+descartados porque bloqueiam chamadas vindas de datacenter — o runner do
+GitHub leva 403.
+
+O modelo (330 MB) fica em cache entre as execuções e não é versionado.
+
+A legenda karaokê acerta porque a narração é sintetizada **frase a frase**:
+o começo e o fim de cada frase são medidos no áudio de verdade, e só dentro
+da frase as palavras são distribuídas por tamanho.
+
 ## Fonte do texto bíblico
 
 João Ferreira de Almeida, arquivo `por-almeida.usfx.xml`, declarado domínio
