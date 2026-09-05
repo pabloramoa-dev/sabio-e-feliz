@@ -1,0 +1,3 @@
+Coloque aqui uma fonte própria como "Fonte-Bold.ttf" se quiser trocar a
+tipografia das legendas. Se não houver nada, o projeto usa a DejaVu Sans Bold,
+que já vem instalada no runner do GitHub Actions.
