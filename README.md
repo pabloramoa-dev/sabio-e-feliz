@@ -91,7 +91,7 @@ trocado por engano não consegue publicar na conta errada.
 ## Rodar localmente
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt -r requirements-estudio.txt
 python -m src.conferir                     # confere a fila
 python -m estudio.produzir --id EP-001     # produz um Reel
 python -m estudio.produzir --id EP-001 --mudo   # só o visual, sem rede
