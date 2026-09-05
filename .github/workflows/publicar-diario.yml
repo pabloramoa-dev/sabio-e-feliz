@@ -1,0 +1,49 @@
+name: Publicar provérbio do dia
+
+on:
+  schedule:
+    - cron: "0 12 * * *"    # 09:00 em Brasília (UTC-3)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Ensaio: valida tudo e NÃO publica"
+        type: boolean
+        default: true
+
+concurrency:
+  group: sabioefeliz-producao      # grupo exclusivo: não encosta no pipeline do tempo
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: pip install requests
+
+      - name: Publicar
+        env:
+          IG_USER_ID_SABIO: ${{ secrets.IG_USER_ID_SABIO }}
+          IG_ACCESS_TOKEN_SABIO: ${{ secrets.IG_ACCESS_TOKEN_SABIO }}
+          RAW_BASE_URL: ${{ vars.RAW_BASE_URL }}
+          GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
+          PUBLICAR_ATIVO: ${{ vars.PUBLICAR_ATIVO }}
+          DRY_RUN: ${{ inputs.dry_run && 'true' || 'false' }}
+        run: python -m src.main
+
+      - name: Registrar no histórico
+        if: success()
+        run: |
+          git config user.name "sabio-bot"
+          git config user.email "actions@github.com"
+          git add conteudo/publicados.json conteudo/fila.json
+          git diff --cached --quiet || git commit -m "publicado: provérbio do dia [skip ci]"
+          git push

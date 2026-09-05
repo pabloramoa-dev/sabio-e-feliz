@@ -1,0 +1,32 @@
+name: Coletar métricas (24h e 72h)
+
+on:
+  schedule:
+    - cron: "0 15 * * *"    # 12:00 em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  metricas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - env:
+          IG_USER_ID_SABIO: ${{ secrets.IG_USER_ID_SABIO }}
+          IG_ACCESS_TOKEN_SABIO: ${{ secrets.IG_ACCESS_TOKEN_SABIO }}
+          RAW_BASE_URL: ${{ vars.RAW_BASE_URL }}
+          GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
+        run: python -m src.metricas
+      - run: |
+          git config user.name "sabio-bot"
+          git config user.email "actions@github.com"
+          git add conteudo/publicados.json
+          git diff --cached --quiet || git commit -m "métricas atualizadas [skip ci]"
+          git push

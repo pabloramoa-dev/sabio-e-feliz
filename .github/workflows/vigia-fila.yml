@@ -1,0 +1,36 @@
+name: Vigia da fila
+
+# O agendamento do GitHub pode atrasar ou não rodar. Este vigia confere se a
+# reserva de Reels aprovados está acabando e abre uma issue avisando.
+
+on:
+  schedule:
+    - cron: "0 13 * * 1"    # segunda-feira, 10:00 em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  vigiar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - id: check
+        run: |
+          python -m src.conferir --resumo >> $GITHUB_OUTPUT || true
+      - name: Abrir aviso se a reserva estiver baixa
+        if: steps.check.outputs.reserva_baixa == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: "Reserva de Reels acabando",
+              body: `Restam ${{ steps.check.outputs.aprovados }} episódios aprovados na fila.\n\nRode o workflow **Produzir Reels (estúdio)** e aprove os novos antes que a fila zere.`
+            })

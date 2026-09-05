@@ -1,0 +1,69 @@
+name: Produzir Reels (estúdio)
+
+# Roda sob demanda: você escolhe os episódios e o GitHub gera voz + vídeo.
+# Nada é publicado aqui. O MP4 volta como artefato e é commitado em reels/.
+
+on:
+  workflow_dispatch:
+    inputs:
+      episodios:
+        description: "IDs separados por vírgula (ex.: EP-001,EP-002). Vazio = todos os pendentes."
+        required: false
+        default: ""
+      voz:
+        description: "Voz da narração"
+        required: false
+        default: "pt-BR-AntonioNeural"
+        type: choice
+        options:
+          - pt-BR-AntonioNeural
+          - pt-BR-FabioNeural
+          - pt-BR-ThalitaNeural
+
+concurrency:
+  group: sabioefeliz-estudio
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  produzir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-dejavu-core
+      - run: pip install -r requirements.txt
+
+      - name: Renderizar
+        run: |
+          if [ -z "${{ inputs.episodios }}" ]; then
+            python -m estudio.produzir --pendentes --voz "${{ inputs.voz }}"
+          else
+            ARGS=""
+            IFS=',' read -ra IDS <<< "${{ inputs.episodios }}"
+            for id in "${IDS[@]}"; do ARGS="$ARGS --id $(echo $id | xargs)"; done
+            python -m estudio.produzir $ARGS --voz "${{ inputs.voz }}"
+          fi
+
+      - name: Guardar os MP4 como artefato
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reels-${{ github.run_id }}
+          path: |
+            reels/*.mp4
+            output/**/producao.json
+          retention-days: 30
+
+      - name: Commitar os Reels produzidos
+        run: |
+          git config user.name "estudio-sabio"
+          git config user.email "actions@github.com"
+          git add reels conteudo/fila.json
+          git diff --cached --quiet || git commit -m "estúdio: novos Reels produzidos [skip ci]"
+          git push
