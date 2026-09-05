@@ -20,23 +20,6 @@ FADE_CARTELA_ATE = 2.4     # cartela some depois de ~2,4s
 CARTELA_CHEIA_ATE = 1.6
 
 
-def _mapa_segmentos(segmentos: list[dict], palavras: list[dict]) -> list[dict]:
-    """Converte contagem de palavras em janelas de tempo reais do áudio."""
-    saida = []
-    i = 0
-    for seg in segmentos:
-        n = seg["palavras"]
-        fatia = palavras[i:i + n]
-        if not fatia:
-            fatia = palavras[-1:] if palavras else []
-        if fatia:
-            saida.append({**seg, "inicio": fatia[0]["inicio"], "fim": fatia[-1]["fim"]})
-        i += n
-    if saida:
-        saida[-1]["fim"] += 1.2  # segura o encerramento
-    return saida
-
-
 def _segmento_em(mapa: list[dict], t: float) -> dict:
     for seg in mapa:
         if seg["inicio"] <= t <= seg["fim"]:
@@ -51,14 +34,16 @@ def _bloco_em(blocos: list[dict], t: float) -> dict | None:
     return None
 
 
-def renderizar(item: dict, segmentos: list[dict], wav: Path, dados_voz: dict, saida: Path) -> Path:
+def renderizar(item: dict, wav: Path, dados_voz: dict, saida: Path) -> Path:
     saida.parent.mkdir(parents=True, exist_ok=True)
     duracao = dados_voz["duracao_s"]
     palavras = dados_voz["palavras"]
     total_quadros = max(1, int(math.ceil(duracao * FPS)))
 
     amplitude = vozmod.amplitude_por_quadro(wav, FPS)
-    mapa = _mapa_segmentos(segmentos, palavras)
+    mapa = [dict(s) for s in dados_voz["segmentos"]]
+    if mapa:
+        mapa[-1]["fim"] += 1.2   # segura o encerramento até o fim do áudio
 
     base = desenhar_cenario(0)
     blocos = txt.blocos_legenda(base, palavras)

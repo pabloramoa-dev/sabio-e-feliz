@@ -1,31 +1,49 @@
-"""Narração do Sábio.
+"""Narração do Sábio — voz neural local com Kokoro.
 
-Motor padrão: edge-tts (gratuito, sem chave, vozes neurais PT-BR).
-Vantagem decisiva: devolve WordBoundary, ou seja, o tempo exato de cada
-palavra — é isso que faz a legenda karaokê bater com a fala em vez de ser
-estimada por contagem de caracteres.
+Por que Kokoro e não um serviço na nuvem: o edge-tts é bloqueado quando a
+chamada sai de um datacenter (o runner do GitHub leva 403 da Microsoft).
+O Kokoro roda dentro do próprio runner, sem chave, sem cota e sem depender
+de ninguém estar no ar. É a mesma voz que já roda nos outros canais.
 
-Vozes PT-BR recomendadas para o Sábio:
-    pt-BR-AntonioNeural  (masculina, madura, calma)  <- padrão
-    pt-BR-FabioNeural    (masculina, mais clara)
-    pt-BR-ThalitaNeural  (feminina)
+Vozes PT-BR disponíveis:
+    pm_alex   masculina, madura e calma   <- padrão do Sábio
+    pm_santa  masculina, mais grave
+    pf_dora   feminina
 
-Modo mudo (--mudo): gera silêncio com tempos estimados. Serve só para
-validar o render sem rede; nunca deve ir ao ar.
+Sincronia da legenda: o Kokoro não devolve o tempo de cada palavra, então a
+narração é sintetizada FRASE A FRASE. Assim o início e o fim de cada frase
+são medidos de verdade, e dentro da frase as palavras são distribuídas pelo
+tamanho. A legenda karaokê acerta porque a âncora é medida, não estimada.
+
+Modo mudo (--mudo): silêncio com tempos estimados. Só para conferir o visual
+sem baixar modelo; nunca vai ao ar.
 """
 from __future__ import annotations
 
-import asyncio
 import json
+import os
+import re
 import subprocess
+import urllib.request
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
-VOZ_PADRAO = "pt-BR-AntonioNeural"
-RITMO = "-8%"     # 125-145 palavras por minuto, sem aceleração artificial
-TOM = "-2Hz"
-PRE_ROLL = 0.6    # respiro no começo, dos dois lados (áudio e vídeo)
-CAUDA = 1.4       # silêncio no fim para o encerramento não ser cortado
+import numpy as np
+
+VOZ_PADRAO = "pm_alex"
+VELOCIDADE = 0.92          # 125-145 palavras por minuto, sem pressa
+PRE_ROLL = 0.6             # respiro no começo
+CAUDA = 1.4                # silêncio no fim: o encerramento não pode ser cortado
+PAUSA_FRASE = 0.20         # respiro entre frases da mesma ideia
+PAUSA_SEGMENTO = 0.42      # pausa maior entre gancho, passagem, reflexão...
+LUFS_ALVO = -16.5
+
+RAIZ_MODELOS = Path(os.getenv("KOKORO_DIR", Path(__file__).resolve().parent.parent / "modelos"))
+URL_BASE = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0"
+ARQUIVOS = {"kokoro-v1.0.onnx": f"{URL_BASE}/kokoro-v1.0.onnx",
+            "voices-v1.0.bin": f"{URL_BASE}/voices-v1.0.bin"}
+
+MAX_PALAVRAS_FRASE = 12
 
 
 @dataclass
@@ -35,67 +53,154 @@ class Palavra:
     fim: float
 
 
-async def _sintetizar(texto: str, saida_mp3: Path, voz: str) -> list[Palavra]:
-    import edge_tts
-
-    com = edge_tts.Communicate(texto, voz, rate=RITMO, pitch=TOM)
-    palavras: list[Palavra] = []
-    with saida_mp3.open("wb") as fh:
-        async for pedaco in com.stream():
-            if pedaco["type"] == "audio":
-                fh.write(pedaco["data"])
-            elif pedaco["type"] == "WordBoundary":
-                ini = pedaco["offset"] / 1e7
-                dur = pedaco["duration"] / 1e7
-                palavras.append(Palavra(pedaco["text"], ini + PRE_ROLL, ini + dur + PRE_ROLL))
-    return palavras
+def garantir_modelo() -> tuple[Path, Path]:
+    RAIZ_MODELOS.mkdir(parents=True, exist_ok=True)
+    for nome, url in ARQUIVOS.items():
+        destino = RAIZ_MODELOS / nome
+        if not destino.exists() or destino.stat().st_size < 1_000_000:
+            print(f"  baixando {nome}...")
+            urllib.request.urlretrieve(url, destino)
+    return RAIZ_MODELOS / "kokoro-v1.0.onnx", RAIZ_MODELOS / "voices-v1.0.bin"
 
 
-def _estimar(texto: str) -> list[Palavra]:
-    """Tempos estimados para o modo mudo: 2,4 caracteres por 100 ms."""
-    palavras: list[Palavra] = []
-    t = PRE_ROLL
-    for p in texto.split():
-        dur = max(0.22, len(p) / 13.5)
-        palavras.append(Palavra(p, t, t + dur))
-        t += dur + 0.06
-    return palavras
+def frases(texto: str) -> list[str]:
+    """Quebra em frases faláveis: pontuação forte primeiro, vírgula depois."""
+    brutas = [p.strip() for p in re.split(r"(?<=[.!?:;])\s+", texto) if p.strip()]
+    saida: list[str] = []
+    for frase in brutas:
+        if len(frase.split()) <= MAX_PALAVRAS_FRASE:
+            saida.append(frase)
+            continue
+        pedaco: list[str] = []
+        for parte in re.split(r"(?<=,)\s+", frase):
+            if pedaco and len(" ".join(pedaco + [parte]).split()) > MAX_PALAVRAS_FRASE:
+                saida.append(" ".join(pedaco))
+                pedaco = [parte]
+            else:
+                pedaco.append(parte)
+        if pedaco:
+            saida.append(" ".join(pedaco))
+    return saida
 
 
-def gerar(texto: str, destino_wav: Path, voz: str = VOZ_PADRAO, mudo: bool = False) -> dict:
-    """Gera o WAV final (com pré-roll e cauda) e o mapa de palavras."""
+def _tempos_das_palavras(frase: str, inicio: float, fim: float) -> list[Palavra]:
+    """Dentro da frase, cada palavra recebe fatia proporcional ao tamanho."""
+    palavras = frase.split()
+    pesos = [len(p) + 1 for p in palavras]
+    total = sum(pesos) or 1
+    duracao = max(fim - inicio, 0.05)
+    saida, t = [], inicio
+    for palavra, peso in zip(palavras, pesos):
+        d = duracao * peso / total
+        saida.append(Palavra(palavra, t, t + d))
+        t += d
+    return saida
+
+
+def gerar(segmentos: list[dict], destino_wav: Path, voz: str = VOZ_PADRAO,
+          mudo: bool = False) -> dict:
+    """Sintetiza a narração inteira e devolve o mapa de tempos."""
     destino_wav.parent.mkdir(parents=True, exist_ok=True)
-    bruto = destino_wav.with_suffix(".bruto.mp3")
+    taxa = 24000
 
-    if mudo:
-        palavras = _estimar(texto)
-        dur_fala = palavras[-1].fim - PRE_ROLL if palavras else 1.0
-        total = PRE_ROLL + dur_fala + CAUDA
-        subprocess.run(
-            ["ffmpeg", "-y", "-f", "lavfi", "-i", f"anullsrc=r=44100:cl=mono:d={total:.2f}",
-             "-c:a", "pcm_s16le", str(destino_wav)],
-            check=True, capture_output=True,
-        )
-    else:
-        palavras = asyncio.run(_sintetizar(texto, bruto, voz))
-        subprocess.run(
-            ["ffmpeg", "-y", "-i", str(bruto),
-             "-af", f"adelay={int(PRE_ROLL*1000)}|{int(PRE_ROLL*1000)},apad=pad_dur={CAUDA},"
-                    "loudnorm=I=-16.5:TP=-1.5:LRA=11:print_format=summary,alimiter=limit=0.95",
-             "-ar", "44100", "-ac", "1", "-c:a", "pcm_s16le", str(destino_wav)],
-            check=True, capture_output=True,
-        )
-        bruto.unlink(missing_ok=True)
+    trilha: list[np.ndarray] = []
+    palavras: list[Palavra] = []
+    mapa_segmentos: list[dict] = []
+    t = PRE_ROLL
+    trilha.append(np.zeros(int(PRE_ROLL * taxa), dtype=np.float32))
+
+    kokoro = None
+    if not mudo:
+        modelo, vozes = garantir_modelo()
+        from kokoro_onnx import Kokoro
+        kokoro = Kokoro(str(modelo), str(vozes))
+
+    for n, seg in enumerate(segmentos):
+        inicio_seg = t
+        for i, frase in enumerate(frases(seg["texto"])):
+            if mudo:
+                dur = max(0.6, len(frase) / 15.0)
+                audio = np.zeros(int(dur * taxa), dtype=np.float32)
+            else:
+                audio, taxa_k = kokoro.create(frase, voice=voz, speed=VELOCIDADE, lang="pt-br")
+                audio = np.asarray(audio, dtype=np.float32)
+                taxa = taxa_k
+                dur = len(audio) / taxa
+            trilha.append(audio)
+            palavras.extend(_tempos_das_palavras(frase, t, t + dur))
+            t += dur
+            pausa = PAUSA_FRASE
+            trilha.append(np.zeros(int(pausa * taxa), dtype=np.float32))
+            t += pausa
+
+        extra = PAUSA_SEGMENTO - PAUSA_FRASE
+        if n < len(segmentos) - 1 and extra > 0:
+            trilha.append(np.zeros(int(extra * taxa), dtype=np.float32))
+            t += extra
+
+        mapa_segmentos.append({
+            "papel": seg["papel"], "expressao": seg["expressao"],
+            "gesto": seg["gesto"], "inicio": round(inicio_seg, 3), "fim": round(t, 3),
+        })
+
+    trilha.append(np.zeros(int(CAUDA * taxa), dtype=np.float32))
+    sinal = np.concatenate(trilha)
+
+    bruto = destino_wav.with_suffix(".bruto.wav")
+    _escrever_wav(bruto, sinal, taxa)
+    _masterizar(bruto, destino_wav)
+    bruto.unlink(missing_ok=True)
 
     dados = {
         "voz": "mudo" if mudo else voz,
         "duracao_s": duracao(destino_wav),
         "palavras": [asdict(p) for p in palavras],
+        "segmentos": mapa_segmentos,
     }
-    destino_wav.with_suffix(".palavras.json").write_text(
+    destino_wav.with_suffix(".tempos.json").write_text(
         json.dumps(dados, ensure_ascii=False, indent=1), encoding="utf-8"
     )
     return dados
+
+
+def _escrever_wav(caminho: Path, sinal: np.ndarray, taxa: int) -> None:
+    import wave
+
+    pico = float(np.max(np.abs(sinal))) or 1.0
+    dados = (np.clip(sinal / max(pico, 1e-6) * 0.89, -1, 1) * 32767).astype(np.int16)
+    with wave.open(str(caminho), "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(taxa)
+        w.writeframes(dados.tobytes())
+
+
+def _masterizar(entrada: Path, saida: Path) -> None:
+    """Mede o volume, aplica ganho FIXO e limitador.
+
+    Nada de loudnorm de passe único no caminho do sinal: em passe único ele
+    trabalha em modo dinâmico e a narração sai estalando.
+    """
+    medida = subprocess.run(
+        ["ffmpeg", "-i", str(entrada), "-af", "loudnorm=I=-16.5:TP=-1.5:LRA=11:print_format=json",
+         "-f", "null", "-"],
+        capture_output=True, text=True,
+    ).stderr
+    ganho_db = 0.0
+    try:
+        bloco = medida[medida.rindex("{"):medida.rindex("}") + 1]
+        entrada_i = float(json.loads(bloco)["input_i"])
+        if entrada_i > -70:
+            ganho_db = LUFS_ALVO - entrada_i
+    except Exception:
+        ganho_db = 0.0
+
+    subprocess.run(
+        ["ffmpeg", "-y", "-i", str(entrada),
+         "-af", f"volume={ganho_db:.2f}dB,alimiter=limit=0.95",
+         "-ar", "44100", "-ac", "1", "-c:a", "pcm_s16le", str(saida)],
+        check=True, capture_output=True,
+    )
 
 
 def duracao(arquivo: Path) -> float:
@@ -107,9 +212,7 @@ def duracao(arquivo: Path) -> float:
 
 
 def amplitude_por_quadro(wav: Path, fps: int) -> list[float]:
-    """Envelope de amplitude normalizado — é o que abre e fecha a boca."""
-    import numpy as np
-
+    """Envelope de amplitude — é o que abre e fecha a boca do personagem."""
     bruto = subprocess.check_output(
         ["ffmpeg", "-v", "error", "-i", str(wav), "-f", "s16le", "-ac", "1",
          "-ar", "16000", "-"], stderr=subprocess.DEVNULL,
@@ -123,6 +226,4 @@ def amplitude_por_quadro(wav: Path, fps: int) -> list[float]:
     rms = np.sqrt((blocos ** 2).mean(axis=1))
     pico = float(rms.max()) or 1.0
     env = np.clip(rms / pico * 1.35, 0, 1)
-    # suaviza para a boca não tremer
-    suave = np.convolve(env, np.ones(3) / 3, mode="same")
-    return [float(x) for x in suave]
+    return [float(x) for x in np.convolve(env, np.ones(3) / 3, mode="same")]

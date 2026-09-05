@@ -24,11 +24,11 @@ def produzir(item: dict, mudo: bool = False, voz_escolhida: str = voz.VOZ_PADRAO
     trabalho.mkdir(parents=True, exist_ok=True)
 
     wav = trabalho / "narracao.wav"
-    dados_voz = voz.gerar(texto, wav, voz=voz_escolhida, mudo=mudo)
+    dados_voz = voz.gerar(segmentos, wav, voz=voz_escolhida, mudo=mudo)
 
     destino = config.REELS / f"{item['id']}.mp4"
     destino.parent.mkdir(parents=True, exist_ok=True)
-    render.renderizar(item, segmentos, wav, dados_voz, destino)
+    render.renderizar(item, wav, dados_voz, destino)
 
     tecnico = validar_video.validar(destino)
     resultado = {
