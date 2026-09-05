@@ -13,12 +13,12 @@ on:
       voz:
         description: "Voz da narração (Kokoro PT-BR)"
         required: false
-        default: "pm_alex"
+        default: "pf_dora"
         type: choice
         options:
+          - pf_dora
           - pm_alex
           - pm_santa
-          - pf_dora
 
 concurrency:
   group: sabioefeliz-estudio
@@ -36,7 +36,20 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-dejavu-core
+          cache: pip
+
+      - name: Dependências de sistema (Manim precisa de cairo e pango)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev fonts-dejavu-core
+          sudo apt-get install -y fonts-google-poppins || {
+            mkdir -p ~/.fonts
+            curl -sSL -o ~/.fonts/Poppins-Bold.ttf "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Bold.ttf"
+            curl -sSL -o ~/.fonts/Poppins-Regular.ttf "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Regular.ttf"
+            fc-cache -f
+          }
+          fc-list | grep -i poppins || echo "AVISO: Poppins não instalada; o Manim vai usar a fonte padrão"
+
       - run: pip install -r requirements.txt
 
       - name: Reaproveitar o modelo de voz entre execuções
