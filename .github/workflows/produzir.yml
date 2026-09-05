@@ -11,14 +11,14 @@ on:
         required: false
         default: ""
       voz:
-        description: "Voz da narração"
+        description: "Voz da narração (Kokoro PT-BR)"
         required: false
-        default: "pt-BR-AntonioNeural"
+        default: "pm_alex"
         type: choice
         options:
-          - pt-BR-AntonioNeural
-          - pt-BR-FabioNeural
-          - pt-BR-ThalitaNeural
+          - pm_alex
+          - pm_santa
+          - pf_dora
 
 concurrency:
   group: sabioefeliz-estudio
@@ -38,6 +38,12 @@ jobs:
           python-version: "3.12"
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-dejavu-core
       - run: pip install -r requirements.txt
+
+      - name: Reaproveitar o modelo de voz entre execuções
+        uses: actions/cache@v4
+        with:
+          path: modelos
+          key: kokoro-v1.0
 
       - name: Renderizar
         run: |
