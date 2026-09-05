@@ -36,7 +36,8 @@ fila.json (aprovado) -> confere sha256 -> ffprobe -> raw URL
 | `conteudo/publicados.json` | Histórico auditável: media_id, horário, commit e métricas |
 | `reels/` | Os MP4 aprovados, servidos por raw URL para a Meta baixar |
 | `src/` | Publicação: seleção, validação, cliente da Meta, ledger e métricas |
-| `estudio/` | Produção: roteiro, voz, personagem, cenário, legenda e render |
+| `estudio/` | Produção: roteiro, voz Kokoro, cena Manim e render |
+| `estudio/previsao_lib.py` · `dvh_lib.py` | Bibliotecas do @previsaosulflu, trazidas sem alteração |
 | `tests/` | Testes que rodam a cada push |
 
 ## Status de um episódio
@@ -98,10 +99,21 @@ DRY_RUN=true python -m src.main            # ensaio de publicação
 pytest -q
 ```
 
-## Voz
+## Personagem e voz
 
-Narração neural local com **Kokoro** (`pm_alex`), a mesma família de voz dos
-outros canais. Roda dentro do próprio runner: sem chave, sem cota e sem
+Quem apresenta é a **Dona Maria** — exatamente a mesma personagem do
+@previsaosulflu. Os dois arquivos dela, `previsao_lib.py` e `dvh_lib.py`,
+foram trazidos para `estudio/` sem alteração nenhuma: mesmo traço, mesmo
+mundo visual, mesma família de canais. O que muda é o lugar — em vez do
+quintal com varal, uma manhã com janela, mesa, planta e caneca.
+
+O vídeo é renderizado em **Manim**, como nos outros canais. A boca abre e
+fecha pela amplitude do áudio, e o updater fica pendurado num Dot invisível,
+nunca no personagem — animar um submobjeto tira o grupo de `scene.mobjects`
+e mata todos os updaters dele, sem erro nenhum.
+
+Narração neural local com **Kokoro** (`pf_dora`), a mesma voz da Dona Maria
+no canal do tempo. Roda dentro do próprio runner: sem chave, sem cota e sem
 depender de serviço de terceiro no ar. Serviços de TTS na nuvem foram
 descartados porque bloqueiam chamadas vindas de datacenter — o runner do
 GitHub leva 403.
