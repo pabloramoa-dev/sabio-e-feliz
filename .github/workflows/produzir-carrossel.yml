@@ -43,7 +43,7 @@ jobs:
           fc-cache -f
           fc-list | grep -ci montserrat
 
-      - run: pip install pillow
+      - run: pip install pillow requests
 
       - name: Renderizar
         run: |
