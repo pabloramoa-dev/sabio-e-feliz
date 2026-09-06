@@ -1,0 +1,48 @@
+name: Publicar carrossel da tarde
+
+on:
+  schedule:
+    - cron: "0 21 * * *"    # 18:00 em Brasília (UTC-3)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Ensaio: sorteia, valida e NÃO publica"
+        type: boolean
+        default: true
+
+concurrency:
+  group: sabioefeliz-producao      # o mesmo grupo do Reel: nunca os dois juntos
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+
+      - name: Publicar
+        env:
+          IG_USER_ID_SABIO: ${{ secrets.IG_USER_ID_SABIO }}
+          IG_ACCESS_TOKEN_SABIO: ${{ secrets.IG_ACCESS_TOKEN_SABIO }}
+          RAW_BASE_URL: ${{ vars.RAW_BASE_URL }}
+          GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
+          PUBLICAR_ATIVO: ${{ vars.PUBLICAR_ATIVO }}
+          DRY_RUN: ${{ inputs.dry_run && 'true' || 'false' }}
+        run: python -m src.main_carrossel
+
+      - name: Registrar no histórico
+        if: success()
+        run: |
+          git config user.name "sabio-bot"
+          git config user.email "actions@github.com"
+          git add conteudo/carrosseis_publicados.json conteudo/carrosseis.json
+          git diff --cached --quiet || git commit -m "publicado: carrossel da tarde [skip ci]"
+          git push
