@@ -1,6 +1,6 @@
 # Sábio e Feliz · @sabioefeliz
 
-Pipeline automatizado de Reels diários de Provérbios, isolado dos outros canais.
+Pipeline automatizado do canal de Provérbios — um Reel de manhã e um carrossel à tarde —, isolado dos outros canais.
 
 > Um provérbio. Uma decisão melhor. Todos os dias.
 
@@ -27,6 +27,32 @@ fila.json (aprovado) -> confere sha256 -> ffprobe -> raw URL
    -> publicados.json -> métricas em 24h e 72h
 ```
 
+## O carrossel da tarde
+
+O mesmo desenho, com duas diferenças: as peças são estáticas (sete imagens
+1080x1350 feitas em Pillow, sem Manim) e a escolha do dia é **sorteada**, não
+sequencial — dentro dos carrosséis que você já aprovou.
+
+**Estúdio** — workflow `Produzir carrosséis (estúdio)`
+Gera os sete slides de cada item pendente e commita em `carrosseis/<ID>/`.
+Renderizar de novo um item aprovado **derruba a aprovação** de propósito.
+
+**Publicação (todo dia às 18h)** — workflow `Publicar carrossel da tarde`
+
+```
+carrosseis.json (aprovado) -> sorteio com semente do dia -> confere sha256
+   -> um container por imagem (is_carousel_item)
+   -> container CAROUSEL com a legenda -> media_publish
+   -> carrosseis_publicados.json
+```
+
+O sorteio usa a data como semente: rodar o workflow duas vezes no mesmo dia
+devolve o mesmo carrossel, e a trava de um-por-dia impede a segunda postagem.
+
+A capa alterna entre três cores da casa (teal, tijolo, verde), com
+deslocamento por linha — é o que impede a grade de três colunas do perfil de
+virar faixas verticais de uma cor só.
+
 ## Estrutura
 
 | Pasta | O que é |
@@ -34,22 +60,67 @@ fila.json (aprovado) -> confere sha256 -> ffprobe -> raw URL
 | `conteudo/proverbios.json` | Base integral: 31 capítulos, 915 versículos, Almeida em domínio público |
 | `conteudo/fila.json` | Fila editorial: roteiro, formato, status e arquivo de cada episódio |
 | `conteudo/publicados.json` | Histórico auditável: media_id, horário, commit e métricas |
+| `conteudo/carrosseis.json` | Fila da tarde: versículo, três desdobramentos, pergunta e CTA |
+| `conteudo/carrosseis_publicados.json` | Histórico dos carrosséis publicados |
+| `carrosseis/<ID>/` | Os sete JPGs aprovados de cada carrossel |
 | `reels/` | Os MP4 aprovados, servidos por raw URL para a Meta baixar |
 | `src/` | Publicação: seleção, validação, cliente da Meta, ledger e métricas |
 | `estudio/` | Produção: roteiro, voz Kokoro, cena Manim e render |
+| `estudio/carrossel_base.py` | Tokens, texturas e primitivas de texto do carrossel |
+| `estudio/carrossel.py` | Direção de arte "Manhã": os sete slides |
 | `estudio/previsao_lib.py` · `dvh_lib.py` | Bibliotecas do @previsaosulflu, trazidas sem alteração |
 | `tests/` | Testes que rodam a cada push |
 
+## Piloto automático
+
+Desde 2026-09-06 o canal roda **sem aprovação humana**. O que mudou e o que
+não mudou:
+
+**Deixou de existir:** a espera por alguém assinar cada item. O que passa em
+todas as checagens de máquina vira `aprovado` na hora, com
+`aprovado_por: "automatico"`.
+
+**Continua de pé, e não depende de ninguém:**
+
+- lint editorial (campos, tamanho do roteiro, promessas proibidas)
+- o arquivo existe e o **sha256 bate** com o que foi renderizado
+- um post por dia, por tipo
+- a credencial precisa apontar para `@sabioefeliz`, senão a publicação aborta
+
+**Reserva infinita** — workflow `Reabastecer o canal (piloto automático)`,
+todo domingo. Quando a fila escrita à mão está acabando, o `estudio.reserva`
+gera itens do **formato D (leitura)**: três versículos do mesmo capítulo,
+sorteados entre os 509 versículos autocontidos da base, sem nenhuma paráfrase.
+As únicas frases não bíblicas ali são de serviço, fixas e sempre iguais. Um
+rodízio por uso garante que nem versículo nem combinação se repetem tão cedo.
+
+**Credencial** — workflow `Renovar a credencial do Instagram`, toda segunda.
+A credencial de longa duração vale 60 dias; num canal que ninguém acompanha,
+ela venceria em silêncio. O workflow renova e regrava o Secret sozinho (o que
+exige um PAT no Secret `GH_PAT`); se não conseguir, falha de propósito e abre
+uma issue.
+
+```
+domingo 04:00  reabastecer -> gera -> renderiza -> aprova pelo lint -> commita
+segunda 05:00  renova a credencial (+60 dias)
+todo dia 09:00 publica o Reel aprovado
+todo dia 18:00 sorteia e publica o carrossel aprovado
+```
+
 ## Status de um episódio
 
-`rascunho` → `em_revisao` (já tem MP4) → `aprovado` (você assinou) → `publicado`
+`rascunho` → `em_revisao` (já tem MP4) → `aprovado` (pelo lint) → `publicado`
 
 Só `aprovado` entra no ar. E a aprovação é amarrada ao **sha256 do MP4**: se o
-arquivo mudar depois que você aprovou, a publicação para sozinha.
+arquivo mudar depois, a aprovação cai e a publicação para sozinha. Vale igual
+para os carrosséis, com o sha256 de cada uma das imagens.
 
 ## Aprovar um episódio
 
-Abra `conteudo/fila.json` pelo GitHub, ache o episódio e mude três campos:
+Normalmente você não precisa: o `src.aprovar_auto` faz isso sozinho a cada
+reabastecimento. Para segurar um item específico, mude o status para
+`bloqueado` em `conteudo/fila.json` — nada com esse status é aprovado nem
+publicado. Para aprovar à mão, os três campos são:
 
 ```json
 "status": "aprovado",
