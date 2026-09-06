@@ -1,0 +1,35 @@
+name: Conferir a conta e o token
+
+# Pergunta à Meta quem é o dono do token. Serve para três coisas:
+#   1. provar que a ligação está de pé antes da primeira publicação;
+#   2. confirmar que o token aponta para @sabioefeliz e não para outro canal;
+#   3. checar, quando o token de 60 dias estiver perto de vencer, se ainda vale.
+# Não publica nada e não escreve nada no repositório.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  conferir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+
+      - name: Quem é o dono deste token?
+        env:
+          IG_USER_ID_SABIO: ${{ secrets.IG_USER_ID_SABIO }}
+          IG_ACCESS_TOKEN_SABIO: ${{ secrets.IG_ACCESS_TOKEN_SABIO }}
+          RAW_BASE_URL: ${{ vars.RAW_BASE_URL }}
+          GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
+        run: python -m src.main --conta
+
+      - name: Conferir a fila
+        run: python -m src.conferir
