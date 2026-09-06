@@ -1,7 +1,7 @@
 name: Vigia da fila
 
 # O agendamento do GitHub pode atrasar ou não rodar. Este vigia confere se a
-# reserva de Reels aprovados está acabando e abre uma issue avisando.
+# reserva de Reels OU de carrosséis aprovados está acabando e abre uma issue.
 
 on:
   schedule:
@@ -31,6 +31,6 @@ jobs:
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: "Reserva de Reels acabando",
-              body: `Restam ${{ steps.check.outputs.aprovados }} episódios aprovados na fila.\n\nRode o workflow **Produzir Reels (estúdio)** e aprove os novos antes que a fila zere.`
+              title: "Reserva de conteúdo acabando",
+              body: `Reels aprovados na fila: ${{ steps.check.outputs.aprovados }}\nCarrosséis disponíveis para a tarde: ${{ steps.check.outputs.carrosseis_disponiveis }}\n\nRode **Produzir Reels (estúdio)** e/ou **Produzir carrosséis (estúdio)** e aprove os novos antes que a fila zere.`
             })
