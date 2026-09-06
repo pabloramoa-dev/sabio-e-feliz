@@ -11,14 +11,16 @@ on:
         required: false
         default: ""
       voz:
-        description: "Voz da narração (Kokoro PT-BR)"
+        description: "Voz da narração. A do canal é a mistura pm_alex+im_nicola."
         required: false
-        default: "pf_dora"
+        default: "pm_alex+im_nicola"
         type: choice
         options:
-          - pf_dora
+          - pm_alex+im_nicola
           - pm_alex
           - pm_santa
+          - im_nicola
+          - pf_dora
 
 concurrency:
   group: sabioefeliz-estudio
