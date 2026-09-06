@@ -43,11 +43,17 @@ def produzir(item: dict, mudo: bool = False, voz_escolhida: str = voz.VOZ_PADRAO
     lista = fila.carregar_fila()
     for i in lista:
         if i["id"] == item["id"]:
+            mudou = i.get("sha256") != resultado["sha256"]
             i["arquivo"] = resultado["arquivo"]
             i["sha256"] = resultado["sha256"]
             i["duracao_s"] = tecnico["duracao_s"]
-            if i.get("status") == "rascunho":
+            # Produzir de novo INVALIDA a aprovação: o que foi aprovado era o
+            # arquivo antigo. Sem isso, um render novo entraria no ar sem
+            # ninguém ter visto — exatamente o que a trava do sha256 evita.
+            if i.get("status") in {"rascunho", "em_revisao"} or (mudou and i.get("status") == "aprovado"):
                 i["status"] = "em_revisao"
+                i["aprovado_por"] = None
+                i["aprovado_em"] = None
     fila.salvar_json(config.FILA_JSON, lista)
 
     (trabalho / "producao.json").write_text(

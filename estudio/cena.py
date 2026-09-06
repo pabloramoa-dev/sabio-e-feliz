@@ -30,6 +30,7 @@ from estudio import dvh_lib as L        # noqa: E402
 
 PT = L.PT
 FONTE = L.FONTE
+FIM_CAPA = 2.2      # até quando a capa central fica no ar
 DOURADO = "#d6a84a"
 CREME = "#f7ecd6"
 AZUL = "#174a56"
@@ -116,16 +117,76 @@ def vapor(scene, caneca_topo, n=3):
 
 
 # =====================================================================
-#  CARTELA, SELO E MARCA
+#  O ROSTO DO CANAL
 # =====================================================================
-def cartela(titulo: str):
-    t = Text(titulo.upper(), font=FONTE, weight=BOLD, font_size=64, color=WHITE)
-    if t.width > P.LARG_SEGURA:
-        t.scale(P.LARG_SEGURA / t.width)
-    banda = RoundedRectangle(width=t.width + 0.7, height=t.height + 0.6,
-                             corner_radius=0.22, fill_color=AZUL, fill_opacity=0.94,
-                             stroke_color=DOURADO, stroke_width=7)
-    return VGroup(banda, t)
+def rosto_sabio(dm):
+    """Troca a cara de bravo pela de quem já viu muito e está em paz.
+
+    O previsao_lib.py fica intocado: o personagem nasce igual ao do canal do
+    tempo e a expressão é ajustada aqui, em cima. Assim os dois canais
+    continuam compartilhando o mesmo desenho sem um mexer no outro.
+
+    O que muda: a boca vira sorriso, as sobrancelhas param de franzir e
+    ganham arco, e entram bochechas rosadas — é o detalhe que faz o rosto
+    ler como simpático na miniatura, onde ninguém enxerga sutileza.
+    """
+    c = dm["cab"].get_center()
+
+    dm["boca"].become(
+        ArcBetweenPoints(c + DOWN * 0.62 + LEFT * 0.27, c + DOWN * 0.62 + RIGHT * 0.27,
+                         angle=PI / 2.7).set_stroke(PT, 9))
+
+    dm["sobE"].become(
+        ArcBetweenPoints(c + LEFT * 0.54 + UP * 0.30, c + LEFT * 0.14 + UP * 0.40,
+                         angle=-PI / 3.2).set_stroke(P.GRIS, 13))
+    dm["sobD"].become(
+        ArcBetweenPoints(c + RIGHT * 0.14 + UP * 0.40, c + RIGHT * 0.54 + UP * 0.30,
+                         angle=-PI / 3.2).set_stroke(P.GRIS, 13))
+
+    bochechas = VGroup(*[
+        Ellipse(width=0.38, height=0.24, fill_color="#e79a86", fill_opacity=0.6,
+                stroke_width=0).move_to(c + RIGHT * (lado * 0.54) + DOWN * 0.28)
+        for lado in (-1, 1)])
+    subs = dm["grupo"].submobjects
+    subs.insert(subs.index(dm["cab"]) + 1, bochechas)   # atrás de nariz, óculos e bigode
+    return dm
+
+
+# =====================================================================
+#  CAPA, SELO E MARCA
+# =====================================================================
+def capa(referencia: str, titulo: str):
+    """O cartão dos primeiros segundos — e, por tabela, a miniatura da grade.
+
+    O Instagram recorta o QUADRADO DO MEIO do Reel para montar a grade do
+    perfil. Cartela no topo simplesmente não aparece lá: some no corte. Por
+    isso a capa mora no centro, com a referência e o assunto grandes — é o
+    que faz cada quadradinho da grade ser diferente do outro e dizer do que
+    o vídeo trata.
+    """
+    ref = Text(referencia.upper(), font=FONTE, weight=BOLD, font_size=44, color=DOURADO)
+    tit = Text(titulo.upper(), font=FONTE, weight=BOLD, font_size=68, color=WHITE)
+
+    larg = P.LARG_SEGURA - 0.7
+    if tit.width > larg:                      # título comprido: quebra em duas linhas
+        palavras = titulo.upper().split()
+        meio = len(palavras) // 2 + len(palavras) % 2
+        tit = VGroup(
+            Text(" ".join(palavras[:meio]), font=FONTE, weight=BOLD, font_size=68, color=WHITE),
+            Text(" ".join(palavras[meio:]), font=FONTE, weight=BOLD, font_size=68, color=WHITE),
+        ).arrange(DOWN, buff=0.16)
+    if tit.width > larg:
+        tit.scale(larg / tit.width)
+    if ref.width > larg:
+        ref.scale(larg / ref.width)
+
+    risco = Line(LEFT * 1.1, RIGHT * 1.1, stroke_color=DOURADO, stroke_width=6)
+    miolo = VGroup(ref, risco, tit).arrange(DOWN, buff=0.30)
+
+    banda = RoundedRectangle(width=max(miolo.width + 0.9, 6.4), height=miolo.height + 0.95,
+                             corner_radius=0.28, fill_color=AZUL, fill_opacity=0.95,
+                             stroke_color=DOURADO, stroke_width=8)
+    return VGroup(banda, miolo.move_to(banda.get_center()))
 
 
 def selo_referencia(referencia: str):
@@ -202,7 +263,7 @@ class Episodio(MovingCameraScene):
         # o Seu Ranzinza fica ATRÁS da mesa: plano médio, rosto grande na tela.
         # "desconfiado" em vez de "bravo": aqui ele não está reclamando do
         # tempo, está desconfiado da pressa de quem vai responder com raiva.
-        dm = P.ranzinza("desconfiado")
+        dm = rosto_sabio(P.ranzinza("desconfiado"))
         G = dm["grupo"]
         G.scale(1.95)
         G.shift(UP * (3.2 - dm["cab"].get_center()[1]))
@@ -214,21 +275,26 @@ class Episodio(MovingCameraScene):
 
         lip_sync(self, dm, envelope, fps)
 
-        # legenda karaokê frase a frase, no terço central
+        # legenda karaokê frase a frase, no terço central.
+        # Enquanto a capa está no ar a legenda fica fora: as duas no mesmo
+        # lugar viram sopa. Quem assiste sem som lê o título na capa.
         itens = []
         for f in job["frases"]:
             itens += P.legenda_karaoke(f["texto"], f["inicio"], f["fim"],
                                        y=-1.6, fs=52, por_bloco=3)
+        itens = [(max(i, FIM_CAPA), f, m) for (i, f, m) in itens if f > FIM_CAPA]
         self.add(P.trilha_temporal(itens))
 
-        # cartela do assunto nos primeiros segundos — é o frame da grade
-        cart = cartela(job["titulo"]).move_to([0, 6.0, 0])
+        # capa no CENTRO nos primeiros segundos: é ela que vira a miniatura
+        # da grade. A câmera abre olhando para y=1.0, então a capa nasce ali.
+        cap = capa(job["referencia"], job["titulo"]).move_to([0, -0.25, 0])
+        self.add(P.trilha_temporal([(0.0, FIM_CAPA, cap)], pop=0.0))
+
+        # selo com a referência enquanto ele lê a passagem
         selo = selo_referencia(job["referencia"]).move_to([0, 6.0, 0])
         passagem = next((s for s in job["segmentos"] if s["papel"] == "passagem"), None)
-        topo = [(0.0, 2.4, cart)]
         if passagem:
-            topo.append((passagem["inicio"], passagem["fim"], selo))
-        self.add(P.trilha_temporal(topo, pop=0.10))
+            self.add(P.trilha_temporal([(passagem["inicio"], passagem["fim"], selo)], pop=0.10))
 
         m = marca().move_to([0, -config.frame_height / 2 + 2.4, 0])
         self.add(m)
