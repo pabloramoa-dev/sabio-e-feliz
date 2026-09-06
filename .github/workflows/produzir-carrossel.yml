@@ -1,0 +1,74 @@
+name: Produzir carrosséis (estúdio)
+
+# Roda sob demanda: gera as sete imagens de cada carrossel pendente e commita
+# em carrosseis/. Nada é publicado aqui — e renderizar de novo um carrossel
+# que já estava aprovado DERRUBA a aprovação de propósito.
+
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "IDs separados por vírgula (ex.: CAR-001,CAR-002). Vazio = todos os pendentes."
+        required: false
+        default: ""
+      forcar:
+        description: "Renderizar de novo mesmo quem já tem imagens"
+        type: boolean
+        default: false
+
+concurrency:
+  group: sabioefeliz-estudio
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  produzir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Tipografia do canal
+        # EB Garamond e Montserrat vêm do apt: é o que garante que o
+        # carrossel gerado aqui seja idêntico ao que foi aprovado no estúdio.
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-montserrat fonts-ebgaramond fonts-dejavu-core
+          fc-cache -f
+          fc-list | grep -ci montserrat
+
+      - run: pip install pillow
+
+      - name: Renderizar
+        run: |
+          ARGS=""
+          if [ -n "${{ inputs.ids }}" ]; then
+            IFS=',' read -ra IDS <<< "${{ inputs.ids }}"
+            for id in "${IDS[@]}"; do ARGS="$ARGS $(echo $id | xargs)"; done
+          fi
+          if [ "${{ inputs.forcar }}" = "true" ]; then ARGS="$ARGS --forcar"; fi
+          python -m estudio.render_carrossel $ARGS
+
+      - name: Conferir a fila da tarde
+        run: python -m src.main_carrossel --conferir
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: carrosseis-${{ github.run_id }}
+          path: carrosseis/**/*.jpg
+          retention-days: 30
+
+      - name: Commitar os carrosséis produzidos
+        run: |
+          git config user.name "estudio-sabio"
+          git config user.email "actions@github.com"
+          git add carrosseis conteudo/carrosseis.json
+          git diff --cached --quiet || git commit -m "estúdio: novos carrosséis produzidos [skip ci]"
+          git push
