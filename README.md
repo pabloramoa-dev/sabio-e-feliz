@@ -101,28 +101,49 @@ pytest -q
 
 ## Personagem e voz
 
-Quem apresenta é a **Dona Maria** — exatamente a mesma personagem do
-@previsaosulflu. Os dois arquivos dela, `previsao_lib.py` e `dvh_lib.py`,
+Quem apresenta é o **Seu Ranzinza** — exatamente o mesmo personagem do
+@previsaosulflu. Os dois arquivos dele, `previsao_lib.py` e `dvh_lib.py`,
 foram trazidos para `estudio/` sem alteração nenhuma: mesmo traço, mesmo
-mundo visual, mesma família de canais. O que muda é o lugar — em vez do
-quintal com varal, uma manhã com janela, mesa, planta e caneca.
+mundo visual, mesma família de canais. Ele entra no humor **"desconfiado"**,
+não no "bravo" — aqui ele não está reclamando do tempo.
 
-O vídeo é renderizado em **Manim**, como nos outros canais. A boca abre e
-fecha pela amplitude do áudio, e o updater fica pendurado num Dot invisível,
-nunca no personagem — animar um submobjeto tira o grupo de `scene.mobjects`
-e mata todos os updaters dele, sem erro nenhum.
+O que muda é o lugar: em vez da varanda, uma manhã com janela, mesa, planta
+e caneca. O canal de provérbios tem o cenário dele.
 
-Narração neural local com **Kokoro** (`pf_dora`), a mesma voz da Dona Maria
-no canal do tempo. Roda dentro do próprio runner: sem chave, sem cota e sem
-depender de serviço de terceiro no ar. Serviços de TTS na nuvem foram
-descartados porque bloqueiam chamadas vindas de datacenter — o runner do
-GitHub leva 403.
+O vídeo é renderizado em **Manim**. A boca abre e fecha pela amplitude do
+áudio, e o updater fica pendurado num Dot invisível, nunca no personagem —
+animar um submobjeto tira o grupo de `scene.mobjects` e mata todos os
+updaters dele, sem erro nenhum. A posição da boca aberta é medida a partir
+da boca do próprio personagem, então o mesmo código serve para o Ranzinza e
+para a Dona Maria sem número mágico.
 
-O modelo (330 MB) fica em cache entre as execuções e não é versionado.
+### A voz
 
-A legenda karaokê acerta porque a narração é sintetizada **frase a frase**:
-o começo e o fim de cada frase são medidos no áudio de verdade, e só dentro
-da frase as palavras são distribuídas por tamanho.
+Narração neural local com **Kokoro**, sem chave e sem cota. Serviços de TTS
+na nuvem foram descartados porque bloqueiam chamada vinda de datacenter — o
+runner do GitHub leva 403.
+
+A voz do canal é uma **mistura**: `pm_alex+im_nicola`, meio a meio. O sinal
+de mais combina os dois vetores de estilo e cria uma voz que não existe
+solta no modelo — masculina e grave, com o corpo do italiano e a dicção da
+portuguesa. Para mexer no equilíbrio basta mudar a string:
+`pm_alex:0.7+im_nicola:0.3`.
+
+Velocidade em **0,94**. Esse número entra ANTES da síntese, na hora em que o
+modelo decide quanto dura cada som: ele fala mais devagar de verdade, com
+vogal longa e pausa que respira. Não é o áudio esticado depois, que soa
+como fita arrastada.
+
+A legenda karaokê acerta porque a narração é sintetizada **por bloco de
+ideia** — nunca frase por frase, que reinicia a entonação a cada respiro e é
+o que mais soa robótico. Dentro do bloco, cada fronteira de frase é estimada
+pelo tamanho do texto e depois puxada para o silêncio real mais próximo.
+
+A referência bíblica é expandida antes de falar: "Provérbios 15:1" vira
+"Provérbios, capítulo quinze, versículo um". Sem isso o fonetizador lê
+"quinze:um" grudado e sai "quinzum".
+
+O modelo (330 MB) fica em cache entre execuções e não é versionado.
 
 ## Fonte do texto bíblico
 
