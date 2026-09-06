@@ -1,0 +1,57 @@
+name: Renovar a credencial do Instagram
+
+# A credencial de longa duração vale 60 dias. Num canal que roda sozinho,
+# ninguém está olhando para perceber que ela venceu — então a renovação
+# também tem que ser automática.
+
+on:
+  schedule:
+    - cron: "0 8 * * 1"     # segunda-feira, 05:00 em Brasília
+  workflow_dispatch:
+    inputs:
+      so_conferir:
+        description: "Só conferir a validade, sem gravar nada"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  renovar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests pynacl
+
+      - name: Renovar
+        id: renovar
+        env:
+          IG_USER_ID_SABIO: ${{ secrets.IG_USER_ID_SABIO }}
+          IG_ACCESS_TOKEN_SABIO: ${{ secrets.IG_ACCESS_TOKEN_SABIO }}
+          RAW_BASE_URL: ${{ vars.RAW_BASE_URL }}
+          GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          if [ "${{ inputs.so_conferir }}" = "true" ]; then
+            python -m src.renovar_token --so-conferir
+          else
+            python -m src.renovar_token
+          fi
+
+      - name: Avisar se a renovação falhou
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: "A credencial do Instagram não foi renovada",
+              body: `A renovação automática falhou no run ${context.runId}.\n\nSe a causa foi a falta do Secret **GH_PAT**, crie um token clássico com permissão de escrita em Secrets e guarde nesse Secret — sem ele a credencial vence em até 60 dias e o canal para.\n\nO valor da credencial nunca é impresso no log, então a troca manual, se for o caso, tem que ser feita pela tela de Settings.`
+            })
