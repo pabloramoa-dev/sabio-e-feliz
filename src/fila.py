@@ -14,7 +14,7 @@ CAMPOS_OBRIGATORIOS = [
     "titulo", "gancho", "reflexao", "aplicacao", "cta", "arquivo",
 ]
 STATUS_VALIDOS = {"rascunho", "em_revisao", "aprovado", "publicado", "bloqueado"}
-FORMATOS = {"A", "B", "C"}
+FORMATOS = {"A", "B", "C", "D"}   # D = leitura: tres versiculos do mesmo capitulo, sem parafrase
 
 # Promessas que o plano mestre proíbe (Seção 5.3).
 PALAVRAS_PROIBIDAS = [
@@ -46,6 +46,10 @@ def sha256_arquivo(caminho: Path) -> str:
 
 def carregar_fila() -> list[dict]:
     return carregar_json(config.FILA_JSON, [])
+
+
+def salvar_fila(itens: list[dict]) -> None:
+    salvar_json(config.FILA_JSON, itens)
 
 
 def carregar_publicados() -> list[dict]:

@@ -1,7 +1,10 @@
-"""Cliente da Instagram Graph API — publicação de Reels.
+"""Cliente da Instagram Graph API — Reels e carrosséis.
 
-Fluxo oficial: POST /media (media_type=REELS) -> aguardar status FINISHED
--> POST /media_publish. Nada é publicado com PUBLICAR_ATIVO desligado.
+Reel: POST /media (media_type=REELS) -> aguardar FINISHED -> POST /media_publish.
+Carrossel: um POST /media por imagem (is_carousel_item) -> POST /media com
+media_type=CAROUSEL e a lista de filhos -> POST /media_publish.
+
+Nada é publicado com PUBLICAR_ATIVO desligado.
 """
 from __future__ import annotations
 
@@ -43,6 +46,39 @@ class Publicador:
                 "video_url": url_video,
                 "caption": legenda,
                 "share_to_feed": "true",
+                "access_token": self.cfg.ig_token,
+            },
+            timeout=TIMEOUT,
+        )
+        self._checar(r)
+        return r.json()["id"]
+
+    # -- carrossel -----------------------------------------------------------
+    def criar_item_carrossel(self, url_imagem: str) -> str:
+        """Cada imagem vira um container filho, sem legenda própria."""
+        r = requests.post(
+            f"{self.cfg.base_conta}/media",
+            data={
+                "image_url": url_imagem,
+                "is_carousel_item": "true",
+                "access_token": self.cfg.ig_token,
+            },
+            timeout=TIMEOUT,
+        )
+        self._checar(r)
+        return r.json()["id"]
+
+    def criar_container_carrossel(self, filhos: list[str], legenda: str) -> str:
+        """O container-pai: é ele que carrega a legenda e a ordem dos slides."""
+        if not 2 <= len(filhos) <= 10:
+            raise ErroInstagram(
+                f"carrossel precisa de 2 a 10 imagens, recebeu {len(filhos)}")
+        r = requests.post(
+            f"{self.cfg.base_conta}/media",
+            data={
+                "media_type": "CAROUSEL",
+                "children": ",".join(filhos),
+                "caption": legenda,
                 "access_token": self.cfg.ig_token,
             },
             timeout=TIMEOUT,
