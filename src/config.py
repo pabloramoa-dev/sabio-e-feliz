@@ -37,13 +37,18 @@ class Config:
     publicar_ativo: bool
     dry_run: bool
 
+    # Rota "API do Instagram com login do Instagram": o host é graph.instagram.com.
+    # A outra rota (login do Facebook, graph.facebook.com) exigiria uma Página do
+    # Facebook vinculada à conta — passo que este canal não precisa dar.
+    HOST = "https://graph.instagram.com"
+
     @property
     def base_conta(self) -> str:
-        return f"https://graph.facebook.com/{self.graph_version}/{self.ig_user_id}"
+        return f"{self.HOST}/{self.graph_version}/{self.ig_user_id}"
 
     @property
     def base_graph(self) -> str:
-        return f"https://graph.facebook.com/{self.graph_version}"
+        return f"{self.HOST}/{self.graph_version}"
 
 
 def _flag(nome: str, padrao: str = "false") -> bool:
