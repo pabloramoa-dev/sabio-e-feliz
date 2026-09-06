@@ -1,0 +1,34 @@
+name: Importar Reels publicados na mão
+
+# Reconhece no ledger os Reels que foram ao ar sem passar pela automação.
+# Sem isso o coletor de métricas não enxerga esses posts.
+# Não publica nada.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  importar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - env:
+          IG_USER_ID_SABIO: ${{ secrets.IG_USER_ID_SABIO }}
+          IG_ACCESS_TOKEN_SABIO: ${{ secrets.IG_ACCESS_TOKEN_SABIO }}
+          RAW_BASE_URL: ${{ vars.RAW_BASE_URL }}
+          GRAPH_API_VERSION: ${{ vars.GRAPH_API_VERSION }}
+        run: python -m src.importar
+      - run: |
+          git config user.name "sabio-bot"
+          git config user.email "actions@github.com"
+          git add conteudo/publicados.json conteudo/fila.json
+          git diff --cached --quiet || git commit -m "ledger: Reels publicados na mao reconhecidos [skip ci]"
+          git push
