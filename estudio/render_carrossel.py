@@ -28,7 +28,12 @@ def produzir(ids: list[str] | None = None, forcar: bool = False) -> list[str]:
             continue
         if item.get("status") in {"publicado", "arquivado"}:
             continue
-        if item.get("arquivos") and not forcar and not ids:
+        # Ter os caminhos na fila não é ter as imagens: se o JSON foi commitado
+        # antes dos JPGs, é aqui que a diferença aparece — e renderizar é o
+        # certo, não pular.
+        faltando = [r for r in (item.get("arquivos") or [])
+                    if not (config.RAIZ / r).exists()]
+        if item.get("arquivos") and not faltando and not forcar and not ids:
             continue
 
         destino = PASTA_IMAGENS / item["id"]
