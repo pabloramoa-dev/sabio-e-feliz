@@ -1,0 +1,91 @@
+name: Reabastecer o canal (piloto automático)
+
+# Este é o workflow que faz o canal andar sozinho.
+#
+# Toda semana ele olha as duas filas, gera material novo se a reserva estiver
+# baixa, renderiza, aprova pelo lint e commita. Nenhuma etapa espera por uma
+# pessoa — mas nenhuma etapa também inventa interpretação: o material novo é
+# formato D (leitura), só o texto bíblico em domínio público.
+
+on:
+  schedule:
+    - cron: "0 7 * * 0"     # domingo, 04:00 em Brasília
+  workflow_dispatch:
+    inputs:
+      alvo:
+        description: "Quantos itens aprovados manter em reserva em cada fila"
+        required: false
+        default: "14"
+
+concurrency:
+  group: sabioefeliz-estudio
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  reabastecer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Dependências de sistema
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev \
+            fonts-dejavu-core fonts-montserrat fonts-ebgaramond
+          fc-cache -f
+
+      - run: pip install -r requirements.txt -r requirements-estudio.txt
+
+      - name: Reaproveitar o modelo de voz entre execuções
+        uses: actions/cache@v4
+        with:
+          path: modelos
+          key: kokoro-v1.0
+
+      - name: Quanto falta em cada fila
+        id: conta
+        run: python -m src.reabastecer --alvo "${{ inputs.alvo || 14 }}" --resumo >> $GITHUB_OUTPUT
+
+      - name: Gerar material novo da reserva
+        if: steps.conta.outputs.reels_a_gerar != '0' || steps.conta.outputs.carrosseis_a_gerar != '0'
+        run: |
+          python -m estudio.reserva \
+            --reels "${{ steps.conta.outputs.reels_a_gerar }}" \
+            --carrosseis "${{ steps.conta.outputs.carrosseis_a_gerar }}"
+
+      - name: Renderizar os Reels pendentes
+        run: python -m estudio.produzir --pendentes --voz "pm_alex+im_nicola"
+
+      - name: Renderizar os carrosséis pendentes
+        run: python -m estudio.render_carrossel
+
+      - name: Aprovar o que passou em todas as checagens
+        run: python -m src.aprovar_auto
+
+      - name: Conferir as duas filas
+        run: python -m src.conferir
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reabastecimento-${{ github.run_id }}
+          path: |
+            reels/*.mp4
+            carrosseis/**/*.jpg
+          retention-days: 14
+
+      - name: Commitar
+        run: |
+          git config user.name "sabio-bot"
+          git config user.email "actions@github.com"
+          git add reels carrosseis conteudo
+          git diff --cached --quiet || git commit -m "piloto automático: reserva reabastecida [skip ci]"
+          git push
