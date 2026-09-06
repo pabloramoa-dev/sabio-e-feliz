@@ -1,6 +1,6 @@
-"""Cena Manim do @sabioefeliz — a Dona Maria contando o provérbio do dia.
+"""Cena Manim do @sabioefeliz — o Seu Ranzinza contando o provérbio do dia.
 
-A personagem é EXATAMENTE a dona_maria() do repositório da previsão do tempo:
+O personagem é EXATAMENTE o ranzinza() do repositório da previsão do tempo:
 os dois arquivos dela (previsao_lib.py e dvh_lib.py) foram trazidos para cá sem
 alteração. Mesmo mundo visual, mesmo traço, mesma família de canais.
 
@@ -156,9 +156,11 @@ def lip_sync(scene, dm, envelope, fps):
     Por isso o motor é um Dot invisível.
     """
     boca = dm["boca"]
-    centro = boca.get_center()
-    aberta = Ellipse(width=0.46, height=0.12, fill_color="#5a2a28", fill_opacity=1,
-                     stroke_color=PT, stroke_width=6).move_to(centro)
+    # o deslocamento da boca em relação à cabeça: assim a boca aberta segue a
+    # respiração e cai no lugar certo em qualquer personagem, sem número mágico
+    desloc = boca.get_center() - dm["cab"].get_center()
+    aberta = Ellipse(width=0.42, height=0.12, fill_color="#5a2a28", fill_opacity=1,
+                     stroke_color=PT, stroke_width=6).move_to(boca.get_center())
     aberta.set_opacity(0)
     scene.add(aberta)
 
@@ -168,15 +170,15 @@ def lip_sync(scene, dm, envelope, fps):
         st["t"] += dt
         i = min(int(st["t"] * fps), len(envelope) - 1)
         a = envelope[i] if i >= 0 else 0.0
-        alvo = dm["cab"].get_center() + DOWN * 0.52
+        alvo = dm["cab"].get_center() + desloc
         if a < 0.14:
             aberta.set_opacity(0)
             boca.set_stroke(opacity=1)
         else:
             boca.set_stroke(opacity=0)
             aberta.set_opacity(1)
-            aberta.stretch_to_fit_height(0.12 + 0.40 * a)
-            aberta.stretch_to_fit_width(0.42 + 0.10 * a)
+            aberta.stretch_to_fit_height(0.12 + 0.36 * a)
+            aberta.stretch_to_fit_width(0.40 + 0.10 * a)
             aberta.move_to(alvo)
 
     motor = Dot(fill_opacity=0, stroke_width=0)
@@ -197,8 +199,10 @@ class Episodio(MovingCameraScene):
         fundo, frente, piso_y = cenario_manha()
         self.add(fundo)
 
-        # a Dona Maria fica ATRÁS da mesa: plano médio, rosto grande na tela
-        dm = P.dona_maria("simpatica")
+        # o Seu Ranzinza fica ATRÁS da mesa: plano médio, rosto grande na tela.
+        # "desconfiado" em vez de "bravo": aqui ele não está reclamando do
+        # tempo, está desconfiado da pressa de quem vai responder com raiva.
+        dm = P.ranzinza("desconfiado")
         G = dm["grupo"]
         G.scale(1.95)
         G.shift(UP * (3.2 - dm["cab"].get_center()[1]))

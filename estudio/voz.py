@@ -1,22 +1,31 @@
-"""Narração do Sábio — voz neural local com Kokoro.
+"""Narração — voz neural local com Kokoro.
 
 Por que Kokoro e não um serviço na nuvem: o edge-tts é bloqueado quando a
 chamada sai de um datacenter (o runner do GitHub leva 403 da Microsoft).
 O Kokoro roda dentro do próprio runner, sem chave, sem cota e sem depender
 de ninguém estar no ar. É a mesma voz que já roda nos outros canais.
 
-Vozes PT-BR disponíveis:
-    pm_alex   masculina, madura e calma   <- padrão do Sábio
-    pm_santa  masculina, mais grave
-    pf_dora   feminina
+Vozes PT-BR:
+    pf_dora   feminina  <- padrão (a mesma da Dona Maria no canal do tempo)
+    pm_alex   masculina madura
+    pm_santa  masculina mais grave
 
-Sincronia da legenda: o Kokoro não devolve o tempo de cada palavra, então a
-narração é sintetizada FRASE A FRASE. Assim o início e o fim de cada frase
-são medidos de verdade, e dentro da frase as palavras são distribuídas pelo
-tamanho. A legenda karaokê acerta porque a âncora é medida, não estimada.
+TRÊS DECISÕES QUE MUDAM MUITO A NATURALIDADE
 
-Modo mudo (--mudo): silêncio com tempos estimados. Só para conferir o visual
-sem baixar modelo; nunca vai ao ar.
+1. A narração é sintetizada por BLOCO DE IDEIA, não frase por frase. Cada
+   chamada ao Kokoro reinicia a entonação: picotar em pedacinhos faz a voz
+   subir e descer do zero a cada respiro e é o que mais soa robótico.
+
+2. Nenhum silêncio artificial é enfiado dentro do bloco. O próprio modelo
+   já produz a pausa de vírgula e de ponto. Colar 0,2 s fixo entre frases
+   soa metrônomo.
+
+3. A referência bíblica é EXPANDIDA antes de falar: "Provérbios 15:1" vira
+   "Provérbios, capítulo quinze, versículo um". Sem isso o fonetizador lê
+   "quinze:um" grudado — vira "quinzum".
+
+Os tempos da legenda continuam medidos, não estimados: dentro do bloco os
+silêncios reais do áudio marcam onde cada frase começa.
 """
 from __future__ import annotations
 
@@ -30,12 +39,14 @@ from pathlib import Path
 
 import numpy as np
 
-VOZ_PADRAO = "pf_dora"   # a mesma voz da Dona Maria no canal do tempo
-VELOCIDADE = 0.92          # 125-145 palavras por minuto, sem pressa
-PRE_ROLL = 0.6             # respiro no começo
-CAUDA = 1.4                # silêncio no fim: o encerramento não pode ser cortado
-PAUSA_FRASE = 0.20         # respiro entre frases da mesma ideia
-PAUSA_SEGMENTO = 0.42      # pausa maior entre gancho, passagem, reflexão...
+# Uma voz pode ser um nome do modelo ou uma MISTURA: "pm_alex+im_nicola"
+# combina os dois vetores meio a meio, e "pm_alex:0.7+im_nicola:0.3" define o
+# peso. Misturar cria vozes que não existem soltas no modelo.
+VOZ_PADRAO = "pm_alex+im_nicola"
+VELOCIDADE = 0.94          # um respiro mais devagar que o natural do modelo
+PRE_ROLL = 0.5             # respiro antes da primeira palavra
+CAUDA = 1.3                # o encerramento não pode ser cortado
+PAUSA_SEGMENTO = 0.28      # respiro entre gancho, passagem, reflexão...
 LUFS_ALVO = -16.5
 
 RAIZ_MODELOS = Path(os.getenv("KOKORO_DIR", Path(__file__).resolve().parent.parent / "modelos"))
@@ -43,7 +54,35 @@ URL_BASE = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-
 ARQUIVOS = {"kokoro-v1.0.onnx": f"{URL_BASE}/kokoro-v1.0.onnx",
             "voices-v1.0.bin": f"{URL_BASE}/voices-v1.0.bin"}
 
-MAX_PALAVRAS_FRASE = 12
+UNIDADES = ["zero", "um", "dois", "três", "quatro", "cinco", "seis", "sete",
+            "oito", "nove", "dez", "onze", "doze", "treze", "catorze", "quinze",
+            "dezesseis", "dezessete", "dezoito", "dezenove"]
+DEZENAS = {20: "vinte", 30: "trinta", 40: "quarenta", 50: "cinquenta",
+           60: "sessenta", 70: "setenta", 80: "oitenta", 90: "noventa"}
+
+
+def estilo(kokoro, voz: str):
+    """Devolve o vetor de estilo: nome simples ou mistura ponderada."""
+    if "+" not in voz:
+        return voz
+
+    partes, pesos = [], []
+    for termo in voz.split("+"):
+        termo = termo.strip()
+        if ":" in termo:
+            nome, peso = termo.rsplit(":", 1)
+            partes.append(nome.strip())
+            pesos.append(float(peso))
+        else:
+            partes.append(termo)
+            pesos.append(1.0)
+
+    total = sum(pesos) or 1.0
+    vetor = None
+    for nome, peso in zip(partes, pesos):
+        parcela = kokoro.get_voice_style(nome) * (peso / total)
+        vetor = parcela if vetor is None else vetor + parcela
+    return vetor
 
 
 @dataclass
@@ -53,6 +92,54 @@ class Palavra:
     fim: float
 
 
+# =====================================================================
+#  TEXTO FALADO
+# =====================================================================
+def por_extenso(n: int) -> str:
+    if n < 20:
+        return UNIDADES[n]
+    if n < 100:
+        d, u = divmod(n, 10)
+        base = DEZENAS[d * 10]
+        return base if u == 0 else f"{base} e {UNIDADES[u]}"
+    return str(n)
+
+
+def expandir_referencia(texto: str) -> str:
+    """Provérbios 15:1 -> Provérbios, capítulo quinze, versículo um."""
+    def _um(m):
+        cap, v1, v2 = int(m.group(1)), int(m.group(2)), m.group(3)
+        if v2:
+            return (f", capítulo {por_extenso(cap)}, "
+                    f"versículos {por_extenso(v1)} a {por_extenso(int(v2))}")
+        return f", capítulo {por_extenso(cap)}, versículo {por_extenso(v1)}"
+
+    return re.sub(r"\s*(\d{1,2}):(\d{1,3})(?:\s*[-–a]\s*(\d{1,3}))?", _um, texto)
+
+
+def frases(texto: str) -> list[str]:
+    """Só para a LEGENDA: quebra em frases faláveis, sem cortar a síntese."""
+    brutas = [p.strip() for p in re.split(r"(?<=[.!?:;])\s+", texto) if p.strip()]
+    saida: list[str] = []
+    for frase in brutas:
+        if len(frase.split()) <= 12:
+            saida.append(frase)
+            continue
+        pedaco: list[str] = []
+        for parte in re.split(r"(?<=,)\s+", frase):
+            if pedaco and len(" ".join(pedaco + [parte]).split()) > 12:
+                saida.append(" ".join(pedaco))
+                pedaco = [parte]
+            else:
+                pedaco.append(parte)
+        if pedaco:
+            saida.append(" ".join(pedaco))
+    return saida
+
+
+# =====================================================================
+#  MODELO
+# =====================================================================
 def garantir_modelo() -> tuple[Path, Path]:
     RAIZ_MODELOS.mkdir(parents=True, exist_ok=True)
     for nome, url in ARQUIVOS.items():
@@ -63,28 +150,72 @@ def garantir_modelo() -> tuple[Path, Path]:
     return RAIZ_MODELOS / "kokoro-v1.0.onnx", RAIZ_MODELOS / "voices-v1.0.bin"
 
 
-def frases(texto: str) -> list[str]:
-    """Quebra em frases faláveis: pontuação forte primeiro, vírgula depois."""
-    brutas = [p.strip() for p in re.split(r"(?<=[.!?:;])\s+", texto) if p.strip()]
-    saida: list[str] = []
-    for frase in brutas:
-        if len(frase.split()) <= MAX_PALAVRAS_FRASE:
-            saida.append(frase)
-            continue
-        pedaco: list[str] = []
-        for parte in re.split(r"(?<=,)\s+", frase):
-            if pedaco and len(" ".join(pedaco + [parte]).split()) > MAX_PALAVRAS_FRASE:
-                saida.append(" ".join(pedaco))
-                pedaco = [parte]
-            else:
-                pedaco.append(parte)
-        if pedaco:
-            saida.append(" ".join(pedaco))
+# =====================================================================
+#  ALINHAMENTO PELOS SILÊNCIOS REAIS
+# =====================================================================
+def _silencios(audio: np.ndarray, taxa: int) -> list[tuple[float, float]]:
+    """Todos os respiros do bloco: (centro em segundos, duração em segundos)."""
+    salto = int(taxa * 0.01)
+    janela = int(taxa * 0.02)
+    n = max(1, (len(audio) - janela) // salto)
+    rms = np.array([
+        np.sqrt(np.mean(audio[i * salto: i * salto + janela] ** 2) + 1e-12)
+        for i in range(n)
+    ])
+    limiar = max(rms.max() * 0.06, 1e-4)
+    quieto = rms < limiar
+
+    achados, i = [], 0
+    while i < n:
+        if quieto[i]:
+            j = i
+            while j < n and quieto[j]:
+                j += 1
+            dur = (j - i) * salto / taxa
+            if dur >= 0.045 and i > 0 and j < n:
+                achados.append(((i + j) / 2 * salto / taxa, dur))
+            i = j
+        else:
+            i += 1
+    return achados
+
+
+def _fronteiras(audio: np.ndarray, taxa: int, pedacos: list[str], dur: float) -> list[float]:
+    """Onde cada frase da legenda começa dentro do bloco.
+
+    Primeiro estima pela quantidade de texto, depois puxa cada estimativa
+    para o respiro real mais próximo. Pegar simplesmente os maiores
+    silêncios erra feio: uma vírgula longa no meio rouba a fronteira de
+    quem precisava dela.
+    """
+    if len(pedacos) < 2:
+        return []
+
+    pesos = np.array([len(p) for p in pedacos], dtype=float)
+    esperado = list(np.cumsum(pesos / pesos.sum()) * dur)[:-1]
+
+    respiros = _silencios(audio, taxa)
+    if not respiros:
+        return esperado
+
+    saida, usados, anterior = [], set(), 0.0
+    for alvo in esperado:
+        tolerancia = max(0.45, dur * 0.10)
+        candidatos = [
+            (abs(c - alvo), c) for k, (c, _d) in enumerate(respiros)
+            if k not in usados and c > anterior and abs(c - alvo) <= tolerancia
+        ]
+        if candidatos:
+            _, escolhido = min(candidatos)
+            usados.add(next(k for k, (c, _d) in enumerate(respiros) if c == escolhido))
+        else:
+            escolhido = alvo
+        saida.append(escolhido)
+        anterior = escolhido
     return saida
 
 
 def _tempos_das_palavras(frase: str, inicio: float, fim: float) -> list[Palavra]:
-    """Dentro da frase, cada palavra recebe fatia proporcional ao tamanho."""
     palavras = frase.split()
     pesos = [len(p) + 1 for p in palavras]
     total = sum(pesos) or 1
@@ -97,49 +228,60 @@ def _tempos_das_palavras(frase: str, inicio: float, fim: float) -> list[Palavra]
     return saida
 
 
+# =====================================================================
+#  GERAÇÃO
+# =====================================================================
 def gerar(segmentos: list[dict], destino_wav: Path, voz: str = VOZ_PADRAO,
           mudo: bool = False) -> dict:
-    """Sintetiza a narração inteira e devolve o mapa de tempos."""
     destino_wav.parent.mkdir(parents=True, exist_ok=True)
     taxa = 24000
-
-    trilha: list[np.ndarray] = []
-    palavras: list[Palavra] = []
-    mapa_frases: list[dict] = []
-    mapa_segmentos: list[dict] = []
-    t = PRE_ROLL
-    trilha.append(np.zeros(int(PRE_ROLL * taxa), dtype=np.float32))
 
     kokoro = None
     if not mudo:
         modelo, vozes = garantir_modelo()
         from kokoro_onnx import Kokoro
         kokoro = Kokoro(str(modelo), str(vozes))
+        estilo_voz = estilo(kokoro, voz)
+
+    trilha: list[np.ndarray] = [np.zeros(int(PRE_ROLL * taxa), dtype=np.float32)]
+    palavras: list[Palavra] = []
+    mapa_frases: list[dict] = []
+    mapa_segmentos: list[dict] = []
+    t = PRE_ROLL
 
     for n, seg in enumerate(segmentos):
-        inicio_seg = t
-        for i, frase in enumerate(frases(seg["texto"])):
-            if mudo:
-                dur = max(0.6, len(frase) / 15.0)
-                audio = np.zeros(int(dur * taxa), dtype=np.float32)
-            else:
-                audio, taxa_k = kokoro.create(frase, voice=voz, speed=VELOCIDADE, lang="pt-br")
-                audio = np.asarray(audio, dtype=np.float32)
-                taxa = taxa_k
-                dur = len(audio) / taxa
-            trilha.append(audio)
-            palavras.extend(_tempos_das_palavras(frase, t, t + dur))
-            mapa_frases.append({"texto": frase, "inicio": round(t, 3),
-                                "fim": round(t + dur, 3), "papel": seg["papel"]})
-            t += dur
-            pausa = PAUSA_FRASE
-            trilha.append(np.zeros(int(pausa * taxa), dtype=np.float32))
-            t += pausa
+        # o bloco inteiro vai de uma vez: a entonação atravessa as frases
+        falado = expandir_referencia(seg["texto"])
+        if mudo:
+            dur = max(1.0, len(falado) / 15.0)
+            audio = np.zeros(int(dur * taxa), dtype=np.float32)
+        else:
+            audio, taxa_k = kokoro.create(falado, voice=estilo_voz, speed=VELOCIDADE, lang="pt-br")
+            audio = np.asarray(audio, dtype=np.float32)
+            taxa = taxa_k
+            dur = len(audio) / taxa
 
-        extra = PAUSA_SEGMENTO - PAUSA_FRASE
-        if n < len(segmentos) - 1 and extra > 0:
-            trilha.append(np.zeros(int(extra * taxa), dtype=np.float32))
-            t += extra
+        # legenda: as frases do texto ESCRITO, ancoradas nos silêncios do áudio
+        pedacos = frases(seg["texto"])
+        if mudo:
+            pesos = np.array([len(p) for p in pedacos], dtype=float)
+            cortes = list(np.cumsum(pesos / pesos.sum()) * dur)[:-1]
+        else:
+            cortes = _fronteiras(audio, taxa, pedacos, dur)
+        limites = [0.0] + list(cortes) + [dur]
+
+        inicio_seg = t
+        for k, frase in enumerate(pedacos):
+            ini, fim = t + limites[k], t + limites[k + 1]
+            palavras.extend(_tempos_das_palavras(frase, ini, fim))
+            mapa_frases.append({"texto": frase, "inicio": round(ini, 3),
+                                "fim": round(fim, 3), "papel": seg["papel"]})
+
+        trilha.append(audio)
+        t += dur
+        if n < len(segmentos) - 1:
+            trilha.append(np.zeros(int(PAUSA_SEGMENTO * taxa), dtype=np.float32))
+            t += PAUSA_SEGMENTO
 
         mapa_segmentos.append({
             "papel": seg["papel"], "expressao": seg["expressao"],
