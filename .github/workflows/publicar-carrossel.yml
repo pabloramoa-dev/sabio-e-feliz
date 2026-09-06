@@ -43,6 +43,6 @@ jobs:
         run: |
           git config user.name "sabio-bot"
           git config user.email "actions@github.com"
-          git add conteudo/carrosseis_publicados.json conteudo/carrosseis.json
+          git add -A conteudo
           git diff --cached --quiet || git commit -m "publicado: carrossel da tarde [skip ci]"
           git push
