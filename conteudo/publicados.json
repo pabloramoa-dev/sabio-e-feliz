@@ -1,1 +1,173 @@
-[]
+[
+ {
+  "id": "EP-001",
+  "referencia": "Provérbios 15:1",
+  "titulo": "Antes de enviar",
+  "formato": "A",
+  "arquivo": "reels/EP-001.mp4",
+  "sha256": "abc9908f6ddaaa55a9b9f8ac6019f4aa0731bad66b58684a0ecf8ce9269942db",
+  "url_video": null,
+  "instagram_media_id": "18027750971681408",
+  "publicado_em": "2026-09-06T16:27:44+0000",
+  "commit": "manual",
+  "execucao": "manual",
+  "tecnico": {
+   "origem": "publicado manualmente, importado depois"
+  },
+  "permalink": "https://www.instagram.com/reel/Dc89tC4Ai-E/",
+  "metricas_24h": null,
+  "metricas_72h": null
+ },
+ {
+  "id": "EP-002",
+  "referencia": "Provérbios 6:6",
+  "titulo": "A tarefa pequena",
+  "formato": "B",
+  "arquivo": "reels/EP-002.mp4",
+  "sha256": "dbc93346d6eee03c9944b69c8db04b4de45d23e09983e79f86b99af840439e01",
+  "url_video": null,
+  "instagram_media_id": "18121927954886392",
+  "publicado_em": "2026-09-06T16:29:03+0000",
+  "commit": "manual",
+  "execucao": "manual",
+  "tecnico": {
+   "origem": "publicado manualmente, importado depois"
+  },
+  "permalink": "https://www.instagram.com/reel/Dc892NVtsEr/",
+  "metricas_24h": null,
+  "metricas_72h": null
+ },
+ {
+  "id": "EP-003",
+  "referencia": "Provérbios 17:17",
+  "titulo": "Quem ficou por perto",
+  "formato": "C",
+  "arquivo": "reels/EP-003.mp4",
+  "sha256": "627f9004393d74137691ea3ad16adad81c912e2d130fe171448fd252a3d93319",
+  "url_video": null,
+  "instagram_media_id": "18109761779045561",
+  "publicado_em": "2026-09-06T16:29:52+0000",
+  "commit": "manual",
+  "execucao": "manual",
+  "tecnico": {
+   "origem": "publicado manualmente, importado depois"
+  },
+  "permalink": "https://www.instagram.com/reel/Dc8988JNMZ1/",
+  "metricas_24h": null,
+  "metricas_72h": null
+ },
+ {
+  "id": "EP-004",
+  "referencia": "Provérbios 18:13",
+  "titulo": "Responder antes de ouvir",
+  "formato": "A",
+  "arquivo": "reels/EP-004.mp4",
+  "sha256": "37f367ad7bc23b3fa390260348db8bac890dc95888d15a5624f35d50f8f370cf",
+  "url_video": null,
+  "instagram_media_id": "18116644768822593",
+  "publicado_em": "2026-09-06T16:31:03+0000",
+  "commit": "manual",
+  "execucao": "manual",
+  "tecnico": {
+   "origem": "publicado manualmente, importado depois"
+  },
+  "permalink": "https://www.instagram.com/reel/Dc8-Fpah-Or/",
+  "metricas_24h": null,
+  "metricas_72h": null
+ },
+ {
+  "id": "EP-005",
+  "referencia": "Provérbios 25:28",
+  "titulo": "A cidade sem muros",
+  "formato": "B",
+  "arquivo": "reels/EP-005.mp4",
+  "sha256": "ee08b2cd38daad03a281ee95da84b868814c791e43daeee12f17d8bf593f9716",
+  "url_video": null,
+  "instagram_media_id": "18233334784317614",
+  "publicado_em": "2026-09-06T16:32:09+0000",
+  "commit": "manual",
+  "execucao": "manual",
+  "tecnico": {
+   "origem": "publicado manualmente, importado depois"
+  },
+  "permalink": "https://www.instagram.com/reel/Dc8-NkFpAGz/",
+  "metricas_24h": null,
+  "metricas_72h": null
+ },
+ {
+  "id": "EP-006",
+  "referencia": "Provérbios 12:25",
+  "titulo": "Uma boa palavra",
+  "formato": "C",
+  "arquivo": "reels/EP-006.mp4",
+  "sha256": "f3c21f3bcd024a8b2a38f6f286d07287584eb2f97014c69605f608dec1e45fa4",
+  "url_video": null,
+  "instagram_media_id": "18148157821528735",
+  "publicado_em": "2026-09-06T16:32:59+0000",
+  "commit": "manual",
+  "execucao": "manual",
+  "tecnico": {
+   "origem": "publicado manualmente, importado depois"
+  },
+  "permalink": "https://www.instagram.com/reel/Dc8-TwXus4x/",
+  "metricas_24h": null,
+  "metricas_72h": null
+ },
+ {
+  "id": "EP-007",
+  "referencia": "Provérbios 19:11",
+  "titulo": "O print que você guardou",
+  "formato": "A",
+  "arquivo": "reels/EP-007.mp4",
+  "sha256": "42c715f828c0dd4b4324ddd6b75b455d910c462028b502d03da718adf811569c",
+  "url_video": null,
+  "instagram_media_id": "17982248616112760",
+  "publicado_em": "2026-09-06T16:33:52+0000",
+  "commit": "manual",
+  "execucao": "manual",
+  "tecnico": {
+   "origem": "publicado manualmente, importado depois"
+  },
+  "permalink": "https://www.instagram.com/reel/Dc8-aIzSMrS/",
+  "metricas_24h": null,
+  "metricas_72h": null
+ },
+ {
+  "id": "EP-008",
+  "referencia": "Provérbios 27:17",
+  "titulo": "O ferro que afia",
+  "formato": "B",
+  "arquivo": "reels/EP-008.mp4",
+  "sha256": "b5f4573f0f9f020e987d6f1c5a4480352195cbc7c4e76afd9526f489d231c08c",
+  "url_video": null,
+  "instagram_media_id": "18093430967552413",
+  "publicado_em": "2026-09-06T16:34:47+0000",
+  "commit": "manual",
+  "execucao": "manual",
+  "tecnico": {
+   "origem": "publicado manualmente, importado depois"
+  },
+  "permalink": "https://www.instagram.com/reel/Dc8-gwDOiU7/",
+  "metricas_24h": null,
+  "metricas_72h": null
+ },
+ {
+  "id": "EP-009",
+  "referencia": "Provérbios 22:1",
+  "titulo": "O nome que fica",
+  "formato": "C",
+  "arquivo": "reels/EP-009.mp4",
+  "sha256": "5bd1b9cdcce196e6542fa85c4eed497d278dd73be0aec0b50729af6f065fae8f",
+  "url_video": null,
+  "instagram_media_id": "18617882716056061",
+  "publicado_em": "2026-09-06T16:35:55+0000",
+  "commit": "manual",
+  "execucao": "manual",
+  "tecnico": {
+   "origem": "publicado manualmente, importado depois"
+  },
+  "permalink": "https://www.instagram.com/reel/Dc8-nP3hXJB/",
+  "metricas_24h": null,
+  "metricas_72h": null
+ }
+]
