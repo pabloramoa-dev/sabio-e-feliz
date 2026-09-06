@@ -1,0 +1,953 @@
+{
+ "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
+ "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
+ "total": 17,
+ "carrosseis": [
+  {
+   "id": "CAR-001",
+   "referencias": [
+    "PRO-04-23"
+   ],
+   "referencia_exibida": "Provérbios 4:23",
+   "texto_biblico": "Guarda com toda a diligência o teu coração, porque dele procedem as fontes da vida.",
+   "tema": "juízo",
+   "titulo": "O que você deixa entrar",
+   "gancho": "Ninguém decide o que sente. Mas todo mundo decide o que fica morando dentro.",
+   "pontos": [
+    {
+     "etiqueta": "o que está escrito",
+     "titulo": "Guardar é trabalho, não sentimento",
+     "corpo": "O verbo do texto é o de quem vigia um portão. Não fala de reprimir o que se sente — fala de reparar no que se deixa entrar e voltar todo dia."
+    },
+    {
+     "etiqueta": "onde isso pega",
+     "titulo": "A fonte vem antes do rio",
+     "corpo": "O que sai de você em casa, no trabalho, na mensagem escrita às onze da noite: nada disso nasce ali. Nasce do que foi alimentado durante semanas."
+    },
+    {
+     "etiqueta": "o passo de hoje",
+     "titulo": "Escolha uma porta e feche",
+     "corpo": "Um assunto, um perfil, uma conversa que só te deixa pior. Hoje não é o dia de resolver tudo — é o dia de fechar uma porta só."
+    }
+   ],
+   "pergunta": "O que anda entrando em você todo dia sem você ter dito que podia?",
+   "cta": "Guardar o coração é rotina, não é heroísmo.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "pasta": "carrosseis/CAR-001",
+   "arquivos": [
+    "carrosseis/CAR-001/CAR-001-01.jpg",
+    "carrosseis/CAR-001/CAR-001-02.jpg",
+    "carrosseis/CAR-001/CAR-001-03.jpg",
+    "carrosseis/CAR-001/CAR-001-04.jpg",
+    "carrosseis/CAR-001/CAR-001-05.jpg",
+    "carrosseis/CAR-001/CAR-001-06.jpg",
+    "carrosseis/CAR-001/CAR-001-07.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-001/CAR-001-01.jpg": "0efabceec1b4ede79b9cfcc2f74af1c22ddebc0388dd71d93823b853f033fb66",
+    "carrosseis/CAR-001/CAR-001-02.jpg": "00d8e269f6e6054c4882ef3221051827de4cbc49979a42062d4d74e3f5ce1172",
+    "carrosseis/CAR-001/CAR-001-03.jpg": "5a078afc3455294b946b607c6f98a5aa03858cbfb27b651415f647a7880d0c69",
+    "carrosseis/CAR-001/CAR-001-04.jpg": "2c9fd36952d13121ceabaa0e4fe6b24b67e6fc9187752d49826836e653be80dd",
+    "carrosseis/CAR-001/CAR-001-05.jpg": "706687042efe21dd809fec7752a633776362c02ecbb2afdf148e12f969cb8e5b",
+    "carrosseis/CAR-001/CAR-001-06.jpg": "82926587227c25d8a021cf6e92a5033c19abd88ab9a57633439e5ba0101547ae",
+    "carrosseis/CAR-001/CAR-001-07.jpg": "35372b7a75a7f569825522b1b094d6238dd581c2b18c4530d58aab9d3b399e93"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-06T20:15:41+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "produzido_em": "2026-09-06T20:15:18+00:00"
+  },
+  {
+   "id": "CAR-002",
+   "referencias": [
+    "PRO-16-32"
+   ],
+   "referencia_exibida": "Provérbios 16:32",
+   "texto_biblico": "Melhor é o longânimo do que o valente; e o que domina o seu espírito do que o que toma uma cidade.",
+   "tema": "domínio próprio",
+   "titulo": "Mais difícil que vencer",
+   "gancho": "O texto compara quem se controla a quem toma uma cidade. E dá a vitória para o primeiro.",
+   "pontos": [
+    {
+     "etiqueta": "o que está escrito",
+     "titulo": "A força que ninguém aplaude",
+     "corpo": "Tomar uma cidade tem plateia. Segurar a resposta às sete da manhã não tem. O provérbio inverte quem merece o crédito."
+    },
+    {
+     "etiqueta": "onde isso pega",
+     "titulo": "O adversário mora em casa",
+     "corpo": "Quase nunca a briga é com quem está na sua frente. É com a vontade de ter a última palavra e sair por cima."
+    },
+    {
+     "etiqueta": "o passo de hoje",
+     "titulo": "Segure trinta segundos",
+     "corpo": "Não é engolir. É atrasar. Trinta segundos entre o que você sentiu e o que você fala mudam quase toda discussão."
+    }
+   ],
+   "pergunta": "Qual foi a última vez que você venceu segurando, e não respondendo?",
+   "cta": "Quem domina o próprio ânimo já ganhou a parte difícil.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "pasta": "carrosseis/CAR-002",
+   "arquivos": [
+    "carrosseis/CAR-002/CAR-002-01.jpg",
+    "carrosseis/CAR-002/CAR-002-02.jpg",
+    "carrosseis/CAR-002/CAR-002-03.jpg",
+    "carrosseis/CAR-002/CAR-002-04.jpg",
+    "carrosseis/CAR-002/CAR-002-05.jpg",
+    "carrosseis/CAR-002/CAR-002-06.jpg",
+    "carrosseis/CAR-002/CAR-002-07.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-002/CAR-002-01.jpg": "aafed9d74181d1ed78d5a5b7f8a223c8bcce7d7256caea37411c6a8bdca1cea7",
+    "carrosseis/CAR-002/CAR-002-02.jpg": "e1e746cd6de39ea117251e3856093c459b9aebbdc9403d9c6f6e58799ec32173",
+    "carrosseis/CAR-002/CAR-002-03.jpg": "22917a103b779072d3c23615c69a2a0595f6a40d55345257ab6720cbb2037254",
+    "carrosseis/CAR-002/CAR-002-04.jpg": "9b7291d684f8b90d4245d4140b0dce7aa3c2bec24b0c27a053e249f9d8a6126d",
+    "carrosseis/CAR-002/CAR-002-05.jpg": "5e1c68f24edfcec938b1478aa7a6f6ba337274833c4b06e88440f0eb8301d562",
+    "carrosseis/CAR-002/CAR-002-06.jpg": "607c8b1fdaf78ebc22c51c257bd3fdbdd624c244b8b2508ea2b1d624dd6ed883",
+    "carrosseis/CAR-002/CAR-002-07.jpg": "d287069ac2038d738e794a8bf8b7207fcc39077573f0208265b5a456f4592635"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-06T20:15:41+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "produzido_em": "2026-09-06T20:15:20+00:00"
+  },
+  {
+   "id": "CAR-003",
+   "referencias": [
+    "PRO-13-20"
+   ],
+   "referencia_exibida": "Provérbios 13:20",
+   "texto_biblico": "Quem anda com os sábios será sábio; mas o companheiro dos tolos sofre aflição.",
+   "tema": "companhia",
+   "titulo": "Você vira quem anda com você",
+   "gancho": "O texto não fala de gostar ou não gostar. Fala de convivência — e do que ela faz com o tempo.",
+   "pontos": [
+    {
+     "etiqueta": "o que está escrito",
+     "titulo": "Não é sobre julgar ninguém",
+     "corpo": "O provérbio não classifica pessoas em boas e ruins. Ele descreve um efeito: convivência longa molda o jeito de pensar."
+    },
+    {
+     "etiqueta": "onde isso pega",
+     "titulo": "O contágio é lento",
+     "corpo": "Ninguém muda de valores num jantar. Muda em dois anos de mesmo grupo, mesma piada, mesmo assunto repetido sem ninguém questionar."
+    },
+    {
+     "etiqueta": "o passo de hoje",
+     "titulo": "Some uma pessoa esta semana",
+     "corpo": "Não precisa cortar ninguém. Precisa acrescentar: uma conversa por semana com alguém que pensa melhor do que você."
+    }
+   ],
+   "pergunta": "Se você virar a média das cinco pessoas com quem mais fala, no que você vira?",
+   "cta": "Companhia não é detalhe. É direção.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "pasta": "carrosseis/CAR-003",
+   "arquivos": [
+    "carrosseis/CAR-003/CAR-003-01.jpg",
+    "carrosseis/CAR-003/CAR-003-02.jpg",
+    "carrosseis/CAR-003/CAR-003-03.jpg",
+    "carrosseis/CAR-003/CAR-003-04.jpg",
+    "carrosseis/CAR-003/CAR-003-05.jpg",
+    "carrosseis/CAR-003/CAR-003-06.jpg",
+    "carrosseis/CAR-003/CAR-003-07.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-003/CAR-003-01.jpg": "44a9b518ee36f342cb7cb13656d009964f26f230248de8e0ec0ab3751283908f",
+    "carrosseis/CAR-003/CAR-003-02.jpg": "05497e0eba05ab221f0d75c46fdcfcd102d5ce69319ec678ec2e2f01dd8d44d4",
+    "carrosseis/CAR-003/CAR-003-03.jpg": "e7ca01ef024fb24bbedab086c4e5f6b173cfbb70d0b085fbcf2b955c349f540f",
+    "carrosseis/CAR-003/CAR-003-04.jpg": "2b51012f22a9f08d14d9c5ba838053f6c159fad0d88e61ad3ef75130782be3e0",
+    "carrosseis/CAR-003/CAR-003-05.jpg": "6ab0bd78378439a45c9636d241df1181fc3cc2f6c4822087185eec6047932373",
+    "carrosseis/CAR-003/CAR-003-06.jpg": "ab55a932b6ac2bfb81f31882d8bd2545bf9cef3c12649cf4f77f4a7d44d75ab9",
+    "carrosseis/CAR-003/CAR-003-07.jpg": "2a4ecbb2407445c0fc2c59777448f05a98654b902cf7c5bfaef653ae6b7c1d6e"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-06T20:15:41+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "produzido_em": "2026-09-06T20:15:22+00:00"
+  },
+  {
+   "id": "CAR-004",
+   "referencias": [
+    "PRO-28-13"
+   ],
+   "referencia_exibida": "Provérbios 28:13",
+   "texto_biblico": "O que encobre as suas transgressões nunca prosperará; mas o que as confessa e deixa, alcançará misericórdia.",
+   "tema": "honestidade",
+   "titulo": "O que você esconde cresce",
+   "gancho": "Encobrir dá alívio hoje e custo amanhã. O texto aponta o caminho mais curto — e mais desconfortável.",
+   "pontos": [
+    {
+     "etiqueta": "o que está escrito",
+     "titulo": "São dois verbos, não um",
+     "corpo": "Confessa e deixa. O texto não se contenta com admitir: pede também parar. Um sem o outro não fecha a conta."
+    },
+    {
+     "etiqueta": "onde isso pega",
+     "titulo": "O peso do que ninguém sabe",
+     "corpo": "Erro escondido não fica parado. Consome atenção, exige manutenção e vai encolhendo o tamanho das conversas que você pode ter."
+    },
+    {
+     "etiqueta": "o passo de hoje",
+     "titulo": "Conte para uma pessoa",
+     "corpo": "Não é anunciar para todo mundo. É tirar do escuro com alguém que tenha peso na sua vida e não vá usar isso contra você."
+    }
+   ],
+   "pergunta": "O que você está carregando sozinho só porque contar dá mais trabalho?",
+   "cta": "O escuro não resolve. Só adia com juros.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "pasta": "carrosseis/CAR-004",
+   "arquivos": [
+    "carrosseis/CAR-004/CAR-004-01.jpg",
+    "carrosseis/CAR-004/CAR-004-02.jpg",
+    "carrosseis/CAR-004/CAR-004-03.jpg",
+    "carrosseis/CAR-004/CAR-004-04.jpg",
+    "carrosseis/CAR-004/CAR-004-05.jpg",
+    "carrosseis/CAR-004/CAR-004-06.jpg",
+    "carrosseis/CAR-004/CAR-004-07.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-004/CAR-004-01.jpg": "66a30a09de9d3b62f603813557a478c9a80998929e72ecf671085595bbbdd616",
+    "carrosseis/CAR-004/CAR-004-02.jpg": "6edd1a685dfce98930bda2e902652e0c7bb3fec24c6da8947ca6f25fb23d8e05",
+    "carrosseis/CAR-004/CAR-004-03.jpg": "47c892b2e8dc0b177fc0e71a654c82e3ebe30f3d4606beb4804967985a93d7f0",
+    "carrosseis/CAR-004/CAR-004-04.jpg": "0fccc3757128146465920193f620419c5c5bdaa0b2598b823ac5fda26d787611",
+    "carrosseis/CAR-004/CAR-004-05.jpg": "10765f8c91a25ce0c9b68215f9b29d91af4cdb90bb7fa99bb5b5414b2e93c95b",
+    "carrosseis/CAR-004/CAR-004-06.jpg": "73b8b8b1e367b6d69d59a65fa1fbebeb5d943794fe9b954d4374db6091416d3a",
+    "carrosseis/CAR-004/CAR-004-07.jpg": "454febc9fb49f2576f605ed37b66eb22ddf53a4bacf10296ef22cf581646c06d"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-06T20:15:41+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "produzido_em": "2026-09-06T20:15:24+00:00"
+  },
+  {
+   "id": "CAR-005",
+   "referencias": [
+    "PRO-21-05"
+   ],
+   "referencia_exibida": "Provérbios 21:5",
+   "texto_biblico": "Os planos do diligente conduzem à abundância; mas todo precipitado apressa-se para a penúria.",
+   "tema": "planejamento",
+   "titulo": "Pressa não é velocidade",
+   "gancho": "O texto opõe o diligente ao precipitado. Os dois se mexem. Só um chega.",
+   "pontos": [
+    {
+     "etiqueta": "o que está escrito",
+     "titulo": "Diligente não é apressado",
+     "corpo": "Diligência é constância com direção. Precipitação é movimento sem plano — parece produtivo e cobra a conta depois."
+    },
+    {
+     "etiqueta": "onde isso pega",
+     "titulo": "O atalho cobra duas vezes",
+     "corpo": "Quase todo retrabalho começou numa decisão tomada com pressa para economizar meia hora de conversa."
+    },
+    {
+     "etiqueta": "o passo de hoje",
+     "titulo": "Trinta minutos antes",
+     "corpo": "Antes da próxima coisa grande, sente meia hora e escreva o plano. Meia hora hoje evita semanas de conserto."
+    }
+   ],
+   "pergunta": "Onde você tem corrido rápido sem ter certeza da direção?",
+   "cta": "Constância chega mais longe que arranque.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "pasta": "carrosseis/CAR-005",
+   "arquivos": [
+    "carrosseis/CAR-005/CAR-005-01.jpg",
+    "carrosseis/CAR-005/CAR-005-02.jpg",
+    "carrosseis/CAR-005/CAR-005-03.jpg",
+    "carrosseis/CAR-005/CAR-005-04.jpg",
+    "carrosseis/CAR-005/CAR-005-05.jpg",
+    "carrosseis/CAR-005/CAR-005-06.jpg",
+    "carrosseis/CAR-005/CAR-005-07.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-005/CAR-005-01.jpg": "59c72366dc13a0e8f55b40d08ee963b36024315b5e6b866232b2b5862c5da28c",
+    "carrosseis/CAR-005/CAR-005-02.jpg": "c8c3a3f08a908487296a6be4e476fab8243dd6a7f259036c0fbee0a7b3f22fd5",
+    "carrosseis/CAR-005/CAR-005-03.jpg": "bbe2aa04dfbac8936e3039ec90e6a0254aa1c7163579d74efe80c90dcc8ef871",
+    "carrosseis/CAR-005/CAR-005-04.jpg": "3c2edd7765a916f4987f891ce7e3fd617c4d6538a6b6fcd47616b0f1a472dbba",
+    "carrosseis/CAR-005/CAR-005-05.jpg": "6646729815fedbb5b1a69bf109717851e4256908b791f4a2991dc870de565a70",
+    "carrosseis/CAR-005/CAR-005-06.jpg": "36b0128b8d966fe092868b9f75943a1a7503836a0f57f8d3948eb4cb7673d43d",
+    "carrosseis/CAR-005/CAR-005-07.jpg": "23c3230dd5b300bc1aa7b519521c50b1d02dba9f31698e1214923b54ca57a5c1"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-06T20:15:42+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "produzido_em": "2026-09-06T20:15:26+00:00"
+  },
+  {
+   "id": "CAR-006",
+   "referencias": [
+    "PRO-26-20"
+   ],
+   "referencia_exibida": "Provérbios 26:20",
+   "texto_biblico": "Faltando lenha, apaga-se o fogo; e não havendo difamador, cessa a contenda.",
+   "tema": "conversa",
+   "titulo": "Sem lenha o fogo apaga",
+   "gancho": "A imagem é doméstica e direta: briga que ninguém alimenta morre sozinha.",
+   "pontos": [
+    {
+     "etiqueta": "o que está escrito",
+     "titulo": "Alguém precisa levar a lenha",
+     "corpo": "O texto não fala do fogo, fala de quem abastece. Contenda que dura tem sempre alguém repassando o assunto."
+    },
+    {
+     "etiqueta": "onde isso pega",
+     "titulo": "Repassar também é acender",
+     "corpo": "Não precisa inventar nada. Basta comentar, encaminhar, contar para mais um — o combustível é a repetição."
+    },
+    {
+     "etiqueta": "o passo de hoje",
+     "titulo": "Deixe morrer em você",
+     "corpo": "Recebeu a história? Ela para aí. Não precisa concordar nem discordar em público: basta não passar adiante."
+    }
+   ],
+   "pergunta": "Que conversa continuaria viva amanhã só porque você repetiu hoje?",
+   "cta": "Nem todo fogo precisa da sua lenha.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "pasta": "carrosseis/CAR-006",
+   "arquivos": [
+    "carrosseis/CAR-006/CAR-006-01.jpg",
+    "carrosseis/CAR-006/CAR-006-02.jpg",
+    "carrosseis/CAR-006/CAR-006-03.jpg",
+    "carrosseis/CAR-006/CAR-006-04.jpg",
+    "carrosseis/CAR-006/CAR-006-05.jpg",
+    "carrosseis/CAR-006/CAR-006-06.jpg",
+    "carrosseis/CAR-006/CAR-006-07.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-006/CAR-006-01.jpg": "812de2a8c70593f3c914827dd21c915c2ab8e424714cb6fa35ea3dfce8891123",
+    "carrosseis/CAR-006/CAR-006-02.jpg": "d5ecd329f5621fd210820adcb8f512d99b306375a6f9d503e26da03736b6e933",
+    "carrosseis/CAR-006/CAR-006-03.jpg": "01cdd5b4a20f9c5d6f086cb2a256ad232ccc5245754b7a356559a662efe95760",
+    "carrosseis/CAR-006/CAR-006-04.jpg": "e6b720ee2d47ec31a3c1de07e518dd26ecf6f208a794844ff5f90fa3ea16b0fd",
+    "carrosseis/CAR-006/CAR-006-05.jpg": "becbec20b69479d481bb56ea1bcf792666fea1f50e47dfacb62dd7ccdec60fd2",
+    "carrosseis/CAR-006/CAR-006-06.jpg": "98f13b00399bef8a510b5fd37e500536c116ce3f36cc7c900c2bf8080b182dc2",
+    "carrosseis/CAR-006/CAR-006-07.jpg": "0ead9fbc570b3fefc7886336c296f0183f229ae83d315a0db91fda478fd87207"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-06T20:15:42+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "produzido_em": "2026-09-06T20:15:27+00:00"
+  },
+  {
+   "id": "CAR-007",
+   "referencias": [
+    "PRO-25-11"
+   ],
+   "referencia_exibida": "Provérbios 25:11",
+   "texto_biblico": "Como maçãs de ouro em salvas de prata, assim é a palavra dita a seu tempo.",
+   "tema": "palavra",
+   "titulo": "A palavra e o tempo dela",
+   "gancho": "O texto elogia a palavra dita a seu tempo — não a palavra certa, a palavra na hora.",
+   "pontos": [
+    {
+     "etiqueta": "o que está escrito",
+     "titulo": "Certo na hora errada vira errado",
+     "corpo": "A comparação é com ourivesaria: o valor está no encaixe. Conteúdo bom entregue no momento ruim machuca em vez de ajudar."
+    },
+    {
+     "etiqueta": "onde isso pega",
+     "titulo": "Esperar não é covardia",
+     "corpo": "Guardar uma verdade até a pessoa poder ouvir não é fugir do assunto. É escolher o momento em que ela ainda pode fazer diferença."
+    },
+    {
+     "etiqueta": "o passo de hoje",
+     "titulo": "Adie até amanhã",
+     "corpo": "Aquela conversa que você quer ter hoje no calor: escreva o que quer dizer e leve amanhã. Se ainda fizer sentido, é a hora."
+    }
+   ],
+   "pergunta": "Qual verdade você está dizendo no momento em que ela não pode ser ouvida?",
+   "cta": "A hora certa faz parte da mensagem.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "pasta": "carrosseis/CAR-007",
+   "arquivos": [
+    "carrosseis/CAR-007/CAR-007-01.jpg",
+    "carrosseis/CAR-007/CAR-007-02.jpg",
+    "carrosseis/CAR-007/CAR-007-03.jpg",
+    "carrosseis/CAR-007/CAR-007-04.jpg",
+    "carrosseis/CAR-007/CAR-007-05.jpg",
+    "carrosseis/CAR-007/CAR-007-06.jpg",
+    "carrosseis/CAR-007/CAR-007-07.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-007/CAR-007-01.jpg": "904a3e19265292e5cdaa5f8ea95a2bdbdc0b912473004a540f7667902ac0a5c8",
+    "carrosseis/CAR-007/CAR-007-02.jpg": "cb3465ed411b54640aef1d78808b3b42926ee05c95d700abeb84db5bffccea23",
+    "carrosseis/CAR-007/CAR-007-03.jpg": "f3eda9840d02a66bad1936f34db726da52dfa0e27b374b3b96213b32e8e05bf4",
+    "carrosseis/CAR-007/CAR-007-04.jpg": "4eba47e202dc93b4058bdd874b71bb09b492c934df8b791b11e2502fa9080646",
+    "carrosseis/CAR-007/CAR-007-05.jpg": "cf84b3c8fdcf3aa530879e131a66929a7c3c9f44eca6e530e083a0df6e4ca50d",
+    "carrosseis/CAR-007/CAR-007-06.jpg": "989c7adc46f1137c11aafd72d807615bb8802448b8afd670ad101e8325ba4cd5",
+    "carrosseis/CAR-007/CAR-007-07.jpg": "82601b6e6ff49d5a2f63ad483bbfa4010e30a52d25cf41ac5ffcf2c5956c5829"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-06T20:15:42+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "produzido_em": "2026-09-06T20:15:29+00:00"
+  },
+  {
+   "id": "CAR-008",
+   "referencias": [
+    "PRO-11-02"
+   ],
+   "referencia_exibida": "Provérbios 11:2",
+   "texto_biblico": "Quando vem a soberba, então vem a desonra; mas com os humildes está a sabedoria.",
+   "tema": "humildade",
+   "titulo": "Antes da queda, o inchaço",
+   "gancho": "A soberba não chega sozinha, diz o texto. Vem acompanhada — e a sabedoria está do outro lado.",
+   "pontos": [
+    {
+     "etiqueta": "o que está escrito",
+     "titulo": "A ordem importa",
+     "corpo": "Primeiro vem a soberba, depois a desonra. O provérbio descreve uma sequência, não um castigo avulso."
+    },
+    {
+     "etiqueta": "onde isso pega",
+     "titulo": "Sinal de alerta: parar de perguntar",
+     "corpo": "Soberba raramente aparece como arrogância. Aparece como certeza — quando você não pede opinião porque já sabe."
+    },
+    {
+     "etiqueta": "o passo de hoje",
+     "titulo": "Pergunte de novo",
+     "corpo": "Num assunto em que você é o mais experiente da sala, pergunte a alguém o que ele faria. Ouvir inteiro, sem responder no meio."
+    }
+   ],
+   "pergunta": "Em que assunto você parou de perguntar porque já se acha pronto?",
+   "cta": "Quem ainda pergunta continua aprendendo.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "pasta": "carrosseis/CAR-008",
+   "arquivos": [
+    "carrosseis/CAR-008/CAR-008-01.jpg",
+    "carrosseis/CAR-008/CAR-008-02.jpg",
+    "carrosseis/CAR-008/CAR-008-03.jpg",
+    "carrosseis/CAR-008/CAR-008-04.jpg",
+    "carrosseis/CAR-008/CAR-008-05.jpg",
+    "carrosseis/CAR-008/CAR-008-06.jpg",
+    "carrosseis/CAR-008/CAR-008-07.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-008/CAR-008-01.jpg": "9d5cd3f66a14ea6aadfb741875dcc94b824d8be310670ab65ad7d0090d6463d0",
+    "carrosseis/CAR-008/CAR-008-02.jpg": "fb9707349a7d8e2ff568377fcf3165ecff0b366efe1454ab595d7bd04721703e",
+    "carrosseis/CAR-008/CAR-008-03.jpg": "2156313913cf91c44f132fa0992b07ec0a9564121c48b3402e40e7640a9dbdb9",
+    "carrosseis/CAR-008/CAR-008-04.jpg": "71abf194391976c018d7810ea6e7a52101c48a0078b79809e706d435d734ef95",
+    "carrosseis/CAR-008/CAR-008-05.jpg": "dfb9d101faed94b10aff8034948436892600f1f59dac27af2d0c8792c47a659f",
+    "carrosseis/CAR-008/CAR-008-06.jpg": "1fdff14bfb2d7d180034f83defff1b379b85997c02365612f305c1083a5f8d8f",
+    "carrosseis/CAR-008/CAR-008-07.jpg": "031bb501d064852e9faace0e086293c38f1085061c6435831bc0341bad2cb583"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-06T20:15:42+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "produzido_em": "2026-09-06T20:15:31+00:00"
+  },
+  {
+   "id": "CAR-009",
+   "referencias": [
+    "PRO-20-05"
+   ],
+   "referencia_exibida": "Provérbios 20:5",
+   "texto_biblico": "Como águas profundas é o propósito no coração do homem; mas o homem inteligente o descobrirá.",
+   "tema": "escuta",
+   "titulo": "O que a pessoa não disse",
+   "gancho": "O texto compara o propósito no coração a águas profundas. E diz que dá para alcançar — com trabalho.",
+   "pontos": [
+    {
+     "etiqueta": "o que está escrito",
+     "titulo": "Fundo não é fechado",
+     "corpo": "A imagem não é de porta trancada, é de poço. O que a pessoa quer está lá; só não está na superfície da primeira frase."
+    },
+    {
+     "etiqueta": "onde isso pega",
+     "titulo": "Tirar água exige balde",
+     "corpo": "Ninguém alcança o fundo comentando. Alcança perguntando de novo, com calma, depois da primeira resposta educada."
+    },
+    {
+     "etiqueta": "o passo de hoje",
+     "titulo": "Faça a segunda pergunta",
+     "corpo": "Hoje, com alguém importante para você: depois da resposta padrão, pergunte mais uma vez. É na segunda que costuma vir o que interessa."
+    }
+   ],
+   "pergunta": "De quem você acha que sabe tudo e nunca fez a segunda pergunta?",
+   "cta": "Perguntar de novo é o balde.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "pasta": "carrosseis/CAR-009",
+   "arquivos": [
+    "carrosseis/CAR-009/CAR-009-01.jpg",
+    "carrosseis/CAR-009/CAR-009-02.jpg",
+    "carrosseis/CAR-009/CAR-009-03.jpg",
+    "carrosseis/CAR-009/CAR-009-04.jpg",
+    "carrosseis/CAR-009/CAR-009-05.jpg",
+    "carrosseis/CAR-009/CAR-009-06.jpg",
+    "carrosseis/CAR-009/CAR-009-07.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-009/CAR-009-01.jpg": "4e18e5254315b0f722c7ad46f92d38e62c199b36c870274999eb368adca19fee",
+    "carrosseis/CAR-009/CAR-009-02.jpg": "b7382c676a08072d56acea960b91828e7312968db4d7a5a0c5c7c7ea10ceef3a",
+    "carrosseis/CAR-009/CAR-009-03.jpg": "3202e3097fccf91ffdbce61a983424c613accbf60d257a783cd474120aa3f179",
+    "carrosseis/CAR-009/CAR-009-04.jpg": "bca956f309857381f37334a8b72cdd71ff210315d92d72664a74ef199e7ed85d",
+    "carrosseis/CAR-009/CAR-009-05.jpg": "08544ce493f91be6af910110bcd9e21b12327031c4502356ca30605ba2a5cbeb",
+    "carrosseis/CAR-009/CAR-009-06.jpg": "a7f9e14c2b3e91b7e3a003894d39465e8e70ea802cbc47dc30b22e2c6d4fa675",
+    "carrosseis/CAR-009/CAR-009-07.jpg": "50d5bb589006def85e602b73b07a769507adcf00a9f88b118316cdd00a619994"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-06T20:15:42+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "produzido_em": "2026-09-06T20:15:33+00:00"
+  },
+  {
+   "id": "CAR-010",
+   "referencias": [
+    "PRO-14-29"
+   ],
+   "referencia_exibida": "Provérbios 14:29",
+   "texto_biblico": "Quem é tardio em irar-se é grande em entendimento; mas o que é de ânimo precipitado exalta a loucura.",
+   "tema": "paciência",
+   "titulo": "Demorar a irritar-se",
+   "gancho": "O texto liga demora à inteligência — e pressa de ânimo à loucura. É uma questão de tempo de reação.",
+   "pontos": [
+    {
+     "etiqueta": "o que está escrito",
+     "titulo": "Não é não sentir",
+     "corpo": "Tardio em irar-se não é frio. É quem sente igual a todo mundo e leva mais tempo entre sentir e agir."
+    },
+    {
+     "etiqueta": "onde isso pega",
+     "titulo": "A conta chega em minutos",
+     "corpo": "Quase toda mensagem da qual a gente se arrepende foi escrita nos primeiros noventa segundos de irritação."
+    },
+    {
+     "etiqueta": "o passo de hoje",
+     "titulo": "Deixe no rascunho",
+     "corpo": "Escreva a resposta inteira, com raiva mesmo. E não envie. Leia de novo depois do almoço e decida."
+    }
+   ],
+   "pergunta": "O que você mandaria hoje que amanhã preferiria não ter mandado?",
+   "cta": "Demorar a reagir é inteligência, não fraqueza.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "pasta": "carrosseis/CAR-010",
+   "arquivos": [
+    "carrosseis/CAR-010/CAR-010-01.jpg",
+    "carrosseis/CAR-010/CAR-010-02.jpg",
+    "carrosseis/CAR-010/CAR-010-03.jpg",
+    "carrosseis/CAR-010/CAR-010-04.jpg",
+    "carrosseis/CAR-010/CAR-010-05.jpg",
+    "carrosseis/CAR-010/CAR-010-06.jpg",
+    "carrosseis/CAR-010/CAR-010-07.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-010/CAR-010-01.jpg": "dcdc24470a5f04350e8af6bde42d1969125df1ea94f7e8850b1ded06fd5f34d5",
+    "carrosseis/CAR-010/CAR-010-02.jpg": "7000ab2cbb23e247304cc044188038ff6be2674fdbb1697245ba1181465e466b",
+    "carrosseis/CAR-010/CAR-010-03.jpg": "e43d536f153bdb0f279c0e231e57ae7f1b225835ea65f8694c0ae54e00c88b79",
+    "carrosseis/CAR-010/CAR-010-04.jpg": "8b9b401f51be199d8c2840db126c1c87b2330c6f014ba421f5afed42cec5ea36",
+    "carrosseis/CAR-010/CAR-010-05.jpg": "a64a356205316157ccfc08e3cf2a2bdcfeb65dac6e311037cf5c1178b1b98455",
+    "carrosseis/CAR-010/CAR-010-06.jpg": "109f1ff5d5e09c69471dbb2fbaa1860898b7294883d00600497af160b7d00ea7",
+    "carrosseis/CAR-010/CAR-010-07.jpg": "5de0603c546600d58907e2b3b03c2ac1a9bc546f0e409d5c473fdf6f0f7befd5"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-06T20:15:42+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "produzido_em": "2026-09-06T20:15:34+00:00"
+  },
+  {
+   "id": "CAR-011",
+   "referencias": [
+    "PRO-19-20"
+   ],
+   "referencia_exibida": "Provérbios 19:20",
+   "texto_biblico": "Ouve o conselho, e recebe a correção, para que sejas sábio nos teus últimos dias.",
+   "tema": "correção",
+   "titulo": "Conselho e correção",
+   "gancho": "O texto pede duas coisas diferentes: ouvir o conselho e receber a correção. A segunda dói mais.",
+   "pontos": [
+    {
+     "etiqueta": "o que está escrito",
+     "titulo": "São dois pedidos",
+     "corpo": "Conselho vem antes do erro; correção vem depois. Quem só aceita o primeiro aprende metade do que podia."
+    },
+    {
+     "etiqueta": "onde isso pega",
+     "titulo": "O prazo é longo",
+     "corpo": "O texto fala em ser sábio nos últimos dias. O retorno de aceitar correção não aparece nesta semana — aparece daqui a anos."
+    },
+    {
+     "etiqueta": "o passo de hoje",
+     "titulo": "Agradeça sem se explicar",
+     "corpo": "Na próxima correção que você receber, responda só obrigado. A vontade de justificar é o que trava o aprendizado."
+    }
+   ],
+   "pergunta": "Quando foi a última vez que alguém te corrigiu e você não se defendeu?",
+   "cta": "Quem recebe correção hoje colhe juízo depois.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "pasta": "carrosseis/CAR-011",
+   "arquivos": [
+    "carrosseis/CAR-011/CAR-011-01.jpg",
+    "carrosseis/CAR-011/CAR-011-02.jpg",
+    "carrosseis/CAR-011/CAR-011-03.jpg",
+    "carrosseis/CAR-011/CAR-011-04.jpg",
+    "carrosseis/CAR-011/CAR-011-05.jpg",
+    "carrosseis/CAR-011/CAR-011-06.jpg",
+    "carrosseis/CAR-011/CAR-011-07.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-011/CAR-011-01.jpg": "3653dcec685f5f3e4b10333cf993f681a325eb37fc42300e7390b76584a078ff",
+    "carrosseis/CAR-011/CAR-011-02.jpg": "43be9f3d64a68c52360c9b6c126aa799baad781659d65d817929fd43b8174410",
+    "carrosseis/CAR-011/CAR-011-03.jpg": "6f2194cf07fcddac9c2e90e1fb0251520528ebeeaf639d83869a918ebaefbef4",
+    "carrosseis/CAR-011/CAR-011-04.jpg": "194fc8cd58123675ebde1adb3f22b25dddbc71ada55884bf7dc850ec5eda1a58",
+    "carrosseis/CAR-011/CAR-011-05.jpg": "c94f2548bc8bb7fb997c76c611d00c7fd967521ad9dca48eb5b42821f787ac75",
+    "carrosseis/CAR-011/CAR-011-06.jpg": "0258fa7932bca91f9576bc250775fb912d05b8dc8994f5765c1c8f3a796aaac7",
+    "carrosseis/CAR-011/CAR-011-07.jpg": "0e196ea737bb4cdca4224c76795de02d3fdb710fe97c95be203d6696470cfa72"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-06T20:15:42+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "produzido_em": "2026-09-06T20:15:36+00:00"
+  },
+  {
+   "id": "CAR-012",
+   "referencias": [
+    "PRO-12-16"
+   ],
+   "referencia_exibida": "Provérbios 12:16",
+   "texto_biblico": "A ira do insensato logo se revela; mas o prudente encobre a afronta.",
+   "tema": "prudência",
+   "titulo": "Nem toda ofensa pede resposta",
+   "gancho": "O texto contrasta o insensato, que mostra a ira na hora, com o prudente, que encobre a afronta.",
+   "pontos": [
+    {
+     "etiqueta": "o que está escrito",
+     "titulo": "Encobrir não é fingir",
+     "corpo": "Não é dizer que não doeu. É escolher não transformar cada afronta em assunto público no mesmo minuto."
+    },
+    {
+     "etiqueta": "onde isso pega",
+     "titulo": "A resposta imediata entrega o comando",
+     "corpo": "Quem reage na hora deixa a outra pessoa decidir o tom do dia. O prudente guarda esse direito para si."
+    },
+    {
+     "etiqueta": "o passo de hoje",
+     "titulo": "Escolha o que ignorar",
+     "corpo": "Hoje, ao ser cutucado, decida na hora: isto merece conversa ou merece silêncio? Boa parte merece silêncio."
+    }
+   ],
+   "pergunta": "Quantas discussões da sua semana existiram só porque você respondeu na hora?",
+   "cta": "Nem toda provocação merece o seu dia.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "pasta": "carrosseis/CAR-012",
+   "arquivos": [
+    "carrosseis/CAR-012/CAR-012-01.jpg",
+    "carrosseis/CAR-012/CAR-012-02.jpg",
+    "carrosseis/CAR-012/CAR-012-03.jpg",
+    "carrosseis/CAR-012/CAR-012-04.jpg",
+    "carrosseis/CAR-012/CAR-012-05.jpg",
+    "carrosseis/CAR-012/CAR-012-06.jpg",
+    "carrosseis/CAR-012/CAR-012-07.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-012/CAR-012-01.jpg": "f898524567b94aad426f39c9b8c044bcc84e58068bc3ec6b29f6355717e0e209",
+    "carrosseis/CAR-012/CAR-012-02.jpg": "684d37ae2b86ded058348b4b5aacb7708eb7e05fbac209f7a3f2bf3d5666b8ea",
+    "carrosseis/CAR-012/CAR-012-03.jpg": "2d3116983eb0558dcc14183a5dd65fd5cbc436c6d5c6abb2a0ced66aebec4986",
+    "carrosseis/CAR-012/CAR-012-04.jpg": "aa24d6ac826100347de8f0f967b5a5c0e310edda7baa9be1710d4b8f917dd188",
+    "carrosseis/CAR-012/CAR-012-05.jpg": "3f9b04a3016a9bc50f93fe5a6a432a6888b6d240761f7c2c9843b7e8a49d490c",
+    "carrosseis/CAR-012/CAR-012-06.jpg": "69c5e582f03312fd85cbc29669e52e6cb4bf5518d1248b9124aba3fb0527a690",
+    "carrosseis/CAR-012/CAR-012-07.jpg": "a13fa0f66dd51ac785389688d739fa22db72ed170bf0fa5ea1481035a3d87142"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-06T20:15:42+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "produzido_em": "2026-09-06T20:15:38+00:00"
+  },
+  {
+   "id": "CAR-013",
+   "referencias": [
+    "PRO-27-12"
+   ],
+   "referencia_exibida": "Provérbios 27:12",
+   "texto_biblico": "O prudente vê o mal e se esconde; mas os insensatos passam adiante e sofrem a pena.",
+   "tema": "prudência",
+   "titulo": "Ver o mal e se esconder",
+   "gancho": "O texto separa duas reações ao mesmo aviso: um se resguarda, o outro segue em frente e paga.",
+   "pontos": [
+    {
+     "etiqueta": "o que está escrito",
+     "titulo": "Os dois viram a mesma coisa",
+     "corpo": "O provérbio não fala de quem enxerga mais. Fala de quem faz alguma coisa depois de enxergar."
+    },
+    {
+     "etiqueta": "onde isso pega",
+     "titulo": "Ignorar tem nome",
+     "corpo": "Seguir adiante sabendo do risco não é coragem. É a decisão de pagar depois pelo que dava para evitar agora."
+    },
+    {
+     "etiqueta": "o passo de hoje",
+     "titulo": "Aja no primeiro sinal",
+     "corpo": "Aquele aviso pequeno que você já viu duas vezes — a conta, o barulho no carro, a conversa adiada. Resolva ainda esta semana."
+    }
+   ],
+   "pergunta": "Que sinal você já viu e decidiu tratar depois?",
+   "cta": "Prudência é agir enquanto ainda é barato.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "pasta": "carrosseis/CAR-013",
+   "arquivos": [
+    "carrosseis/CAR-013/CAR-013-01.jpg",
+    "carrosseis/CAR-013/CAR-013-02.jpg",
+    "carrosseis/CAR-013/CAR-013-03.jpg",
+    "carrosseis/CAR-013/CAR-013-04.jpg",
+    "carrosseis/CAR-013/CAR-013-05.jpg",
+    "carrosseis/CAR-013/CAR-013-06.jpg",
+    "carrosseis/CAR-013/CAR-013-07.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-013/CAR-013-01.jpg": "7fa1149a23fef61e74f778b1f72afac5de7ed465c4cd83080b05ef1c2478a768",
+    "carrosseis/CAR-013/CAR-013-02.jpg": "cc84569754063898d9e0c38ed309701ea6b1a147f93c4ad9943c007a3b9e8710",
+    "carrosseis/CAR-013/CAR-013-03.jpg": "01863517f1b8353adf55fc5bcc4edba809a7d893319ea32b30e9b6f36ce20d66",
+    "carrosseis/CAR-013/CAR-013-04.jpg": "cf167a7d3df999e934a8ce7a6c39a45f931ff2fded120e4ecc2ef22dae669992",
+    "carrosseis/CAR-013/CAR-013-05.jpg": "649aa9e0958699dceec6e0b391abe204d0b2293432a65088c5b39e0f5460b8e7",
+    "carrosseis/CAR-013/CAR-013-06.jpg": "304982210cbd6f4c85918f5c960a8546c8d9c6ac14d3998cc342a77e72781ffb",
+    "carrosseis/CAR-013/CAR-013-07.jpg": "e46dd8eef611b55eb7c068f5d0fb4c46d8d83c5e648ac8b4e317804543063700"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-06T20:15:42+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "produzido_em": "2026-09-06T20:15:40+00:00"
+  },
+  {
+   "id": "CAR-014",
+   "referencias": [
+    "PRO-18-24"
+   ],
+   "referencia_exibida": "Provérbios 18:24",
+   "texto_biblico": "O homem que tem muitos amigos, tem-nos para a sua ruína; mas há um amigo que é mais chegado do que um irmão.",
+   "tema": "amizade",
+   "titulo": "Muitos contatos, poucos amigos",
+   "gancho": "O texto alerta contra a conta cheia de conhecidos e aponta para o amigo mais chegado que irmão.",
+   "pontos": [
+    {
+     "etiqueta": "o que está escrito",
+     "titulo": "Quantidade cansa",
+     "corpo": "Ter muitos amigos, no texto, aparece como risco. Relação demais, espalhada demais, não sustenta ninguém na hora difícil."
+    },
+    {
+     "etiqueta": "onde isso pega",
+     "titulo": "Chegado é medida de presença",
+     "corpo": "O amigo do provérbio não é o mais divertido nem o mais antigo. É o que está por perto quando não há nada a ganhar."
+    },
+    {
+     "etiqueta": "o passo de hoje",
+     "titulo": "Ligue para um",
+     "corpo": "Sem motivo, sem assunto, sem pedir nada. Uma ligação de cinco minutos para a pessoa que apareceu quando você precisou."
+    }
+   ],
+   "pergunta": "Quem apareceu na sua pior semana e há quanto tempo você não fala com essa pessoa?",
+   "cta": "Amizade se mede em presença, não em número.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "pasta": "carrosseis/CAR-014",
+   "arquivos": [
+    "carrosseis/CAR-014/CAR-014-01.jpg",
+    "carrosseis/CAR-014/CAR-014-02.jpg",
+    "carrosseis/CAR-014/CAR-014-03.jpg",
+    "carrosseis/CAR-014/CAR-014-04.jpg",
+    "carrosseis/CAR-014/CAR-014-05.jpg",
+    "carrosseis/CAR-014/CAR-014-06.jpg",
+    "carrosseis/CAR-014/CAR-014-07.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-014/CAR-014-01.jpg": "b78c497e1c7a92095fd3566ce4a23aae214a98f0a128a97fbc495dd54cbeafd6",
+    "carrosseis/CAR-014/CAR-014-02.jpg": "4ef4f2c2d3c2f79d72165bda2e413a2320413a9864a9fab651b42f76db43cf49",
+    "carrosseis/CAR-014/CAR-014-03.jpg": "7060c1a0a1461bb1e8e43a11efd0b4b5635ddcc93327f473a61d5c89419e2ce8",
+    "carrosseis/CAR-014/CAR-014-04.jpg": "c2372e1527e68a6ec1ba3e29fd4f43334dc32c211498b0632de12aec6825979e",
+    "carrosseis/CAR-014/CAR-014-05.jpg": "adf7edd5cdc1daaccd221222f91bc8634e0a2b841d04a393d83e63247ac37ba9",
+    "carrosseis/CAR-014/CAR-014-06.jpg": "2433d270a448559c84339eaad0617548254cb41f22da90bf93b2d23b2e8ab08d",
+    "carrosseis/CAR-014/CAR-014-07.jpg": "e606fc7769e3801f0c24afdcd43694203b7234a750e3b28da7b928ee28c98995"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-06T20:15:42+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "produzido_em": "2026-09-06T20:15:41+00:00"
+  },
+  {
+   "id": "CAR-015",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-21-08",
+    "PRO-21-11",
+    "PRO-21-13"
+   ],
+   "referencia_exibida": "Provérbios 21",
+   "capitulo": 21,
+   "texto_biblico": "O caminho do homem perverso é tortuoso; mas o proceder do puro é reto.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 21:8",
+     "texto": "O caminho do homem perverso é tortuoso; mas o proceder do puro é reto."
+    },
+    {
+     "referencia": "Provérbios 21:11",
+     "texto": "Quando o escarnecedor é castigado, o simples torna-se sábio; e, quando o sábio é instruído, recebe o conhecimento."
+    },
+    {
+     "referencia": "Provérbios 21:13",
+     "texto": "Quem tapa o seu ouvido ao clamor do pobre, também clamará e não será ouvido."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 21",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 21 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-015/CAR-015-01.jpg",
+    "carrosseis/CAR-015/CAR-015-02.jpg",
+    "carrosseis/CAR-015/CAR-015-03.jpg",
+    "carrosseis/CAR-015/CAR-015-04.jpg",
+    "carrosseis/CAR-015/CAR-015-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-015/CAR-015-01.jpg": "0fc2cbf5f321b0428b41605bd462694da9c9137a0986ef7b83b3a111d094c160",
+    "carrosseis/CAR-015/CAR-015-02.jpg": "d0605c80e7e2dddc77858b41e0f6ab18424ed6cb852c21d013a426d4d8698681",
+    "carrosseis/CAR-015/CAR-015-03.jpg": "12a9098e2bdc7cf1418ef4f2ed609fcf5ff9da66485f3ecb21b915500ff75ce0",
+    "carrosseis/CAR-015/CAR-015-04.jpg": "fb4273a048a5695f38cf3861ebe0e4b60c8cf57497fea5bf151ede1f6aea67b9",
+    "carrosseis/CAR-015/CAR-015-05.jpg": "ee6a592ee9892e1fcb208831199883a98cd729478d328052665011a6855d0f36"
+   },
+   "status": "em_revisao",
+   "aprovado_por": null,
+   "aprovado_em": null,
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-06T20:17:35+00:00",
+   "produzido_em": "2026-09-06T20:18:45+00:00"
+  },
+  {
+   "id": "CAR-016",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-17-04",
+    "PRO-17-10",
+    "PRO-17-18"
+   ],
+   "referencia_exibida": "Provérbios 17",
+   "capitulo": 17,
+   "texto_biblico": "O malfazejo atenta para o lábio iníquo; o mentiroso inclina os ouvidos para a língua maligna.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 17:4",
+     "texto": "O malfazejo atenta para o lábio iníquo; o mentiroso inclina os ouvidos para a língua maligna."
+    },
+    {
+     "referencia": "Provérbios 17:10",
+     "texto": "Mais profundamente entra a repreensão no prudente, do que cem açoites no insensato."
+    },
+    {
+     "referencia": "Provérbios 17:18",
+     "texto": "O homem falto de entendimento compromete-se, tornando-se fiador na presença do seu vizinho."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 17",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 17 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-016/CAR-016-01.jpg",
+    "carrosseis/CAR-016/CAR-016-02.jpg",
+    "carrosseis/CAR-016/CAR-016-03.jpg",
+    "carrosseis/CAR-016/CAR-016-04.jpg",
+    "carrosseis/CAR-016/CAR-016-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-016/CAR-016-01.jpg": "89513480c87fe5a35a77f3dfcc5f21de3d079f32db15108b561e55ca23771a45",
+    "carrosseis/CAR-016/CAR-016-02.jpg": "767468416642668823c180ef5878e73c87a24dd7071ad7c8cc5aa02c014efa6b",
+    "carrosseis/CAR-016/CAR-016-03.jpg": "c03ffbf5e0c4dfd0f39e5e3222757cc142997d04ce68d82c1774aab487d036a1",
+    "carrosseis/CAR-016/CAR-016-04.jpg": "40ca84a369cc32116036b54e5d174b9e6dc9f7d6146e34df35039ebadfac7d8c",
+    "carrosseis/CAR-016/CAR-016-05.jpg": "050cdc1ab90331f868065e127d56d205a29cff3ecda08bff674cb4dc229c44f5"
+   },
+   "status": "em_revisao",
+   "aprovado_por": null,
+   "aprovado_em": null,
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-06T20:17:35+00:00",
+   "produzido_em": "2026-09-06T20:18:47+00:00"
+  },
+  {
+   "id": "CAR-017",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-28-05",
+    "PRO-28-11",
+    "PRO-28-28"
+   ],
+   "referencia_exibida": "Provérbios 28",
+   "capitulo": 28,
+   "texto_biblico": "Os homens maus não entendem a justiça; mas os que buscam ao Senhor a entendem plenamente.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 28:5",
+     "texto": "Os homens maus não entendem a justiça; mas os que buscam ao Senhor a entendem plenamente."
+    },
+    {
+     "referencia": "Provérbios 28:11",
+     "texto": "O homem rico é sábio aos seus próprios olhos; mas o pobre que tem entendimento o esquadrinha."
+    },
+    {
+     "referencia": "Provérbios 28:28",
+     "texto": "Quando os ímpios sobem, escondem-se os homens; mas quando eles perecem, multiplicam-se os justos."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 28",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 28 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-017/CAR-017-01.jpg",
+    "carrosseis/CAR-017/CAR-017-02.jpg",
+    "carrosseis/CAR-017/CAR-017-03.jpg",
+    "carrosseis/CAR-017/CAR-017-04.jpg",
+    "carrosseis/CAR-017/CAR-017-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-017/CAR-017-01.jpg": "6297709230cca9b4c8b47f53709e6b94484520447fcae3fafb5bd02c34f1dd4a",
+    "carrosseis/CAR-017/CAR-017-02.jpg": "27948fb47a1b6bb26933aa1a34abbe0244e07636583cd90b4bd9bb1a94892944",
+    "carrosseis/CAR-017/CAR-017-03.jpg": "044e4d9c945d049c199d8d82c398d95f45993984bf9ac42e0f1f6a87c91bc634",
+    "carrosseis/CAR-017/CAR-017-04.jpg": "4e701411566e633a57a91f8b297dbf4b21b05fb0fe46903229d2c56d21be15c3",
+    "carrosseis/CAR-017/CAR-017-05.jpg": "35376d1c782c2cb2d4944fb1746e2f6853593cb08da6d09b73c314387c5f2128"
+   },
+   "status": "em_revisao",
+   "aprovado_por": null,
+   "aprovado_em": null,
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-06T20:17:35+00:00",
+   "produzido_em": "2026-09-06T20:18:48+00:00"
+  }
+ ]
+}
