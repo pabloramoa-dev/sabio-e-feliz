@@ -169,5 +169,28 @@
   "permalink": "https://www.instagram.com/reel/Dc8-nP3hXJB/",
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-010",
+  "referencia": "Provérbios 15:22",
+  "titulo": "Antes de decidir sozinho",
+  "formato": "A",
+  "arquivo": "reels/EP-010.mp4",
+  "sha256": "fb276b2ff021542e9bbe986709010cdac365fcb25f8e7e0ed8bc652a6d5a6ff1",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-010.mp4",
+  "instagram_media_id": "18166523353463417",
+  "publicado_em": "2026-09-07T17:18:16+00:00",
+  "commit": "40e1dd40fc548752ea44bb6eb9ed596bc5b04e94",
+  "execucao": "34146887257",
+  "tecnico": {
+   "duracao_s": 32.98,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 3.87,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
