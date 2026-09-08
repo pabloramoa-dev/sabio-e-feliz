@@ -276,12 +276,12 @@
   "arquivo": "reels/EP-011.mp4",
   "duracao_s": 29.82,
   "sha256": "aad5fec1f7af5abb8e3614f72eb34cf30b45053508e0e1f2801a7e422442e6b5",
-  "status": "aprovado",
+  "status": "publicado",
   "aprovado_por": "Pablo",
   "aprovado_em": "2026-09-06",
   "prioridade": 11,
-  "publicado_em": null,
-  "instagram_media_id": null
+  "publicado_em": "2026-09-08T16:01:31+00:00",
+  "instagram_media_id": "18150127654544475"
  },
  {
   "id": "EP-012",
