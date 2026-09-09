@@ -301,12 +301,12 @@
   "arquivo": "reels/EP-012.mp4",
   "duracao_s": 30.12,
   "sha256": "2b81176865faad912eb42f30a87ec9c122aa33a857f5b721c0fe7392c797711b",
-  "status": "aprovado",
+  "status": "publicado",
   "aprovado_por": "Pablo",
   "aprovado_em": "2026-09-06",
   "prioridade": 12,
-  "publicado_em": null,
-  "instagram_media_id": null
+  "publicado_em": "2026-09-09T15:57:48+00:00",
+  "instagram_media_id": "17880180369525257"
  },
  {
   "id": "EP-013",
