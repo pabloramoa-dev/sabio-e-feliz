@@ -351,12 +351,12 @@
   "arquivo": "reels/EP-014.mp4",
   "duracao_s": 29.05,
   "sha256": "44b3e735c26778594edbecf3ff378bfe75255fcbf02d7a755e46c5e9cc7fb5f8",
-  "status": "aprovado",
+  "status": "publicado",
   "aprovado_por": "Pablo",
   "aprovado_em": "2026-09-06",
   "prioridade": 14,
-  "publicado_em": null,
-  "instagram_media_id": null
+  "publicado_em": "2026-09-11T15:54:43+00:00",
+  "instagram_media_id": "18216309973346679"
  },
  {
   "id": "EP-015",
