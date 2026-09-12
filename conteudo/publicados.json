@@ -548,5 +548,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-015",
+  "referencia": "Provérbios 14:30",
+  "titulo": "A rolagem infinita",
+  "formato": "B",
+  "arquivo": "reels/EP-015.mp4",
+  "sha256": "7c421b95ca3982362bebfdc5b1d693f25dfb53fcc47dce5d14e1e02db8cf11c8",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-015.mp4",
+  "instagram_media_id": "18110694299132765",
+  "publicado_em": "2026-09-12T15:01:48+00:00",
+  "commit": "b31c2f464463e3bf64498e8c6ac35ad6d778d370",
+  "execucao": "34700888166",
+  "tecnico": {
+   "duracao_s": 30.08,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 3.54,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
