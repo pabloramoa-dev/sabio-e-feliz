@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 17,
+ "total": 20,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -948,6 +948,168 @@
    "instagram_media_id": null,
    "criado_em": "2026-09-06T20:17:35+00:00",
    "produzido_em": "2026-09-06T22:25:57+00:00"
+  },
+  {
+   "id": "CAR-018",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-22-04",
+    "PRO-22-26",
+    "PRO-22-27"
+   ],
+   "referencia_exibida": "Provérbios 22",
+   "capitulo": 22,
+   "texto_biblico": "O galardão da humildade e do temor do Senhor é riquezas, e honra e vida.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 22:4",
+     "texto": "O galardão da humildade e do temor do Senhor é riquezas, e honra e vida."
+    },
+    {
+     "referencia": "Provérbios 22:26",
+     "texto": "Não estejas entre os que se comprometem, que ficam por fiadores de dívidas."
+    },
+    {
+     "referencia": "Provérbios 22:27",
+     "texto": "Se não tens com que pagar, por que tirariam a tua cama de debaixo de ti?"
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 22",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 22 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-018/CAR-018-01.jpg",
+    "carrosseis/CAR-018/CAR-018-02.jpg",
+    "carrosseis/CAR-018/CAR-018-03.jpg",
+    "carrosseis/CAR-018/CAR-018-04.jpg",
+    "carrosseis/CAR-018/CAR-018-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-018/CAR-018-01.jpg": "0e458e01b1c48d760d7369e7e01177615b76e37274e598950aa5ed69c984a94f",
+    "carrosseis/CAR-018/CAR-018-02.jpg": "a3d94d0adf6a989810144ecddf2a4134d87a169a3382ef280dbc2950c79456d9",
+    "carrosseis/CAR-018/CAR-018-03.jpg": "f6c4d233c3f33277bb41dbc56600b0c505ee43f46c6cb41e52955e4ac8b49682",
+    "carrosseis/CAR-018/CAR-018-04.jpg": "0a56338a8abb3f50e7168e8f36f521122736225adaea99d50d303a5899dba794",
+    "carrosseis/CAR-018/CAR-018-05.jpg": "7ed1024f7faca2dc25fc7745071764fda962ac807e665f7fb6e0fe5e66244ea8"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-13T12:43:16+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-13T12:36:00+00:00",
+   "produzido_em": "2026-09-13T12:43:13+00:00"
+  },
+  {
+   "id": "CAR-019",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-06-08",
+    "PRO-06-14",
+    "PRO-06-25"
+   ],
+   "referencia_exibida": "Provérbios 6",
+   "capitulo": 6,
+   "texto_biblico": "no verão faz a provisão do seu mantimento, e ajunta o seu alimento no tempo da ceifa.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 6:8",
+     "texto": "no verão faz a provisão do seu mantimento, e ajunta o seu alimento no tempo da ceifa."
+    },
+    {
+     "referencia": "Provérbios 6:14",
+     "texto": "perversidade há no seu coração; todo o tempo maquina o mal; anda semeando contendas."
+    },
+    {
+     "referencia": "Provérbios 6:25",
+     "texto": "Não cobices no teu coração a sua formosura, nem te deixes prender pelos seus olhares."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 6",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 6 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-019/CAR-019-01.jpg",
+    "carrosseis/CAR-019/CAR-019-02.jpg",
+    "carrosseis/CAR-019/CAR-019-03.jpg",
+    "carrosseis/CAR-019/CAR-019-04.jpg",
+    "carrosseis/CAR-019/CAR-019-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-019/CAR-019-01.jpg": "9de21b4ff8cc071ee8fcc6bd7ce4429ad44e6c1eced196bb2e1ca4e226917ebf",
+    "carrosseis/CAR-019/CAR-019-02.jpg": "3d2934022406322703667c7f40eac63229943f1c6a48d20748cac0238b246d68",
+    "carrosseis/CAR-019/CAR-019-03.jpg": "313029c63bc05661d6ee793e6b873b0a24cf78debc95c7cfbcdb0961a8baf623",
+    "carrosseis/CAR-019/CAR-019-04.jpg": "586762288cabcdb9725a19271296a9d247e7bb36218dbb6e9d2ff4c76961b302",
+    "carrosseis/CAR-019/CAR-019-05.jpg": "4d982248712725416bdda73f862d8818d1d6dfbbe2ce2d9c56cecc9075eee7eb"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-13T12:43:16+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-13T12:36:00+00:00",
+   "produzido_em": "2026-09-13T12:43:14+00:00"
+  },
+  {
+   "id": "CAR-020",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-04-01",
+    "PRO-04-13",
+    "PRO-04-27"
+   ],
+   "referencia_exibida": "Provérbios 4",
+   "capitulo": 4,
+   "texto_biblico": "Ouvi, filhos, a instrução do pai, e estai atentos para conhecerdes o entendimento.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 4:1",
+     "texto": "Ouvi, filhos, a instrução do pai, e estai atentos para conhecerdes o entendimento."
+    },
+    {
+     "referencia": "Provérbios 4:13",
+     "texto": "Apega-te à instrução e não a largues; guarda-a, porque ela é a tua vida."
+    },
+    {
+     "referencia": "Provérbios 4:27",
+     "texto": "Não declines nem para a direita nem para a esquerda; retira o teu pé do mal."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 4",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 4 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-020/CAR-020-01.jpg",
+    "carrosseis/CAR-020/CAR-020-02.jpg",
+    "carrosseis/CAR-020/CAR-020-03.jpg",
+    "carrosseis/CAR-020/CAR-020-04.jpg",
+    "carrosseis/CAR-020/CAR-020-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-020/CAR-020-01.jpg": "a22ea0a2a34ce28c6a6de07f94e9bb609b149527cc13436250c3358b246a664b",
+    "carrosseis/CAR-020/CAR-020-02.jpg": "b07497758b4c370f104e1df37d79485e7a3503a530ca76fbc76ec76c5632f16b",
+    "carrosseis/CAR-020/CAR-020-03.jpg": "0cce76f2783c2dbed84ae4df25a81e43076366c43d49703bef6b6c252ee356c9",
+    "carrosseis/CAR-020/CAR-020-04.jpg": "1614af33dbed70c5bff3550a0c01179449f33aa1c231e43924ed617f05b13f1b",
+    "carrosseis/CAR-020/CAR-020-05.jpg": "e86508b5f2623c522b0c1b9ff63b30698b623ab99aea5d5ba54aaa64896e2923"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-13T12:43:16+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-13T12:36:00+00:00",
+   "produzido_em": "2026-09-13T12:43:16+00:00"
   }
  ]
 }
