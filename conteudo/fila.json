@@ -426,12 +426,12 @@
   "arquivo": "reels/EP-017.mp4",
   "duracao_s": 28.75,
   "sha256": "cc140873ca3ed96cc6422b35c07ac7329c3d94d457d21140d3640edb91e0bc03",
-  "status": "aprovado",
+  "status": "publicado",
   "aprovado_por": "Pablo",
   "aprovado_em": "2026-09-06",
   "prioridade": 17,
-  "publicado_em": null,
-  "instagram_media_id": null
+  "publicado_em": "2026-09-14T17:44:33+00:00",
+  "instagram_media_id": "18430804999195896"
  },
  {
   "id": "EP-018",
