@@ -451,12 +451,12 @@
   "arquivo": "reels/EP-018.mp4",
   "duracao_s": 29.95,
   "sha256": "3a653bac1f5d57280f429c882b7630650a61a28e73e158ca2dfabe6da40f435d",
-  "status": "aprovado",
+  "status": "publicado",
   "aprovado_por": "Pablo",
   "aprovado_em": "2026-09-06",
   "prioridade": 18,
-  "publicado_em": null,
-  "instagram_media_id": null
+  "publicado_em": "2026-09-15T16:18:41+00:00",
+  "instagram_media_id": "18074649728725563"
  },
  {
   "id": "EP-019",

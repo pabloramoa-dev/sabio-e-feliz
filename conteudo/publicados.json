@@ -683,5 +683,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-018",
+  "referencia": "Provérbios 29:11",
+  "titulo": "Falar tudo o que pensa",
+  "formato": "A",
+  "arquivo": "reels/EP-018.mp4",
+  "sha256": "3a653bac1f5d57280f429c882b7630650a61a28e73e158ca2dfabe6da40f435d",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-018.mp4",
+  "instagram_media_id": "18074649728725563",
+  "publicado_em": "2026-09-15T16:18:41+00:00",
+  "commit": "b447ac96f54facf1a42caaf325d6a16e998448f0",
+  "execucao": "34994008033",
+  "tecnico": {
+   "duracao_s": 29.95,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 3.52,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
