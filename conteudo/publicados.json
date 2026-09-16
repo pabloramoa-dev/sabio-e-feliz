@@ -728,5 +728,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-019",
+  "referencia": "Provérbios 12:1",
+  "titulo": "Quando alguém te corrige",
+  "formato": "B",
+  "arquivo": "reels/EP-019.mp4",
+  "sha256": "88db6b8d35221cd545d7c93388458083d5e7316aa32bd86ea7026ac662c2eacc",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-019.mp4",
+  "instagram_media_id": "18126290882500462",
+  "publicado_em": "2026-09-16T16:11:00+00:00",
+  "commit": "e036a09dfed43b3a7a2ada862b3f46dbaaf9610d",
+  "execucao": "35120104915",
+  "tecnico": {
+   "duracao_s": 28.65,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 3.45,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]

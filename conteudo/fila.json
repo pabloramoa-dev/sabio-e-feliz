@@ -476,12 +476,12 @@
   "arquivo": "reels/EP-019.mp4",
   "duracao_s": 28.65,
   "sha256": "88db6b8d35221cd545d7c93388458083d5e7316aa32bd86ea7026ac662c2eacc",
-  "status": "aprovado",
+  "status": "publicado",
   "aprovado_por": "Pablo",
   "aprovado_em": "2026-09-06",
   "prioridade": 19,
-  "publicado_em": null,
-  "instagram_media_id": null
+  "publicado_em": "2026-09-16T16:11:00+00:00",
+  "instagram_media_id": "18126290882500462"
  },
  {
   "id": "EP-020",
