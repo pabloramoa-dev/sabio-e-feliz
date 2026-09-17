@@ -773,5 +773,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-020",
+  "referencia": "Provérbios 10:19",
+  "titulo": "Quando o silêncio resolve",
+  "formato": "A",
+  "arquivo": "reels/EP-020.mp4",
+  "sha256": "eefc2284e41f1b0f51764adc5f9daa019d4ba7080c3d178c93d2eb668b7c7a4a",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-020.mp4",
+  "instagram_media_id": "18077491493429859",
+  "publicado_em": "2026-09-17T16:17:45+00:00",
+  "commit": "658eb3589d9070c98863f716836ef2cb603088bb",
+  "execucao": "35245499023",
+  "tecnico": {
+   "duracao_s": 30.72,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 14.16,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]

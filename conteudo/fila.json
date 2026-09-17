@@ -501,12 +501,12 @@
   "arquivo": "reels/EP-020.mp4",
   "duracao_s": 30.72,
   "sha256": "eefc2284e41f1b0f51764adc5f9daa019d4ba7080c3d178c93d2eb668b7c7a4a",
-  "status": "aprovado",
+  "status": "publicado",
   "aprovado_por": "automatico",
   "aprovado_em": "2026-09-17T02:23:14+00:00",
   "prioridade": 20,
-  "publicado_em": null,
-  "instagram_media_id": null
+  "publicado_em": "2026-09-17T16:17:45+00:00",
+  "instagram_media_id": "18077491493429859"
  },
  {
   "id": "EP-021",
