@@ -77,6 +77,12 @@ def main() -> int:
         alvos = [i for i in lista if i["id"] in args.id]
 
     if not alvos:
+        if args.pendentes:
+            # Fila em dia não é erro: o reabastecimento semanal segue para a
+            # aprovação automática em vez de morrer aqui.
+            print(json.dumps({"ok": True, "produzidos": [], "aviso": "nada pendente"},
+                             ensure_ascii=False))
+            return 0
         print(json.dumps({"ok": False, "erro": "nenhum episódio selecionado"}, ensure_ascii=False))
         return 1
 
