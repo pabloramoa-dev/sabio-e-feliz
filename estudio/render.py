@@ -62,6 +62,12 @@ def renderizar(item: dict, wav: Path, dados_voz: dict, saida: Path) -> Path:
         raise RuntimeError(f"manim não gerou o MP4 esperado em {media}")
     mudo = mudos[0]
 
+    # Colagem (vox): grão de papel sobre o vídeo MUDO, antes de juntar a voz.
+    # Textura como imagem dentro do Manim deixaria o render muito mais lento.
+    if os.getenv("SABIO_ESTILO", "vox").strip().lower() != "classico":
+        from estudio import vox_papel as VX
+        mudo = Path(VX.aplicar_textura(mudo, trabalho / "mudo_papel.mp4"))
+
     subprocess.run(
         ["ffmpeg", "-y", "-i", str(mudo), "-i", str(wav),
          "-c:v", "libx264", "-profile:v", "main", "-level", "4.0", "-preset", "medium",

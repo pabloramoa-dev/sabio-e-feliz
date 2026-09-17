@@ -27,6 +27,7 @@ config.frame_height = 8.0 * 1920 / 1080
 
 from estudio import previsao_lib as P   # noqa: E402
 from estudio import dvh_lib as L        # noqa: E402
+from estudio import vox_papel as VX     # noqa: E402
 
 PT = L.PT
 FONTE = L.FONTE
@@ -34,6 +35,12 @@ FIM_CAPA = 2.2      # até quando a capa central fica no ar
 DOURADO = "#d6a84a"
 CREME = "#f7ecd6"
 AZUL = "#174a56"
+# Estilo colagem de papel (Vox) é o padrão desde 16/09/2026.
+# SABIO_ESTILO=classico volta ao visual anterior sem editar arquivo.
+VOX = VX.ativo()
+# Janela da "foto colada": do tampo da mesa (-6.2) até acima do chapéu de
+# cabelo do Sábio (6.0). O selo da referência mora na borda de cima.
+JANELA_W, JANELA_H, JANELA_Y = 6.6, 12.2, -0.1
 
 
 def carregar_job() -> dict:
@@ -189,6 +196,30 @@ def capa(referencia: str, titulo: str):
     return VGroup(banda, miolo.move_to(banda.get_center()))
 
 
+def capa_vox(referencia: str, titulo: str):
+    """A mesma capa central, em colagem: papel azul rasgado, a referência numa
+    tira dourada, o título em recortes creme e o carimbo PROVÉRBIOS."""
+    larg = P.LARG_SEGURA - 0.7
+    ref = VX.manchete(referencia.upper(), cor_papel="amarelo", cor_texto="ink",
+                      tam=40, semente=7, juntar=True, desalinho=False)
+    # corpo 52: com 62 cada palavra ocupava uma linha e o título virava coluna
+    tit = VX.manchete(titulo.upper(), cor_papel="recorte", cor_texto="ink",
+                      tam=52, semente=11, largura_max=larg + 0.4)
+    miolo = VGroup(ref, tit).arrange(DOWN, buff=0.28)
+    if miolo.width > larg:
+        miolo.scale_to_fit_width(larg)
+    # meio palmo a mais embaixo: é onde o carimbo fica, sem encostar no título
+    papel = VX.recorte(max(miolo.width + 0.9, 6.2), miolo.height + 1.6,
+                       cor="cartao", semente=21)
+    papel.move_to(miolo).shift(DOWN * 0.3)
+    selo = VX.carimbo("PROVÉRBIOS", cor="amarelo", tam=26, girar=0.16, sobre="cartao")
+    selo.scale_to_fit_width(2.2)
+    # no canto de baixo, sobre o papel: não cobre o título nem a referência
+    selo.move_to(papel.get_corner(DOWN + RIGHT) + LEFT * 1.35 + UP * 0.45)
+    fita_topo = VX.fita(papel.get_top() + DOWN * 0.04, girar=0.08)
+    return VGroup(papel, miolo, selo, fita_topo)
+
+
 def selo_referencia(referencia: str):
     t = Text(referencia, font=FONTE, weight=BOLD, font_size=44, color=PT)
     banda = RoundedRectangle(width=t.width + 0.8, height=t.height + 0.45,
@@ -259,6 +290,11 @@ class Episodio(MovingCameraScene):
 
         fundo, frente, piso_y = cenario_manha()
         self.add(fundo)
+        # colagem: a folha com a janela vai por cima de cenário, Sábio e mesa
+        # (a mesa ocupa a largura toda e cobriria a margem de papel)
+        if VOX:
+            folha, retic = VX.janela_colada(JANELA_W, JANELA_H, centro=(0, JANELA_Y),
+                                            girar=-0.010, semente=5)
 
         # o Seu Ranzinza fica ATRÁS da mesa: plano médio, rosto grande na tela.
         # "desconfiado" em vez de "bravo": aqui ele não está reclamando do
@@ -267,11 +303,15 @@ class Episodio(MovingCameraScene):
         G = dm["grupo"]
         G.scale(1.95)
         G.shift(UP * (3.2 - dm["cab"].get_center()[1]))
+        if VOX:
+            self.add(VX.adesivo_personagem(dm))
         self.add(G)
         L.respirar(G, amp=0.045, periodo=3.0)
 
         self.add(frente)
         vapor(self, np.array([2.9, piso_y + 0.9, 0]))
+        if VOX:
+            self.add(folha, *retic)
 
         lip_sync(self, dm, envelope, fps)
 
@@ -280,23 +320,33 @@ class Episodio(MovingCameraScene):
         # lugar viram sopa. Quem assiste sem som lê o título na capa.
         itens = []
         for f in job["frases"]:
-            itens += P.legenda_karaoke(f["texto"], f["inicio"], f["fim"],
-                                       y=-1.6, fs=52, por_bloco=3)
+            if VOX:
+                itens += VX.legenda_karaoke_papel(f["texto"], f["inicio"], f["fim"],
+                                                  y=-1.6, fs=52, por_bloco=3,
+                                                  larg=P.SEGURA - 0.6)
+            else:
+                itens += P.legenda_karaoke(f["texto"], f["inicio"], f["fim"],
+                                           y=-1.6, fs=52, por_bloco=3)
         itens = [(max(i, FIM_CAPA), f, m) for (i, f, m) in itens if f > FIM_CAPA]
         self.add(P.trilha_temporal(itens))
 
         # capa no CENTRO nos primeiros segundos: é ela que vira a miniatura
         # da grade. A câmera abre olhando para y=1.0, então a capa nasce ali.
-        cap = capa(job["referencia"], job["titulo"]).move_to([0, -0.25, 0])
+        cap = (capa_vox if VOX else capa)(job["referencia"], job["titulo"]).move_to([0, -0.25, 0])
         self.add(P.trilha_temporal([(0.0, FIM_CAPA, cap)], pop=0.0))
 
         # selo com a referência enquanto ele lê a passagem
-        selo = selo_referencia(job["referencia"]).move_to([0, 6.0, 0])
+        if VOX:
+            selo = VX.manchete(job["referencia"], cor_papel="amarelo", cor_texto="ink",
+                               tam=44, semente=13, juntar=True).move_to([0, 6.0, 0])
+        else:
+            selo = selo_referencia(job["referencia"]).move_to([0, 6.0, 0])
         passagem = next((s for s in job["segmentos"] if s["papel"] == "passagem"), None)
         if passagem:
-            self.add(P.trilha_temporal([(passagem["inicio"], passagem["fim"], selo)], pop=0.10))
+            trecho = [(passagem["inicio"], passagem["fim"], selo)]
+            self.add(VX.trilha_colada(trecho) if VOX else P.trilha_temporal(trecho, pop=0.10))
 
-        m = marca().move_to([0, -config.frame_height / 2 + 2.4, 0])
+        m = (VX.marca() if VOX else marca()).move_to([0, -config.frame_height / 2 + 2.4, 0])
         self.add(m)
 
         P.camera_push_in(self, dur=2.2, duracao=dur)
