@@ -526,12 +526,12 @@
   "arquivo": "reels/EP-021.mp4",
   "duracao_s": 28.05,
   "sha256": "9f11a71730ff7bc4cc32e8da08ec7dfb0c7c6de766debb463d6fbff14d7afbaf",
-  "status": "aprovado",
+  "status": "publicado",
   "aprovado_por": "automatico",
   "aprovado_em": "2026-09-17T02:23:14+00:00",
   "prioridade": 21,
-  "publicado_em": null,
-  "instagram_media_id": null
+  "publicado_em": "2026-09-18T15:52:57+00:00",
+  "instagram_media_id": "18115182274789045"
  },
  {
   "id": "EP-022",
