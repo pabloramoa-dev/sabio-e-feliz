@@ -554,12 +554,12 @@
   "arquivo": "reels/EP-022.mp4",
   "duracao_s": 32.04,
   "sha256": "0080e4c8a6c8a060bd1ad585ff1ab88bea25e547e08dfffadc1b37d7af6702a3",
-  "status": "aprovado",
+  "status": "publicado",
   "aprovado_por": "automatico",
   "aprovado_em": "2026-09-17T02:23:14+00:00",
   "prioridade": 50,
-  "publicado_em": null,
-  "instagram_media_id": null,
+  "publicado_em": "2026-09-19T15:24:17+00:00",
+  "instagram_media_id": "18249056860309194",
   "criado_em": "2026-09-06T20:17:35+00:00"
  },
  {
