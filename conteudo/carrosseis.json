@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 20,
+ "total": 26,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -1110,6 +1110,330 @@
    "instagram_media_id": "18094361285420803",
    "criado_em": "2026-09-13T12:36:00+00:00",
    "produzido_em": "2026-09-13T12:43:16+00:00"
+  },
+  {
+   "id": "CAR-021",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-11-12",
+    "PRO-11-20",
+    "PRO-11-28"
+   ],
+   "referencia_exibida": "Provérbios 11",
+   "capitulo": 11,
+   "texto_biblico": "Quem despreza o seu próximo é falto de senso; mas o homem de entendimento se cala.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 11:12",
+     "texto": "Quem despreza o seu próximo é falto de senso; mas o homem de entendimento se cala."
+    },
+    {
+     "referencia": "Provérbios 11:20",
+     "texto": "Abominação para o Senhor são os perversos de coração; mas os que são perfeitos em seu caminho são o seu deleite."
+    },
+    {
+     "referencia": "Provérbios 11:28",
+     "texto": "Aquele que confia nas suas riquezas, cairá; mas os justos reverdecerão como a folhagem."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 11",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 11 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-021/CAR-021-01.jpg",
+    "carrosseis/CAR-021/CAR-021-02.jpg",
+    "carrosseis/CAR-021/CAR-021-03.jpg",
+    "carrosseis/CAR-021/CAR-021-04.jpg",
+    "carrosseis/CAR-021/CAR-021-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-021/CAR-021-01.jpg": "cbac7ff0653747d2c0ee578b896037a11fdcd8f216ad4e91bf83d06772a96937",
+    "carrosseis/CAR-021/CAR-021-02.jpg": "d503a3b272d896c3b34dade09e9a6be1c7de9984cfb8715de935c488302aa66d",
+    "carrosseis/CAR-021/CAR-021-03.jpg": "d1dd65034eb5f23d95cadf05d9d67c89c2b6e234c85e100ce81ed8ccbb1d353d",
+    "carrosseis/CAR-021/CAR-021-04.jpg": "a118514aa859f31d3c12236055672434fb76d4ae8cd35f14797189a3450f482b",
+    "carrosseis/CAR-021/CAR-021-05.jpg": "6e27907ddd4d95b400110a47a323fce24c7997abf639cf3bc534de9aa58f41bc"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-20T12:27:23+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-20T12:04:43+00:00",
+   "produzido_em": "2026-09-20T12:27:16+00:00"
+  },
+  {
+   "id": "CAR-022",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-21-14",
+    "PRO-21-17",
+    "PRO-21-29"
+   ],
+   "referencia_exibida": "Provérbios 21",
+   "capitulo": 21,
+   "texto_biblico": "O presente que se dá em segredo aplaca a ira; e a dádiva às escondidas, a forte indignação.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 21:14",
+     "texto": "O presente que se dá em segredo aplaca a ira; e a dádiva às escondidas, a forte indignação."
+    },
+    {
+     "referencia": "Provérbios 21:17",
+     "texto": "Quem ama os prazeres empobrecerá; quem ama o vinho e o azeite nunca enriquecera."
+    },
+    {
+     "referencia": "Provérbios 21:29",
+     "texto": "O homem ímpio endurece o seu rosto; mas o reto considera os seus caminhos."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 21",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 21 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-022/CAR-022-01.jpg",
+    "carrosseis/CAR-022/CAR-022-02.jpg",
+    "carrosseis/CAR-022/CAR-022-03.jpg",
+    "carrosseis/CAR-022/CAR-022-04.jpg",
+    "carrosseis/CAR-022/CAR-022-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-022/CAR-022-01.jpg": "4a1ced99288f64a2d16e6138b861a35d000a1a49381cd5bfb509c7966fed6f3a",
+    "carrosseis/CAR-022/CAR-022-02.jpg": "2ddb0f231718c066f64e1aefd4bc2bd0cc609d9ab1fdb8359da9e60b39f256d5",
+    "carrosseis/CAR-022/CAR-022-03.jpg": "7e64a3f3b91abc4742b74c304ffcfb2d006cea83d4c6c30ce933646934aa2265",
+    "carrosseis/CAR-022/CAR-022-04.jpg": "ddb574a354354432d413581d33ecb18fbea7c8f2d1ce77ac5208914945a3bc78",
+    "carrosseis/CAR-022/CAR-022-05.jpg": "2e32e7fefb6a60432cb553dcb9921019ba2d8637ab279a70efb74b2fb839b69e"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-20T12:27:23+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-20T12:04:43+00:00",
+   "produzido_em": "2026-09-20T12:27:17+00:00"
+  },
+  {
+   "id": "CAR-023",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-28-01",
+    "PRO-28-14",
+    "PRO-28-20"
+   ],
+   "referencia_exibida": "Provérbios 28",
+   "capitulo": 28,
+   "texto_biblico": "Fogem os ímpios, sem que ninguém os persiga; mas os justos são ousados como o leão.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 28:1",
+     "texto": "Fogem os ímpios, sem que ninguém os persiga; mas os justos são ousados como o leão."
+    },
+    {
+     "referencia": "Provérbios 28:14",
+     "texto": "Feliz é o homem que teme ao Senhor continuamente; mas o que endurece o seu coração virá a cair no mal."
+    },
+    {
+     "referencia": "Provérbios 28:20",
+     "texto": "O homem fiel gozará de abundantes bênçãos; mas o que se apressa a enriquecer não ficará impune."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 28",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 28 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-023/CAR-023-01.jpg",
+    "carrosseis/CAR-023/CAR-023-02.jpg",
+    "carrosseis/CAR-023/CAR-023-03.jpg",
+    "carrosseis/CAR-023/CAR-023-04.jpg",
+    "carrosseis/CAR-023/CAR-023-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-023/CAR-023-01.jpg": "5187eb09cd4a0337bcefee836118f9efb0aeab4716b76828c9b68b50493d7594",
+    "carrosseis/CAR-023/CAR-023-02.jpg": "de5f84c07cfa6491ae95523ab9bc86e3156dbafc383ce210c44de2a517972dd3",
+    "carrosseis/CAR-023/CAR-023-03.jpg": "e799d069d814507a2deb2c61672cd2399c5e9572a1cf909e5de4af444d767fb1",
+    "carrosseis/CAR-023/CAR-023-04.jpg": "7ed0b7eb5bc3bf5ac9e976925d0a85a9e54de42caacaacd343df036a633a3e66",
+    "carrosseis/CAR-023/CAR-023-05.jpg": "a88f6e2c83a1aa97a701cb05096e83764e9887c956dfed25705297a95418f239"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-20T12:27:23+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-20T12:04:43+00:00",
+   "produzido_em": "2026-09-20T12:27:19+00:00"
+  },
+  {
+   "id": "CAR-024",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-01-07",
+    "PRO-01-22",
+    "PRO-01-31"
+   ],
+   "referencia_exibida": "Provérbios 1",
+   "capitulo": 1,
+   "texto_biblico": "O temor do Senhor é o princípio do conhecimento; mas os insensatos desprezam a sabedoria e a instrução.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 1:7",
+     "texto": "O temor do Senhor é o princípio do conhecimento; mas os insensatos desprezam a sabedoria e a instrução."
+    },
+    {
+     "referencia": "Provérbios 1:22",
+     "texto": "Até quando, ó estúpidos, amareis a estupidez? e até quando se deleitarão no escárnio os escarnecedores, e odiarão os insensatos o conhecimento?"
+    },
+    {
+     "referencia": "Provérbios 1:31",
+     "texto": "portanto comerão do fruto do seu caminho e se fartarão dos seus próprios conselhos."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 1",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 1 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-024/CAR-024-01.jpg",
+    "carrosseis/CAR-024/CAR-024-02.jpg",
+    "carrosseis/CAR-024/CAR-024-03.jpg",
+    "carrosseis/CAR-024/CAR-024-04.jpg",
+    "carrosseis/CAR-024/CAR-024-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-024/CAR-024-01.jpg": "6452594e84cae851d0ffdabe32ff04516d722f679cf7f38799d912395e972821",
+    "carrosseis/CAR-024/CAR-024-02.jpg": "eb46265024f5ffbcd37a4f34d84660471d10347d7aa2007ca6eb5a8702ec33fd",
+    "carrosseis/CAR-024/CAR-024-03.jpg": "eb2bd7db0446fab8f73b0595e234524928339249d97e198ac89dbebb4a3ff7e0",
+    "carrosseis/CAR-024/CAR-024-04.jpg": "32d706a43e5e81938e57114951821a02907d19fc9ef908edd5f706794696cff3",
+    "carrosseis/CAR-024/CAR-024-05.jpg": "b652392cf60c64df1658c2c73b2801ced621934080e9a9380bf0918c979b7732"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-20T12:27:23+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-20T12:04:43+00:00",
+   "produzido_em": "2026-09-20T12:27:20+00:00"
+  },
+  {
+   "id": "CAR-025",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-03-15",
+    "PRO-03-19",
+    "PRO-03-28"
+   ],
+   "referencia_exibida": "Provérbios 3",
+   "capitulo": 3,
+   "texto_biblico": "Mais preciosa é do que as jóias, e nada do que possas desejar é comparável a ela.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 3:15",
+     "texto": "Mais preciosa é do que as jóias, e nada do que possas desejar é comparável a ela."
+    },
+    {
+     "referencia": "Provérbios 3:19",
+     "texto": "O Senhor pela sabedoria fundou a terra; pelo entendimento estabeleceu o céu."
+    },
+    {
+     "referencia": "Provérbios 3:28",
+     "texto": "Não digas ao teu próximo: Vai, e volta, amanhã to darei; tendo-o tu contigo."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 3",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 3 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-025/CAR-025-01.jpg",
+    "carrosseis/CAR-025/CAR-025-02.jpg",
+    "carrosseis/CAR-025/CAR-025-03.jpg",
+    "carrosseis/CAR-025/CAR-025-04.jpg",
+    "carrosseis/CAR-025/CAR-025-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-025/CAR-025-01.jpg": "5ce6dbd77f38335422d10dae90f80bfec8a3b567a8e2ed6859aa95841fc81128",
+    "carrosseis/CAR-025/CAR-025-02.jpg": "b17358cde8dbaac9ae868642566d3a1e46777a743f1c388c090909c096d41285",
+    "carrosseis/CAR-025/CAR-025-03.jpg": "11b6b9d3897d19de311022a2236edef2899412e98aae1f980de791953ea7bf32",
+    "carrosseis/CAR-025/CAR-025-04.jpg": "65ccd056b0f0e6f09965401758da1c14801ad317b49fab09f3231710ebb644f2",
+    "carrosseis/CAR-025/CAR-025-05.jpg": "e29e3669080dbef6c08541308586e195beeb79b638edf2d8aa1015c7e508edd6"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-20T12:27:23+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-20T12:04:43+00:00",
+   "produzido_em": "2026-09-20T12:27:21+00:00"
+  },
+  {
+   "id": "CAR-026",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-08-13",
+    "PRO-08-22",
+    "PRO-08-23"
+   ],
+   "referencia_exibida": "Provérbios 8",
+   "capitulo": 8,
+   "texto_biblico": "O temor do Senhor é odiar o mal; a soberba, e a arrogância, e o mau caminho, e a boca perversa, eu os odeio.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 8:13",
+     "texto": "O temor do Senhor é odiar o mal; a soberba, e a arrogância, e o mau caminho, e a boca perversa, eu os odeio."
+    },
+    {
+     "referencia": "Provérbios 8:22",
+     "texto": "O Senhor me criou como a primeira das suas obras, o princípio dos seus feitos mais antigos."
+    },
+    {
+     "referencia": "Provérbios 8:23",
+     "texto": "Desde a eternidade fui constituída, desde o princípio, antes de existir a terra."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 8",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 8 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-026/CAR-026-01.jpg",
+    "carrosseis/CAR-026/CAR-026-02.jpg",
+    "carrosseis/CAR-026/CAR-026-03.jpg",
+    "carrosseis/CAR-026/CAR-026-04.jpg",
+    "carrosseis/CAR-026/CAR-026-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-026/CAR-026-01.jpg": "87f4a0827b0032fe7c752a722eaa3d88b6f41046eff81fd352c70a767337563c",
+    "carrosseis/CAR-026/CAR-026-02.jpg": "ccbfc4a4e64014e44286030f43f87111f01eead34f707c0829121b49c703e811",
+    "carrosseis/CAR-026/CAR-026-03.jpg": "a88eb2f82af10bbb254474fbae9e727d2c5e3779e467e882475134e3b460c2eb",
+    "carrosseis/CAR-026/CAR-026-04.jpg": "48ef07d1fed9e19fa563fee5e56e2a06708cd567249ca6e2d2e9811ae8c86c5a",
+    "carrosseis/CAR-026/CAR-026-05.jpg": "90a8138ed8e9a97fd9da34a6464e632be7e1baf907a74878a258b2089067055f"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-20T12:27:23+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-20T12:04:43+00:00",
+   "produzido_em": "2026-09-20T12:27:23+00:00"
   }
  ]
 }
