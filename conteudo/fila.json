@@ -612,12 +612,12 @@
   "arquivo": "reels/EP-024.mp4",
   "duracao_s": 29.82,
   "sha256": "7d6de5db6bdab24a6192ce828395b88d9fd546a6f8c2d766dde738b3c1ea9a98",
-  "status": "aprovado",
+  "status": "publicado",
   "aprovado_por": "automatico",
   "aprovado_em": "2026-09-17T02:23:14+00:00",
   "prioridade": 50,
-  "publicado_em": null,
-  "instagram_media_id": null,
+  "publicado_em": "2026-09-21T17:54:15+00:00",
+  "instagram_media_id": "18135182449725101",
   "criado_em": "2026-09-06T20:17:35+00:00"
  },
  {

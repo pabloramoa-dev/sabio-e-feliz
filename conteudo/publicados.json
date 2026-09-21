@@ -953,5 +953,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-024",
+  "referencia": "Provérbios 8",
+  "titulo": "Três de Provérbios 8",
+  "formato": "D",
+  "arquivo": "reels/EP-024.mp4",
+  "sha256": "7d6de5db6bdab24a6192ce828395b88d9fd546a6f8c2d766dde738b3c1ea9a98",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-024.mp4",
+  "instagram_media_id": "18135182449725101",
+  "publicado_em": "2026-09-21T17:54:15+00:00",
+  "commit": "00a2befc8b2262be1d0c56a34cfa83c1d217faf1",
+  "execucao": "35634808539",
+  "tecnico": {
+   "duracao_s": 29.82,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 13.86,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
