@@ -1133,5 +1133,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-028",
+  "referencia": "Provérbios 6",
+  "titulo": "Três de Provérbios 6",
+  "formato": "D",
+  "arquivo": "reels/EP-028.mp4",
+  "sha256": "b9861ef41bc94a570d5444ddd28e8e506957eb497310cace244604f1d2e7cfeb",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-028.mp4",
+  "instagram_media_id": "17909031294508613",
+  "publicado_em": "2026-09-25T16:35:38+00:00",
+  "commit": "1e96a32e6f5d5b73f5312b974a0bda72636468fa",
+  "execucao": "36161598328",
+  "tecnico": {
+   "duracao_s": 31.68,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 14.41,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
