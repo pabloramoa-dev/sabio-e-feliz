@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 26,
+ "total": 33,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -1434,6 +1434,384 @@
    "instagram_media_id": "18008426969971048",
    "criado_em": "2026-09-20T12:04:43+00:00",
    "produzido_em": "2026-09-20T12:27:23+00:00"
+  },
+  {
+   "id": "CAR-027",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-10-06",
+    "PRO-10-22",
+    "PRO-10-28"
+   ],
+   "referencia_exibida": "Provérbios 10",
+   "capitulo": 10,
+   "texto_biblico": "Bênçãos caem sobre a cabeça do justo; porém a boca dos ímpios esconde a violência.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 10:6",
+     "texto": "Bênçãos caem sobre a cabeça do justo; porém a boca dos ímpios esconde a violência."
+    },
+    {
+     "referencia": "Provérbios 10:22",
+     "texto": "A bênção do Senhor é que enriquece; e ele não a faz seguir de dor alguma."
+    },
+    {
+     "referencia": "Provérbios 10:28",
+     "texto": "A esperança dos justos é alegria; mas a expectação dos ímpios perecerá."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 10",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 10 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-027/CAR-027-01.jpg",
+    "carrosseis/CAR-027/CAR-027-02.jpg",
+    "carrosseis/CAR-027/CAR-027-03.jpg",
+    "carrosseis/CAR-027/CAR-027-04.jpg",
+    "carrosseis/CAR-027/CAR-027-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-027/CAR-027-01.jpg": "efd5bf49aa20ee454ad0ebd3e8cdbeeb3f209a98aeac62207f504929687afd6f",
+    "carrosseis/CAR-027/CAR-027-02.jpg": "ab9c7090ed7a479b0f4437af8b1bc8d5aa9671b7395cb65d86b4b79568a06ebd",
+    "carrosseis/CAR-027/CAR-027-03.jpg": "aedeb03503fdf9e1dd9c0074950e3002720023fb8d06d5f25c9d1a9f606cf4ed",
+    "carrosseis/CAR-027/CAR-027-04.jpg": "994418aaa00cc6cfdae533ba36485bff01066812b939b5ebad1a1f767e447643",
+    "carrosseis/CAR-027/CAR-027-05.jpg": "a6bb32ba151842d5ee237a32de73022d3b9b4920b7fd378f2753a03424832b2e"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-27T13:03:07+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-27T12:51:09+00:00",
+   "produzido_em": "2026-09-27T13:03:02+00:00"
+  },
+  {
+   "id": "CAR-028",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-16-18",
+    "PRO-16-21",
+    "PRO-16-26"
+   ],
+   "referencia_exibida": "Provérbios 16",
+   "capitulo": 16,
+   "texto_biblico": "A soberba precede a destruição, e a altivez do espírito precede a queda.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 16:18",
+     "texto": "A soberba precede a destruição, e a altivez do espírito precede a queda."
+    },
+    {
+     "referencia": "Provérbios 16:21",
+     "texto": "O sábio de coração será chamado prudente; e a doçura dos lábios aumenta o saber."
+    },
+    {
+     "referencia": "Provérbios 16:26",
+     "texto": "O apetite do trabalhador trabalha por ele, porque a sua fome o incita a isso."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 16",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 16 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-028/CAR-028-01.jpg",
+    "carrosseis/CAR-028/CAR-028-02.jpg",
+    "carrosseis/CAR-028/CAR-028-03.jpg",
+    "carrosseis/CAR-028/CAR-028-04.jpg",
+    "carrosseis/CAR-028/CAR-028-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-028/CAR-028-01.jpg": "c4dac88ab87990a179c7ac9a2ad53a86bb535716e9bbd748436c9248d28b0a3d",
+    "carrosseis/CAR-028/CAR-028-02.jpg": "8f77758e83ed2455474cfd8ae77f4f99e090ecf04c8d868f070beec5616f01d4",
+    "carrosseis/CAR-028/CAR-028-03.jpg": "947548d6381177a92235c3805671ef9183cc0cede0558126a10ea57d5b958b64",
+    "carrosseis/CAR-028/CAR-028-04.jpg": "83a2c3597bf5d73493ff27869be142c00db0bb7987de64e5af47f67bfa5fe365",
+    "carrosseis/CAR-028/CAR-028-05.jpg": "3be502ae710cc6bab85d0c1163956a530437d56fb63c864de0b510c68259b807"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-27T13:03:07+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-27T12:51:09+00:00",
+   "produzido_em": "2026-09-27T13:03:03+00:00"
+  },
+  {
+   "id": "CAR-029",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-15-06",
+    "PRO-15-19",
+    "PRO-15-33"
+   ],
+   "referencia_exibida": "Provérbios 15",
+   "capitulo": 15,
+   "texto_biblico": "Na casa do justo há um grande tesouro; mas nos lucros do ímpio há perturbação.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 15:6",
+     "texto": "Na casa do justo há um grande tesouro; mas nos lucros do ímpio há perturbação."
+    },
+    {
+     "referencia": "Provérbios 15:19",
+     "texto": "O caminho do preguiçoso é como a sebe de espinhos; porém a vereda dos justos é uma estrada real."
+    },
+    {
+     "referencia": "Provérbios 15:33",
+     "texto": "O temor do Senhor é a instrução da sabedoria; e adiante da honra vai a humildade."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 15",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 15 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-029/CAR-029-01.jpg",
+    "carrosseis/CAR-029/CAR-029-02.jpg",
+    "carrosseis/CAR-029/CAR-029-03.jpg",
+    "carrosseis/CAR-029/CAR-029-04.jpg",
+    "carrosseis/CAR-029/CAR-029-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-029/CAR-029-01.jpg": "7e2b2c55bc928a241320200078521b10350f4234377135229d02014d9e0c361d",
+    "carrosseis/CAR-029/CAR-029-02.jpg": "24d809a7f898521d982f811500de4709c976fe398bd7189d82301d3e501829f0",
+    "carrosseis/CAR-029/CAR-029-03.jpg": "a419913b59cb3a251a10abbeaab3821387f0ec14390cd083d49d50d016cf2418",
+    "carrosseis/CAR-029/CAR-029-04.jpg": "f63f652dbc2717e4970e4db6043ed2845de3cdee6cbfeed388a281ab85f1749e",
+    "carrosseis/CAR-029/CAR-029-05.jpg": "99fa3a4def316ca95fb3aa64ec8d33c513d521564b71683a9376e9967b56ef89"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-27T13:03:07+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-27T12:51:09+00:00",
+   "produzido_em": "2026-09-27T13:03:04+00:00"
+  },
+  {
+   "id": "CAR-030",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-19-06",
+    "PRO-19-12",
+    "PRO-19-21"
+   ],
+   "referencia_exibida": "Provérbios 19",
+   "capitulo": 19,
+   "texto_biblico": "Muitos procurarão o favor do liberal; e cada um é amigo daquele que dá presentes.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 19:6",
+     "texto": "Muitos procurarão o favor do liberal; e cada um é amigo daquele que dá presentes."
+    },
+    {
+     "referencia": "Provérbios 19:12",
+     "texto": "A ira do rei é como o bramido o leão; mas o seu favor é como o orvalho sobre a erva."
+    },
+    {
+     "referencia": "Provérbios 19:21",
+     "texto": "Muitos são os planos no coração do homem; mas o desígnio do Senhor, esse prevalecerá."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 19",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 19 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-030/CAR-030-01.jpg",
+    "carrosseis/CAR-030/CAR-030-02.jpg",
+    "carrosseis/CAR-030/CAR-030-03.jpg",
+    "carrosseis/CAR-030/CAR-030-04.jpg",
+    "carrosseis/CAR-030/CAR-030-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-030/CAR-030-01.jpg": "65f6a6d1e373654babf2609ba76bb3466e1b705c8dade8e3b15dd0d6b800ac81",
+    "carrosseis/CAR-030/CAR-030-02.jpg": "991f46c25a162bb14086e587ecd455b00ef433b07bdd3a1d1a234318c58973b0",
+    "carrosseis/CAR-030/CAR-030-03.jpg": "c7a50c39ef31b9b2a7f3002698ce74cd971942ec1ee3ecaec9b71efcc65c5e24",
+    "carrosseis/CAR-030/CAR-030-04.jpg": "ae44e7a4383fbda49b0a30d06ecb9a161140471b8d1a5afd6c8f57a4c5288268",
+    "carrosseis/CAR-030/CAR-030-05.jpg": "7931d1cc7c9351b0c2b2e30af8bdc9ea4208c188e4f2e65fd235c2b8f8d73f64"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-27T13:03:07+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-27T12:51:09+00:00",
+   "produzido_em": "2026-09-27T13:03:05+00:00"
+  },
+  {
+   "id": "CAR-031",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-24-05",
+    "PRO-24-14",
+    "PRO-24-27"
+   ],
+   "referencia_exibida": "Provérbios 24",
+   "capitulo": 24,
+   "texto_biblico": "O sábio é mais poderoso do que o forte; e o inteligente do que o que possui a força.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 24:5",
+     "texto": "O sábio é mais poderoso do que o forte; e o inteligente do que o que possui a força."
+    },
+    {
+     "referencia": "Provérbios 24:14",
+     "texto": "Sabe que é assim a sabedoria para a tua alma: se a achares, haverá para ti recompensa, e não será malograda a tua esperança."
+    },
+    {
+     "referencia": "Provérbios 24:27",
+     "texto": "Prepara os teus trabalhos de fora, apronta bem o teu campo; e depois edifica a tua casa."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 24",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 24 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-031/CAR-031-01.jpg",
+    "carrosseis/CAR-031/CAR-031-02.jpg",
+    "carrosseis/CAR-031/CAR-031-03.jpg",
+    "carrosseis/CAR-031/CAR-031-04.jpg",
+    "carrosseis/CAR-031/CAR-031-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-031/CAR-031-01.jpg": "73b95609bbe58f91ef5117110f51a48096accba9b6dd6bdddf7823db5dda9e9e",
+    "carrosseis/CAR-031/CAR-031-02.jpg": "087ee26458babb3854e8e63bff707649324a2265c7ac7f9959c6ba9cadb64a09",
+    "carrosseis/CAR-031/CAR-031-03.jpg": "13dbb951a6b1130aa9f907f509409b3ecbe3491dd53b6b266d69875388084540",
+    "carrosseis/CAR-031/CAR-031-04.jpg": "c93fe93f2b2bbd5d430ef4233d04486680f82315635ecb9354d66072dce0fffd",
+    "carrosseis/CAR-031/CAR-031-05.jpg": "7563c7c3bbb828d65ebb910de4ecd3dede019ff1186c004b1e77d13d6d90752f"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-27T13:03:07+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-27T12:51:09+00:00",
+   "produzido_em": "2026-09-27T13:03:06+00:00"
+  },
+  {
+   "id": "CAR-032",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-11-01",
+    "PRO-11-02",
+    "PRO-11-03"
+   ],
+   "referencia_exibida": "Provérbios 11",
+   "capitulo": 11,
+   "texto_biblico": "A balança enganosa é abominação para o Senhor; mas o peso justo é o seu prazer.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 11:1",
+     "texto": "A balança enganosa é abominação para o Senhor; mas o peso justo é o seu prazer."
+    },
+    {
+     "referencia": "Provérbios 11:2",
+     "texto": "Quando vem a soberba, então vem a desonra; mas com os humildes está a sabedoria."
+    },
+    {
+     "referencia": "Provérbios 11:3",
+     "texto": "A integridade dos retos os guia; porém a perversidade dos desleais os destrói."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 11",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 11 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-032/CAR-032-01.jpg",
+    "carrosseis/CAR-032/CAR-032-02.jpg",
+    "carrosseis/CAR-032/CAR-032-03.jpg",
+    "carrosseis/CAR-032/CAR-032-04.jpg",
+    "carrosseis/CAR-032/CAR-032-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-032/CAR-032-01.jpg": "cbac7ff0653747d2c0ee578b896037a11fdcd8f216ad4e91bf83d06772a96937",
+    "carrosseis/CAR-032/CAR-032-02.jpg": "91b2465787bdc8ccc9675fb08ff47b6cbdb0e6ff63f4abaab84875d4f7e2cf27",
+    "carrosseis/CAR-032/CAR-032-03.jpg": "6b8c7286e3bf046bf9e010a4fbff0d7c236746caccb9aec8ffc0b3db3e9a55a1",
+    "carrosseis/CAR-032/CAR-032-04.jpg": "9aa8ef43a10bc40ce5f8ba2d0925f9e7334968f7fecf4b539e186508540708d9",
+    "carrosseis/CAR-032/CAR-032-05.jpg": "6e27907ddd4d95b400110a47a323fce24c7997abf639cf3bc534de9aa58f41bc"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-27T13:03:07+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-27T12:51:09+00:00",
+   "produzido_em": "2026-09-27T13:03:06+00:00"
+  },
+  {
+   "id": "CAR-033",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-23-09",
+    "PRO-23-13",
+    "PRO-23-24"
+   ],
+   "referencia_exibida": "Provérbios 23",
+   "capitulo": 23,
+   "texto_biblico": "Não fales aos ouvidos do tolo; porque desprezará a sabedoria das tuas palavras.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 23:9",
+     "texto": "Não fales aos ouvidos do tolo; porque desprezará a sabedoria das tuas palavras."
+    },
+    {
+     "referencia": "Provérbios 23:13",
+     "texto": "Não retires da criança a disciplina; porque, fustigando-a tu com a vara, nem por isso morrerá."
+    },
+    {
+     "referencia": "Provérbios 23:24",
+     "texto": "Grandemente se regozijará o pai do justo; e quem gerar um filho sábio, nele se alegrará."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 23",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 23 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-033/CAR-033-01.jpg",
+    "carrosseis/CAR-033/CAR-033-02.jpg",
+    "carrosseis/CAR-033/CAR-033-03.jpg",
+    "carrosseis/CAR-033/CAR-033-04.jpg",
+    "carrosseis/CAR-033/CAR-033-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-033/CAR-033-01.jpg": "6d8dcf661e158c8119f18856bf36d83665b555c4624a7e9337a323a8929e64eb",
+    "carrosseis/CAR-033/CAR-033-02.jpg": "93e7acf0d96970cb9c1dba3673174b2b128261f3dc2dd55d567d6451e98a096a",
+    "carrosseis/CAR-033/CAR-033-03.jpg": "d8d55ce09784ee5bebab43dc8d3ade929d082be9014c9630c52d6a6be7a9874c",
+    "carrosseis/CAR-033/CAR-033-04.jpg": "b7ec2e1c97aa259a72d9eee4c2e385034355b0f707b0a97f765d82e4cb5a5ced",
+    "carrosseis/CAR-033/CAR-033-05.jpg": "247c2720f7ae45fb2094196338f314f68df0236bab310f5491e986c049169b9a"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-09-27T13:03:07+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-09-27T12:51:09+00:00",
+   "produzido_em": "2026-09-27T13:03:07+00:00"
   }
  ]
 }
