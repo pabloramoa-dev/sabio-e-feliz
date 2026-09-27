@@ -786,12 +786,12 @@
   "arquivo": "reels/EP-030.mp4",
   "duracao_s": 32.15,
   "sha256": "8e59ed3cb662d7e5acce94e833d96a5bcd79ad62a0d53bfaf3d41bf352d7f3b1",
-  "status": "aprovado",
+  "status": "publicado",
   "aprovado_por": "automatico",
   "aprovado_em": "2026-09-20T12:27:23+00:00",
   "prioridade": 50,
-  "publicado_em": null,
-  "instagram_media_id": null,
+  "publicado_em": "2026-09-27T16:27:05+00:00",
+  "instagram_media_id": "18080367455361760",
   "criado_em": "2026-09-20T12:04:43+00:00"
  },
  {
