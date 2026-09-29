@@ -1313,5 +1313,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-032",
+  "referencia": "Provérbios 26",
+  "titulo": "Três de Provérbios 26",
+  "formato": "D",
+  "arquivo": "reels/EP-032.mp4",
+  "sha256": "c417a82d0597de8fc74da07d1aa5d83adb37898150f12083f7088cdfaf06ec8c",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-032.mp4",
+  "instagram_media_id": "18105693260614114",
+  "publicado_em": "2026-09-29T17:40:35+00:00",
+  "commit": "8f181b591bd682daa3dfa5c58a9d6f1d06f0f339",
+  "execucao": "36606482738",
+  "tecnico": {
+   "duracao_s": 32.81,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 15.0,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]

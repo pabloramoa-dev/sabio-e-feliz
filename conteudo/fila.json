@@ -844,12 +844,12 @@
   "arquivo": "reels/EP-032.mp4",
   "duracao_s": 32.81,
   "sha256": "c417a82d0597de8fc74da07d1aa5d83adb37898150f12083f7088cdfaf06ec8c",
-  "status": "aprovado",
+  "status": "publicado",
   "aprovado_por": "automatico",
   "aprovado_em": "2026-09-20T12:27:23+00:00",
   "prioridade": 50,
-  "publicado_em": null,
-  "instagram_media_id": null,
+  "publicado_em": "2026-09-29T17:40:35+00:00",
+  "instagram_media_id": "18105693260614114",
   "criado_em": "2026-09-20T12:04:43+00:00"
  },
  {
