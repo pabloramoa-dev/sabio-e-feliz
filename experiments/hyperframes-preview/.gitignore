@@ -1,0 +1,9 @@
+node_modules/
+assets/
+media/
+__pycache__/
+index.html
+job.json
+timeline.json
+validation.json
+renders/

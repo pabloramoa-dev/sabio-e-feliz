@@ -1,0 +1,7 @@
+{
+  "name": "nina-hyperframes-test",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {"hyperframes": "0.8.96", "gsap": "3.15.0"}
+}
+
