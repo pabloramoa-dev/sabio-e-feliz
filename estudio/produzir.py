@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 
 from estudio import render, roteiro, voz
@@ -37,6 +38,7 @@ def produzir(item: dict, mudo: bool = False, voz_escolhida: str = voz.VOZ_PADRAO
         "sha256": fila.sha256_arquivo(destino),
         "palavras": len(texto.split()),
         "voz": dados_voz["voz"],
+        "renderizador": os.getenv('SABIO_RENDERER', 'hyperframes'),
         **tecnico,
     }
 
@@ -47,6 +49,7 @@ def produzir(item: dict, mudo: bool = False, voz_escolhida: str = voz.VOZ_PADRAO
             i["arquivo"] = resultado["arquivo"]
             i["sha256"] = resultado["sha256"]
             i["duracao_s"] = tecnico["duracao_s"]
+            i["renderizador"] = resultado['renderizador']
             # Produzir de novo INVALIDA a aprovação: o que foi aprovado era o
             # arquivo antigo. Sem isso, um render novo entraria no ar sem
             # ninguém ter visto — exatamente o que a trava do sha256 evita.

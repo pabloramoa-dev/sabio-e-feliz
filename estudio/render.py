@@ -25,6 +25,16 @@ def _manim() -> str:
 
 
 def renderizar(item: dict, wav: Path, dados_voz: dict, saida: Path) -> Path:
+    motor = os.getenv('SABIO_RENDERER', 'hyperframes').strip().lower()
+    if motor == 'hyperframes':
+        from estudio.hyperframes import renderizar as render_hyperframes
+        return render_hyperframes(item, wav, dados_voz, saida)
+    if motor != 'manim':
+        raise ValueError(f'Renderizador desconhecido: {motor}')
+    return renderizar_manim(item, wav, dados_voz, saida)
+
+
+def renderizar_manim(item: dict, wav: Path, dados_voz: dict, saida: Path) -> Path:
     saida.parent.mkdir(parents=True, exist_ok=True)
     raiz = Path(__file__).resolve().parent.parent
     trabalho = wav.parent

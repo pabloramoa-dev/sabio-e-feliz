@@ -44,6 +44,8 @@ jobs:
 
       - run: pip install -r requirements.txt -r requirements-estudio.txt
 
+      - uses: ./.github/actions/setup-hyperframes
+
       - name: Reaproveitar o modelo de voz entre execuções
         uses: actions/cache@v4
         with:

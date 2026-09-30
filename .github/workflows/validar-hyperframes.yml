@@ -1,0 +1,45 @@
+name: Validar render HyperFrames
+on:
+  push:
+    branches: [main, feature/hyperframes-production]
+    paths: ['estudio/**', 'video/**', 'tools/teste_hyperframes.py', 'requirements-estudio.txt', '.github/actions/setup-hyperframes/**', '.github/workflows/validar-hyperframes.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OPENBLAS_NUM_THREADS: '2'
+      OMP_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Dependências do estúdio
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev fonts-dejavu-core
+          pip install -r requirements.txt -r requirements-estudio.txt pytest
+      - uses: ./.github/actions/setup-hyperframes
+      - uses: actions/cache@v4
+        with:
+          path: modelos
+          key: kokoro-v1.0
+      - run: python -m pytest -q
+      - name: Render narrado do formato de leitura (sem publicar)
+        run: python -m tools.teste_hyperframes
+      - name: Confirmar que o teste não alterou a fila
+        run: git diff --exit-code -- conteudo reels
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: proverbios-hyperframes-integracao
+          path: |
+            output/teste-hyperframes/teste.mp4
+            output/teste-hyperframes/render.json
+            output/teste-hyperframes/voz.tempos.json
+          retention-days: 14
