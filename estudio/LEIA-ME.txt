@@ -1,0 +1,9 @@
+Coloque aqui uma fonte própria como "Fonte-Bold.ttf" se quiser trocar a
+tipografia das legendas. Se não houver nada, o projeto usa a DejaVu Sans Bold,
+que já vem instalada no runner do GitHub Actions.
+
+Fontes do visual HyperFrames v2 (Reels):
+- Poppins-Bold.ttf / Poppins-Medium.ttf — títulos, cartões e legendas
+- Lora-Italic-Variable.ttf — texto bíblico no pergaminho
+As duas famílias são da Google Fonts, sob a SIL Open Font License 1.1
+(uso comercial e redistribuição permitidos).

@@ -1,0 +1,95 @@
+/* Sábio e Feliz — visual HyperFrames v2 (01/10/2026). Papel creme, azul-petróleo e dourado. */
+@font-face{font-family:SabioBold;src:url(assets/Poppins-Bold.ttf)}
+@font-face{font-family:SabioMed;src:url(assets/Poppins-Medium.ttf)}
+@font-face{font-family:SabioLora;src:url(assets/Lora-Italic.ttf)}
+*{box-sizing:border-box}
+body{margin:0;background:#f3dcb8;color:#173d43;font-family:SabioBold,sans-serif}
+#root{position:relative;width:100%;height:100%;overflow:hidden}
+#cam{position:absolute;inset:0;transform-origin:50% 46%}
+#base{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#sunglow{position:absolute;left:330px;top:640px;width:760px;height:760px;border-radius:50%;
+  background:radial-gradient(circle,#fff3c6cc 0%,#ffd98a66 35%,#ffc06a00 70%);mix-blend-mode:screen;pointer-events:none}
+#raio{position:absolute;left:380px;top:-200px;width:260px;height:2400px;transform:rotate(28deg);
+  background:linear-gradient(90deg,#fff6d000,#fff6d055,#fff6d000);mix-blend-mode:screen}
+.bokeh{position:absolute;border-radius:50%;background:radial-gradient(circle,#fff7d8 0%,#ffe39a99 45%,#ffe39a00 72%);opacity:0}
+.wash{position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(#f6e6cc 0%,#f6e6ccd0 10%,#f6e6cc00 22%,#f6e6cc00 70%,#123b45c8 80%,#123b45 92%)}
+header{position:absolute;top:58px;left:64px;right:64px;display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:10px;padding:10px 20px 10px 12px;background:#f4c55b;color:#173d43;font-size:30px;
+  border-radius:40px;box-shadow:5px 6px 0 #174a56;transform:rotate(-2deg)}
+.brand .mini{width:44px;height:44px;display:block}.brand .mini svg{width:100%;height:100%}
+.tag{font-size:21px;letter-spacing:2px;color:#174a56;border-bottom:4px solid #d6a84a;padding-bottom:6px}
+
+/* capa central — miniatura da grade */
+#capa{position:absolute;inset:0}
+#burst{position:absolute;left:540px;top:960px;width:0;height:0}
+#burst i{position:absolute;left:-30px;top:-900px;width:60px;height:900px;transform-origin:50% 100%;
+  background:linear-gradient(#f4c55b00,#f4c55b66)}
+#capa-card{position:absolute;left:90px;right:90px;top:640px;padding:46px 40px 50px;background:#174a56;border-radius:34px;
+  border:6px solid #f4c55b;box-shadow:16px 20px 0 #0b2c33aa;text-align:center;color:#fff8e8}
+#capa-ref{display:inline-block;background:#f4c55b;color:#173d43;font-size:40px;padding:8px 26px;border-radius:12px;
+  letter-spacing:1px;transform:rotate(-2deg);margin-bottom:24px}
+#capa-tit{margin:0;line-height:1.08;letter-spacing:-1px}.cw{display:inline-block}
+#capa-risco{height:8px;width:260px;background:#f4c55b;margin:26px auto 18px;border-radius:4px;transform-origin:50% 50%}
+#capa-sub{font-family:SabioMed;font-size:24px;letter-spacing:3px;color:#f6e3b4}
+.fita{position:absolute;top:-24px;left:42%;width:170px;height:44px;background:#e6cf9fcc;transform:rotate(-4deg)}
+
+/* cartões */
+.painel{position:absolute;left:64px;right:64px;top:184px;height:520px}
+.card{position:relative;width:100%;height:100%;background:#fff8e8;border:4px solid #174a56;border-radius:30px;
+  box-shadow:14px 18px 0 #174a5633;padding:34px 40px 40px;overflow:visible}
+.rotulo{display:flex;align-items:center;gap:12px;color:#8b6516;font-size:27px;letter-spacing:2px;margin-bottom:18px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rotulo i{display:block;width:16px;height:16px;border-radius:50%;background:#d6a84a;flex-shrink:0}
+.lado{display:flex;align-items:center;gap:30px;height:330px}
+.ic{width:150px;height:150px;flex-shrink:0}
+.caixa{width:130px;height:130px;flex-shrink:0}
+.txt{line-height:1.22;color:#173d43}
+.w{display:inline-block}
+.barra{position:absolute;left:40px;right:40px;bottom:26px;height:7px;border-radius:4px;background:#d6a84a;transform-origin:left}
+.chips{position:absolute;left:40px;right:40px;bottom:52px;display:flex;gap:18px;justify-content:center}
+.chip{display:inline-block;background:#174a56;color:#fff8e8;font-size:28px;padding:12px 22px;border-radius:30px;
+  box-shadow:4px 5px 0 #d6a84a}
+.cta .lado{height:250px}
+
+/* pergaminho do versículo */
+.card.pergaminho{background:linear-gradient(#fbf0d6,#f3e0b6);border-color:#8b6516;border-radius:18px}
+.card.pergaminho::before,.card.pergaminho::after{content:"";position:absolute;left:-14px;right:-14px;height:30px;
+  background:linear-gradient(#d9b979,#b98d45);border:3px solid #6f4f1c;border-radius:15px}
+.card.pergaminho::before{top:-16px}.card.pergaminho::after{bottom:-16px}
+.perg{position:relative;height:380px}
+.perg-topo{font-size:24px;letter-spacing:2px;color:#8b6516;margin-bottom:14px}
+.verso{font-family:SabioLora;color:#3b2a10;line-height:1.25}
+.lw{opacity:.18}
+.selo{position:absolute;right:-6px;bottom:-26px;width:140px;height:140px;border-radius:50%;
+  background:radial-gradient(circle at 40% 35%,#d65a5a,#9e2b2b 70%);border:5px solid #7c1f1f;
+  box-shadow:4px 6px 0 #0003;display:flex;align-items:center;justify-content:center;transform:rotate(-12deg)}
+.selo span{color:#ffe6c4;font-size:30px;letter-spacing:-1px}
+
+/* legendas */
+.legenda{position:absolute;top:1440px;left:60px;right:60px;text-align:center}
+.pal{display:inline-block;font-size:50px;line-height:1.28;color:#fff;background:#123b45f2;border:3px solid #f4c55b88;
+  padding:20px 28px;border-radius:26px;box-shadow:8px 10px 0 #0003}
+.pal span{display:inline-block;margin:0 .16em}
+
+/* encerramento */
+#fim{position:absolute;inset:0}
+#fim-card{position:absolute;left:110px;right:110px;top:250px;padding:50px 40px 56px;background:#fff8e8;border:5px solid #174a56;
+  border-radius:40px;text-align:center;box-shadow:16px 20px 0 #174a5655}
+#fim .sol{width:150px;height:150px;margin:-120px auto 6px}
+#fim .sol svg{width:100%;height:100%}
+.fim-a{font-size:46px;letter-spacing:6px;color:#8b6516}.fim-b{font-size:72px;letter-spacing:-2px;color:#174a56}
+.fim-c{font-family:SabioMed;font-size:30px;color:#3b5a5f;margin:10px 0 28px}
+#seguir{display:inline-block;background:#2f80c8;color:#fff;font-size:40px;padding:16px 70px;border-radius:18px}
+#mao{position:absolute;left:58%;top:76%;width:90px;height:112px}#mao svg{width:100%;height:100%}
+.estrela{position:absolute;top:560px;width:18px;height:18px;border-radius:4px;opacity:0}
+
+footer{position:absolute;left:66px;right:66px;bottom:118px;display:flex;justify-content:space-between;color:#f7ecdd;font-size:23px;font-family:SabioMed}
+footer small{font-size:21px;letter-spacing:1px;color:#f4c55b}
+#trilho{position:absolute;left:76px;width:928px;bottom:78px;height:8px;background:#ffffff26;border-radius:4px}
+#prog{position:absolute;inset:0;background:#f4c55b;border-radius:4px;transform-origin:left}
+#progsol{position:absolute;left:-22px;top:-18px;width:44px;height:44px}#progsol svg{width:100%;height:100%}
+#grain{position:absolute;inset:0;opacity:.07;pointer-events:none;background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22180%22 height=%22180%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%22.85%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 opacity=%22.55%22 filter=%22url(%23n)%22/%3E%3C/svg%3E')}
+#faixa{position:absolute;left:-200px;right:-200px;top:-200px;bottom:-200px;transform:translateX(-130%) rotate(-12deg);pointer-events:none;
+  background:linear-gradient(90deg,#f4c55b00 0%,#f4c55b 30%,#fff1c4 50%,#f4c55b 70%,#f4c55b00 100%)}
+#clarao{position:absolute;inset:0;background:radial-gradient(circle at 60% 52%,#fffbe9,#ffe7a8 60%,#ffd98a);opacity:0;pointer-events:none}
