@@ -239,6 +239,8 @@ def gerar(segmentos: list[dict], destino_wav: Path, voz: str = VOZ_PADRAO,
     kokoro = None
     if not mudo:
         modelo, vozes = garantir_modelo()
+        import onnxruntime as ort
+        ort.disable_telemetry_events()
         from kokoro_onnx import Kokoro
         kokoro = Kokoro(str(modelo), str(vozes))
         estilo_voz = estilo(kokoro, voz)

@@ -4,6 +4,30 @@ Pipeline automatizado do canal de Provérbios — um Reel de manhã e um carross
 
 > Um provérbio. Uma decisão melhor. Todos os dias.
 
+## Visual HyperFrames aprovado em 30/09/2026
+
+HyperFrames é o padrão para **todos os próximos Reels produzidos** pelo estúdio
+ou pelo reabastecimento automático. Preserva o Sábio, o cenário da manhã e a voz
+`pm_alex+im_nicola` a 0,94, com câmera suave, gestos, transições, cartões,
+legendas destacadas, trilha original discreta, efeitos sonoros e CTA do episódio.
+Os cartões usam o conteúdo editorial de cada item; o formato D mantém a leitura
+bíblica, sem inserir a reflexão do piloto.
+
+Os MP4 já prontos na reserva mantêm seu visual até serem renderizados novamente.
+Publicação, carrosséis, horários e credenciais continuam independentes do motor.
+
+Para renderizar localmente, instale também:
+
+```bash
+npm ci --prefix video
+npx --prefix video hyperframes browser ensure
+python -m tools.teste_hyperframes      # ensaio narrado do formato D, sem publicar
+```
+
+O render valida áudio, duração, resolução e codec antes de substituir o arquivo.
+`SABIO_RENDERER=manim` seleciona explicitamente o motor anterior para diagnóstico;
+falhas do HyperFrames interrompem a produção, sem trocar de visual silenciosamente.
+
 ## Como este projeto funciona
 
 O GitHub **não inventa interpretação nenhuma**. Ele seleciona conteúdo já

@@ -5,3 +5,4 @@ output/
 !output/.gitkeep
 *.bruto.mp3
 modelos/
+video/node_modules/
