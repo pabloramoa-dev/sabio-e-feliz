@@ -36,11 +36,21 @@ import numpy as np
 from PIL import ImageFont
 
 RAIZ = Path(__file__).resolve().parent.parent
-FONTES = RAIZ / 'assets/fonts'
-SFX = RAIZ / 'assets/sfx'
-F_BOLD = FONTES / 'Poppins-Bold.ttf'
-F_MED = FONTES / 'Poppins-Medium.ttf'
-F_LORA = FONTES / 'Lora-Italic-Variable.ttf'
+
+
+def achar(nome, *pastas):
+    """Arquivo de apoio (fonte, efeito, CSS): procura nas pastas organizadas e,
+    se não estiver lá, em estudio/ — o upload pelo navegador põe tudo junto."""
+    for pasta in (*pastas, 'estudio'):
+        arq = RAIZ / pasta / nome
+        if arq.is_file():
+            return arq
+    raise FileNotFoundError(f'{nome} não encontrado em {", ".join(pastas)} nem em estudio/')
+
+
+F_BOLD = achar('Poppins-Bold.ttf', 'assets/fonts')
+F_MED = achar('Poppins-Medium.ttf', 'assets/fonts')
+F_LORA = achar('Lora-Italic-Variable.ttf', 'assets/fonts')
 
 FPS = 30
 CAPA = 2.2          # capa central no ar (miniatura da grade)
@@ -496,8 +506,11 @@ def mixar(voz_wav: Path, dur: float, sons, destino: Path):
 
     # efeitos
     for nome, t, vol in sons:
-        arq = SFX / f'{nome}.mp3'
-        if arq.is_file():
+        try:
+            arq = achar(f'{nome}.mp3', 'assets/sfx')
+        except FileNotFoundError:
+            arq = None
+        if arq:
             add(sfx, t, _ler(arq) * vol)
 
     voz = _ler(voz_wav)

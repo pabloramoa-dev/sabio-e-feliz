@@ -152,11 +152,10 @@ def renderizar(item, wav: Path, dados_voz: dict, saida: Path) -> Path:
            'colorbalance=gs=0.01:bs=-0.03:bh=-0.02,eq=saturation=1.06:contrast=1.04')
     H.sh(['ffmpeg','-y','-v','error','-i',bases[0],'-vf',luz,'-c:v','libx264','-preset','fast','-crf','16',
           '-g','30','-pix_fmt','yuv420p','-an',assets/'base.mp4'])
-    fontes = raiz/'assets/fonts'
-    shutil.copy(fontes/'Poppins-Bold.ttf',assets/'Poppins-Bold.ttf')
-    shutil.copy(fontes/'Poppins-Medium.ttf',assets/'Poppins-Medium.ttf')
-    shutil.copy(fontes/'Lora-Italic-Variable.ttf',assets/'Lora-Italic.ttf')
-    shutil.copy(video/'assets/sabio-v2.css',trabalho/'composition.css')
+    shutil.copy(S.achar('Poppins-Bold.ttf','assets/fonts'),assets/'Poppins-Bold.ttf')
+    shutil.copy(S.achar('Poppins-Medium.ttf','assets/fonts'),assets/'Poppins-Medium.ttf')
+    shutil.copy(S.achar('Lora-Italic-Variable.ttf','assets/fonts'),assets/'Lora-Italic.ttf')
+    shutil.copy(S.achar('sabio-v2.css','video/assets'),trabalho/'composition.css')
     shutil.copy(video/'node_modules/gsap/dist/gsap.min.js',assets/'gsap.min.js')
     dur, sons = S.compor(item, dados_voz, trabalho)
     S.mixar(wav, dur, sons, assets/'mix.wav')
