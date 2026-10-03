@@ -1435,7 +1435,18 @@
    "compartilhamentos_por_1000_alcancados": 0.0,
    "coletado_em": "2026-10-01T19:59:03+00:00"
   },
-  "metricas_72h": null
+  "metricas_72h": {
+   "reach": 3,
+   "shares": 0,
+   "saved": 1,
+   "comments": 0,
+   "likes": 1,
+   "total_interactions": 2,
+   "ig_reels_avg_watch_time": 12072,
+   "ig_reels_video_view_total_time": 36218,
+   "compartilhamentos_por_1000_alcancados": 0.0,
+   "coletado_em": "2026-10-03T18:26:03+00:00"
+  }
  },
  {
   "id": "EP-034",
