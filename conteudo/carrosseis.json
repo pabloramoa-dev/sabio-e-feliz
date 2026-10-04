@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 33,
+ "total": 38,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -1812,6 +1812,276 @@
    "instagram_media_id": "18128254399866007",
    "criado_em": "2026-09-27T12:51:09+00:00",
    "produzido_em": "2026-09-27T13:03:07+00:00"
+  },
+  {
+   "id": "CAR-034",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-07-20",
+    "PRO-07-21",
+    "PRO-07-24"
+   ],
+   "referencia_exibida": "Provérbios 7",
+   "capitulo": 7,
+   "texto_biblico": "um saquitel de dinheiro levou na mão; só lá para o dia da lua cheia voltará para casa.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 7:20",
+     "texto": "um saquitel de dinheiro levou na mão; só lá para o dia da lua cheia voltará para casa."
+    },
+    {
+     "referencia": "Provérbios 7:21",
+     "texto": "Ela o faz ceder com a multidão das suas palavras sedutoras, com as lisonjas dos seus lábios o arrasta."
+    },
+    {
+     "referencia": "Provérbios 7:24",
+     "texto": "Agora, pois, filhos, ouvi-me, e estai atentos às palavras da minha boca."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 7",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 7 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-034/CAR-034-01.jpg",
+    "carrosseis/CAR-034/CAR-034-02.jpg",
+    "carrosseis/CAR-034/CAR-034-03.jpg",
+    "carrosseis/CAR-034/CAR-034-04.jpg",
+    "carrosseis/CAR-034/CAR-034-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-034/CAR-034-01.jpg": "29e115fe7b73b22789bd15a6f64323bb76cd95d9da126e64527b5c27ed63353d",
+    "carrosseis/CAR-034/CAR-034-02.jpg": "d5d216b673cdddf818d5d58812fc9c825bc08b92e6b92c4dbacfc3ebf20b52ad",
+    "carrosseis/CAR-034/CAR-034-03.jpg": "16c556693554f465b5aedbdd8dd0e038677d46ee85181655005453c3f2c4ca1d",
+    "carrosseis/CAR-034/CAR-034-04.jpg": "9cad08cc08fc3e727d232fa1b923b29a36268633c19cf614857f06acf09393f3",
+    "carrosseis/CAR-034/CAR-034-05.jpg": "b317178347b133e27f8aba32d53190cb2338b3fa9d3c977af8d0d8e450cc683d"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-04T13:29:51+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-04T13:05:47+00:00",
+   "produzido_em": "2026-10-04T13:29:45+00:00"
+  },
+  {
+   "id": "CAR-035",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-25-02",
+    "PRO-25-15",
+    "PRO-25-24"
+   ],
+   "referencia_exibida": "Provérbios 25",
+   "capitulo": 25,
+   "texto_biblico": "A glória de Deus é encobrir as coisas; mas a glória dos reis é esquadrinhá-las.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 25:2",
+     "texto": "A glória de Deus é encobrir as coisas; mas a glória dos reis é esquadrinhá-las."
+    },
+    {
+     "referencia": "Provérbios 25:15",
+     "texto": "Pela longanimidade se persuade o príncipe, e a língua branda quebranta os ossos."
+    },
+    {
+     "referencia": "Provérbios 25:24",
+     "texto": "Melhor é morar num canto do eirado, do que com a mulher rixosa numa casa ampla."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 25",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 25 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-035/CAR-035-01.jpg",
+    "carrosseis/CAR-035/CAR-035-02.jpg",
+    "carrosseis/CAR-035/CAR-035-03.jpg",
+    "carrosseis/CAR-035/CAR-035-04.jpg",
+    "carrosseis/CAR-035/CAR-035-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-035/CAR-035-01.jpg": "b95bd75f21efb5b12f65b300138b610bbc462ac4c9ea512c543a1ae04f87737a",
+    "carrosseis/CAR-035/CAR-035-02.jpg": "4de554e64db9db0417938a1d83cabe61c4f92b328ae77621d7c3f6344449b76b",
+    "carrosseis/CAR-035/CAR-035-03.jpg": "52ea98a22edf1cd48b135a177d93fe29501f9295f45d1e7da377350ba6bd70c2",
+    "carrosseis/CAR-035/CAR-035-04.jpg": "ade57bac51c09ef4e278acfe6c5876277e4c24815c5821a28843857309b802d9",
+    "carrosseis/CAR-035/CAR-035-05.jpg": "7f2980e79b0a55cea811daf3fed42aab69c0b0d1a66054a605878cd5f46d3252"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-04T13:29:51+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-04T13:05:47+00:00",
+   "produzido_em": "2026-10-04T13:29:47+00:00"
+  },
+  {
+   "id": "CAR-036",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-30-05",
+    "PRO-30-13",
+    "PRO-30-20"
+   ],
+   "referencia_exibida": "Provérbios 30",
+   "capitulo": 30,
+   "texto_biblico": "Toda palavra de Deus é pura; ele é um escudo para os que nele confiam.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 30:5",
+     "texto": "Toda palavra de Deus é pura; ele é um escudo para os que nele confiam."
+    },
+    {
+     "referencia": "Provérbios 30:13",
+     "texto": "Há gente cujos olhos são altivos, e cujas pálpebras são levantadas para cima."
+    },
+    {
+     "referencia": "Provérbios 30:20",
+     "texto": "Tal é o caminho da mulher adúltera: ela come, e limpa a sua boca, e diz: não pratiquei iniqüidade."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 30",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 30 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-036/CAR-036-01.jpg",
+    "carrosseis/CAR-036/CAR-036-02.jpg",
+    "carrosseis/CAR-036/CAR-036-03.jpg",
+    "carrosseis/CAR-036/CAR-036-04.jpg",
+    "carrosseis/CAR-036/CAR-036-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-036/CAR-036-01.jpg": "680310a1c033f843830bc5d409028bcd07afdcc4cd689078b264bed8d9b651a0",
+    "carrosseis/CAR-036/CAR-036-02.jpg": "8e2195d6d49dc61e76f7444dd1b830a35c82c76df11a50de1d0985b4963485c7",
+    "carrosseis/CAR-036/CAR-036-03.jpg": "28b1fb409c9ed469491ed95612113b699829f4d2907dea9f534662e897d2c9f6",
+    "carrosseis/CAR-036/CAR-036-04.jpg": "a285afe2b7ba55a18a4ff97f7670805ac35583d3bef26b4e39e49c40581e1a72",
+    "carrosseis/CAR-036/CAR-036-05.jpg": "8afd0396126ac8f6b73b4d98961a57a0323f127f4f16d6a1ed8ce002192ab955"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-04T13:29:51+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-04T13:05:47+00:00",
+   "produzido_em": "2026-10-04T13:29:48+00:00"
+  },
+  {
+   "id": "CAR-037",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-23-12",
+    "PRO-23-23",
+    "PRO-23-31"
+   ],
+   "referencia_exibida": "Provérbios 23",
+   "capitulo": 23,
+   "texto_biblico": "Aplica o teu coração à instrução, e os teus ouvidos às palavras do conhecimento.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 23:12",
+     "texto": "Aplica o teu coração à instrução, e os teus ouvidos às palavras do conhecimento."
+    },
+    {
+     "referencia": "Provérbios 23:23",
+     "texto": "Compra a verdade, e não a vendas; sim, a sabedoria, a disciplina, e o entendimento."
+    },
+    {
+     "referencia": "Provérbios 23:31",
+     "texto": "Não olhes para o vinho quando se mostra vermelho, quando resplandece no copo e se escoa suavemente."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 23",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 23 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-037/CAR-037-01.jpg",
+    "carrosseis/CAR-037/CAR-037-02.jpg",
+    "carrosseis/CAR-037/CAR-037-03.jpg",
+    "carrosseis/CAR-037/CAR-037-04.jpg",
+    "carrosseis/CAR-037/CAR-037-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-037/CAR-037-01.jpg": "6d8dcf661e158c8119f18856bf36d83665b555c4624a7e9337a323a8929e64eb",
+    "carrosseis/CAR-037/CAR-037-02.jpg": "b56da7b92321d9139a238ec787a0e2f1d75d6c915127b6f6b6fb6e7841fb0bf2",
+    "carrosseis/CAR-037/CAR-037-03.jpg": "a9ca6fc83a846dcfb9c57622c6c4ba52589f3133775175606e8952136ae92451",
+    "carrosseis/CAR-037/CAR-037-04.jpg": "23022bd047da779c78f9864121b3a4e44cdbbe4578df94dde6e436b4a542fb85",
+    "carrosseis/CAR-037/CAR-037-05.jpg": "247c2720f7ae45fb2094196338f314f68df0236bab310f5491e986c049169b9a"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-04T13:29:51+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-04T13:05:47+00:00",
+   "produzido_em": "2026-10-04T13:29:49+00:00"
+  },
+  {
+   "id": "CAR-038",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-05-06",
+    "PRO-05-18",
+    "PRO-05-23"
+   ],
+   "referencia_exibida": "Provérbios 5",
+   "capitulo": 5,
+   "texto_biblico": "Ela não pondera a vereda da vida; incertos são os seus caminhos, e ela o ignora.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 5:6",
+     "texto": "Ela não pondera a vereda da vida; incertos são os seus caminhos, e ela o ignora."
+    },
+    {
+     "referencia": "Provérbios 5:18",
+     "texto": "Seja bendito o teu manancial; e regozija-te na mulher da tua mocidade."
+    },
+    {
+     "referencia": "Provérbios 5:23",
+     "texto": "Ele morre pela falta de disciplina; e pelo excesso da sua loucura anda errado."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 5",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 5 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-038/CAR-038-01.jpg",
+    "carrosseis/CAR-038/CAR-038-02.jpg",
+    "carrosseis/CAR-038/CAR-038-03.jpg",
+    "carrosseis/CAR-038/CAR-038-04.jpg",
+    "carrosseis/CAR-038/CAR-038-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-038/CAR-038-01.jpg": "7fa54064fb97c843cc6d0bd964435218381f80d51159e733cd67ad19d86ce2f7",
+    "carrosseis/CAR-038/CAR-038-02.jpg": "9e8503942dfd5adfef7fbac1d4d2dd1a063a42b8ec81203c6e82e04cc1cafc81",
+    "carrosseis/CAR-038/CAR-038-03.jpg": "785bea44cb83b23be743f5233acf97d8a8150ade405fd33e1aac277ed272550b",
+    "carrosseis/CAR-038/CAR-038-04.jpg": "f29857b018013a781b86dd85e90a7cf799aa42b20573f9816f2819379220ba43",
+    "carrosseis/CAR-038/CAR-038-05.jpg": "bf27abb14ed0a5329d9b69fb7885d59e2e6f17265045af7aaeddb1baffa9ba2c"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-04T13:29:51+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-04T13:05:47+00:00",
+   "produzido_em": "2026-10-04T13:29:51+00:00"
   }
  ]
 }
