@@ -10,6 +10,12 @@ name: Reabastecer o canal (piloto automático)
 on:
   schedule:
     - cron: "15 5 * * *"    # todos os dias, 02:15 em Brasília
+  push:
+    branches: [main]
+    paths:
+      - "src/reabastecer.py"
+      - "estudio/reserva.py"
+      - ".github/workflows/reabastecer.yml"
   workflow_dispatch:
     inputs:
       alvo:
