@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 38,
+ "total": 47,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -2082,6 +2082,492 @@
    "instagram_media_id": null,
    "criado_em": "2026-10-04T13:05:47+00:00",
    "produzido_em": "2026-10-04T13:29:51+00:00"
+  },
+  {
+   "id": "CAR-039",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-29-07",
+    "PRO-29-12",
+    "PRO-29-16"
+   ],
+   "referencia_exibida": "Provérbios 29",
+   "capitulo": 29,
+   "texto_biblico": "O justo toma conhecimento da causa dos pobres; mas o ímpio não tem entendimento para a conhecer.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 29:7",
+     "texto": "O justo toma conhecimento da causa dos pobres; mas o ímpio não tem entendimento para a conhecer."
+    },
+    {
+     "referencia": "Provérbios 29:12",
+     "texto": "O governador que dá atenção às palavras mentirosas achará que todos os seus servos são ímpios."
+    },
+    {
+     "referencia": "Provérbios 29:16",
+     "texto": "Quando os ímpios se multiplicam, multiplicam-se as transgressões; mas os justos verão a queda deles."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 29",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 29 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-039/CAR-039-01.jpg",
+    "carrosseis/CAR-039/CAR-039-02.jpg",
+    "carrosseis/CAR-039/CAR-039-03.jpg",
+    "carrosseis/CAR-039/CAR-039-04.jpg",
+    "carrosseis/CAR-039/CAR-039-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-039/CAR-039-01.jpg": "e2ae17702b2b38db45a5862bd869479da6795b97bbaea2e69a9e895c8eece9c8",
+    "carrosseis/CAR-039/CAR-039-02.jpg": "51babb1e85d53969983688b288be9a9812b8f729cfae627c7017853b813c9ccb",
+    "carrosseis/CAR-039/CAR-039-03.jpg": "ca386f502d776df674c9fa6a2990cf334231fbec6d295b376431653bfff8b17c",
+    "carrosseis/CAR-039/CAR-039-04.jpg": "1baa90ef53245395185e4323c4e8816a9df48ea9ad9895da5d349d1ae8148808",
+    "carrosseis/CAR-039/CAR-039-05.jpg": "1692e4430cddd12dee2493bb4cb818ca1bb4deee3fe38f9db62ff7a1fcca36d7"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-06T20:27:55+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-06T19:54:49+00:00",
+   "produzido_em": "2026-10-06T20:27:47+00:00"
+  },
+  {
+   "id": "CAR-040",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-19-20",
+    "PRO-19-27",
+    "PRO-19-29"
+   ],
+   "referencia_exibida": "Provérbios 19",
+   "capitulo": 19,
+   "texto_biblico": "Ouve o conselho, e recebe a correção, para que sejas sábio nos teus últimos dias.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 19:20",
+     "texto": "Ouve o conselho, e recebe a correção, para que sejas sábio nos teus últimos dias."
+    },
+    {
+     "referencia": "Provérbios 19:27",
+     "texto": "Cessa, filho meu, de ouvir a instrução, e logo te desviarás das palavras do conhecimento."
+    },
+    {
+     "referencia": "Provérbios 19:29",
+     "texto": "A condenação está preparada para os escarnecedores, e os açoites para as costas dos tolos."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 19",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 19 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-040/CAR-040-01.jpg",
+    "carrosseis/CAR-040/CAR-040-02.jpg",
+    "carrosseis/CAR-040/CAR-040-03.jpg",
+    "carrosseis/CAR-040/CAR-040-04.jpg",
+    "carrosseis/CAR-040/CAR-040-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-040/CAR-040-01.jpg": "d4092f56b3728f6758b01cc03593412aca2c8d8142558b5307ccc12761e1ddd5",
+    "carrosseis/CAR-040/CAR-040-02.jpg": "27819d6bc33eee31579e2f23259db7afa67ad23afe6b0c069dd5c67f8dab62d9",
+    "carrosseis/CAR-040/CAR-040-03.jpg": "c700d08f02d2db8e5d5cdaa2d7137feda4dcc31950afff87146f90e21ca10f6f",
+    "carrosseis/CAR-040/CAR-040-04.jpg": "4928544b8c1b39991c4d6e155e8ebdad3e85e8cb51b3ebc9473fbfba5329d04d",
+    "carrosseis/CAR-040/CAR-040-05.jpg": "7931d1cc7c9351b0c2b2e30af8bdc9ea4208c188e4f2e65fd235c2b8f8d73f64"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-06T20:27:55+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-06T19:54:49+00:00",
+   "produzido_em": "2026-10-06T20:27:48+00:00"
+  },
+  {
+   "id": "CAR-041",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-09-08",
+    "PRO-09-09",
+    "PRO-09-12"
+   ],
+   "referencia_exibida": "Provérbios 9",
+   "capitulo": 9,
+   "texto_biblico": "Não repreendas ao escarnecedor, para que não te odeie; repreende ao sábio, e amar-te-á.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 9:8",
+     "texto": "Não repreendas ao escarnecedor, para que não te odeie; repreende ao sábio, e amar-te-á."
+    },
+    {
+     "referencia": "Provérbios 9:9",
+     "texto": "Instrui ao sábio, e ele se fará mais, sábio; ensina ao justo, e ele crescerá em entendimento."
+    },
+    {
+     "referencia": "Provérbios 9:12",
+     "texto": "Se fores sábio, para ti mesmo o serás; e, se fores escarnecedor, tu só o suportarás."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 9",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 9 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-041/CAR-041-01.jpg",
+    "carrosseis/CAR-041/CAR-041-02.jpg",
+    "carrosseis/CAR-041/CAR-041-03.jpg",
+    "carrosseis/CAR-041/CAR-041-04.jpg",
+    "carrosseis/CAR-041/CAR-041-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-041/CAR-041-01.jpg": "ba129ccc1fc041f2075c25c08a36b2b7ae32024f0820694b7796dcc0c1db3ddf",
+    "carrosseis/CAR-041/CAR-041-02.jpg": "329267fab70fea76bb9d82f2ef946bff2d28db72d643216d491e16e64cede6b0",
+    "carrosseis/CAR-041/CAR-041-03.jpg": "53977bccb6b5a8a032f8be9b068395442b162d7eaf545b5c2d0e39531490c953",
+    "carrosseis/CAR-041/CAR-041-04.jpg": "e5053a2ca3e6c737eeaff9157fa57ca30e639ef202bf189bd0c4f0883c40a98c",
+    "carrosseis/CAR-041/CAR-041-05.jpg": "dc6dedbdfc972fdfc2bef7a3010bcc0b6ef7c842aafea0eaf5cc5300e41c3f9b"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-06T20:27:55+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-06T19:54:49+00:00",
+   "produzido_em": "2026-10-06T20:27:49+00:00"
+  },
+  {
+   "id": "CAR-042",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-26-17",
+    "PRO-26-20",
+    "PRO-26-22"
+   ],
+   "referencia_exibida": "Provérbios 26",
+   "capitulo": 26,
+   "texto_biblico": "O que, passando, se mete em questão alheia é como aquele que toma um cão pelas orelhas.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 26:17",
+     "texto": "O que, passando, se mete em questão alheia é como aquele que toma um cão pelas orelhas."
+    },
+    {
+     "referencia": "Provérbios 26:20",
+     "texto": "Faltando lenha, apaga-se o fogo; e não havendo difamador, cessa a contenda."
+    },
+    {
+     "referencia": "Provérbios 26:22",
+     "texto": "As palavras do difamador são como bocados deliciosos, que descem ao íntimo do ventre."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 26",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 26 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-042/CAR-042-01.jpg",
+    "carrosseis/CAR-042/CAR-042-02.jpg",
+    "carrosseis/CAR-042/CAR-042-03.jpg",
+    "carrosseis/CAR-042/CAR-042-04.jpg",
+    "carrosseis/CAR-042/CAR-042-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-042/CAR-042-01.jpg": "13499d34f35d478519c002bccb26c95aac2afc87d8cf378ad4899efe9681d09b",
+    "carrosseis/CAR-042/CAR-042-02.jpg": "f19850e51a2fb53fbbdab56863f8557f3c47fc9d1126ad87b45dcfefcf836fbf",
+    "carrosseis/CAR-042/CAR-042-03.jpg": "45553607fbee3c801d2fc4e9453292b8f8e8a3cb1160d76fe0f5a17c1adac6d8",
+    "carrosseis/CAR-042/CAR-042-04.jpg": "218dff02dd3dd8dc815d8469359c7c7b32be6202492575db5b6be1ee503dc3b8",
+    "carrosseis/CAR-042/CAR-042-05.jpg": "db33d7fed3df8edfcc55a93a3e14877cf4dcf7f99c27827e2d084af4fe683ae4"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-06T20:27:55+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-06T19:54:49+00:00",
+   "produzido_em": "2026-10-06T20:27:50+00:00"
+  },
+  {
+   "id": "CAR-043",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-28-06",
+    "PRO-28-16",
+    "PRO-28-21"
+   ],
+   "referencia_exibida": "Provérbios 28",
+   "capitulo": 28,
+   "texto_biblico": "Melhor é o pobre que anda na sua integridade, do que o rico perverso nos seus caminhos.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 28:6",
+     "texto": "Melhor é o pobre que anda na sua integridade, do que o rico perverso nos seus caminhos."
+    },
+    {
+     "referencia": "Provérbios 28:16",
+     "texto": "O príncipe falto de entendimento é também opressor cruel; mas o que aborrece a avareza prolongará os seus dias."
+    },
+    {
+     "referencia": "Provérbios 28:21",
+     "texto": "Fazer acepção de pessoas não é bom; mas até por um bocado de pão prevaricará o homem."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 28",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 28 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-043/CAR-043-01.jpg",
+    "carrosseis/CAR-043/CAR-043-02.jpg",
+    "carrosseis/CAR-043/CAR-043-03.jpg",
+    "carrosseis/CAR-043/CAR-043-04.jpg",
+    "carrosseis/CAR-043/CAR-043-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-043/CAR-043-01.jpg": "5187eb09cd4a0337bcefee836118f9efb0aeab4716b76828c9b68b50493d7594",
+    "carrosseis/CAR-043/CAR-043-02.jpg": "f1febf98e069ae85836171c53dcbb7f0ca30a7c2ac90f8b6df12ef1835522559",
+    "carrosseis/CAR-043/CAR-043-03.jpg": "119bde94e1d042698b2510e8ecbee25a63db56c2b0844d95e63b73e528e5e39b",
+    "carrosseis/CAR-043/CAR-043-04.jpg": "2df4c76ede208278b0ed48273a64721e3ff1727f8ce57ca7aa5825ed97f4074b",
+    "carrosseis/CAR-043/CAR-043-05.jpg": "a88f6e2c83a1aa97a701cb05096e83764e9887c956dfed25705297a95418f239"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-06T20:27:55+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-06T19:54:49+00:00",
+   "produzido_em": "2026-10-06T20:27:51+00:00"
+  },
+  {
+   "id": "CAR-044",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-07-02",
+    "PRO-07-12",
+    "PRO-07-25"
+   ],
+   "referencia_exibida": "Provérbios 7",
+   "capitulo": 7,
+   "texto_biblico": "Observa os meus mandamentos e vive; guarda a minha lei, como a menina dos teus olhos.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 7:2",
+     "texto": "Observa os meus mandamentos e vive; guarda a minha lei, como a menina dos teus olhos."
+    },
+    {
+     "referencia": "Provérbios 7:12",
+     "texto": "ora está ela pelas ruas, ora pelas praças, espreitando por todos os cantos."
+    },
+    {
+     "referencia": "Provérbios 7:25",
+     "texto": "Não se desvie para os seus caminhos o teu coração, e não andes perdido nas suas veredas."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 7",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 7 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-044/CAR-044-01.jpg",
+    "carrosseis/CAR-044/CAR-044-02.jpg",
+    "carrosseis/CAR-044/CAR-044-03.jpg",
+    "carrosseis/CAR-044/CAR-044-04.jpg",
+    "carrosseis/CAR-044/CAR-044-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-044/CAR-044-01.jpg": "8ef5ee6e11312acaec7d6c161bae70553db66b963ca679146df109d654b7e5c4",
+    "carrosseis/CAR-044/CAR-044-02.jpg": "d9d1be77deccd1c17886ed64422e2ed39d29e052b962e2c15368fc5893081612",
+    "carrosseis/CAR-044/CAR-044-03.jpg": "f16b999c0efa82aa3ff7db30db8f237654d8317eb903d45561016626a86d80fc",
+    "carrosseis/CAR-044/CAR-044-04.jpg": "746fd8edfc09b6c4cf29e07ec5b0b180531651c3d8e741f765013e9728ee1e20",
+    "carrosseis/CAR-044/CAR-044-05.jpg": "b317178347b133e27f8aba32d53190cb2338b3fa9d3c977af8d0d8e450cc683d"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-06T20:27:55+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-06T19:54:49+00:00",
+   "produzido_em": "2026-10-06T20:27:52+00:00"
+  },
+  {
+   "id": "CAR-045",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-18-11",
+    "PRO-18-12",
+    "PRO-18-22"
+   ],
+   "referencia_exibida": "Provérbios 18",
+   "capitulo": 18,
+   "texto_biblico": "Os bens do rico são a sua cidade forte, e como um muro alto na sua imaginação.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 18:11",
+     "texto": "Os bens do rico são a sua cidade forte, e como um muro alto na sua imaginação."
+    },
+    {
+     "referencia": "Provérbios 18:12",
+     "texto": "Antes da ruína eleva-se o coração do homem; e adiante da honra vai a humildade."
+    },
+    {
+     "referencia": "Provérbios 18:22",
+     "texto": "Quem encontra uma esposa acha uma coisa boa; e alcança o favor do Senhor."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 18",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 18 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-045/CAR-045-01.jpg",
+    "carrosseis/CAR-045/CAR-045-02.jpg",
+    "carrosseis/CAR-045/CAR-045-03.jpg",
+    "carrosseis/CAR-045/CAR-045-04.jpg",
+    "carrosseis/CAR-045/CAR-045-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-045/CAR-045-01.jpg": "aa765c0baf5fecaa2a0466cf9cf95f869a0affe1269a51553ab14dab3b074a44",
+    "carrosseis/CAR-045/CAR-045-02.jpg": "a3b3bfca5dc0f646a52b3a95533068c048e079cb45dd6adaf2887502b4290f38",
+    "carrosseis/CAR-045/CAR-045-03.jpg": "75db4969aee77716ba59e926fa13a205195b4bb99d418dd4e43e7f23034f8a12",
+    "carrosseis/CAR-045/CAR-045-04.jpg": "32a2bdc19c35e95e9119647aaa18b46356febd322fa89c12745d3e9f67a8e786",
+    "carrosseis/CAR-045/CAR-045-05.jpg": "4b82b6a6f99194712fcc79947a9d55945641c085fa5a1acac73df96735324fa9"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-06T20:27:55+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-06T19:54:49+00:00",
+   "produzido_em": "2026-10-06T20:27:53+00:00"
+  },
+  {
+   "id": "CAR-046",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-08-19",
+    "PRO-08-32",
+    "PRO-08-34"
+   ],
+   "referencia_exibida": "Provérbios 8",
+   "capitulo": 8,
+   "texto_biblico": "Melhor é o meu fruto do que o ouro, sim, do que o ouro refinado; e a minha renda melhor do que a prata escolhida.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 8:19",
+     "texto": "Melhor é o meu fruto do que o ouro, sim, do que o ouro refinado; e a minha renda melhor do que a prata escolhida."
+    },
+    {
+     "referencia": "Provérbios 8:32",
+     "texto": "Agora, pois, filhos, ouvi-me; porque felizes são os que guardam os meus caminhos."
+    },
+    {
+     "referencia": "Provérbios 8:34",
+     "texto": "Feliz é o homem que me dá ouvidos, velando cada dia às minhas entradas, esperando junto às ombreiras da minha porta."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 8",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 8 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-046/CAR-046-01.jpg",
+    "carrosseis/CAR-046/CAR-046-02.jpg",
+    "carrosseis/CAR-046/CAR-046-03.jpg",
+    "carrosseis/CAR-046/CAR-046-04.jpg",
+    "carrosseis/CAR-046/CAR-046-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-046/CAR-046-01.jpg": "87f4a0827b0032fe7c752a722eaa3d88b6f41046eff81fd352c70a767337563c",
+    "carrosseis/CAR-046/CAR-046-02.jpg": "2af93873bbce9e72338e63e689db12a30e8ee3210eaa06bc9082776285be01b6",
+    "carrosseis/CAR-046/CAR-046-03.jpg": "12ec0c29cd912ce3d86d3d83b557035d9b034822400121d8d50b8f75a0f9a992",
+    "carrosseis/CAR-046/CAR-046-04.jpg": "9a10b1b32156376ae9c69e88463cb030b271e40664b4de208266057564fe88a2",
+    "carrosseis/CAR-046/CAR-046-05.jpg": "90a8138ed8e9a97fd9da34a6464e632be7e1baf907a74878a258b2089067055f"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-06T20:27:55+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-06T19:54:49+00:00",
+   "produzido_em": "2026-10-06T20:27:54+00:00"
+  },
+  {
+   "id": "CAR-047",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-03-16",
+    "PRO-03-17",
+    "PRO-03-24"
+   ],
+   "referencia_exibida": "Provérbios 3",
+   "capitulo": 3,
+   "texto_biblico": "Longura de dias há na sua mão direita; na sua esquerda riquezas e honra.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 3:16",
+     "texto": "Longura de dias há na sua mão direita; na sua esquerda riquezas e honra."
+    },
+    {
+     "referencia": "Provérbios 3:17",
+     "texto": "Os seus caminhos são caminhos de delícias, e todas as suas veredas são paz."
+    },
+    {
+     "referencia": "Provérbios 3:24",
+     "texto": "Quando te deitares, não temerás; sim, tu te deitarás e o teu sono será suave."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 3",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 3 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-047/CAR-047-01.jpg",
+    "carrosseis/CAR-047/CAR-047-02.jpg",
+    "carrosseis/CAR-047/CAR-047-03.jpg",
+    "carrosseis/CAR-047/CAR-047-04.jpg",
+    "carrosseis/CAR-047/CAR-047-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-047/CAR-047-01.jpg": "e0c0fe088b9e298816aa18232673af749d37e6dbf2ba11f3d1510008194d3ef6",
+    "carrosseis/CAR-047/CAR-047-02.jpg": "96aad2704c8b533e181e290b21bcb5caedc2ed284a4f65a3995a029cb58c6aee",
+    "carrosseis/CAR-047/CAR-047-03.jpg": "6e5c6d7b419cb226ac5410c61a47d31600cbb26363e34dac26ca908d04695c69",
+    "carrosseis/CAR-047/CAR-047-04.jpg": "04211257e4f0fd705e589d3f7cc00eba7ebe67f6b1c394a992e691dcf5d79fd3",
+    "carrosseis/CAR-047/CAR-047-05.jpg": "e29e3669080dbef6c08541308586e195beeb79b638edf2d8aa1015c7e508edd6"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-06T20:27:55+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-06T19:54:49+00:00",
+   "produzido_em": "2026-10-06T20:27:55+00:00"
   }
  ]
 }
