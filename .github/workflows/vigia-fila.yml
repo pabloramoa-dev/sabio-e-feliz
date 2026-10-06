@@ -5,7 +5,7 @@ name: Vigia da fila
 
 on:
   schedule:
-    - cron: "0 13 * * 1"    # segunda-feira, 10:00 em Brasília
+    - cron: "30 9 * * *"    # todos os dias, 06:30 em Brasília
   workflow_dispatch:
 
 permissions:
@@ -32,5 +32,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: "Reserva de conteúdo acabando",
-              body: `Reels aprovados na fila: ${{ steps.check.outputs.aprovados }}\nCarrosséis disponíveis para a tarde: ${{ steps.check.outputs.carrosseis_disponiveis }}\n\nRode **Produzir Reels (estúdio)** e/ou **Produzir carrosséis (estúdio)** e aprove os novos antes que a fila zere.`
+              body: `Reels aprovados na fila: ${{ steps.check.outputs.aprovados }}\nCarrosséis disponíveis para a tarde: ${{ steps.check.outputs.carrosseis_disponiveis }}\n\nO reabastecimento automático roda diariamente. Se a reserva continuar baixa, confira o workflow **Reabastecer o canal (piloto automático)** e os logs do estúdio.`
             })
