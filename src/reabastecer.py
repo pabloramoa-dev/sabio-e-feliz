@@ -5,7 +5,7 @@ fila e diz quantos faltam para chegar ao alvo. Quem gera é o estudio.reserva;
 quem renderiza é o estúdio; quem aprova é o src.aprovar_auto. Aqui só se
 calcula a conta.
 
-    python -m src.reabastecer --alvo 14 --resumo
+    python -m src.reabastecer --alvo 21 --resumo
 """
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ import json
 from src import carrossel_fila as cfila
 from src import fila as rfila
 
-ALVO_PADRAO = 14      # duas semanas de folga em cada fila
+ALVO_PADRAO = 21      # três semanas de folga em cada fila
 
 
 def faltando(alvo: int = ALVO_PADRAO) -> dict:
