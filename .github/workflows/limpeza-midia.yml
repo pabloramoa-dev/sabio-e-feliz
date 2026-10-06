@@ -1,0 +1,57 @@
+name: Limpeza de Reels publicados
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "conteudo/fila.json"
+      - ".github/workflows/limpeza-midia.yml"
+  schedule:
+    - cron: "10 8 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sabioefeliz-limpeza
+  cancel-in-progress: false
+
+jobs:
+  limpar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout: |
+            .github/workflows/limpeza-midia.yml
+            conteudo/fila.json
+          sparse-checkout-cone-mode: false
+
+      - name: Remover MP4s já publicados sem baixar os vídeos
+        run: |
+          python3 - <<'PY' > /tmp/publicados.txt
+          import json
+          from pathlib import Path
+          fila = json.loads(Path("conteudo/fila.json").read_text(encoding="utf-8"))
+          for item in fila:
+              if item.get("status") == "publicado" and item.get("arquivo"):
+                  print(item["arquivo"])
+          PY
+
+          git config user.name "sabio-bot"
+          git config user.email "actions@github.com"
+          while read -r arquivo; do
+            [ -n "$arquivo" ] || continue
+            if git ls-files --error-unmatch "$arquivo" >/dev/null 2>&1; then
+              git update-index --force-remove -- "$arquivo"
+              echo "removendo $arquivo"
+            fi
+          done < /tmp/publicados.txt
+
+          git diff --cached --quiet && exit 0
+          git commit -q -m "limpeza: remover Reels já publicados [skip ci]"
+          for i in 1 2 3; do git pull --rebase && git push -q && exit 0; sleep 5; done
+          exit 1
