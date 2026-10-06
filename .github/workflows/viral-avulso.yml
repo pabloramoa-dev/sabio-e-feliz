@@ -1,0 +1,69 @@
+name: Sábio — referência viral avulsa
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "viral_avulsos/*.json"
+      - "estudio/viral_avulso.py"
+  workflow_dispatch:
+    inputs:
+      arquivo:
+        description: "JSON em viral_avulsos/"
+        required: true
+        default: ""
+
+concurrency:
+  group: sabio-viral-avulso
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Dependências do vídeo
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg pkg-config libcairo2-dev libpango1.0-dev fonts-dejavu-core
+          mkdir -p ~/.fonts
+          curl -sSL -o ~/.fonts/Poppins-Bold.ttf "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Bold.ttf"
+          curl -sSL -o ~/.fonts/Poppins-Regular.ttf "https://github.com/google/fonts/raw/main/ofl/poppins/Poppins-Regular.ttf"
+          fc-cache -f
+          pip install -r requirements.txt -r requirements-estudio.txt
+      - uses: ./.github/actions/setup-hyperframes
+      - uses: actions/cache@v4
+        with:
+          path: modelos
+          key: kokoro-v1.0
+      - name: Renderizar somente arquivo
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            F="${{ inputs.arquivo }}"
+            test -n "$F"
+            python -m estudio.viral_avulso "$F"
+          else
+            for F in viral_avulsos/*.json; do
+              [ -e "$F" ] || continue
+              ID=$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["id"])' "$F")
+              [ -f "viral_prontos/$ID.mp4" ] && continue
+              python -m estudio.viral_avulso "$F"
+            done
+          fi
+      - name: Entregar MP4 e descrição
+        uses: actions/upload-artifact@v4
+        with:
+          name: sabio-viral-${{ github.run_id }}
+          path: |
+            viral_prontos/*.mp4
+            viral_prontos/*.txt
+            viral_prontos/*.json
+          retention-days: 2
