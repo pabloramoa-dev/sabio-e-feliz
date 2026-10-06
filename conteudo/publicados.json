@@ -1526,5 +1526,28 @@
    "coletado_em": "2026-10-05T21:44:20+00:00"
   },
   "metricas_72h": null
+ },
+ {
+  "id": "EP-036",
+  "referencia": "Provérbios 28",
+  "titulo": "Três de Provérbios 28",
+  "formato": "D",
+  "arquivo": "reels/EP-036.mp4",
+  "sha256": "907998336e0be1946c312f0beb88842264ccf94b575ff297af2c73a4db370611",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-036.mp4",
+  "instagram_media_id": "18344962207252608",
+  "publicado_em": "2026-10-06T17:59:31+00:00",
+  "commit": "a6af2ee32f525ead818f803b57385c1c5226aef9",
+  "execucao": "37507562095",
+  "tecnico": {
+   "duracao_s": 39.23,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 28.85,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
