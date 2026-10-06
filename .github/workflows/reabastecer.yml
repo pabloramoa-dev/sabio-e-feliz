@@ -2,20 +2,20 @@ name: Reabastecer o canal (piloto automático)
 
 # Este é o workflow que faz o canal andar sozinho.
 #
-# Toda semana ele olha as duas filas, gera material novo se a reserva estiver
+# Todos os dias ele olha as duas filas, gera material novo se a reserva estiver
 # baixa, renderiza, aprova pelo lint e commita. Nenhuma etapa espera por uma
 # pessoa — mas nenhuma etapa também inventa interpretação: o material novo é
 # formato D (leitura), só o texto bíblico em domínio público.
 
 on:
   schedule:
-    - cron: "0 7 * * 0"     # domingo, 04:00 em Brasília
+    - cron: "15 5 * * *"    # todos os dias, 02:15 em Brasília
   workflow_dispatch:
     inputs:
       alvo:
         description: "Quantos itens aprovados manter em reserva em cada fila"
         required: false
-        default: "14"
+        default: "21"
 
 concurrency:
   group: sabioefeliz-estudio
@@ -27,7 +27,7 @@ permissions:
 jobs:
   reabastecer:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -54,7 +54,7 @@ jobs:
 
       - name: Quanto falta em cada fila
         id: conta
-        run: python -m src.reabastecer --alvo "${{ inputs.alvo || 14 }}" --resumo >> $GITHUB_OUTPUT
+        run: python -m src.reabastecer --alvo "${{ inputs.alvo || 21 }}" --resumo >> $GITHUB_OUTPUT
 
       - name: Gerar material novo da reserva
         if: steps.conta.outputs.reels_a_gerar != '0' || steps.conta.outputs.carrosseis_a_gerar != '0'
