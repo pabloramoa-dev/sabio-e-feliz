@@ -47,3 +47,30 @@ jobs:
           git add conteudo/publicados.json conteudo/fila.json
           git diff --cached --quiet || git commit -m "publicado: provérbio do dia [skip ci]"
           git push
+
+
+      - name: Limpar MP4s já publicados
+        if: success()
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          fila = json.loads(Path("conteudo/fila.json").read_text(encoding="utf-8"))
+          removidos = []
+          for item in fila:
+              if item.get("status") != "publicado":
+                  continue
+              arq = item.get("arquivo")
+              if not arq:
+                  continue
+              p = Path(arq)
+              if p.exists():
+                  p.unlink()
+                  removidos.append(str(p))
+          print(f"MP4s publicados removidos: {len(removidos)}")
+          for p in removidos:
+              print(" -", p)
+          PY
+          git add -u reels/
+          git diff --cached --quiet || git commit -m "limpeza: remover Reels já publicados [skip ci]"
+          git push
