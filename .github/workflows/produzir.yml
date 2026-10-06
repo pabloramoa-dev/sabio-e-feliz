@@ -81,7 +81,7 @@ jobs:
           path: |
             reels/*.mp4
             output/**/producao.json
-          retention-days: 30
+          retention-days: 2
 
       - name: Commitar os Reels produzidos
         run: |
