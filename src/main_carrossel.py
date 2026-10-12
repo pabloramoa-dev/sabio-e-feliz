@@ -80,12 +80,14 @@ def executar() -> dict:
 
     try:
         media_id = pub.publicar(pai)
-    except Exception as erro:  # timeout ou rede: estado indefinido
-        provavel = pub.reconciliar(pai)
-        raise RuntimeError(
-            f"Publicação em estado indefinido ({erro}). Última mídia da conta: {provavel}. "
-            "Conferir no Instagram ANTES de rodar de novo."
-        ) from erro
+    except Exception as erro:  # timeout ou erro transitório após media_publish
+        media_id = pub.reconciliar(pai, texto)
+        if not media_id:
+            raise RuntimeError(
+                f"Publicação em estado indefinido ({erro}). Nenhum carrossel recente com a legenda esperada foi encontrado. "
+                "Conferir no Instagram ANTES de rodar de novo."
+            ) from erro
+        resultado["reconciliado_apos_erro"] = True
 
     agora = datetime.now(timezone.utc).isoformat(timespec="seconds")
     cfila.registrar(item, media_id, agora)
