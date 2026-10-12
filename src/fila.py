@@ -87,7 +87,9 @@ def validar_item(item: dict, raiz: Path | None = None) -> list[str]:
         erros.append("mais de um convite de compartilhamento no mesmo roteiro")
 
     arquivo = raiz / str(item.get("arquivo", ""))
-    if item.get("status") in {"aprovado", "publicado"}:
+    status = item.get("status")
+    if status == "aprovado":
+        # Item ainda elegível para publicação precisa manter o MP4 e o hash.
         if not arquivo.exists():
             erros.append(f"MP4 não encontrado: {item.get('arquivo')}")
         else:
@@ -98,8 +100,10 @@ def validar_item(item: dict, raiz: Path | None = None) -> list[str]:
                 erros.append(
                     "o MP4 mudou depois da aprovação (sha256 diferente) — reaprovar antes de publicar"
                 )
-        if not item.get("aprovado_por"):
-            erros.append("item aprovado sem responsável registrado")
+    # Depois de publicado, o MP4 pode ser removido pela limpeza automática.
+    # O histórico editorial continua exigindo a assinatura de aprovação.
+    if status in {"aprovado", "publicado"} and not item.get("aprovado_por"):
+        erros.append("item aprovado sem responsável registrado")
 
     return erros
 
