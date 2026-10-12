@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 47,
+ "total": 53,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -2568,6 +2568,330 @@
    "instagram_media_id": null,
    "criado_em": "2026-10-06T19:54:49+00:00",
    "produzido_em": "2026-10-06T20:27:55+00:00"
+  },
+  {
+   "id": "CAR-048",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-19-02",
+    "PRO-19-09",
+    "PRO-19-19"
+   ],
+   "referencia_exibida": "Provérbios 19",
+   "capitulo": 19,
+   "texto_biblico": "Não é bom agir sem refletir; e o que se apressa com seus pés erra o caminho.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 19:2",
+     "texto": "Não é bom agir sem refletir; e o que se apressa com seus pés erra o caminho."
+    },
+    {
+     "referencia": "Provérbios 19:9",
+     "texto": "A testemunha falsa não ficará impune, e o que profere mentiras perecerá."
+    },
+    {
+     "referencia": "Provérbios 19:19",
+     "texto": "Homem de grande ira tem de sofrer o castigo; porque se o livrares, terás de o fazer de novo."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 19",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 19 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-048/CAR-048-01.jpg",
+    "carrosseis/CAR-048/CAR-048-02.jpg",
+    "carrosseis/CAR-048/CAR-048-03.jpg",
+    "carrosseis/CAR-048/CAR-048-04.jpg",
+    "carrosseis/CAR-048/CAR-048-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-048/CAR-048-01.jpg": "65f6a6d1e373654babf2609ba76bb3466e1b705c8dade8e3b15dd0d6b800ac81",
+    "carrosseis/CAR-048/CAR-048-02.jpg": "c6b64fd71777b2725cec35a11a1bf90e4d119656995d4f8065a8f66a50ef0f1e",
+    "carrosseis/CAR-048/CAR-048-03.jpg": "27249478f63daa83e19bcd55f747a55ba0f4fa6d9620f437a1508eaa0d86fcb5",
+    "carrosseis/CAR-048/CAR-048-04.jpg": "f94c2da433d233bdfec973b3c2aa9ed102c12017a987d215969a669b14f5c69a",
+    "carrosseis/CAR-048/CAR-048-05.jpg": "7931d1cc7c9351b0c2b2e30af8bdc9ea4208c188e4f2e65fd235c2b8f8d73f64"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-12T13:50:18+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-12T13:26:24+00:00",
+   "produzido_em": "2026-10-12T13:50:11+00:00"
+  },
+  {
+   "id": "CAR-049",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-26-07",
+    "PRO-26-15",
+    "PRO-26-24"
+   ],
+   "referencia_exibida": "Provérbios 26",
+   "capitulo": 26,
+   "texto_biblico": "As pernas do coxo pendem frouxas; assim é o provérbio na boca dos tolos.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 26:7",
+     "texto": "As pernas do coxo pendem frouxas; assim é o provérbio na boca dos tolos."
+    },
+    {
+     "referencia": "Provérbios 26:15",
+     "texto": "O preguiçoso esconde a sua mão no prato, e nem ao menos quer levá-la de novo à boca."
+    },
+    {
+     "referencia": "Provérbios 26:24",
+     "texto": "Aquele que odeia dissimula com os seus lábios; mas no seu interior entesoura o engano."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 26",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 26 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-049/CAR-049-01.jpg",
+    "carrosseis/CAR-049/CAR-049-02.jpg",
+    "carrosseis/CAR-049/CAR-049-03.jpg",
+    "carrosseis/CAR-049/CAR-049-04.jpg",
+    "carrosseis/CAR-049/CAR-049-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-049/CAR-049-01.jpg": "b7201b9f5ed1b0f7b76434ee131f85597f85169f40f8905495053b7f40f5a824",
+    "carrosseis/CAR-049/CAR-049-02.jpg": "526f96f107341898551be996acfdb50fe700e87d1f42b52d807473dee70c7693",
+    "carrosseis/CAR-049/CAR-049-03.jpg": "44f980d276024c7883a8c6ab31155f2f8d48f53f45fbc7e56092009146b12820",
+    "carrosseis/CAR-049/CAR-049-04.jpg": "f79bb7e58345e8675b16ebc39e1a68d24014fee4ad19532ea0e7bc4b1046cbbb",
+    "carrosseis/CAR-049/CAR-049-05.jpg": "db33d7fed3df8edfcc55a93a3e14877cf4dcf7f99c27827e2d084af4fe683ae4"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-12T13:50:18+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-12T13:26:24+00:00",
+   "produzido_em": "2026-10-12T13:50:12+00:00"
+  },
+  {
+   "id": "CAR-050",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-31-08",
+    "PRO-31-09",
+    "PRO-31-11"
+   ],
+   "referencia_exibida": "Provérbios 31",
+   "capitulo": 31,
+   "texto_biblico": "Abre a tua boca a favor do mudo, a favor do direito de todos os desamparados.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 31:8",
+     "texto": "Abre a tua boca a favor do mudo, a favor do direito de todos os desamparados."
+    },
+    {
+     "referencia": "Provérbios 31:9",
+     "texto": "Abre a tua boca; julga retamente, e faze justiça aos pobres e aos necessitados."
+    },
+    {
+     "referencia": "Provérbios 31:11",
+     "texto": "Bete. O coração do seu marido confia nela, e não lhe haverá falta de lucro."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 31",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 31 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-050/CAR-050-01.jpg",
+    "carrosseis/CAR-050/CAR-050-02.jpg",
+    "carrosseis/CAR-050/CAR-050-03.jpg",
+    "carrosseis/CAR-050/CAR-050-04.jpg",
+    "carrosseis/CAR-050/CAR-050-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-050/CAR-050-01.jpg": "cdcc0d17ab488475d718e2e00737a4456a40a1fd5e3697d0fb1ebf87b43c2a31",
+    "carrosseis/CAR-050/CAR-050-02.jpg": "90a7b8076081f5d7015bf2fe96b6c8f1d3c2323df779167a0cff1f2e190379e9",
+    "carrosseis/CAR-050/CAR-050-03.jpg": "4fb51dc761407f4b109467961ddd83227be28719a898107d647c393772d0a97f",
+    "carrosseis/CAR-050/CAR-050-04.jpg": "a9fe1c90861bc68b12de166be9e1bac024c98a02f3e68c1e4891d918078e1fb9",
+    "carrosseis/CAR-050/CAR-050-05.jpg": "21338ce1a537226a89cf24c86d1b46604c2c9bf9e87218723aed137c086bbf3d"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-12T13:50:18+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-12T13:26:24+00:00",
+   "produzido_em": "2026-10-12T13:50:14+00:00"
+  },
+  {
+   "id": "CAR-051",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-14-18",
+    "PRO-14-22",
+    "PRO-14-24"
+   ],
+   "referencia_exibida": "Provérbios 14",
+   "capitulo": 14,
+   "texto_biblico": "Os simples herdam a estultícia; mas os prudentes se coroam de conhecimento.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 14:18",
+     "texto": "Os simples herdam a estultícia; mas os prudentes se coroam de conhecimento."
+    },
+    {
+     "referencia": "Provérbios 14:22",
+     "texto": "Porventura não erram os que maquinam o mal? mas há beneficência e fidelidade para os que planejam o bem."
+    },
+    {
+     "referencia": "Provérbios 14:24",
+     "texto": "A coroa dos sábios é a sua riqueza; porém a estultícia dos tolos não passa de estultícia."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 14",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 14 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-051/CAR-051-01.jpg",
+    "carrosseis/CAR-051/CAR-051-02.jpg",
+    "carrosseis/CAR-051/CAR-051-03.jpg",
+    "carrosseis/CAR-051/CAR-051-04.jpg",
+    "carrosseis/CAR-051/CAR-051-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-051/CAR-051-01.jpg": "3c5cc9fdebc9b50f3736c28326fa35bdabee5c7d68811d642ace1490df70ada4",
+    "carrosseis/CAR-051/CAR-051-02.jpg": "a27b00378e10f065f35b8e112be73199110e0cab7e1f311810135e527c6de177",
+    "carrosseis/CAR-051/CAR-051-03.jpg": "d611785990472224508cade1689a52d1a3ff4e2ece2f8ed27386b48140c1e5eb",
+    "carrosseis/CAR-051/CAR-051-04.jpg": "d42ec5af5c25ce287a8f05e2ca0f9be58c968674334ac424f4bc50865194f8e3",
+    "carrosseis/CAR-051/CAR-051-05.jpg": "1b9053778eb56e47b9f93795c6de322e75448c981928c8415f563b90752bb105"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-12T13:50:18+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-12T13:26:24+00:00",
+   "produzido_em": "2026-10-12T13:50:15+00:00"
+  },
+  {
+   "id": "CAR-052",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-03-06",
+    "PRO-03-20",
+    "PRO-03-33"
+   ],
+   "referencia_exibida": "Provérbios 3",
+   "capitulo": 3,
+   "texto_biblico": "Reconhece-o em todos os teus caminhos, e ele endireitará as tuas veredas.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 3:6",
+     "texto": "Reconhece-o em todos os teus caminhos, e ele endireitará as tuas veredas."
+    },
+    {
+     "referencia": "Provérbios 3:20",
+     "texto": "Pelo seu conhecimento se fendem os abismos, e as nuvens destilam o orvalho."
+    },
+    {
+     "referencia": "Provérbios 3:33",
+     "texto": "A maldição do Senhor habita na casa do ímpio, mas ele abençoa a habitação dos justos."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 3",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 3 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-052/CAR-052-01.jpg",
+    "carrosseis/CAR-052/CAR-052-02.jpg",
+    "carrosseis/CAR-052/CAR-052-03.jpg",
+    "carrosseis/CAR-052/CAR-052-04.jpg",
+    "carrosseis/CAR-052/CAR-052-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-052/CAR-052-01.jpg": "5ce6dbd77f38335422d10dae90f80bfec8a3b567a8e2ed6859aa95841fc81128",
+    "carrosseis/CAR-052/CAR-052-02.jpg": "78a103008b7b64e74e173474fa8dca9c994ad81a8f9bd55e30caa1757b80edbf",
+    "carrosseis/CAR-052/CAR-052-03.jpg": "dd5e91bdea35be0bb15e467fa5fc234f67ba374e86d9746ef00af12b3fbf6ef8",
+    "carrosseis/CAR-052/CAR-052-04.jpg": "21cd33e047514f25ac28a0831193a2ab552de2364a19b0ea90a2e52b90ffc216",
+    "carrosseis/CAR-052/CAR-052-05.jpg": "e29e3669080dbef6c08541308586e195beeb79b638edf2d8aa1015c7e508edd6"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-12T13:50:18+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-12T13:26:24+00:00",
+   "produzido_em": "2026-10-12T13:50:16+00:00"
+  },
+  {
+   "id": "CAR-053",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-18-02",
+    "PRO-18-03",
+    "PRO-18-20"
+   ],
+   "referencia_exibida": "Provérbios 18",
+   "capitulo": 18,
+   "texto_biblico": "O tolo não toma prazer no entendimento, mas tão somente em revelar a sua opinião.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 18:2",
+     "texto": "O tolo não toma prazer no entendimento, mas tão somente em revelar a sua opinião."
+    },
+    {
+     "referencia": "Provérbios 18:3",
+     "texto": "Quando vem o ímpio, vem também o desprezo; e com a desonra vem o opróbrio."
+    },
+    {
+     "referencia": "Provérbios 18:20",
+     "texto": "O homem se fartará do fruto da sua boca; dos renovos dos seus lábios se fartará."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 18",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 18 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-053/CAR-053-01.jpg",
+    "carrosseis/CAR-053/CAR-053-02.jpg",
+    "carrosseis/CAR-053/CAR-053-03.jpg",
+    "carrosseis/CAR-053/CAR-053-04.jpg",
+    "carrosseis/CAR-053/CAR-053-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-053/CAR-053-01.jpg": "573dab82ece0afc783d4896546557066f8558ca2dee69b4645903f6c5251b304",
+    "carrosseis/CAR-053/CAR-053-02.jpg": "0e55f30646a92d2f9f137857be9613d22be611974d2cee20ce3d4338929b69d3",
+    "carrosseis/CAR-053/CAR-053-03.jpg": "30dd390a0955c42348acccd7e58f72a946beedcd7fc76caa78fe2e7dec2f5e5d",
+    "carrosseis/CAR-053/CAR-053-04.jpg": "960bb88a71953d63fee64e69b7ab439ea440ec10398a89874e58a28c0655670d",
+    "carrosseis/CAR-053/CAR-053-05.jpg": "4b82b6a6f99194712fcc79947a9d55945641c085fa5a1acac73df96735324fa9"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-12T13:50:18+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-12T13:26:24+00:00",
+   "produzido_em": "2026-10-12T13:50:18+00:00"
   }
  ]
 }
