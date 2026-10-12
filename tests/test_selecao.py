@@ -38,6 +38,12 @@ def test_aprovado_sem_mp4_reprova():
     assert any("MP4 não encontrado" in e for e in fila.validar_item(item))
 
 
+def test_publicado_pode_ter_mp4_removido_pela_limpeza():
+    item = dict(BASE, status="publicado", aprovado_por="automatico",
+                sha256="hash-historico", publicado_em="2026-10-01T12:00:00+00:00")
+    assert fila.validar_item(item) == []
+
+
 def test_status_invalido_reprova():
     item = dict(BASE, status="pronto")
     assert any("status inválido" in e for e in fila.validar_item(item))
