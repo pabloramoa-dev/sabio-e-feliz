@@ -69,12 +69,14 @@ def executar() -> dict:
 
     try:
         media_id = pub.publicar(container)
-    except Exception as erro:  # timeout ou rede: estado UNKNOWN
-        provavel = pub.reconciliar(container)
-        raise RuntimeError(
-            f"Publicação em estado indefinido ({erro}). Última mídia da conta: {provavel}. "
-            "Conferir no Instagram ANTES de rodar de novo."
-        ) from erro
+    except Exception as erro:  # timeout ou erro transitório após media_publish
+        media_id = pub.reconciliar(container, texto_legenda)
+        if not media_id:
+            raise RuntimeError(
+                f"Publicação em estado indefinido ({erro}). Nenhuma mídia recente com a legenda esperada foi encontrada. "
+                "Conferir no Instagram ANTES de rodar de novo."
+            ) from erro
+        resultado["reconciliado_apos_erro"] = True
 
     registro = ledger.registrar(item, media_id, url_video, tecnico)
     resultado.update({"publicado": True, "instagram_media_id": media_id, "registro": registro["publicado_em"]})
