@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 53,
+ "total": 54,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -2892,6 +2892,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-10-12T13:26:24+00:00",
    "produzido_em": "2026-10-12T13:50:18+00:00"
+  },
+  {
+   "id": "CAR-054",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-14-02",
+    "PRO-14-05",
+    "PRO-14-15"
+   ],
+   "referencia_exibida": "Provérbios 14",
+   "capitulo": 14,
+   "texto_biblico": "Quem anda na sua retidão teme ao Senhor; mas aquele que é perverso nos seus caminhos despreza-o.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 14:2",
+     "texto": "Quem anda na sua retidão teme ao Senhor; mas aquele que é perverso nos seus caminhos despreza-o."
+    },
+    {
+     "referencia": "Provérbios 14:5",
+     "texto": "A testemunha verdadeira não mentirá; a testemunha falsa, porém, se desboca em mentiras."
+    },
+    {
+     "referencia": "Provérbios 14:15",
+     "texto": "O simples dá crédito a tudo; mas o prudente atenta para os seus passos."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 14",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 14 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-054/CAR-054-01.jpg",
+    "carrosseis/CAR-054/CAR-054-02.jpg",
+    "carrosseis/CAR-054/CAR-054-03.jpg",
+    "carrosseis/CAR-054/CAR-054-04.jpg",
+    "carrosseis/CAR-054/CAR-054-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-054/CAR-054-01.jpg": "41021207fb92eff3d7b10b4bd6ee0319f7c3c076de54e099f7145ba4f589eb6a",
+    "carrosseis/CAR-054/CAR-054-02.jpg": "bac1ec92f61d447fa1ebc131d4a5bd2ec3d5f5366c87a05420e2ed583d4bc295",
+    "carrosseis/CAR-054/CAR-054-03.jpg": "181587803e2f4092111d02975281cb872e1076c042e2d58e7dd77efbd13a6d15",
+    "carrosseis/CAR-054/CAR-054-04.jpg": "6749fdfc22e2add6c56b98accad6ccc44cf76bcbc348dcea2fa5ede2904c55d4",
+    "carrosseis/CAR-054/CAR-054-05.jpg": "1b9053778eb56e47b9f93795c6de322e75448c981928c8415f563b90752bb105"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-13T12:44:57+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-13T12:41:15+00:00",
+   "produzido_em": "2026-10-13T12:44:57+00:00"
   }
  ]
 }

@@ -1749,5 +1749,35 @@
   "instagram_media_id": null,
   "criado_em": "2026-10-12T13:26:24+00:00",
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-063",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-12-09",
+   "PRO-12-19",
+   "PRO-12-27"
+  ],
+  "referencia_exibida": "Provérbios 12",
+  "texto_biblico": "Melhor é o que é estimado em pouco e tem servo, do que quem se honra a si mesmo e tem falta de pão.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 12",
+  "gancho": "Três versículos de Provérbios, capítulo doze. Sem comentário.",
+  "reflexao": "O lábio veraz permanece para sempre; mas a língua mentirosa dura só um momento.",
+  "aplicacao": "O preguiçoso não apanha a sua caça; mas o bem precioso do homem é para o diligente.",
+  "cta": "Está tudo em Provérbios doze. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-063.mp4",
+  "duracao_s": 33.5,
+  "sha256": "abff08c99f1f5fa5e621dcb88a65ced492fe4739b2dfeaeb41c22d13f088b9e6",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-10-13T12:44:57+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-10-13T12:41:15+00:00",
+  "renderizador": "hyperframes"
  }
 ]
