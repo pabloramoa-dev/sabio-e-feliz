@@ -1808,5 +1808,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-043",
+  "referencia": "Provérbios 15",
+  "titulo": "Três de Provérbios 15",
+  "formato": "D",
+  "arquivo": "reels/EP-043.mp4",
+  "sha256": "ea66810cab0fec6a6d98f8c9b46b47827f154017a304548f9170b3b039cda0fb",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-043.mp4",
+  "instagram_media_id": "18077472992430055",
+  "publicado_em": "2026-10-13T18:54:57+00:00",
+  "commit": "3ada1d093ac1a717074d986ec64ab4c8bf1efdf7",
+  "execucao": "38450372027",
+  "tecnico": {
+   "duracao_s": 34.43,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 26.14,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
