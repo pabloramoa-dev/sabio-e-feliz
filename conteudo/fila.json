@@ -1779,5 +1779,35 @@
   "instagram_media_id": null,
   "criado_em": "2026-10-13T12:41:15+00:00",
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-064",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-30-10",
+   "PRO-30-17",
+   "PRO-30-23"
+  ],
+  "referencia_exibida": "Provérbios 30",
+  "texto_biblico": "Não calunies o servo diante de seu senhor, para que ele não te amaldiçoe e fiques tu culpado.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 30",
+  "gancho": "Três versículos de Provérbios, capítulo trinta. Sem comentário.",
+  "reflexao": "Os olhos que zombam do pai, ou desprezam a obediência à mãe, serão arrancados pelos corvos do vale e devorados pelos filhos da águia.",
+  "aplicacao": "a mulher desdenhada quando se casa; e a serva quando fica herdeira da sua senhora.",
+  "cta": "Está tudo em Provérbios trinta. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-064.mp4",
+  "duracao_s": 36.83,
+  "sha256": "7face612a4c934cd81459cd242a9f41a5e782f13be9121c0a59ae0f132bd5501",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-10-14T10:14:35+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-10-14T10:09:28+00:00",
+  "renderizador": "hyperframes"
  }
 ]

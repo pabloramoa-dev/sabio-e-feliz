@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 54,
+ "total": 55,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -2946,6 +2946,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-10-13T12:41:15+00:00",
    "produzido_em": "2026-10-13T12:44:57+00:00"
+  },
+  {
+   "id": "CAR-055",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-08-06",
+    "PRO-08-21",
+    "PRO-08-24"
+   ],
+   "referencia_exibida": "Provérbios 8",
+   "capitulo": 8,
+   "texto_biblico": "Ouvi vós, porque profiro coisas excelentes; os meus lábios se abrem para a eqüidade.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 8:6",
+     "texto": "Ouvi vós, porque profiro coisas excelentes; os meus lábios se abrem para a eqüidade."
+    },
+    {
+     "referencia": "Provérbios 8:21",
+     "texto": "dotando de bens permanentes os que me amam, e enchendo os seus tesouros."
+    },
+    {
+     "referencia": "Provérbios 8:24",
+     "texto": "Antes de haver abismos, fui gerada, e antes ainda de haver fontes cheias d'água."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 8",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 8 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-055/CAR-055-01.jpg",
+    "carrosseis/CAR-055/CAR-055-02.jpg",
+    "carrosseis/CAR-055/CAR-055-03.jpg",
+    "carrosseis/CAR-055/CAR-055-04.jpg",
+    "carrosseis/CAR-055/CAR-055-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-055/CAR-055-01.jpg": "87f4a0827b0032fe7c752a722eaa3d88b6f41046eff81fd352c70a767337563c",
+    "carrosseis/CAR-055/CAR-055-02.jpg": "a28af341369cbceb6d62724f732c571950a89ab1d77c4b233ab04b92768e289c",
+    "carrosseis/CAR-055/CAR-055-03.jpg": "4d383816e6d85d65b278ff8172811d1560b0dc1aa9b8a568c058eeb0f7461b20",
+    "carrosseis/CAR-055/CAR-055-04.jpg": "651c8321d82d4a3c118f5a4cb9cce22bf75a58d653830575e4d8ca68f33cb25d",
+    "carrosseis/CAR-055/CAR-055-05.jpg": "90a8138ed8e9a97fd9da34a6464e632be7e1baf907a74878a258b2089067055f"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-14T10:14:35+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-14T10:09:28+00:00",
+   "produzido_em": "2026-10-14T10:14:35+00:00"
   }
  ]
 }
