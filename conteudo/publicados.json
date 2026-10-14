@@ -1842,5 +1842,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-044",
+  "referencia": "Provérbios 29",
+  "titulo": "Três de Provérbios 29",
+  "formato": "D",
+  "arquivo": "reels/EP-044.mp4",
+  "sha256": "416d67e2e4492aca3f731d3d9b80e12a825b2ed224f946faed81d0f879a6fd97",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-044.mp4",
+  "instagram_media_id": "18206535682373619",
+  "publicado_em": "2026-10-14T16:35:37+00:00",
+  "commit": "2c067873b117fce1ec4e798411d91cde68bb6739",
+  "execucao": "38599161072",
+  "tecnico": {
+   "duracao_s": 33.43,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 25.45,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
