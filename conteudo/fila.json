@@ -1809,5 +1809,35 @@
   "instagram_media_id": null,
   "criado_em": "2026-10-14T10:09:28+00:00",
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-065",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-24-09",
+   "PRO-24-11",
+   "PRO-24-28"
+  ],
+  "referencia_exibida": "Provérbios 24",
+  "texto_biblico": "O desígnio do insensato é pecado; e abominável aos homens é o escarnecedor.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 24",
+  "gancho": "Três versículos de Provérbios, capítulo vinte e quatro. Sem comentário.",
+  "reflexao": "Livra os que estão sendo levados à morte, detém os que vão tropeçando para a matança.",
+  "aplicacao": "Não sejas testemunha sem causa contra o teu próximo; e não enganes com os teus lábios.",
+  "cta": "Está tudo em Provérbios vinte e quatro. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-065.mp4",
+  "duracao_s": 34.5,
+  "sha256": "0b3df1192c3e17a4fb1321133a0efc6337d2b0ee82a603ba1b8d99731c2487eb",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-10-15T09:56:54+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-10-15T09:52:06+00:00",
+  "renderizador": "hyperframes"
  }
 ]
