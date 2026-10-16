@@ -1932,5 +1932,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-046",
+  "referencia": "Provérbios 18",
+  "titulo": "Três de Provérbios 18",
+  "formato": "D",
+  "arquivo": "reels/EP-046.mp4",
+  "sha256": "fc0d60d9510d11c229065c3c4a78c9d409ccab5e3175ee3dcf19716fcfd7d281",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-046.mp4",
+  "instagram_media_id": "18125110201856376",
+  "publicado_em": "2026-10-16T16:08:36+00:00",
+  "commit": "6457e08e44042a520e27ea072c6da622ab9bec51",
+  "execucao": "38929275818",
+  "tecnico": {
+   "duracao_s": 32.87,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 24.98,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
