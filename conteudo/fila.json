@@ -1839,5 +1839,35 @@
   "instagram_media_id": null,
   "criado_em": "2026-10-15T09:52:06+00:00",
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-066",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-19-07",
+   "PRO-19-11",
+   "PRO-19-14"
+  ],
+  "referencia_exibida": "Provérbios 19",
+  "texto_biblico": "Todos os irmãos do pobre o aborrecem; quanto mais se afastam dele os seus amigos! persegue-os com súplicas, mas eles já se foram.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 19",
+  "gancho": "Três versículos de Provérbios, capítulo dezenove. Sem comentário.",
+  "reflexao": "A discrição do homem fá-lo tardio em irar-se; e sua glória está em esquecer ofensas.",
+  "aplicacao": "Casa e riquezas são herdadas dos pais; mas a mulher prudente vem do Senhor.",
+  "cta": "Está tudo em Provérbios dezenove. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-066.mp4",
+  "duracao_s": 36.53,
+  "sha256": "81d37b0d82f054b69eea2aee303dfefba4cdde3f1ea02cfad25bd77d787cc7de",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-10-16T09:50:24+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-10-16T09:45:24+00:00",
+  "renderizador": "hyperframes"
  }
 ]
