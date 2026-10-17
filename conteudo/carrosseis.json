@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 56,
+ "total": 57,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -3054,6 +3054,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-10-16T09:45:24+00:00",
    "produzido_em": "2026-10-16T09:50:24+00:00"
+  },
+  {
+   "id": "CAR-057",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-28-01",
+    "PRO-28-06",
+    "PRO-28-20"
+   ],
+   "referencia_exibida": "Provérbios 28",
+   "capitulo": 28,
+   "texto_biblico": "Fogem os ímpios, sem que ninguém os persiga; mas os justos são ousados como o leão.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 28:1",
+     "texto": "Fogem os ímpios, sem que ninguém os persiga; mas os justos são ousados como o leão."
+    },
+    {
+     "referencia": "Provérbios 28:6",
+     "texto": "Melhor é o pobre que anda na sua integridade, do que o rico perverso nos seus caminhos."
+    },
+    {
+     "referencia": "Provérbios 28:20",
+     "texto": "O homem fiel gozará de abundantes bênçãos; mas o que se apressa a enriquecer não ficará impune."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 28",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 28 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-057/CAR-057-01.jpg",
+    "carrosseis/CAR-057/CAR-057-02.jpg",
+    "carrosseis/CAR-057/CAR-057-03.jpg",
+    "carrosseis/CAR-057/CAR-057-04.jpg",
+    "carrosseis/CAR-057/CAR-057-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-057/CAR-057-01.jpg": "5187eb09cd4a0337bcefee836118f9efb0aeab4716b76828c9b68b50493d7594",
+    "carrosseis/CAR-057/CAR-057-02.jpg": "de5f84c07cfa6491ae95523ab9bc86e3156dbafc383ce210c44de2a517972dd3",
+    "carrosseis/CAR-057/CAR-057-03.jpg": "19e5061066fe176b26aad0089cfae2bcc0c4924a45b821a81dd9ed4efe8f6d95",
+    "carrosseis/CAR-057/CAR-057-04.jpg": "7ed0b7eb5bc3bf5ac9e976925d0a85a9e54de42caacaacd343df036a633a3e66",
+    "carrosseis/CAR-057/CAR-057-05.jpg": "a88f6e2c83a1aa97a701cb05096e83764e9887c956dfed25705297a95418f239"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-17T09:23:22+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-17T09:19:28+00:00",
+   "produzido_em": "2026-10-17T09:23:22+00:00"
   }
  ]
 }

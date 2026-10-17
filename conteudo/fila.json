@@ -1869,5 +1869,35 @@
   "instagram_media_id": null,
   "criado_em": "2026-10-16T09:45:24+00:00",
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-067",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-25-02",
+   "PRO-25-16",
+   "PRO-25-18"
+  ],
+  "referencia_exibida": "Provérbios 25",
+  "texto_biblico": "A glória de Deus é encobrir as coisas; mas a glória dos reis é esquadrinhá-las.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 25",
+  "gancho": "Três versículos de Provérbios, capítulo vinte e cinco. Sem comentário.",
+  "reflexao": "Se achaste mel, come somente o que te basta, para que porventura não te fartes dele, e o venhas a vomitar.",
+  "aplicacao": "Malho, e espada, e flecha aguda é o homem que levanta falso testemunho contra o seu próximo.",
+  "cta": "Está tudo em Provérbios vinte e cinco. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-067.mp4",
+  "duracao_s": 36.07,
+  "sha256": "5d0f97d514790e0d488d8359561bc54d5e68613b791b0be2cecf99da545977b9",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-10-17T09:23:22+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-10-17T09:19:28+00:00",
+  "renderizador": "hyperframes"
  }
 ]
