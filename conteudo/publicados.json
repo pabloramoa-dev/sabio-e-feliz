@@ -1977,5 +1977,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-047",
+  "referencia": "Provérbios 4",
+  "titulo": "Três de Provérbios 4",
+  "formato": "D",
+  "arquivo": "reels/EP-047.mp4",
+  "sha256": "6ef93f613e4a59f6e67ee261d30760bc8c95f7ae23bcca3f4de602f4d5fc4cb1",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-047.mp4",
+  "instagram_media_id": "17888569152479122",
+  "publicado_em": "2026-10-17T15:01:04+00:00",
+  "commit": "fb29ad3564ba44ad35357af1bc0848da86bb2a18",
+  "execucao": "39043042799",
+  "tecnico": {
+   "duracao_s": 33.2,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 25.24,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
