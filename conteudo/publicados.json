@@ -2033,5 +2033,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-048",
+  "referencia": "Provérbios 21",
+  "titulo": "Três de Provérbios 21",
+  "formato": "D",
+  "arquivo": "reels/EP-048.mp4",
+  "sha256": "cf0370bf0cdc636217ff9aafb4c512584acf8e40514670e72a259bb083551dfd",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-048.mp4",
+  "instagram_media_id": "18115390118039679",
+  "publicado_em": "2026-10-18T15:25:35+00:00",
+  "commit": "b12b2bb6e14223773298805569f6ed3c5a081b0d",
+  "execucao": "39140282223",
+  "tecnico": {
+   "duracao_s": 33.6,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 25.57,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
