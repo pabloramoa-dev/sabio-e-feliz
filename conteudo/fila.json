@@ -1899,5 +1899,35 @@
   "instagram_media_id": null,
   "criado_em": "2026-10-17T09:19:28+00:00",
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-068",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-30-16",
+   "PRO-30-19",
+   "PRO-30-32"
+  ],
+  "referencia_exibida": "Provérbios 30",
+  "texto_biblico": "o Seol, a madre estéril, a terra que não se farta d'água, e o fogo que nunca diz: Basta.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 30",
+  "gancho": "Três versículos de Provérbios, capítulo trinta. Sem comentário.",
+  "reflexao": "o caminho da águia no ar, o caminho da cobra na penha, o caminho do navio no meio do mar, e o caminho do homem com uma virgem.",
+  "aplicacao": "Se procedeste loucamente em te elevares, ou se maquinaste o mal, põe a mão sobre a boca.",
+  "cta": "Está tudo em Provérbios trinta. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-068.mp4",
+  "duracao_s": 35.43,
+  "sha256": "a61b52984009d0d80b863749eeffc299f1bcc26a022d538c3d8043ee5af3c045",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-10-18T09:37:56+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-10-18T09:33:11+00:00",
+  "renderizador": "hyperframes"
  }
 ]

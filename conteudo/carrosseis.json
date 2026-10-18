@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 57,
+ "total": 58,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -3108,6 +3108,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-10-17T09:19:28+00:00",
    "produzido_em": "2026-10-17T09:23:22+00:00"
+  },
+  {
+   "id": "CAR-058",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-01-19",
+    "PRO-01-23",
+    "PRO-01-27"
+   ],
+   "referencia_exibida": "Provérbios 1",
+   "capitulo": 1,
+   "texto_biblico": "Tais são as veredas de todo aquele que se entrega à cobiça; ela tira a vida dos que a possuem.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 1:19",
+     "texto": "Tais são as veredas de todo aquele que se entrega à cobiça; ela tira a vida dos que a possuem."
+    },
+    {
+     "referencia": "Provérbios 1:23",
+     "texto": "Convertei-vos pela minha repreensão; eis que derramarei sobre vós o meu; espírito e vos farei saber as minhas palavras."
+    },
+    {
+     "referencia": "Provérbios 1:27",
+     "texto": "quando o terror vos sobrevier como tempestade, e a vossa calamidade passar como redemoinho, e quando vos sobrevierem aperto e angústia."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 1",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 1 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-058/CAR-058-01.jpg",
+    "carrosseis/CAR-058/CAR-058-02.jpg",
+    "carrosseis/CAR-058/CAR-058-03.jpg",
+    "carrosseis/CAR-058/CAR-058-04.jpg",
+    "carrosseis/CAR-058/CAR-058-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-058/CAR-058-01.jpg": "1a3bf66a8bdc6412e8d72a6fecec72452e3a162de37e16e565622b247b535e79",
+    "carrosseis/CAR-058/CAR-058-02.jpg": "2e783d45989a8d4818cf03979f42e6fe336bda81d107edf4c19246c5d3e7e15f",
+    "carrosseis/CAR-058/CAR-058-03.jpg": "41df50dc61a139c6c625ec1689f37e0e54770fa367c22d9216e69fa0e9a37440",
+    "carrosseis/CAR-058/CAR-058-04.jpg": "03922fa030c1a842652cf92cca7f9224512bcb98edd3154825f8da479a269942",
+    "carrosseis/CAR-058/CAR-058-05.jpg": "b652392cf60c64df1658c2c73b2801ced621934080e9a9380bf0918c979b7732"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-18T09:37:56+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-18T09:33:11+00:00",
+   "produzido_em": "2026-10-18T09:37:56+00:00"
   }
  ]
 }
