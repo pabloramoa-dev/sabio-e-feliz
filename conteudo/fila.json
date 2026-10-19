@@ -1929,5 +1929,35 @@
   "instagram_media_id": null,
   "criado_em": "2026-10-18T09:33:11+00:00",
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-069",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-24-07",
+   "PRO-24-09",
+   "PRO-24-12"
+  ],
+  "referencia_exibida": "Provérbios 24",
+  "texto_biblico": "A sabedoria é alta demais para o insensato; ele não abre a sua boca na porta.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 24",
+  "gancho": "Três versículos de Provérbios, capítulo vinte e quatro. Sem comentário.",
+  "reflexao": "O desígnio do insensato é pecado; e abominável aos homens é o escarnecedor.",
+  "aplicacao": "Se disseres: Eis que não o sabemos; porventura aquele que pesa os corações não o percebe? e aquele que guarda a tua vida não o sabe? e não retribuirá a cada um conforme a sua obra?",
+  "cta": "Está tudo em Provérbios vinte e quatro. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-069.mp4",
+  "duracao_s": 39.4,
+  "sha256": "1aa4a0363c9bc102e548d4bbb11971a02dd264fe5cc76d93ea151f4293c9121c",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-10-19T10:49:27+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-10-19T10:43:58+00:00",
+  "renderizador": "hyperframes"
  }
 ]

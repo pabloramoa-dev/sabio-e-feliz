@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 58,
+ "total": 59,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -3162,6 +3162,60 @@
    "instagram_media_id": "17906876688578104",
    "criado_em": "2026-10-18T09:33:11+00:00",
    "produzido_em": "2026-10-18T09:37:56+00:00"
+  },
+  {
+   "id": "CAR-059",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-04-05",
+    "PRO-04-09",
+    "PRO-04-12"
+   ],
+   "referencia_exibida": "Provérbios 4",
+   "capitulo": 4,
+   "texto_biblico": "Adquire a sabedoria, adquire o entendimento; não te esqueças nem te desvies das palavras da minha boca.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 4:5",
+     "texto": "Adquire a sabedoria, adquire o entendimento; não te esqueças nem te desvies das palavras da minha boca."
+    },
+    {
+     "referencia": "Provérbios 4:9",
+     "texto": "Ela dará à tua cabeça uma grinalda de graça; e uma coroa de glória te entregará."
+    },
+    {
+     "referencia": "Provérbios 4:12",
+     "texto": "Quando andares, não se embaraçarão os teus passos; e se correres, não tropeçarás."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 4",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 4 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-059/CAR-059-01.jpg",
+    "carrosseis/CAR-059/CAR-059-02.jpg",
+    "carrosseis/CAR-059/CAR-059-03.jpg",
+    "carrosseis/CAR-059/CAR-059-04.jpg",
+    "carrosseis/CAR-059/CAR-059-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-059/CAR-059-01.jpg": "b6b33ec27657313ace5f18a2987f416b3dfde8429e78fbef7712ca2b02884a6d",
+    "carrosseis/CAR-059/CAR-059-02.jpg": "13f86bd2bc9a43cbce4a8ec80951a04991f202099309e23bebe2aa6faa2458bf",
+    "carrosseis/CAR-059/CAR-059-03.jpg": "d312cc626bcc7a6cb31bad8b502fd859852ba5c16819e4f401f4f77e78f30cbe",
+    "carrosseis/CAR-059/CAR-059-04.jpg": "25e18fafc6fd318dd6ceac60951ad2376932b4261e382270a887e90f99fbfccb",
+    "carrosseis/CAR-059/CAR-059-05.jpg": "e86508b5f2623c522b0c1b9ff63b30698b623ab99aea5d5ba54aaa64896e2923"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-19T10:49:27+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-19T10:43:58+00:00",
+   "produzido_em": "2026-10-19T10:49:27+00:00"
   }
  ]
 }
