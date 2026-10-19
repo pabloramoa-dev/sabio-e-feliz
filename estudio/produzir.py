@@ -30,6 +30,10 @@ def produzir(item: dict, mudo: bool = False, voz_escolhida: str = voz.VOZ_PADRAO
     destino = config.REELS / f"{item['id']}.mp4"
     destino.parent.mkdir(parents=True, exist_ok=True)
     render.renderizar(item, wav, dados_voz, destino)
+    # O sabio e a voz Kokoro originais seguem no Reel; quiz opcional só no final.
+    if item.get("interatividade"):
+        from tools.native_video_finisher import apply_from_metadata
+        print("acabamento nativo:", apply_from_metadata(destino, item, config.RAIZ))
 
     tecnico = validar_video.validar(destino)
     resultado = {
