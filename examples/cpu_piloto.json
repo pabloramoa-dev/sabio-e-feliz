@@ -1,0 +1,27 @@
+{
+  "name": "SABIO E FELIZ",
+  "style": "sabio",
+  "footer": "Compartilhe sua reflexao com respeito.",
+  "scenes": [
+    {
+      "title": "Uma escolha de sabedoria",
+      "text": "As palavras podem melhorar ou dificultar uma conversa.",
+      "seconds": 4
+    },
+    {
+      "title": "O que voce faria?",
+      "text": "Quando uma conversa esquenta, qual atitude costuma ajudar mais?",
+      "seconds": 4
+    },
+    {
+      "title": "Duas respostas",
+      "text": "A: Ouvir antes de responder. B: Interromper e levantar a voz.",
+      "seconds": 4
+    },
+    {
+      "title": "Reflexao de hoje",
+      "text": "A escuta e uma resposta calma podem abrir espaco para o entendimento.",
+      "seconds": 4
+    }
+  ]
+}
