@@ -1,0 +1,37 @@
+name: Demo original Sabio MP4 - sem publicar
+on:
+  push:
+    branches: [demo/renders-originais-20261019]
+    paths: ['.github/workflows/demo-original-20261019.yml']
+permissions:
+  contents: read
+jobs:
+  entregar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: |
+            reels/EP-050.mp4
+          sparse-checkout-cone-mode: false
+      - name: Conferir MP4 original completo
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          ffprobe -v error -show_entries format=duration -show_entries stream=codec_type,codec_name,width,height -of json reels/EP-050.mp4 > sabio-validacao.json
+          python - <<'PY'
+          import json
+          d=json.load(open('sabio-validacao.json'))
+          kinds={s['codec_type'] for s in d['streams']}
+          assert 'audio' in kinds and 'video' in kinds
+          print('MP4 original com personagem e voz, confirmado')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sabio-original-com-voz-kokoro
+          path: |
+            reels/EP-050.mp4
+            sabio-validacao.json
+          retention-days: 2
