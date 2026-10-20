@@ -35,6 +35,8 @@ def produzir(item: dict, mudo: bool = False, voz_escolhida: str = voz.VOZ_PADRAO
         from tools.native_video_finisher import apply_from_metadata
         print("acabamento nativo:", apply_from_metadata(destino, item, config.RAIZ))
 
+    from tools.channel_ops import record_render
+    render_receipt = record_render(destino, item, config.RAIZ)
     tecnico = validar_video.validar(destino)
     resultado = {
         "id": item["id"],
@@ -50,6 +52,7 @@ def produzir(item: dict, mudo: bool = False, voz_escolhida: str = voz.VOZ_PADRAO
     for i in lista:
         if i["id"] == item["id"]:
             mudou = i.get("sha256") != resultado["sha256"]
+            i["render_receipt"] = render_receipt
             i["arquivo"] = resultado["arquivo"]
             i["sha256"] = resultado["sha256"]
             i["duracao_s"] = tecnico["duracao_s"]

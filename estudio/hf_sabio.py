@@ -213,6 +213,11 @@ def compor(item, dados, pasta: Path):
     refs = [_versiculo(r) for r in item.get('referencias', [])]
     ref_txt = item['referencia_exibida']
 
+    from estudio.visual_images import preparar
+    visual_ep = {'titulo': item['titulo'], 'batidas': [
+        {'fala': f['texto']} for f in frases]}
+    visual_segs = [{'ini': f['inicio'], 'fim': f['fim']} for f in frases]
+    visual_map, visual_report = preparar(visual_ep, visual_segs, pasta/'assets', pasta)
     partes, anim, sons = [], [], []
     A = anim.append
 
@@ -299,6 +304,18 @@ def compor(item, dados, pasta: Path):
                 corpo = (f'<div class="lado">{CORACAO}<div class="txt" style="font-size:{tam}px">{_linhas_html(ls, f"v{i}_")}</div></div>'
                          f'<div class="chips">{chips}</div>')
             tipo = papel
+        # Segment groups may contain multiple TTS phrases. Select a matching
+        # illustration by spoken time, never by unrelated segment index.
+        visual_index = next((j for j, f in enumerate(frases)
+                             if float(f['inicio']) <= float(s['inicio']) < float(f['fim'])), None)
+        image = visual_map.get(visual_index)
+        image_mode = bool(image and papel in ('reflexao', 'aplicacao'))
+        if image_mode:
+            if leitura:
+                rot = topo
+            corpo = (f'<div class="story-art" style="height:270px;display:flex;justify-content:center"><img style="max-width:700px;height:100%;object-fit:contain" src="assets/{e(image)}" '
+                     'alt="Ilustração da reflexão"></div>')
+            tipo += ' story-frame-image'
         partes.append(
             f'<section id="p{i}" class="clip painel" data-start="{a:.3f}" data-duration="{d:.3f}" data-track-index="2">'
             f'<div id="c{i}" class="card {tipo}"><div class="fita"></div>'
@@ -333,6 +350,9 @@ def compor(item, dados, pasta: Path):
         A(f'tl.fromTo("#c{i} .rotulo",{{x:-40,opacity:0}},{{x:0,opacity:1,duration:.4,ease:"power2.out"}},{a + .15:.3f});')
         A(f'tl.fromTo("#bar{i}",{{scaleX:0}},{{scaleX:1,duration:{max(.3, float(s["fim"]) - a):.3f},ease:"none"}},{a:.3f});')
 
+        # Image panels keep the spoken words only in the lower caption.
+        if image_mode:
+            tempos = []
         # palavras acendendo no tempo da fala
         for k, (w0, w1) in enumerate(tempos):
             if k >= len(ws):
@@ -344,7 +364,9 @@ def compor(item, dados, pasta: Path):
                 A(f'tl.fromTo("#v{i}_{k}",{{opacity:.28}},{{opacity:1,duration:.18}},{t0:.3f});')
 
         # efeitos próprios de cada cartão
-        if leitura:
+        if image_mode:
+            A(f'tl.fromTo("#c{i} .story-art",{{scale:.96}},{{scale:1,duration:{max(.1,d-.7)},ease:"none"}},{a+.5:.3f});')
+        elif leitura:
             ts = a + .5
             A(f'tl.fromTo("#selo{i}",{{scale:2.6,rotation:-30,opacity:0}},{{scale:1,rotation:-12,opacity:1,duration:.32,ease:"back.out(2.2)"}},{ts:.3f});')
             A(f'tl.fromTo("#cam",{{x:0}},{{x:6,duration:.05,yoyo:true,repeat:3}},{ts + .3:.3f});')

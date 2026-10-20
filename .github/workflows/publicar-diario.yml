@@ -40,10 +40,11 @@ jobs:
         run: python -m src.main
 
       - name: Registrar no histórico
-        if: success()
+        if: always()
         run: |
           git config user.name "sabio-bot"
           git config user.email "actions@github.com"
+          if [ -f conteudo/send_receipts.json ]; then git add conteudo/send_receipts.json; fi
           git add conteudo/publicados.json conteudo/fila.json
           git diff --cached --quiet || git commit -m "publicado: provérbio do dia [skip ci]"
           git push

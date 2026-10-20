@@ -27,6 +27,11 @@ def executar() -> dict:
 
     item = fila.proximo_episodio()
     video = config.RAIZ / item["arquivo"]
+    from tools.channel_ops import validate_render
+    if item.get("render_receipt"):
+        from tools.channel_ops import atomic_json
+        atomic_json(video.with_suffix(".production.json"), item["render_receipt"])
+    validate_render(video, item, config.RAIZ)
     tecnico = validar_video.validar(video)
     texto_legenda = legenda.montar(item)
 
@@ -62,21 +67,27 @@ def executar() -> dict:
         )
 
     url_video = url_publica(cfg, item["arquivo"])
-    container = pub.criar_container(url_video, texto_legenda)
-    resultado["container_id"] = container
+    from tools.channel_ops import resume_send, pending_send, confirm_send
+    media_id = resume_send(config.RAIZ, item['id'], lambda cid: pub.reconciliar(cid, texto_legenda))
+    if not media_id:
+        container = pub.criar_container(url_video, texto_legenda)
+        resultado["container_id"] = container
 
-    pub.aguardar_pronto(container)
+        pub.aguardar_pronto(container)
 
-    try:
-        media_id = pub.publicar(container)
-    except Exception as erro:  # timeout ou erro transitório após media_publish
-        media_id = pub.reconciliar(container, texto_legenda)
-        if not media_id:
-            raise RuntimeError(
-                f"Publicação em estado indefinido ({erro}). Nenhuma mídia recente com a legenda esperada foi encontrada. "
-                "Conferir no Instagram ANTES de rodar de novo."
-            ) from erro
-        resultado["reconciliado_apos_erro"] = True
+        pending_send(config.RAIZ, item['id'], container)
+        try:
+            media_id = pub.publicar(container)
+        except Exception as erro:  # timeout ou erro transitório após media_publish
+            media_id = pub.reconciliar(container, texto_legenda)
+            if not media_id:
+                raise RuntimeError(
+                    f"Publicação em estado indefinido ({erro}). Nenhuma mídia recente com a legenda esperada foi encontrada. "
+                    "Conferir no Instagram ANTES de rodar de novo."
+                ) from erro
+            resultado["reconciliado_apos_erro"] = True
+
+        confirm_send(config.RAIZ, item['id'], media_id)
 
     registro = ledger.registrar(item, media_id, url_video, tecnico)
     resultado.update({"publicado": True, "instagram_media_id": media_id, "registro": registro["publicado_em"]})

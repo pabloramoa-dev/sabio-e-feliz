@@ -1,0 +1,15 @@
+{
+  "auto_visual_images": true,
+  "hide_inner_caption_when_image": true,
+  "bottom_caption_only": true,
+  "min_images": 4,
+  "max_images": 8,
+  "target_images": 6,
+  "image_model": "gpt-image-2",
+  "image_quality": "medium",
+  "image_size": "1536x1024",
+  "image_background": "transparent",
+  "image_timeout_seconds": 180,
+  "image_retries": 1,
+  "fallback": "story_frame_text"
+}

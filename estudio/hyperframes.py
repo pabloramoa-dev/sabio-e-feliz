@@ -91,6 +91,7 @@ def renderizar_v1(item, wav: Path, dados_voz: dict, saida: Path) -> Path:
     H.mixar(wav,segs,dur,assets/'mix.wav')
     H.compor(ep,segs,trabalho)
     H.sh(['node',cli,'lint',trabalho],env=env)
+    H.sh(['node',video/'validate-production-layout.mjs',trabalho],env=env)
     temporario = saida.with_name(saida.stem+'.rendering.mp4')
     try:
         H.sh(['node',cli,'render',trabalho,'--output',temporario,'--workers',
@@ -160,6 +161,7 @@ def renderizar(item, wav: Path, dados_voz: dict, saida: Path) -> Path:
     dur, sons = S.compor(item, dados_voz, trabalho)
     S.mixar(wav, dur, sons, assets/'mix.wav')
     H.sh(['node',cli,'lint',trabalho],env=env)
+    H.sh(['node',video/'validate-production-layout.mjs',trabalho],env=env)
     temporario = saida.with_name(saida.stem+'.rendering.mp4')
     try:
         H.sh(['node',cli,'render',trabalho,'--output',temporario,'--workers',
