@@ -1959,5 +1959,35 @@
   "instagram_media_id": null,
   "criado_em": "2026-10-19T10:43:58+00:00",
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-070",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-07-02",
+   "PRO-07-21",
+   "PRO-07-24"
+  ],
+  "referencia_exibida": "Provérbios 7",
+  "texto_biblico": "Observa os meus mandamentos e vive; guarda a minha lei, como a menina dos teus olhos.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 7",
+  "gancho": "Três versículos de Provérbios, capítulo sete. Sem comentário.",
+  "reflexao": "Ela o faz ceder com a multidão das suas palavras sedutoras, com as lisonjas dos seus lábios o arrasta.",
+  "aplicacao": "Agora, pois, filhos, ouvi-me, e estai atentos às palavras da minha boca.",
+  "cta": "Está tudo em Provérbios sete. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-070.mp4",
+  "duracao_s": 33.07,
+  "sha256": "f8eb1f942fd5c96136b8917638e6d6b471d963c042c37794c06cb8e063b7b34f",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-10-20T10:06:07+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-10-20T10:01:14+00:00",
+  "renderizador": "hyperframes"
  }
 ]

@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 59,
+ "total": 60,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -3216,6 +3216,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-10-19T10:43:58+00:00",
    "produzido_em": "2026-10-19T10:49:27+00:00"
+  },
+  {
+   "id": "CAR-060",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-24-05",
+    "PRO-24-14",
+    "PRO-24-29"
+   ],
+   "referencia_exibida": "Provérbios 24",
+   "capitulo": 24,
+   "texto_biblico": "O sábio é mais poderoso do que o forte; e o inteligente do que o que possui a força.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 24:5",
+     "texto": "O sábio é mais poderoso do que o forte; e o inteligente do que o que possui a força."
+    },
+    {
+     "referencia": "Provérbios 24:14",
+     "texto": "Sabe que é assim a sabedoria para a tua alma: se a achares, haverá para ti recompensa, e não será malograda a tua esperança."
+    },
+    {
+     "referencia": "Provérbios 24:29",
+     "texto": "Não digas: Como ele me fez a mim, assim lhe farei a ele; pagarei a cada um segundo a sua obra."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 24",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 24 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-060/CAR-060-01.jpg",
+    "carrosseis/CAR-060/CAR-060-02.jpg",
+    "carrosseis/CAR-060/CAR-060-03.jpg",
+    "carrosseis/CAR-060/CAR-060-04.jpg",
+    "carrosseis/CAR-060/CAR-060-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-060/CAR-060-01.jpg": "eab2a6754efd02aa7f61ad029b05c12a331f38f794c1fa817898d8da939005b9",
+    "carrosseis/CAR-060/CAR-060-02.jpg": "087ee26458babb3854e8e63bff707649324a2265c7ac7f9959c6ba9cadb64a09",
+    "carrosseis/CAR-060/CAR-060-03.jpg": "13dbb951a6b1130aa9f907f509409b3ecbe3491dd53b6b266d69875388084540",
+    "carrosseis/CAR-060/CAR-060-04.jpg": "aeee3adb286067a0ac28d300bdcf103dbe5e051fdc0b4300680d886fccd8229b",
+    "carrosseis/CAR-060/CAR-060-05.jpg": "7563c7c3bbb828d65ebb910de4ecd3dede019ff1186c004b1e77d13d6d90752f"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-20T10:06:07+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-20T10:01:13+00:00",
+   "produzido_em": "2026-10-20T10:06:07+00:00"
   }
  ]
 }
