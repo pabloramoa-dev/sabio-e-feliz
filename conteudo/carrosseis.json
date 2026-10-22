@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 60,
+ "total": 61,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -3270,6 +3270,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-10-20T10:01:13+00:00",
    "produzido_em": "2026-10-20T10:06:07+00:00"
+  },
+  {
+   "id": "CAR-061",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-18-04",
+    "PRO-18-14",
+    "PRO-18-16"
+   ],
+   "referencia_exibida": "Provérbios 18",
+   "capitulo": 18,
+   "texto_biblico": "Aguas profundas são as palavras da boca do homem; e a fonte da sabedoria é um ribeiro que corre.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 18:4",
+     "texto": "Aguas profundas são as palavras da boca do homem; e a fonte da sabedoria é um ribeiro que corre."
+    },
+    {
+     "referencia": "Provérbios 18:14",
+     "texto": "O espírito do homem o sustentará na sua enfermidade; mas ao espírito abatido quem o levantará?"
+    },
+    {
+     "referencia": "Provérbios 18:16",
+     "texto": "O presente do homem alarga-lhe o caminho, e leva-o à presença dos grandes."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 18",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 18 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-061/CAR-061-01.jpg",
+    "carrosseis/CAR-061/CAR-061-02.jpg",
+    "carrosseis/CAR-061/CAR-061-03.jpg",
+    "carrosseis/CAR-061/CAR-061-04.jpg",
+    "carrosseis/CAR-061/CAR-061-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-061/CAR-061-01.jpg": "365a0272df79e5efaaf3142d0250dc177c3b8a199f90dc745f40e6572fdd8bb8",
+    "carrosseis/CAR-061/CAR-061-02.jpg": "ac51b739e849f2f99e0ab5d8caff05b9f57da7263862c01938fae69c3e961ae0",
+    "carrosseis/CAR-061/CAR-061-03.jpg": "66d0660f1a6603dbfd05868af63b098b25b985e979634c5f0fb23a0bcaab41f5",
+    "carrosseis/CAR-061/CAR-061-04.jpg": "3a11ec72573ee7d32035be23a7d90779604688a2e9a45f023545296394f0bf2e",
+    "carrosseis/CAR-061/CAR-061-05.jpg": "4b82b6a6f99194712fcc79947a9d55945641c085fa5a1acac73df96735324fa9"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-22T10:12:16+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-22T10:08:56+00:00",
+   "produzido_em": "2026-10-22T10:12:16+00:00"
   }
  ]
 }
