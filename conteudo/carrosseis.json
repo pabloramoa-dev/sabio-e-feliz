@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 61,
+ "total": 62,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -3324,6 +3324,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-10-22T10:08:56+00:00",
    "produzido_em": "2026-10-22T10:12:16+00:00"
+  },
+  {
+   "id": "CAR-062",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-28-03",
+    "PRO-28-21",
+    "PRO-28-28"
+   ],
+   "referencia_exibida": "Provérbios 28",
+   "capitulo": 28,
+   "texto_biblico": "O homem pobre que oprime os pobres, é como chuva impetuosa, que não deixa trigo nenhum.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 28:3",
+     "texto": "O homem pobre que oprime os pobres, é como chuva impetuosa, que não deixa trigo nenhum."
+    },
+    {
+     "referencia": "Provérbios 28:21",
+     "texto": "Fazer acepção de pessoas não é bom; mas até por um bocado de pão prevaricará o homem."
+    },
+    {
+     "referencia": "Provérbios 28:28",
+     "texto": "Quando os ímpios sobem, escondem-se os homens; mas quando eles perecem, multiplicam-se os justos."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 28",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 28 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-062/CAR-062-01.jpg",
+    "carrosseis/CAR-062/CAR-062-02.jpg",
+    "carrosseis/CAR-062/CAR-062-03.jpg",
+    "carrosseis/CAR-062/CAR-062-04.jpg",
+    "carrosseis/CAR-062/CAR-062-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-062/CAR-062-01.jpg": "7132631f0e51e86c9eae3e6e4da464313b437e79386180a05a41c0706f304c96",
+    "carrosseis/CAR-062/CAR-062-02.jpg": "8ddfc8cb48406d7110d3153cc6870b864ac71c49a0b1c4e609affcb566f1af4b",
+    "carrosseis/CAR-062/CAR-062-03.jpg": "a61018ac326cf612cac26c43a2fa95a8cc91ed1695b6286f51bbc8d01405f17b",
+    "carrosseis/CAR-062/CAR-062-04.jpg": "a6115a500ef74c58c7323806bda361d67fc33efd7a6afe0ea79f73784ce83fa6",
+    "carrosseis/CAR-062/CAR-062-05.jpg": "a88f6e2c83a1aa97a701cb05096e83764e9887c956dfed25705297a95418f239"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-23T10:06:37+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-23T10:02:12+00:00",
+   "produzido_em": "2026-10-23T10:06:37+00:00"
   }
  ]
 }

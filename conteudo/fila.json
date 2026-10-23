@@ -2063,5 +2063,42 @@
    "created_at": "2026-10-22T10:12:15.153507+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-073",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-13-01",
+   "PRO-13-06",
+   "PRO-13-17"
+  ],
+  "referencia_exibida": "Provérbios 13",
+  "texto_biblico": "O filho sábio ouve a instrução do pai; mas o escarnecedor não escuta a repreensão.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 13",
+  "gancho": "Três versículos de Provérbios, capítulo treze. Sem comentário.",
+  "reflexao": "A justiça guarda ao que é reto no seu caminho; mas a perversidade transtorna o pecador.",
+  "aplicacao": "O mensageiro perverso faz cair no mal; mas o embaixador fiel traz saúde.",
+  "cta": "Está tudo em Provérbios treze. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-073.mp4",
+  "duracao_s": 32.83,
+  "sha256": "8a80daca0cb126aca37b706d994c7f2ddaaeb2adcc3b63f3c66fd95c67c038bc",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-10-23T10:06:37+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-10-23T10:02:12+00:00",
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "8c533657c51f3325b2e8a98e0046ff7af14b76fadb3ebcf6c87cea44cd00625b",
+   "editorial_sha256": "a88184a211c211864c343037b395bd3dcce78704a7d876ea95efbaa8174b35d3",
+   "video_sha256": "8a80daca0cb126aca37b706d994c7f2ddaaeb2adcc3b63f3c66fd95c67c038bc",
+   "created_at": "2026-10-23T10:06:36.007164+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]
