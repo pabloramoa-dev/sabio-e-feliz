@@ -2258,5 +2258,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-053",
+  "referencia": "Provérbios 22",
+  "titulo": "Três de Provérbios 22",
+  "formato": "D",
+  "arquivo": "reels/EP-053.mp4",
+  "sha256": "3f53168a0edd03641620c9a7e9610d0c1d1973d37c454a0b788153688c165a00",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-053.mp4",
+  "instagram_media_id": "18645000967030336",
+  "publicado_em": "2026-10-23T16:39:55+00:00",
+  "commit": "e679ba134ff0376b2b44b5048119d888653c2f0c",
+  "execucao": "39987148495",
+  "tecnico": {
+   "duracao_s": 34.8,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 26.12,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
