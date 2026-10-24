@@ -2100,5 +2100,42 @@
    "created_at": "2026-10-23T10:06:36.007164+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-074",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-17-08",
+   "PRO-17-13",
+   "PRO-17-23"
+  ],
+  "referencia_exibida": "Provérbios 17",
+  "texto_biblico": "Pedra preciosa é a peita aos olhos de quem a oferece; para onde quer que ele se volte, serve-lhe de proveito.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 17",
+  "gancho": "Três versículos de Provérbios, capítulo dezessete. Sem comentário.",
+  "reflexao": "Quanto àquele que torna mal por bem, não se apartará o mal da sua casa.",
+  "aplicacao": "O ímpio recebe do regaço a peita, para perverter as veredas da justiça.",
+  "cta": "Está tudo em Provérbios dezessete. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-074.mp4",
+  "duracao_s": 33.23,
+  "sha256": "7e201fa0fa165db0371c75108a0cc4beb99ffa2b17e799e86a22933d5180f762",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-10-24T09:36:43+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-10-24T09:31:57+00:00",
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "8c533657c51f3325b2e8a98e0046ff7af14b76fadb3ebcf6c87cea44cd00625b",
+   "editorial_sha256": "1e367399e67b5fb76a575dcabd563106ef4fbdb253aa199cc06a615d7f847c2d",
+   "video_sha256": "7e201fa0fa165db0371c75108a0cc4beb99ffa2b17e799e86a22933d5180f762",
+   "created_at": "2026-10-24T09:36:41.125358+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]
