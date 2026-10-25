@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 63,
+ "total": 64,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -3432,6 +3432,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-10-24T09:31:57+00:00",
    "produzido_em": "2026-10-24T09:36:42+00:00"
+  },
+  {
+   "id": "CAR-064",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-07-12",
+    "PRO-07-23",
+    "PRO-07-24"
+   ],
+   "referencia_exibida": "Provérbios 7",
+   "capitulo": 7,
+   "texto_biblico": "ora está ela pelas ruas, ora pelas praças, espreitando por todos os cantos.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 7:12",
+     "texto": "ora está ela pelas ruas, ora pelas praças, espreitando por todos os cantos."
+    },
+    {
+     "referencia": "Provérbios 7:23",
+     "texto": "até que uma flecha lhe atravesse o fígado, como a ave que se apressa para o laço, sem saber que está armado contra a sua vida."
+    },
+    {
+     "referencia": "Provérbios 7:24",
+     "texto": "Agora, pois, filhos, ouvi-me, e estai atentos às palavras da minha boca."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 7",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 7 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-064/CAR-064-01.jpg",
+    "carrosseis/CAR-064/CAR-064-02.jpg",
+    "carrosseis/CAR-064/CAR-064-03.jpg",
+    "carrosseis/CAR-064/CAR-064-04.jpg",
+    "carrosseis/CAR-064/CAR-064-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-064/CAR-064-01.jpg": "8ef5ee6e11312acaec7d6c161bae70553db66b963ca679146df109d654b7e5c4",
+    "carrosseis/CAR-064/CAR-064-02.jpg": "e9094b3517c5b424cccf352135a9e3fea205219c79e50962370439e12b6a3b9d",
+    "carrosseis/CAR-064/CAR-064-03.jpg": "4641ccf59fc954c9f3f9d6576846d3513b0b7f5246afa1dd64707d7be31c052d",
+    "carrosseis/CAR-064/CAR-064-04.jpg": "9cad08cc08fc3e727d232fa1b923b29a36268633c19cf614857f06acf09393f3",
+    "carrosseis/CAR-064/CAR-064-05.jpg": "b317178347b133e27f8aba32d53190cb2338b3fa9d3c977af8d0d8e450cc683d"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-25T09:52:32+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-25T09:48:48+00:00",
+   "produzido_em": "2026-10-25T09:52:32+00:00"
   }
  ]
 }
