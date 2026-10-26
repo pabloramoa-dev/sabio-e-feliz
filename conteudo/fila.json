@@ -2174,5 +2174,42 @@
    "created_at": "2026-10-25T09:52:30.970922+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-076",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-13-07",
+   "PRO-13-11",
+   "PRO-13-16"
+  ],
+  "referencia_exibida": "Provérbios 13",
+  "texto_biblico": "Há quem se faça rico, não tendo coisa alguma; e quem se faça pobre, tendo grande riqueza.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 13",
+  "gancho": "Três versículos de Provérbios, capítulo treze. Sem comentário.",
+  "reflexao": "A riqueza adquirida às pressas diminuira; mas quem a ajunta pouco a pouco terá aumento.",
+  "aplicacao": "Em tudo o homem prudente procede com conhecimento; mas o tolo espraia a sua insensatez.",
+  "cta": "Está tudo em Provérbios treze. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-076.mp4",
+  "duracao_s": 34.23,
+  "sha256": "e1977070f75d10a7d1c3094edc5b86df7d662a810ef9bbf6faaab4d722af10e3",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-10-26T11:26:29+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-10-26T11:21:36+00:00",
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "8c533657c51f3325b2e8a98e0046ff7af14b76fadb3ebcf6c87cea44cd00625b",
+   "editorial_sha256": "77bb2bccea4cbcb1c345c259ded97f8ac8995a2996aa056a4dc76ac479dcca92",
+   "video_sha256": "e1977070f75d10a7d1c3094edc5b86df7d662a810ef9bbf6faaab4d722af10e3",
+   "created_at": "2026-10-26T11:26:28.799533+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]
