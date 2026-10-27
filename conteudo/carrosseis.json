@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 64,
+ "total": 65,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -3486,6 +3486,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-10-25T09:48:48+00:00",
    "produzido_em": "2026-10-25T09:52:32+00:00"
+  },
+  {
+   "id": "CAR-065",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-09-02",
+    "PRO-09-08",
+    "PRO-09-10"
+   ],
+   "referencia_exibida": "Provérbios 9",
+   "capitulo": 9,
+   "texto_biblico": "já imolou as suas vítimas, misturou o seu vinho, e preparou a sua mesa.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 9:2",
+     "texto": "já imolou as suas vítimas, misturou o seu vinho, e preparou a sua mesa."
+    },
+    {
+     "referencia": "Provérbios 9:8",
+     "texto": "Não repreendas ao escarnecedor, para que não te odeie; repreende ao sábio, e amar-te-á."
+    },
+    {
+     "referencia": "Provérbios 9:10",
+     "texto": "O temor do Senhor é o princípio sabedoria; e o conhecimento do Santo é o entendimento."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 9",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 9 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-065/CAR-065-01.jpg",
+    "carrosseis/CAR-065/CAR-065-02.jpg",
+    "carrosseis/CAR-065/CAR-065-03.jpg",
+    "carrosseis/CAR-065/CAR-065-04.jpg",
+    "carrosseis/CAR-065/CAR-065-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-065/CAR-065-01.jpg": "89815b5422c1e8b4580dedbaebb97c0759cc2e1bf6b425b379cff2f9335f8a2e",
+    "carrosseis/CAR-065/CAR-065-02.jpg": "0b15a7dcd4172b05b6e3b32dc2b1e42fbbb727f6067fcc4b2c502263df62d620",
+    "carrosseis/CAR-065/CAR-065-03.jpg": "cac5cc69cb200c4010fbee1de9d9ea495f183e32546953acc6346ea34507ebc4",
+    "carrosseis/CAR-065/CAR-065-04.jpg": "e7ae31816c682ded777100f98b68de042c61c8e1ff7b95599c5ef0f5f1e47765",
+    "carrosseis/CAR-065/CAR-065-05.jpg": "dc6dedbdfc972fdfc2bef7a3010bcc0b6ef7c842aafea0eaf5cc5300e41c3f9b"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-27T10:36:38+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-27T10:32:02+00:00",
+   "produzido_em": "2026-10-27T10:36:38+00:00"
   }
  ]
 }
