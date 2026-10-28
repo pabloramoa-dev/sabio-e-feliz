@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 65,
+ "total": 66,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -3540,6 +3540,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-10-27T10:32:02+00:00",
    "produzido_em": "2026-10-27T10:36:38+00:00"
+  },
+  {
+   "id": "CAR-066",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-14-14",
+    "PRO-14-19",
+    "PRO-14-27"
+   ],
+   "referencia_exibida": "Provérbios 14",
+   "capitulo": 14,
+   "texto_biblico": "Dos seus próprios caminhos se fartará o infiel de coração, como também o homem bom se contentará dos seus.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 14:14",
+     "texto": "Dos seus próprios caminhos se fartará o infiel de coração, como também o homem bom se contentará dos seus."
+    },
+    {
+     "referencia": "Provérbios 14:19",
+     "texto": "Os maus inclinam-se perante os bons; e os ímpios diante das portas dos justos."
+    },
+    {
+     "referencia": "Provérbios 14:27",
+     "texto": "O temor do Senhor é uma fonte de vida, para o homem se desviar dos laços da morte."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 14",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 14 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-066/CAR-066-01.jpg",
+    "carrosseis/CAR-066/CAR-066-02.jpg",
+    "carrosseis/CAR-066/CAR-066-03.jpg",
+    "carrosseis/CAR-066/CAR-066-04.jpg",
+    "carrosseis/CAR-066/CAR-066-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-066/CAR-066-01.jpg": "ac4399890716d0551eb4e22077b43e92e27ca9c7d3e372dbc39165f7a528684b",
+    "carrosseis/CAR-066/CAR-066-02.jpg": "d1beb4859f3e660fed6a1b5131da60141b3fa0a92dd31ec1f1c502a9b3712fa4",
+    "carrosseis/CAR-066/CAR-066-03.jpg": "014adc39c7151bd8df53b69013dcd47b4e1429b4264a0b25ac9af0b7db994dcd",
+    "carrosseis/CAR-066/CAR-066-04.jpg": "736bf0940ee3b7d2d60bd60402c9fcf46a4a56c56cfafe2b70a165944212880f",
+    "carrosseis/CAR-066/CAR-066-05.jpg": "1b9053778eb56e47b9f93795c6de322e75448c981928c8415f563b90752bb105"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-28T11:25:02+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-28T11:20:06+00:00",
+   "produzido_em": "2026-10-28T11:25:02+00:00"
   }
  ]
 }

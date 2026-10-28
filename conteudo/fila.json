@@ -2248,5 +2248,42 @@
    "created_at": "2026-10-27T10:36:36.575700+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-078",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-29-01",
+   "PRO-29-18",
+   "PRO-29-19"
+  ],
+  "referencia_exibida": "Provérbios 29",
+  "texto_biblico": "Aquele que, sendo muitas vezes repreendido, endurece a cerviz, será quebrantado de repente sem que haja cura.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 29",
+  "gancho": "Três versículos de Provérbios, capítulo vinte e nove. Sem comentário.",
+  "reflexao": "Onde não há profecia, o povo se corrompe; mas o que guarda a lei esse é bem-aventurado.",
+  "aplicacao": "O servo não se emendará com palavras; porque, ainda que entenda, não atenderá.",
+  "cta": "Está tudo em Provérbios vinte e nove. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-078.mp4",
+  "duracao_s": 35.6,
+  "sha256": "bb2c70a4e41b1038f58f539fb5fb37be5213906605a14d709dd8c93784e51873",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-10-28T11:25:02+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-10-28T11:20:06+00:00",
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "8c533657c51f3325b2e8a98e0046ff7af14b76fadb3ebcf6c87cea44cd00625b",
+   "editorial_sha256": "4f06d87a6b4c2052a93f5a7179c2724432f611a85b1c113c3e62f71ad54851fd",
+   "video_sha256": "bb2c70a4e41b1038f58f539fb5fb37be5213906605a14d709dd8c93784e51873",
+   "created_at": "2026-10-28T11:25:00.361468+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]
