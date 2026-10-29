@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 66,
+ "total": 67,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -3594,6 +3594,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-10-28T11:20:06+00:00",
    "produzido_em": "2026-10-28T11:25:02+00:00"
+  },
+  {
+   "id": "CAR-067",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-10-14",
+    "PRO-10-19",
+    "PRO-10-27"
+   ],
+   "referencia_exibida": "Provérbios 10",
+   "capitulo": 10,
+   "texto_biblico": "Os sábios entesouram o conhecimento; porém a boca do insensato é uma destruição iminente.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 10:14",
+     "texto": "Os sábios entesouram o conhecimento; porém a boca do insensato é uma destruição iminente."
+    },
+    {
+     "referencia": "Provérbios 10:19",
+     "texto": "Na multidão de palavras não falta transgressão; mas o que refreia os seus lábios é prudente."
+    },
+    {
+     "referencia": "Provérbios 10:27",
+     "texto": "O temor do Senhor aumenta os dias; mas os anos os impios serão abreviados."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 10",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 10 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-067/CAR-067-01.jpg",
+    "carrosseis/CAR-067/CAR-067-02.jpg",
+    "carrosseis/CAR-067/CAR-067-03.jpg",
+    "carrosseis/CAR-067/CAR-067-04.jpg",
+    "carrosseis/CAR-067/CAR-067-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-067/CAR-067-01.jpg": "efd5bf49aa20ee454ad0ebd3e8cdbeeb3f209a98aeac62207f504929687afd6f",
+    "carrosseis/CAR-067/CAR-067-02.jpg": "402f6a8366d4bdbfe560d51090dd70ac67edeaa987246d5f91f1be26d0718145",
+    "carrosseis/CAR-067/CAR-067-03.jpg": "c374a1968f96dd9d43bf128a74adde26fce7228791d0353b6ec781f0a5a9a206",
+    "carrosseis/CAR-067/CAR-067-04.jpg": "35c9029dda260e4af749777adc888d1a1cfc232617ae7a320db8832695c04e3e",
+    "carrosseis/CAR-067/CAR-067-05.jpg": "a6bb32ba151842d5ee237a32de73022d3b9b4920b7fd378f2753a03424832b2e"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-29T11:35:08+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-29T11:30:44+00:00",
+   "produzido_em": "2026-10-29T11:35:07+00:00"
   }
  ]
 }
