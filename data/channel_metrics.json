@@ -545,10 +545,66 @@
         "comments": 0,
         "shares_per_1000_reached": 0.0
       }
+    },
+    {
+      "media_id": "18121595791978834",
+      "window": "24h",
+      "age_hours": 25.87,
+      "collected_at": "2026-10-30T19:56:15.969013+00:00",
+      "metrics": {
+        "reach": 139,
+        "shares": 0,
+        "saved": 2,
+        "likes": 7,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18108186131249544",
+      "window": "24h",
+      "age_hours": 43.38,
+      "collected_at": "2026-10-30T19:56:15.969013+00:00",
+      "metrics": {
+        "reach": 2,
+        "shares": 0,
+        "saved": 1,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "17886003375511310",
+      "window": "72h",
+      "age_hours": 74.4,
+      "collected_at": "2026-10-30T19:56:15.969013+00:00",
+      "metrics": {
+        "reach": 18,
+        "shares": 0,
+        "saved": 1,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
+    },
+    {
+      "media_id": "18165670855492180",
+      "window": "72h",
+      "age_hours": 91.77,
+      "collected_at": "2026-10-30T19:56:15.969013+00:00",
+      "metrics": {
+        "reach": 2,
+        "shares": 0,
+        "saved": 0,
+        "likes": 0,
+        "comments": 0,
+        "shares_per_1000_reached": 0.0
+      }
     }
   ],
   "status": "ok",
   "errors": [],
-  "updated_at": "2026-10-29T20:18:54.005841+00:00",
+  "updated_at": "2026-10-30T19:56:15.969013+00:00",
   "account": "sabioefeliz"
 }
