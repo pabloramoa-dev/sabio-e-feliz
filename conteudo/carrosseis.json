@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 67,
+ "total": 68,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -3648,6 +3648,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-10-29T11:30:44+00:00",
    "produzido_em": "2026-10-29T11:35:07+00:00"
+  },
+  {
+   "id": "CAR-068",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-16-01",
+    "PRO-16-16",
+    "PRO-16-28"
+   ],
+   "referencia_exibida": "Provérbios 16",
+   "capitulo": 16,
+   "texto_biblico": "Ao homem pertencem os planos do coração; mas a resposta da língua é do Senhor.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 16:1",
+     "texto": "Ao homem pertencem os planos do coração; mas a resposta da língua é do Senhor."
+    },
+    {
+     "referencia": "Provérbios 16:16",
+     "texto": "Quanto melhor é adquirir a sabedoria do que o ouro! e quanto mais excelente é escolher o entendimento do que a prata!"
+    },
+    {
+     "referencia": "Provérbios 16:28",
+     "texto": "O homem perverso espalha contendas; e o difamador separa amigos íntimos."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 16",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 16 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-068/CAR-068-01.jpg",
+    "carrosseis/CAR-068/CAR-068-02.jpg",
+    "carrosseis/CAR-068/CAR-068-03.jpg",
+    "carrosseis/CAR-068/CAR-068-04.jpg",
+    "carrosseis/CAR-068/CAR-068-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-068/CAR-068-01.jpg": "27cdc63242908409b03c3225cc58b4eb13f90a09d0111342558b41786822cb2c",
+    "carrosseis/CAR-068/CAR-068-02.jpg": "a9139698f8b832a134c78de5dc8ba34403cf512f952f8c7afaa8d51e1f84cad2",
+    "carrosseis/CAR-068/CAR-068-03.jpg": "c269d780531f075e9aed130af8a801ad9a02e4ea3d3b85170ac12b28f4ca5e9d",
+    "carrosseis/CAR-068/CAR-068-04.jpg": "ca44c96403cfcd47c2c2e2c85e9cbca8876fb5eab15d9463a3a826c7a0098da5",
+    "carrosseis/CAR-068/CAR-068-05.jpg": "3be502ae710cc6bab85d0c1163956a530437d56fb63c864de0b510c68259b807"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-30T11:28:19+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-30T11:23:17+00:00",
+   "produzido_em": "2026-10-30T11:28:19+00:00"
   }
  ]
 }

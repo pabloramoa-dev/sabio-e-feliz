@@ -2322,5 +2322,42 @@
    "created_at": "2026-10-29T11:35:06.363586+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-080",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-15-08",
+   "PRO-15-14",
+   "PRO-15-16"
+  ],
+  "referencia_exibida": "Provérbios 15",
+  "texto_biblico": "O sacrifício dos ímpios é abominável ao Senhor; mas a oração dos retos lhe é agradável.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 15",
+  "gancho": "Três versículos de Provérbios, capítulo quinze. Sem comentário.",
+  "reflexao": "O coração do inteligente busca o conhecimento; mas a boca dos tolos se apascenta de estultícia.",
+  "aplicacao": "Melhor é o pouco com o temor do Senhor, do que um grande tesouro, e com ele a inquietação.",
+  "cta": "Está tudo em Provérbios quinze. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-080.mp4",
+  "duracao_s": 34.07,
+  "sha256": "423d04ebec8eae57c084c35f0c96a495c8cf4830acbabeabacbc736c84799927",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-10-30T11:28:19+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-10-30T11:23:17+00:00",
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "8c533657c51f3325b2e8a98e0046ff7af14b76fadb3ebcf6c87cea44cd00625b",
+   "editorial_sha256": "e8250984f9be06a9d73474ba3e32475a122b0b74d94fb88f8aeb8862daf09920",
+   "video_sha256": "423d04ebec8eae57c084c35f0c96a495c8cf4830acbabeabacbc736c84799927",
+   "created_at": "2026-10-30T11:28:17.627263+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]
