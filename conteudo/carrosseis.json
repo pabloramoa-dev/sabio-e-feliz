@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 68,
+ "total": 69,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -3702,6 +3702,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-10-30T11:23:17+00:00",
    "produzido_em": "2026-10-30T11:28:19+00:00"
+  },
+  {
+   "id": "CAR-069",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-21-10",
+    "PRO-21-16",
+    "PRO-21-21"
+   ],
+   "referencia_exibida": "Provérbios 21",
+   "capitulo": 21,
+   "texto_biblico": "A alma do ímpio deseja o mal; o seu próximo não agrada aos seus olhos.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 21:10",
+     "texto": "A alma do ímpio deseja o mal; o seu próximo não agrada aos seus olhos."
+    },
+    {
+     "referencia": "Provérbios 21:16",
+     "texto": "O homem que anda desviado do caminho do entendimento repousará na congregação dos mortos."
+    },
+    {
+     "referencia": "Provérbios 21:21",
+     "texto": "Aquele que segue a justiça e a bondade achará a vida, a justiça e a honra."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 21",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 21 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-069/CAR-069-01.jpg",
+    "carrosseis/CAR-069/CAR-069-02.jpg",
+    "carrosseis/CAR-069/CAR-069-03.jpg",
+    "carrosseis/CAR-069/CAR-069-04.jpg",
+    "carrosseis/CAR-069/CAR-069-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-069/CAR-069-01.jpg": "1b311ba7229038fd74acc2fcadaabc2aa2b37c6faf7e1428c431a24423677d26",
+    "carrosseis/CAR-069/CAR-069-02.jpg": "3e19989a9448871f1fa00b25dfdf4b2d9a70691dd72154e8fa4b2c63c92b65da",
+    "carrosseis/CAR-069/CAR-069-03.jpg": "02f5ca79be1bbc42eb69172279ac05edf7fd03c691af82fc6a2eddc9bbec8f9d",
+    "carrosseis/CAR-069/CAR-069-04.jpg": "7d05004fb4a5778e3e02a5baf241ec1e9701881afc2b0bf066c4cc8a9405bffd",
+    "carrosseis/CAR-069/CAR-069-05.jpg": "2e32e7fefb6a60432cb553dcb9921019ba2d8637ab279a70efb74b2fb839b69e"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-10-31T11:00:00+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-10-31T10:55:08+00:00",
+   "produzido_em": "2026-10-31T11:00:00+00:00"
   }
  ]
 }

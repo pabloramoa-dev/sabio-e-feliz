@@ -2359,5 +2359,42 @@
    "created_at": "2026-10-30T11:28:17.627263+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-081",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-05-07",
+   "PRO-05-14",
+   "PRO-05-22"
+  ],
+  "referencia_exibida": "Provérbios 5",
+  "texto_biblico": "Agora, pois, filhos, dai-me ouvidos, e não vos desvieis das palavras da minha boca.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 5",
+  "gancho": "Três versículos de Provérbios, capítulo cinco. Sem comentário.",
+  "reflexao": "Quase cheguei à ruína completa, no meio da congregação e da assembléia.",
+  "aplicacao": "Quanto ao ímpio, as suas próprias iniqüidades o prenderão, e pelas cordas do seu pecado será detido.",
+  "cta": "Está tudo em Provérbios cinco. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-081.mp4",
+  "duracao_s": 32.7,
+  "sha256": "bd3909925d58e81699b7f3ce92fa9a843ebcaeb38e9c53bb6a28cdc8c0543201",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-10-31T11:00:00+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-10-31T10:55:08+00:00",
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "8c533657c51f3325b2e8a98e0046ff7af14b76fadb3ebcf6c87cea44cd00625b",
+   "editorial_sha256": "e77b09a82e9dae0842e02c4357d2aa575765e9db0d794f598df45a0aae9e7590",
+   "video_sha256": "bd3909925d58e81699b7f3ce92fa9a843ebcaeb38e9c53bb6a28cdc8c0543201",
+   "created_at": "2026-10-31T10:59:58.850497+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]
