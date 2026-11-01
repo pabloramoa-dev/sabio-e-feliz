@@ -2605,7 +2605,18 @@
    "compartilhamentos_por_1000_alcancados": 0.0,
    "coletado_em": "2026-10-30T19:47:37+00:00"
   },
-  "metricas_72h": null
+  "metricas_72h": {
+   "reach": 139,
+   "shares": 0,
+   "saved": 2,
+   "comments": 0,
+   "likes": 7,
+   "total_interactions": 9,
+   "ig_reels_avg_watch_time": 4701,
+   "ig_reels_video_view_total_time": 667547,
+   "compartilhamentos_por_1000_alcancados": 0.0,
+   "coletado_em": "2026-11-01T19:16:53+00:00"
+  }
  },
  {
   "id": "EP-060",
@@ -2661,7 +2672,18 @@
    "codec_video": "h264",
    "codec_audio": "aac"
   },
-  "metricas_24h": null,
+  "metricas_24h": {
+   "reach": 1,
+   "shares": 0,
+   "saved": 1,
+   "comments": 0,
+   "likes": 0,
+   "total_interactions": 1,
+   "ig_reels_avg_watch_time": 5330,
+   "ig_reels_video_view_total_time": 5330,
+   "compartilhamentos_por_1000_alcancados": 0.0,
+   "coletado_em": "2026-11-01T19:16:54+00:00"
+  },
   "metricas_72h": null
  },
  {
