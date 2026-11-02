@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 69,
+ "total": 70,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -3756,6 +3756,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-10-31T10:55:08+00:00",
    "produzido_em": "2026-10-31T11:00:00+00:00"
+  },
+  {
+   "id": "CAR-070",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-13-02",
+    "PRO-13-10",
+    "PRO-13-24"
+   ],
+   "referencia_exibida": "Provérbios 13",
+   "capitulo": 13,
+   "texto_biblico": "Do fruto da boca o homem come o bem; mas o apetite dos prevaricadores alimenta-se da violência.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 13:2",
+     "texto": "Do fruto da boca o homem come o bem; mas o apetite dos prevaricadores alimenta-se da violência."
+    },
+    {
+     "referencia": "Provérbios 13:10",
+     "texto": "Da soberba só provém a contenda; mas com os que se aconselham se acha a sabedoria."
+    },
+    {
+     "referencia": "Provérbios 13:24",
+     "texto": "Aquele que poupa a vara aborrece a seu filho; mas quem o ama, a seu tempo o castiga."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 13",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 13 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-070/CAR-070-01.jpg",
+    "carrosseis/CAR-070/CAR-070-02.jpg",
+    "carrosseis/CAR-070/CAR-070-03.jpg",
+    "carrosseis/CAR-070/CAR-070-04.jpg",
+    "carrosseis/CAR-070/CAR-070-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-070/CAR-070-01.jpg": "9171824dd0202df38ea019ef4465c082f24fa14454a7fbf5d8b865ae05026b59",
+    "carrosseis/CAR-070/CAR-070-02.jpg": "4310f1a9c07ec3501609a9e22eca9a6c40663387ecb381511636cfa0e4e94184",
+    "carrosseis/CAR-070/CAR-070-03.jpg": "e54401a3eb7ce97f15d7e0ddbddc23e37c407a5296b64caad2f450c425d0ab58",
+    "carrosseis/CAR-070/CAR-070-04.jpg": "544090ecba4c9062bf2a97651aca8eb4d5b54da7c6577bce67edd4359074fb59",
+    "carrosseis/CAR-070/CAR-070-05.jpg": "a9f9f5998722140b96b8aba2bcbfc75cb9e4c730350badfb05a8ebfc216f07ab"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-02T13:33:05+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-02T13:28:02+00:00",
+   "produzido_em": "2026-11-02T13:33:05+00:00"
   }
  ]
 }
