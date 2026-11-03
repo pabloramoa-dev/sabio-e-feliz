@@ -2470,5 +2470,42 @@
    "created_at": "2026-11-02T13:33:03.482803+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-084",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-18-03",
+   "PRO-18-07",
+   "PRO-18-22"
+  ],
+  "referencia_exibida": "Provérbios 18",
+  "texto_biblico": "Quando vem o ímpio, vem também o desprezo; e com a desonra vem o opróbrio.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 18",
+  "gancho": "Três versículos de Provérbios, capítulo dezoito. Sem comentário.",
+  "reflexao": "A boca do tolo é a sua própria destruição, e os seus lábios um laço para a sua alma.",
+  "aplicacao": "Quem encontra uma esposa acha uma coisa boa; e alcança o favor do Senhor.",
+  "cta": "Está tudo em Provérbios dezoito. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-084.mp4",
+  "duracao_s": 32.23,
+  "sha256": "cec31cdbc5a260b1a863c2c4d7d25d91d6b3cfbfb2f2b338d8a62efb5e076c7b",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-03T12:50:36+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-11-03T12:45:57+00:00",
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "8c533657c51f3325b2e8a98e0046ff7af14b76fadb3ebcf6c87cea44cd00625b",
+   "editorial_sha256": "661b380bc9a9e66f610870b3c4d9fba200cc6f26e6f0c45a714ae3477536670e",
+   "video_sha256": "cec31cdbc5a260b1a863c2c4d7d25d91d6b3cfbfb2f2b338d8a62efb5e076c7b",
+   "created_at": "2026-11-03T12:50:35.175278+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]

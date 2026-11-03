@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 70,
+ "total": 71,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -3810,6 +3810,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-02T13:28:02+00:00",
    "produzido_em": "2026-11-02T13:33:05+00:00"
+  },
+  {
+   "id": "CAR-071",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-26-04",
+    "PRO-26-25",
+    "PRO-26-28"
+   ],
+   "referencia_exibida": "Provérbios 26",
+   "capitulo": 26,
+   "texto_biblico": "Não respondas ao tolo segundo a sua estultícia, para que também não te faças semelhante a ele.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 26:4",
+     "texto": "Não respondas ao tolo segundo a sua estultícia, para que também não te faças semelhante a ele."
+    },
+    {
+     "referencia": "Provérbios 26:25",
+     "texto": "Quando te suplicar com voz suave, não o creias; porque sete abominações há no teu coração."
+    },
+    {
+     "referencia": "Provérbios 26:28",
+     "texto": "A língua falsa odeia aqueles a quem ela tenha ferido; e a boca lisonjeira opera a ruína."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 26",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 26 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-071/CAR-071-01.jpg",
+    "carrosseis/CAR-071/CAR-071-02.jpg",
+    "carrosseis/CAR-071/CAR-071-03.jpg",
+    "carrosseis/CAR-071/CAR-071-04.jpg",
+    "carrosseis/CAR-071/CAR-071-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-071/CAR-071-01.jpg": "3cf7862e45a7e8e9a74fbda8f83e64aaa2b4a851ce13972c03940b6a9a41219d",
+    "carrosseis/CAR-071/CAR-071-02.jpg": "4d3007861c72a3de65987ede2fc514f4210a65641769b2ace17b7841d7ef0aa7",
+    "carrosseis/CAR-071/CAR-071-03.jpg": "5ee8b8182fa16f98e0b48efc4974c9a4056431e6b36a95af8b560581fb0339bc",
+    "carrosseis/CAR-071/CAR-071-04.jpg": "21ce4a7e4915abf2abeb599c49af0ef6a499496f86327e437ce35c21674d0daa",
+    "carrosseis/CAR-071/CAR-071-05.jpg": "4617aade5da582f0e7f7b5a451ef25466660f32bd31adf6bc32da259eff22e5c"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-03T12:50:36+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-03T12:45:57+00:00",
+   "produzido_em": "2026-11-03T12:50:36+00:00"
   }
  ]
 }
