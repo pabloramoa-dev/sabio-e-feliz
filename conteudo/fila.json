@@ -2507,5 +2507,42 @@
    "created_at": "2026-11-03T12:50:35.175278+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-085",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-19-01",
+   "PRO-19-05",
+   "PRO-19-24"
+  ],
+  "referencia_exibida": "Provérbios 19",
+  "texto_biblico": "Melhor é o pobre que anda na sua integridade, do que aquele que é perverso de lábios e tolo.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 19",
+  "gancho": "Três versículos de Provérbios, capítulo dezenove. Sem comentário.",
+  "reflexao": "A testemunha falsa não ficará impune; e o que profere mentiras não escapará.",
+  "aplicacao": "O preguiçoso esconde a sua mão no prato, e nem ao menos quer levá-la de novo à boca.",
+  "cta": "Está tudo em Provérbios dezenove. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-085.mp4",
+  "duracao_s": 33.77,
+  "sha256": "003f599bfb1faa171d7193afc67934990ee2cb4bf36bb6e77485acbda13b2628",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-04T13:02:11+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-11-04T12:58:41+00:00",
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "8c533657c51f3325b2e8a98e0046ff7af14b76fadb3ebcf6c87cea44cd00625b",
+   "editorial_sha256": "7818419bc8cabf66f264f320ec7c182466bc51279bef41324aac13b2e98d23bf",
+   "video_sha256": "003f599bfb1faa171d7193afc67934990ee2cb4bf36bb6e77485acbda13b2628",
+   "created_at": "2026-11-04T13:02:09.929884+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]

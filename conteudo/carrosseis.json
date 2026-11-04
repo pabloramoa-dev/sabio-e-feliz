@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 71,
+ "total": 72,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -3864,6 +3864,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-03T12:45:57+00:00",
    "produzido_em": "2026-11-03T12:50:36+00:00"
+  },
+  {
+   "id": "CAR-072",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-29-02",
+    "PRO-29-14",
+    "PRO-29-15"
+   ],
+   "referencia_exibida": "Provérbios 29",
+   "capitulo": 29,
+   "texto_biblico": "Quando os justos governam, alegra-se o povo; mas quando o ímpio domina, o povo geme.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 29:2",
+     "texto": "Quando os justos governam, alegra-se o povo; mas quando o ímpio domina, o povo geme."
+    },
+    {
+     "referencia": "Provérbios 29:14",
+     "texto": "Se o rei julgar os pobres com eqüidade, o seu trono será estabelecido para sempre."
+    },
+    {
+     "referencia": "Provérbios 29:15",
+     "texto": "A vara e a repreensão dão sabedoria; mas a criança entregue a si mesma envergonha a sua mãe."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 29",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 29 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-072/CAR-072-01.jpg",
+    "carrosseis/CAR-072/CAR-072-02.jpg",
+    "carrosseis/CAR-072/CAR-072-03.jpg",
+    "carrosseis/CAR-072/CAR-072-04.jpg",
+    "carrosseis/CAR-072/CAR-072-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-072/CAR-072-01.jpg": "3de5c533cf0a949ce18f2bdfd1824fc166d8332f91180967d3cfdea769d88f6a",
+    "carrosseis/CAR-072/CAR-072-02.jpg": "cf8a9c652a3d51522d8caf31ce172bc45584684a2128646a88da704b1b152977",
+    "carrosseis/CAR-072/CAR-072-03.jpg": "b770af125e4d400b5cfeb18d6877d390c04bf9fcae475557a4002cc95db55637",
+    "carrosseis/CAR-072/CAR-072-04.jpg": "42b24c5bd316798f03fc613717ce49f6a62932c2fc5ba33e3b7a2b94e6602be2",
+    "carrosseis/CAR-072/CAR-072-05.jpg": "bdee80ec9e165fa06f021fa1eafc65d72cc6fe2db613df72854b1027c88ab371"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-04T13:02:11+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-04T12:58:41+00:00",
+   "produzido_em": "2026-11-04T13:02:11+00:00"
   }
  ]
 }
