@@ -2877,5 +2877,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-067",
+  "referencia": "Provérbios 25",
+  "titulo": "Três de Provérbios 25",
+  "formato": "D",
+  "arquivo": "reels/EP-067.mp4",
+  "sha256": "5d0f97d514790e0d488d8359561bc54d5e68613b791b0be2cecf99da545977b9",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-067.mp4",
+  "instagram_media_id": "17890922778479733",
+  "publicado_em": "2026-11-06T18:56:30+00:00",
+  "commit": "dcda7d25ef433c08a8b5575ff75ae19ac29f7c05",
+  "execucao": "42274882221",
+  "tecnico": {
+   "duracao_s": 36.07,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 27.0,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
