@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 73,
+ "total": 74,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -3972,6 +3972,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-05T13:11:35+00:00",
    "produzido_em": "2026-11-05T13:15:20+00:00"
+  },
+  {
+   "id": "CAR-074",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-08-16",
+    "PRO-08-21",
+    "PRO-08-26"
+   ],
+   "referencia_exibida": "Provérbios 8",
+   "capitulo": 8,
+   "texto_biblico": "Por mim governam os príncipes e os nobres, sim, todos os juízes da terra.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 8:16",
+     "texto": "Por mim governam os príncipes e os nobres, sim, todos os juízes da terra."
+    },
+    {
+     "referencia": "Provérbios 8:21",
+     "texto": "dotando de bens permanentes os que me amam, e enchendo os seus tesouros."
+    },
+    {
+     "referencia": "Provérbios 8:26",
+     "texto": "quando ele ainda não tinha feito a terra com seus campos, nem sequer o princípio do pó do mundo."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 8",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 8 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-074/CAR-074-01.jpg",
+    "carrosseis/CAR-074/CAR-074-02.jpg",
+    "carrosseis/CAR-074/CAR-074-03.jpg",
+    "carrosseis/CAR-074/CAR-074-04.jpg",
+    "carrosseis/CAR-074/CAR-074-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-074/CAR-074-01.jpg": "3fac30d0c4a72a0ded1ac23619406bbec030eaa142dd22ff76c9cb6b6879c9e3",
+    "carrosseis/CAR-074/CAR-074-02.jpg": "e13af63633a6e1ce40aa926eb593f390f965c60a9e1cb0e43377801c49fac624",
+    "carrosseis/CAR-074/CAR-074-03.jpg": "07cdb81a20b3839bf042ada55479720f994577309dd3933d611573a7dc79df0a",
+    "carrosseis/CAR-074/CAR-074-04.jpg": "4f3873fff1f5fb6de6660ff297bcc11872a391a83986f907159486eafe7ca0b0",
+    "carrosseis/CAR-074/CAR-074-05.jpg": "d6733d13a8762f562bba705c977359efb83b0a1bd8a8e195d5bc400c258f24f4"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-06T13:00:36+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-06T12:55:49+00:00",
+   "produzido_em": "2026-11-06T13:00:36+00:00"
   }
  ]
 }

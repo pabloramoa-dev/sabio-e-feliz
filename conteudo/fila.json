@@ -2581,5 +2581,42 @@
    "created_at": "2026-11-05T13:15:19.121148+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-087",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-13-01",
+   "PRO-13-05",
+   "PRO-13-18"
+  ],
+  "referencia_exibida": "Provérbios 13",
+  "texto_biblico": "O filho sábio ouve a instrução do pai; mas o escarnecedor não escuta a repreensão.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 13",
+  "gancho": "Três versículos de Provérbios, capítulo treze. Sem comentário.",
+  "reflexao": "O justo odeia a palavra mentirosa, mas o ímpio se faz odioso e se cobre de vergonha.",
+  "aplicacao": "Pobreza e afronta virão ao que rejeita a correção; mas o que guarda a repreensão será honrado.",
+  "cta": "Está tudo em Provérbios treze. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-087.mp4",
+  "duracao_s": 33.8,
+  "sha256": "e8a372c70d424e92d2ff7b49f5e67f4f09e481b26eff13643cebcf8b092f2f67",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-06T13:00:36+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-11-06T12:55:49+00:00",
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "8c533657c51f3325b2e8a98e0046ff7af14b76fadb3ebcf6c87cea44cd00625b",
+   "editorial_sha256": "e1fde7ed5f57162ef1bb2c61835580532048c6c12b89daf71f0b50058992bafb",
+   "video_sha256": "e8a372c70d424e92d2ff7b49f5e67f4f09e481b26eff13643cebcf8b092f2f67",
+   "created_at": "2026-11-06T13:00:35.040054+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]
