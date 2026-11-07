@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 74,
+ "total": 75,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4026,6 +4026,60 @@
    "instagram_media_id": "18019004717798495",
    "criado_em": "2026-11-06T12:55:49+00:00",
    "produzido_em": "2026-11-06T13:00:36+00:00"
+  },
+  {
+   "id": "CAR-075",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-29-06",
+    "PRO-29-12",
+    "PRO-29-20"
+   ],
+   "referencia_exibida": "Provérbios 29",
+   "capitulo": 29,
+   "texto_biblico": "Na transgressão do homem mau há laço; mas o justo canta e se regozija.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 29:6",
+     "texto": "Na transgressão do homem mau há laço; mas o justo canta e se regozija."
+    },
+    {
+     "referencia": "Provérbios 29:12",
+     "texto": "O governador que dá atenção às palavras mentirosas achará que todos os seus servos são ímpios."
+    },
+    {
+     "referencia": "Provérbios 29:20",
+     "texto": "Vês um homem precipitado nas suas palavras? Maior esperança há para o tolo do que para ele."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 29",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 29 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-075/CAR-075-01.jpg",
+    "carrosseis/CAR-075/CAR-075-02.jpg",
+    "carrosseis/CAR-075/CAR-075-03.jpg",
+    "carrosseis/CAR-075/CAR-075-04.jpg",
+    "carrosseis/CAR-075/CAR-075-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-075/CAR-075-01.jpg": "a09a5bac895be618f0d7c54d7621f63dc512ee51c4c2db2f7314cebee9cf2f6e",
+    "carrosseis/CAR-075/CAR-075-02.jpg": "c6fc6b8c3eab6b444dad4379999847dc327a71c8f12f48cc6a752c9e6a4a3514",
+    "carrosseis/CAR-075/CAR-075-03.jpg": "5f3d619833978f014036ee272e4d4e80be9a535b7295263d40810e2cc2e680b9",
+    "carrosseis/CAR-075/CAR-075-04.jpg": "967b74a5c7f74fddcb4931dea1d927abd2b1c3940a2ac37af54ecec5d9de2835",
+    "carrosseis/CAR-075/CAR-075-05.jpg": "bdee80ec9e165fa06f021fa1eafc65d72cc6fe2db613df72854b1027c88ab371"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-07T11:46:00+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-07T11:42:59+00:00",
+   "produzido_em": "2026-11-07T11:46:00+00:00"
   }
  ]
 }

@@ -2618,5 +2618,42 @@
    "created_at": "2026-11-06T13:00:35.040054+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-088",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-25-17",
+   "PRO-25-24",
+   "PRO-25-27"
+  ],
+  "referencia_exibida": "Provérbios 25",
+  "texto_biblico": "Põe raramente o teu pé na casa do teu próximo, para que não se enfade de ti, e te aborreça.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 25",
+  "gancho": "Três versículos de Provérbios, capítulo vinte e cinco. Sem comentário.",
+  "reflexao": "Melhor é morar num canto do eirado, do que com a mulher rixosa numa casa ampla.",
+  "aplicacao": "comer muito mel não é bom; não multipliques, pois, as palavras de lisonja.",
+  "cta": "Está tudo em Provérbios vinte e cinco. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-088.mp4",
+  "duracao_s": 33.73,
+  "sha256": "dc464cc825985ed949d3222cc5771f6830cd0f0926e4aa3fc29b759559fd487c",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-07T11:46:00+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-11-07T11:42:59+00:00",
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "8c533657c51f3325b2e8a98e0046ff7af14b76fadb3ebcf6c87cea44cd00625b",
+   "editorial_sha256": "332e79c52ad407afbaebd4cf895d3a3144ed6bad23e90f0356320ea2e37151b4",
+   "video_sha256": "dc464cc825985ed949d3222cc5771f6830cd0f0926e4aa3fc29b759559fd487c",
+   "created_at": "2026-11-07T11:45:59.330067+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]
