@@ -2931,7 +2931,18 @@
    "codec_video": "h264",
    "codec_audio": "aac"
   },
-  "metricas_24h": null,
+  "metricas_24h": {
+   "reach": 60,
+   "shares": 0,
+   "saved": 0,
+   "comments": 0,
+   "likes": 3,
+   "total_interactions": 3,
+   "ig_reels_avg_watch_time": 9769,
+   "ig_reels_video_view_total_time": 595923,
+   "compartilhamentos_por_1000_alcancados": 0.0,
+   "coletado_em": "2026-11-07T19:12:41+00:00"
+  },
   "metricas_72h": null
  },
  {
