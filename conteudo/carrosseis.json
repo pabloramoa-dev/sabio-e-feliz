@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 75,
+ "total": 76,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4080,6 +4080,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-07T11:42:59+00:00",
    "produzido_em": "2026-11-07T11:46:00+00:00"
+  },
+  {
+   "id": "CAR-076",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-09-02",
+    "PRO-09-09",
+    "PRO-09-12"
+   ],
+   "referencia_exibida": "Provérbios 9",
+   "capitulo": 9,
+   "texto_biblico": "já imolou as suas vítimas, misturou o seu vinho, e preparou a sua mesa.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 9:2",
+     "texto": "já imolou as suas vítimas, misturou o seu vinho, e preparou a sua mesa."
+    },
+    {
+     "referencia": "Provérbios 9:9",
+     "texto": "Instrui ao sábio, e ele se fará mais, sábio; ensina ao justo, e ele crescerá em entendimento."
+    },
+    {
+     "referencia": "Provérbios 9:12",
+     "texto": "Se fores sábio, para ti mesmo o serás; e, se fores escarnecedor, tu só o suportarás."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 9",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 9 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-076/CAR-076-01.jpg",
+    "carrosseis/CAR-076/CAR-076-02.jpg",
+    "carrosseis/CAR-076/CAR-076-03.jpg",
+    "carrosseis/CAR-076/CAR-076-04.jpg",
+    "carrosseis/CAR-076/CAR-076-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-076/CAR-076-01.jpg": "1282d0509db3fd56850257a7ef8ea8176184c71f978501d9e84769a3596c987d",
+    "carrosseis/CAR-076/CAR-076-02.jpg": "8c3cbb520c9708752669a08ee38c238677d47feb1baaf10b138a12df15bd6c43",
+    "carrosseis/CAR-076/CAR-076-03.jpg": "b7277054616154615adef203937ddaa77e5c4646f19902336441df9a1a44d3e1",
+    "carrosseis/CAR-076/CAR-076-04.jpg": "6f3356eda16d1bec920fa3927a1329443adcc2265c60feb670dd6705b1fe8498",
+    "carrosseis/CAR-076/CAR-076-05.jpg": "5788599951e2049af42f0d89014dbfbb868b3055137c17102d06b899b40ea8e1"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-08T11:57:58+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-08T11:55:15+00:00",
+   "produzido_em": "2026-11-08T11:57:58+00:00"
   }
  ]
 }
