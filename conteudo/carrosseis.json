@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 76,
+ "total": 77,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4134,6 +4134,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-08T11:55:15+00:00",
    "produzido_em": "2026-11-08T11:57:58+00:00"
+  },
+  {
+   "id": "CAR-077",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-29-01",
+    "PRO-29-02",
+    "PRO-29-25"
+   ],
+   "referencia_exibida": "Provérbios 29",
+   "capitulo": 29,
+   "texto_biblico": "Aquele que, sendo muitas vezes repreendido, endurece a cerviz, será quebrantado de repente sem que haja cura.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 29:1",
+     "texto": "Aquele que, sendo muitas vezes repreendido, endurece a cerviz, será quebrantado de repente sem que haja cura."
+    },
+    {
+     "referencia": "Provérbios 29:2",
+     "texto": "Quando os justos governam, alegra-se o povo; mas quando o ímpio domina, o povo geme."
+    },
+    {
+     "referencia": "Provérbios 29:25",
+     "texto": "O receio do homem lhe arma laços; mas o que confia no Senhor está seguro."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 29",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 29 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-077/CAR-077-01.jpg",
+    "carrosseis/CAR-077/CAR-077-02.jpg",
+    "carrosseis/CAR-077/CAR-077-03.jpg",
+    "carrosseis/CAR-077/CAR-077-04.jpg",
+    "carrosseis/CAR-077/CAR-077-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-077/CAR-077-01.jpg": "a09a5bac895be618f0d7c54d7621f63dc512ee51c4c2db2f7314cebee9cf2f6e",
+    "carrosseis/CAR-077/CAR-077-02.jpg": "3c98a5d8f6009bba5a379b4bda561c86f5b21ae1b7b0174cff318741e2fddc72",
+    "carrosseis/CAR-077/CAR-077-03.jpg": "4e7dfbd99de94ed8ea7d0c4bb0245908db97e49d277a8caa5775a330533b9865",
+    "carrosseis/CAR-077/CAR-077-04.jpg": "12005e85a8213659a7c2221fc4f78c7de630aa3e038da8c0a941ccb8746aeadb",
+    "carrosseis/CAR-077/CAR-077-05.jpg": "bdee80ec9e165fa06f021fa1eafc65d72cc6fe2db613df72854b1027c88ab371"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-09T13:56:54+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-09T13:52:53+00:00",
+   "produzido_em": "2026-11-09T13:56:53+00:00"
   }
  ]
 }

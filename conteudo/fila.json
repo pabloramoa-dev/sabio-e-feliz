@@ -2692,5 +2692,42 @@
    "created_at": "2026-11-08T11:57:57.844501+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-090",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-24-07",
+   "PRO-24-15",
+   "PRO-24-28"
+  ],
+  "referencia_exibida": "Provérbios 24",
+  "texto_biblico": "A sabedoria é alta demais para o insensato; ele não abre a sua boca na porta.",
+  "formato": "D",
+  "tema": "leitura",
+  "titulo": "Três de Provérbios 24",
+  "gancho": "Três versículos de Provérbios, capítulo vinte e quatro. Sem comentário.",
+  "reflexao": "Não te ponhas de emboscada, ó ímpio, contra a habitação do justo; nem assoles a sua pousada.",
+  "aplicacao": "Não sejas testemunha sem causa contra o teu próximo; e não enganes com os teus lábios.",
+  "cta": "Está tudo em Provérbios vinte e quatro. Leia o capítulo inteiro hoje.",
+  "cta_tipo": "leitura",
+  "arquivo": "reels/EP-090.mp4",
+  "duracao_s": 35.17,
+  "sha256": "c067e0b2623407ce9004c732a5cd6eee06bc4a215805a812bc7c9a02e8afa817",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-09T13:56:54+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-11-09T13:52:53+00:00",
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "8c533657c51f3325b2e8a98e0046ff7af14b76fadb3ebcf6c87cea44cd00625b",
+   "editorial_sha256": "9d61373c7d14dcb961917b31103fb9c8f6376d62ccdc8fd0e521d344fb9c37b9",
+   "video_sha256": "c067e0b2623407ce9004c732a5cd6eee06bc4a215805a812bc7c9a02e8afa817",
+   "created_at": "2026-11-09T13:56:52.718741+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]
