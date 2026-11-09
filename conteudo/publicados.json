@@ -3012,5 +3012,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-070",
+  "referencia": "Provérbios 7",
+  "titulo": "Três de Provérbios 7",
+  "formato": "D",
+  "arquivo": "reels/EP-070.mp4",
+  "sha256": "f8eb1f942fd5c96136b8917638e6d6b471d963c042c37794c06cb8e063b7b34f",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-070.mp4",
+  "instagram_media_id": "17918735535464658",
+  "publicado_em": "2026-11-09T21:57:18+00:00",
+  "commit": "355b5a3d83977e0ecb5577d396a51ef06f944713",
+  "execucao": "42707150501",
+  "tecnico": {
+   "duracao_s": 33.07,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 25.2,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
