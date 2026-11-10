@@ -11,6 +11,13 @@ SEGMENTOS = [
 ]
 
 
+def convite(item):
+    tema = item.get("tema")
+    if tema and tema != "leitura":
+        return f"Manda pra quem conversou com você sobre {tema}."
+    return "Manda pra quem lê Provérbios com você."
+
+
 def montar(item: dict) -> list[dict]:
     """Devolve os segmentos falados, na ordem, com direção de cena."""
     abertura = item.get("abertura") or item["texto_biblico"].split(";")[0].split(",")[0]
@@ -25,7 +32,7 @@ def montar(item: dict) -> list[dict]:
         if item.get("curto") and papel == "aplicacao" and item["formato"] == "D":
             continue
         if papel == "cta":
-            texto = "Manda pra quem precisa ouvir isso hoje."
+            texto = convite(item)
         if not texto:
             continue
         saida.append({

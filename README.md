@@ -253,3 +253,9 @@ curadoria antes de virar vídeo.
 - Prometer prosperidade, cura, castigo ou previsão de acontecimentos.
 - Pedir curtida, comentário, seguida e compartilhamento na mesma respiração.
 - Mandar alguém marcar "quem precisa aprender". Compartilhar é cuidado, não acusação.
+
+## Vozes e encerramento dos Reels
+
+O Sábio usa `pm_alex+im_nicola`, com 50% de cada estilo. O convite final acompanha o tema de Provérbios tanto na voz quanto no cartão.
+
+A narração termina com um único convite de envio ligado ao assunto do vídeo.

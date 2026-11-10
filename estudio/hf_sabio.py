@@ -68,6 +68,8 @@ CAMERA = {  # escala, deslocamento y (px) — y negativo sobe o rosto
     'aplicacao': (1.04, 6), 'cta': (1.0, 0),
 }
 
+from estudio.roteiro import convite
+
 e = html.escape
 
 
@@ -412,17 +414,12 @@ def compor(item, dados, pasta: Path):
           f'{fim_voz + .55 + (k % 3) * .04:.3f});')
     partes.append(
         f'<section id="fim" class="clip" data-start="{fim_voz:.3f}" data-duration="{dur - fim_voz:.3f}" data-track-index="5">'
-        f'<div id="fim-card"><div class="sol">{SOL_SVG}</div><div class="fim-a">Manda pra quem precisa</div><div class="fim-b">ouvir isso hoje.</div>'
-        f'<div class="fim-c">@sabioefeliz</div><div id="seguir" style="visibility:hidden">Seguir</div>'
-        f'<div id="mao">{MAO}</div></div>{estrelas}</section>')
+        f'<div id="fim-card"><div class="sol">{SOL_SVG}</div><div class="fim-a">{e(convite(item))}</div>'
+        f'<div class="fim-c">@sabioefeliz</div>'
+        f'</div>{estrelas}</section>')
     A(f'tl.fromTo("#fim-card",{{y:300,scale:.7,opacity:0}},{{y:0,scale:1,opacity:1,duration:.5,ease:"back.out(1.5)"}},{fim_voz:.3f});')
     A(f'tl.fromTo("#fim .sol",{{rotation:-90,scale:.3}},{{rotation:0,scale:1,duration:.7,ease:"back.out(2)"}},{fim_voz + .1:.3f});')
     A(f'tl.to("#fim .sol",{{rotation:60,duration:{dur - fim_voz:.3f},ease:"none"}},{fim_voz + .8:.3f});')
-    A(f'tl.fromTo("#mao",{{x:220,y:200,opacity:0}},{{x:0,y:0,opacity:1,duration:.45,ease:"power2.out"}},{fim_voz + .7:.3f});')
-    A(f'tl.to("#mao",{{scale:.85,duration:.1,yoyo:true,repeat:1}},{fim_voz + 1.2:.3f});')
-    A(f'tl.set("#seguir",{{visibility:"visible"}},{dur - 2:.3f});')
-    A(f'tl.to("#seguir",{{scale:.92,backgroundColor:"#3f8a5b",duration:.1,yoyo:true,repeat:1}},{fim_voz + 1.2:.3f});')
-    A(f'tl.set("#seguir",{{backgroundColor:"#3f8a5b"}},{fim_voz + 1.42:.3f});')
     A(f'tl.to("#cam",{{scale:1.0,y:0,duration:.6}},{fim_voz:.3f});')
     sons += [('sparkle', fim_voz + .45, .3), ('click-soft', fim_voz + 1.2, .6), ('chime', fim_voz + 1.3, .15)]
 
