@@ -38,6 +38,12 @@ def test_fila_sem_problemas():
 def test_roteiro_fica_na_faixa_de_palavras():
     for item in fila.carregar_fila():
         n = roteiro.palavras_totais(item)
+        if item.get("curto"):
+            assert 1 <= n <= 80, f"{item['id']} tem {n} palavras"
+            assert len(item["referencias"]) == 1
+            if item.get("duracao_s") is not None:
+                assert 20 <= item["duracao_s"] <= 30, item["id"]
+            continue
         assert 40 <= n <= 130, f"{item['id']} tem {n} palavras"
 
 
