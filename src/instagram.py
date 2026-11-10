@@ -61,12 +61,13 @@ class Publicador:
         return r.json()
 
     # -- publicação ----------------------------------------------------------
-    def criar_container(self, url_video: str, legenda: str) -> str:
+    def criar_container(self, url_video: str, legenda: str, cover_url: str | None = None) -> str:
         r = self._request("POST",
             f"{self.cfg.base_conta}/media",
             data={
                 "media_type": "REELS",
                 "video_url": url_video,
+                **({"cover_url": cover_url} if cover_url else {}),
                 "caption": legenda,
                 "share_to_feed": "true",
                 "access_token": self.cfg.ig_token,

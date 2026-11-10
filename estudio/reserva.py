@@ -149,56 +149,43 @@ def gerar_carrosseis(quantos: int, semente: str | None = None) -> list[dict]:
     return novos
 
 
+def reel_curto(numero: int, modelo: dict) -> dict:
+    """Adapta uma situação editorial revisada, preservando o versículo literal."""
+    leitura = numero % 7 in (1, 5)
+    verso = modelo["texto_biblico"]
+    abertura = verso.split(";")[0].split(",")[0].rstrip(".")
+    return {
+        "id": f"EP-{numero:03d}", "origem": "reserva", "curto": True,
+        "referencias": modelo["referencias"], "referencia_exibida": modelo["referencia_exibida"],
+        "texto_biblico": verso, "abertura": abertura + ".",
+        "formato": "D" if leitura else modelo["formato"],
+        "tema": modelo["tema"], "titulo": modelo["titulo"], "gancho": modelo["gancho"],
+        "reflexao": modelo["reflexao"], "aplicacao": modelo["aplicacao"],
+        "cta": "Manda pra quem precisa ouvir isso hoje.", "cta_tipo": "envio",
+        "arquivo": f"reels/EP-{numero:03d}.mp4", "duracao_s": None, "sha256": None,
+        "status": "rascunho", "aprovado_por": None, "aprovado_em": None,
+        "prioridade": 50, "publicado_em": None, "instagram_media_id": None,
+        "criado_em": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+    }
+
+
 def gerar_reels(quantos: int, semente: str | None = None) -> list[dict]:
-    reg = _registro()
-    pool = por_capitulo()
-    rng = random.Random((semente or datetime.now(timezone.utc).isoformat()) + "reel")
     fila = carregar_reels()
-    proximo = max([int(i["id"].split("-")[-1]) for i in fila] or [0]) + 1
-    trios = set(reg["trios"])
-
+    modelos = [i for i in fila if i["formato"] in ("A", "B", "C") and not i.get("curto")]
+    proximo = max(int(i["id"].split("-")[-1]) for i in fila) + 1
+    rng = random.Random(semente)
+    rng.shuffle(modelos)
+    usos = {m["titulo"]: 0 for m in modelos}
+    for item in fila:
+        if item.get("curto") and item["titulo"] in usos:
+            usos[item["titulo"]] += 1
     novos = []
-    capitulos = sorted(pool)
-    rng.shuffle(capitulos)
-    for capitulo in (capitulos * (quantos // len(capitulos) + 1))[:quantos]:
-        trio, chave = _trio(rng, pool[capitulo], reg["uso"], trios)
-        if trio is None:
-            continue
-        trios.add(chave)
-        reg["trios"].append(chave)
-        for v in trio:
-            reg["uso"][v["id"]] = reg["uso"].get(v["id"], 0) + 1
-        por_extenso = NUMEROS.get(capitulo, str(capitulo))
-        novos.append({
-            "id": f"EP-{proximo:03d}",
-            "origem": "reserva",
-            "referencias": [v["id"] for v in trio],
-            "referencia_exibida": f"Provérbios {capitulo}",
-            "texto_biblico": trio[0]["texto"],
-            "formato": "D",
-            "tema": "leitura",
-            "titulo": f"Três de Provérbios {capitulo}",
-            "gancho": f"Três versículos de Provérbios, capítulo {por_extenso}. Sem comentário.",
-            "reflexao": trio[1]["texto"],
-            "aplicacao": trio[2]["texto"],
-            "cta": f"Está tudo em Provérbios {por_extenso}. Leia o capítulo inteiro hoje.",
-            "cta_tipo": "leitura",
-            "arquivo": f"reels/EP-{proximo:03d}.mp4",
-            "duracao_s": None,
-            "sha256": None,
-            "status": "rascunho",
-            "aprovado_por": None,
-            "aprovado_em": None,
-            "prioridade": 50,
-            "publicado_em": None,
-            "instagram_media_id": None,
-            "criado_em": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        })
-        proximo += 1
-
+    for numero in range(proximo, proximo + quantos):
+        modelo = min(modelos, key=lambda m: usos[m["titulo"]])
+        novos.append(reel_curto(numero, modelo))
+        usos[modelo["titulo"]] += 1
     if novos:
         salvar_reels(fila + novos)
-        salvar_json(USADOS_JSON, reg)
     return novos
 
 

@@ -72,7 +72,7 @@ jobs:
             --carrosseis "${{ steps.conta.outputs.carrosseis_a_gerar }}"
 
       - name: Renderizar os Reels pendentes
-        run: python -m estudio.produzir --pendentes --voz "pm_alex+im_nicola"
+        run: python -m estudio.produzir --pendentes --limite 3 --voz "pm_alex+im_nicola"
 
       - name: Renderizar os carrosséis pendentes
         run: python -m estudio.render_carrossel

@@ -18,7 +18,7 @@ RODAPE_LEITURA = "Texto bíblico: João Ferreira de Almeida, domínio público (
 def montar(item: dict, hashtags: list[str] | None = None) -> str:
     tags = hashtags if hashtags is not None else HASHTAGS_BASE
 
-    if item.get("formato") == "D":
+    if item.get("formato") == "D" and len(item.get("referencias", [])) > 1:
         # leitura pura: os três textos são bíblicos, não há paráfrase a avisar
         partes = [
             item["titulo"].strip(), "",
@@ -39,7 +39,7 @@ def montar(item: dict, hashtags: list[str] | None = None) -> str:
         f"“{item['texto_biblico'].strip()}”",
         f"— {item['referencia_exibida'].strip()}",
         "",
-        item["aplicacao"].strip(),
+        item["aplicacao"].strip() if item.get("formato") != "D" else "",
         "",
         item["cta"].strip(),
         "",

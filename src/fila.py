@@ -141,9 +141,13 @@ def proximo_episodio() -> dict:
     fila = carregar_fila()
     publicados_ids = {p["id"] for p in carregar_publicados()}
 
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    dia_leitura = datetime.now(ZoneInfo("America/Sao_Paulo")).weekday() in (2, 6)
     elegiveis = [
         i for i in fila
         if i.get("status") == "aprovado"
+        and (dia_leitura or i.get("formato") != "D")
         and not i.get("publicado_em")
         and i.get("id") not in publicados_ids
     ]
@@ -152,7 +156,7 @@ def proximo_episodio() -> dict:
             "Nenhum episódio aprovado disponível. Produza e aprove novos Reels antes do próximo horário."
         )
 
-    elegiveis.sort(key=lambda i: (i.get("prioridade", 100), i["id"]))
+    elegiveis.sort(key=lambda i: (dia_leitura and i.get("formato") != "D", i.get("prioridade", 100), i["id"]))
     escolhido = elegiveis[0]
 
     erros = validar_item(escolhido)

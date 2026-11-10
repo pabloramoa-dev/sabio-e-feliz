@@ -13,13 +13,19 @@ SEGMENTOS = [
 
 def montar(item: dict) -> list[dict]:
     """Devolve os segmentos falados, na ordem, com direção de cena."""
-    passagem = (
-        f"O provérbio de hoje está em {item['referencia_exibida']}. "
-        f"{item['texto_biblico'].strip()}"
-    )
-    saida = []
+    abertura = item.get("abertura") or item["texto_biblico"].split(";")[0].split(",")[0]
+    saida = [dict(papel="abertura", texto=abertura, expressao="seriedade",
+                  gesto="apontar", palavras=len(abertura.split()))]
+    passagem = item["texto_biblico"].strip()
+
     for papel, campo, expressao, gesto in SEGMENTOS:
         texto = passagem if campo == "_passagem" else str(item.get(campo, "")).strip()
+        if item.get("curto") and papel == "reflexao":
+            continue
+        if item.get("curto") and papel == "aplicacao" and item["formato"] == "D":
+            continue
+        if papel == "cta":
+            texto = "Manda pra quem precisa ouvir isso hoje."
         if not texto:
             continue
         saida.append({

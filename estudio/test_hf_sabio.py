@@ -35,11 +35,11 @@ def test_composicao_v2_usa_so_o_conteudo_do_item(item, tmp_path):
     assert math.isclose(dur, d['duracao_s'] + S.CAUDA, abs_tol=1e-6)
     assert 'data-composition-id="sabio-hf2"' in doc
     assert "window.__timelines['sabio-hf2']=tl" in doc
-    assert 'id="capa"' in doc and 'id="fim"' in doc
+    assert 'id="capa"' not in doc and 'id="fim"' in doc
     for palavra in item['texto_biblico'].split():
         assert palavra.replace('"', '&quot;') in doc or palavra in doc
     assert all(0 <= t <= dur for _, t, _ in sons)
-    if item['formato'] == 'D':
+    if item['formato'] == 'D' and len(item['referencias']) > 1:
         assert doc.count('class="card pergaminho"') == 3
     else:
         assert doc.count('class="card pergaminho"') == 1

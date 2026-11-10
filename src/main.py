@@ -70,7 +70,9 @@ def executar() -> dict:
     from tools.channel_ops import resume_send, pending_send, confirm_send
     media_id = resume_send(config.RAIZ, item['id'], lambda cid: pub.reconciliar(cid, texto_legenda))
     if not media_id:
-        container = pub.criar_container(url_video, texto_legenda)
+        capa = video.with_suffix(".jpg")
+        url_capa = url_publica(cfg, str(capa.relative_to(config.RAIZ))) if capa.exists() else None
+        container = pub.criar_container(url_video, texto_legenda, url_capa)
         resultado["container_id"] = container
 
         pub.aguardar_pronto(container)
