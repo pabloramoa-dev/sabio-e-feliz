@@ -2007,18 +2007,25 @@
   "cta": "Manda pra quem precisa ouvir isso hoje.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-071.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 20.2,
+  "sha256": "28a2bfd88d8c7236983b17e60028dbce4939e49511b9d69926ab286f3d6990be",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-10T03:37:56+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
   "criado_em": "2026-11-10T03:07:38+00:00",
   "renderizador": "hyperframes",
   "curto": true,
-  "abertura": "A resposta branda desvia o furor."
+  "abertura": "A resposta branda desvia o furor.",
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "c6736e7f866fafa9b1a09602da71dcf66720cdc6a795607a55adbe85942ed25e",
+   "editorial_sha256": "5a2bdf13ca2af854494692a12b47cb6881d801e92cd868cfa9c27bf7cc71d2a5",
+   "video_sha256": "28a2bfd88d8c7236983b17e60028dbce4939e49511b9d69926ab286f3d6990be",
+   "created_at": "2026-11-10T03:31:38.409427+00:00"
+  }
  },
  {
   "id": "EP-072",
@@ -2037,18 +2044,25 @@
   "cta": "Manda pra quem precisa ouvir isso hoje.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-072.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 22.8,
+  "sha256": "a1fd95953a6f86f9a72862ee3b1402249b52caf91814fe2488e750fead3157ba",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-10T03:37:56+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
   "criado_em": "2026-11-10T03:07:38+00:00",
   "renderizador": "hyperframes",
   "curto": true,
-  "abertura": "Vai ter com a formiga."
+  "abertura": "Vai ter com a formiga.",
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "c6736e7f866fafa9b1a09602da71dcf66720cdc6a795607a55adbe85942ed25e",
+   "editorial_sha256": "3f2afe292eb0dc526f5206e0a23b869981241bb3397dcd657c54a51acbc74f37",
+   "video_sha256": "a1fd95953a6f86f9a72862ee3b1402249b52caf91814fe2488e750fead3157ba",
+   "created_at": "2026-11-10T03:34:53.103550+00:00"
+  }
  },
  {
   "id": "EP-073",
@@ -2067,18 +2081,25 @@
   "cta": "Manda pra quem precisa ouvir isso hoje.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-073.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 21.3,
+  "sha256": "00339dd2b99de3692175fd548c4cd83b6333e5d5c6e1f85522e29f2fc138aea9",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-10T03:37:56+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
   "criado_em": "2026-11-10T03:07:38+00:00",
   "renderizador": "hyperframes",
   "curto": true,
-  "abertura": "O amigo ama em todo o tempo."
+  "abertura": "O amigo ama em todo o tempo.",
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "c6736e7f866fafa9b1a09602da71dcf66720cdc6a795607a55adbe85942ed25e",
+   "editorial_sha256": "90d3d0a54d448d950626bc4aaa8c8ab7ba21532da2b9008681f6ff27262195e9",
+   "video_sha256": "00339dd2b99de3692175fd548c4cd83b6333e5d5c6e1f85522e29f2fc138aea9",
+   "created_at": "2026-11-10T03:37:54.340525+00:00"
+  }
  },
  {
   "id": "EP-074",
@@ -2589,5 +2610,34 @@
   "renderizador": "hyperframes",
   "curto": true,
   "abertura": "Na multidão de palavras não falta transgressão."
+ },
+ {
+  "id": "EP-091",
+  "origem": "reserva",
+  "curto": true,
+  "referencias": [
+   "PRO-27-02"
+  ],
+  "referencia_exibida": "Provérbios 27:2",
+  "texto_biblico": "Seja outro o que te louve, e não a tua boca; o estranho, e não os teus lábios.",
+  "abertura": "Seja outro o que te louve.",
+  "formato": "C",
+  "tema": "caráter",
+  "titulo": "Quem fala bem de você",
+  "gancho": "Você já se pegou contando a própria vitória para alguém?",
+  "reflexao": "O que você fala de si convence pouco. O que os outros falam de você fica.",
+  "aplicacao": "Hoje, em vez de contar o que você fez, conte o que alguém fez por você.",
+  "cta": "Manda pra quem precisa ouvir isso hoje.",
+  "cta_tipo": "envio",
+  "arquivo": "reels/EP-091.mp4",
+  "duracao_s": null,
+  "sha256": null,
+  "status": "rascunho",
+  "aprovado_por": null,
+  "aprovado_em": null,
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-11-10T03:28:41+00:00"
  }
 ]

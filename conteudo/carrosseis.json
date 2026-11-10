@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 77,
+ "total": 78,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4188,6 +4188,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-09T13:52:53+00:00",
    "produzido_em": "2026-11-09T13:56:53+00:00"
+  },
+  {
+   "id": "CAR-078",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-05-16",
+    "PRO-05-18",
+    "PRO-05-23"
+   ],
+   "referencia_exibida": "Provérbios 5",
+   "capitulo": 5,
+   "texto_biblico": "Derramar-se-iam as tuas fontes para fora, e pelas ruas os ribeiros de águas?",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 5:16",
+     "texto": "Derramar-se-iam as tuas fontes para fora, e pelas ruas os ribeiros de águas?"
+    },
+    {
+     "referencia": "Provérbios 5:18",
+     "texto": "Seja bendito o teu manancial; e regozija-te na mulher da tua mocidade."
+    },
+    {
+     "referencia": "Provérbios 5:23",
+     "texto": "Ele morre pela falta de disciplina; e pelo excesso da sua loucura anda errado."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 5",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 5 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-078/CAR-078-01.jpg",
+    "carrosseis/CAR-078/CAR-078-02.jpg",
+    "carrosseis/CAR-078/CAR-078-03.jpg",
+    "carrosseis/CAR-078/CAR-078-04.jpg",
+    "carrosseis/CAR-078/CAR-078-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-078/CAR-078-01.jpg": "a6d33c13c07284ca8105eb685758857a93a43415f4d9b0828c92dfc1c4053c0c",
+    "carrosseis/CAR-078/CAR-078-02.jpg": "a95406a69be1d82acc6665da9c46baeae9a921dcf149a79d1ba63c50bc4692db",
+    "carrosseis/CAR-078/CAR-078-03.jpg": "9975b150ed8acf37490854ab0c9e33146867910d0d166d13a636d064560dc3bf",
+    "carrosseis/CAR-078/CAR-078-04.jpg": "6f0547cf47439534a8f814620d5347784fb9869f758ec6bb3d264ec0acc5f175",
+    "carrosseis/CAR-078/CAR-078-05.jpg": "e9994fe8992a17e0d8991ca7d099ec85ba623655f1687df84396c5eeeee115a5"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-10T03:37:56+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-10T03:28:41+00:00",
+   "produzido_em": "2026-11-10T03:37:55+00:00"
   }
  ]
 }
