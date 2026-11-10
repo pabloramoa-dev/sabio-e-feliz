@@ -53,11 +53,11 @@ F_MED = achar('Poppins-Medium.ttf', 'assets/fonts')
 F_LORA = achar('Lora-Italic-Variable.ttf', 'assets/fonts')
 
 FPS = 30
-CAPA = 2.2          # capa central no ar (miniatura da grade)
+
 CAUDA = 2.6         # encerramento depois da última fala
 TRANSICOES = ['folha', 'faixa', 'clarao', 'circulo']
 ROTULOS = {
-    'gancho': 'PARA COMEÇAR',
+    'gancho': '',
     'passagem': 'A PALAVRA',
     'reflexao': 'PARA PENSAR',
     'aplicacao': 'PRATIQUE HOJE',
@@ -222,7 +222,7 @@ def compor(item, dados, pasta: Path):
     A = anim.append
 
     # ---------- câmera e luz de fundo ----------
-    A('tl.fromTo("#cam",{scale:1.0,y:0},{scale:1.03,y:0,duration:%.3f,ease:"none"},0);' % CAPA)
+    A('tl.set("#cam",{scale:1.22,y:28},0);')
     A('tl.fromTo("#sunglow",{opacity:.2,scale:.9},{opacity:.45,scale:1.08,duration:%.3f,ease:"sine.inOut",yoyo:true,repeat:%d},0);'
       % (3.2, max(1, int(dur / 3.2))))
     A('tl.fromTo("#raio",{opacity:.0,x:-60},{opacity:.4,x:40,duration:%.3f,ease:"sine.inOut",yoyo:true,repeat:%d},0);'
@@ -239,33 +239,15 @@ def compor(item, dados, pasta: Path):
         A(f'tl.fromTo("#bk{k}",{{y:0,x:0,opacity:0}},{{y:-{sobe},x:{(k % 5 - 2) * 24},opacity:{.35 + (k % 4) * .12:.2f},'
           f'duration:{dur / 2:.3f},ease:"sine.inOut",yoyo:true,repeat:1}},{(k * .37) % 2:.2f});')
 
-    # ---------- capa central (miniatura da grade) ----------
-    tam_t, lin_t = caber(item['titulo'].upper(), F_BOLD, 820, 300, 104, 54, 1.08)
-    titulo_capa = '<br>'.join(' '.join(f'<span class="cw">{e(w)}</span>' for w in ln) for ln in lin_t)
-    raios = ''.join(f'<i style="transform:rotate({a}deg)"></i>' for a in range(0, 360, 20))
-    partes.append(
-        f'<section id="capa" class="clip" data-start="0" data-duration="{CAPA + .45}" data-track-index="5">'
-        f'<div id="burst">{raios}</div>'
-        f'<div id="capa-card"><div class="fita"></div><div id="capa-ref">{e(ref_txt.upper())}</div>'
-        f'<h1 id="capa-tit" style="font-size:{tam_t}px">{titulo_capa}</h1>'
-        f'<div id="capa-risco"></div><div id="capa-sub">UM PROVÉRBIO · UMA DECISÃO MELHOR</div></div></section>')
-    A('tl.fromTo("#burst",{rotation:0,scale:.6,opacity:0},{rotation:40,scale:1.15,opacity:1,duration:%.2f,ease:"power1.out"},0);' % (CAPA + .4))
-    A('tl.fromTo("#capa-card",{scale:.55,rotation:-6,opacity:0},{scale:1,rotation:-1.5,opacity:1,duration:.55,ease:"back.out(1.6)"},0.05);')
-    A('tl.fromTo("#capa-ref",{y:-30,opacity:0},{y:0,opacity:1,duration:.4,ease:"power2.out"},0.35);')
-    A('tl.fromTo("#capa-tit .cw",{y:60,opacity:0,rotation:4},{y:0,opacity:1,rotation:0,duration:.45,stagger:.07,ease:"back.out(1.7)"},0.5);')
-    A('tl.fromTo("#capa-risco",{scaleX:0},{scaleX:1,duration:.5,ease:"power2.out"},1.0);')
-    A('tl.fromTo("#capa-sub",{opacity:0,y:16},{opacity:1,y:0,duration:.4},1.2);')
-    A('tl.to("#capa-card",{y:-520,scale:.45,opacity:0,duration:.45,ease:"power2.in"},%.2f);' % CAPA)
-    A('tl.to("#burst",{opacity:0,scale:1.6,duration:.45,ease:"power1.in"},%.2f);' % CAPA)
-    sons += [('whoosh-cinematic', 0.0, .22), ('pop', .1, .35), ('chime', 1.0, .18)]
-
     # ---------- cartões por momento ----------
     for i, s in enumerate(segs):
         papel = s['papel']
-        a = max(float(s['inicio']), CAPA if i == 0 else float(s['inicio']))
+        a = float(s['inicio'])
+        if papel in ('abertura', 'gancho'):
+            continue
         z = float(segs[i + 1]['inicio']) if i + 1 < len(segs) else dur
         d = z - a
-        leitura = papel in ('passagem', 'reflexao', 'aplicacao') and formato == 'D' or papel == 'passagem'
+        leitura = papel in ('passagem', 'reflexao', 'aplicacao') and formato == 'D' and len(refs) > 1 or papel == 'passagem'
         rot = ROTULOS.get(papel, '')
         corpo_txt = item['texto_biblico'] if papel == 'passagem' else str(item.get(papel, '')).strip()
         if formato == 'D' and papel in ('reflexao', 'aplicacao'):
@@ -296,20 +278,16 @@ def compor(item, dados, pasta: Path):
                 tam, ls = caber(corpo_txt, F_BOLD, 660, 270, 50, 28)
                 corpo = f'<div class="lado">{CHECK}<div class="txt" style="font-size:{tam}px">{_linhas_html(ls, f"v{i}_")}</div></div>'
             else:  # cta
-                if formato == 'D':
-                    rot = 'LEIA O CAPÍTULO'
-                tam, ls = caber(corpo_txt, F_BOLD, 640, 170, 48, 28)
-                chips = ''.join(f'<b class="chip" id="chip{i}_{k}">{t}</b>' for k, t in
-                                enumerate(['♡ SALVE', '➤ ENVIE', '+ SIGA']))
-                corpo = (f'<div class="lado">{CORACAO}<div class="txt" style="font-size:{tam}px">{_linhas_html(ls, f"v{i}_")}</div></div>'
-                         f'<div class="chips">{chips}</div>')
+                rot = ''
+                tam, ls = caber(corpo_txt, F_BOLD, 740, 220, 60, 32)
+                corpo = f'<div class="txt" style="font-size:{tam}px">{_linhas_html(ls, f"v{i}_")}</div>'
             tipo = papel
         # Segment groups may contain multiple TTS phrases. Select a matching
         # illustration by spoken time, never by unrelated segment index.
         visual_index = next((j for j, f in enumerate(frases)
                              if float(f['inicio']) <= float(s['inicio']) < float(f['fim'])), None)
         image = visual_map.get(visual_index)
-        image_mode = bool(image and papel in ('reflexao', 'aplicacao'))
+        image_mode = bool(image and not leitura and papel in ('reflexao', 'aplicacao'))
         if image_mode:
             if leitura:
                 rot = topo
@@ -379,13 +357,6 @@ def compor(item, dados, pasta: Path):
         elif papel == 'gancho':
             A(f'tl.fromTo("#c{i} .ic",{{rotation:-15,scale:.6}},{{rotation:8,scale:1,duration:.5,ease:"back.out(2)"}},{a + .1:.3f});')
             A(f'tl.to("#c{i} .ic",{{rotation:-6,duration:.9,yoyo:true,repeat:{max(1, int(d / .9))},ease:"sine.inOut"}},{a + .6:.3f});')
-        elif papel == 'cta':
-            A(f'tl.fromTo("#c{i} .pulsa",{{scale:1,transformOrigin:"50% 50%"}},{{scale:1.14,duration:.35,yoyo:true,repeat:{max(1, int(d / .35))},ease:"sine.inOut"}},{a:.3f});')
-            for k in range(3):
-                tk = a + .5 + k * .35
-                A(f'tl.fromTo("#chip{i}_{k}",{{scale:0,opacity:0}},{{scale:1,opacity:1,duration:.35,ease:"back.out(2.4)"}},{tk:.3f});')
-                sons.append(('pop', tk, .22))
-
         # câmera por momento
         esc, dy = CAMERA.get(papel, (1.05, 0))
         A(f'tl.to("#cam",{{scale:{esc},y:{dy},duration:.9,ease:"power2.inOut"}},{a:.3f});')
@@ -394,12 +365,15 @@ def compor(item, dados, pasta: Path):
     # ---------- legendas karaokê ----------
     for n, f in enumerate(frases):
         fa, fz = float(f['inicio']), float(f['fim'])
-        if fz <= CAPA:
+        if f.get('papel') in ('passagem', 'cta') or (
+            formato == 'D' and len(refs) > 1 and f.get('papel') in ('reflexao', 'aplicacao')
+        ):
             continue
         ws = f['texto'].split()
         tempos = tempos_das_palavras(f['texto'], palavras, fa, fz)
         grupos, g = [], []
-        fonte = ImageFont.truetype(str(F_BOLD), 50)
+        tamanho = 68 if f.get('papel') == 'abertura' else 50
+        fonte = ImageFont.truetype(str(F_BOLD), tamanho)
         for k, w in enumerate(ws):
             if g and fonte.getlength(' '.join([ws[j] for j in g] + [w])) > 880:
                 grupos.append(g)
@@ -411,14 +385,15 @@ def compor(item, dados, pasta: Path):
         if g:
             grupos.append(g)
         for m, g in enumerate(grupos):
-            g0 = max(CAPA, tempos[g[0]][0] - .05 if m else fa)
+            g0 = max(0, tempos[g[0]][0] - .05 if m else fa)
             g1 = tempos[grupos[m + 1][0]][0] - .05 if m + 1 < len(grupos) else fz
             if g1 <= g0 + .05:
                 continue
             spans = ' '.join(f'<span id="k{n}_{k}">{e(ws[k])}</span>' for k in g)
             partes.append(f'<div id="cap{n}_{m}" class="clip legenda" data-start="{g0:.3f}" data-duration="{g1 - g0:.3f}" '
-                          f'data-track-index="3"><div class="pal">{spans}</div></div>')
-            A(f'tl.fromTo("#cap{n}_{m} .pal",{{y:24,opacity:0}},{{y:0,opacity:1,duration:.2,ease:"power2.out"}},{g0:.3f});')
+                          f'data-track-index="3"><div class="pal" style="font-size:{tamanho}px">{spans}</div></div>')
+            if n or m:
+                A(f'tl.fromTo("#cap{n}_{m} .pal",{{y:24,opacity:0}},{{y:0,opacity:1,duration:.2,ease:"power2.out"}},{g0:.3f});')
             for k in g:
                 w0, w1 = tempos[k]
                 w0 = max(w0, g0)
@@ -437,14 +412,15 @@ def compor(item, dados, pasta: Path):
           f'{fim_voz + .55 + (k % 3) * .04:.3f});')
     partes.append(
         f'<section id="fim" class="clip" data-start="{fim_voz:.3f}" data-duration="{dur - fim_voz:.3f}" data-track-index="5">'
-        f'<div id="fim-card"><div class="sol">{SOL_SVG}</div><div class="fim-a">SIGA</div><div class="fim-b">@sabioefeliz</div>'
-        f'<div class="fim-c">Um provérbio por dia, toda manhã.</div><div id="seguir">Seguir</div>'
+        f'<div id="fim-card"><div class="sol">{SOL_SVG}</div><div class="fim-a">Manda pra quem precisa</div><div class="fim-b">ouvir isso hoje.</div>'
+        f'<div class="fim-c">@sabioefeliz</div><div id="seguir" style="visibility:hidden">Seguir</div>'
         f'<div id="mao">{MAO}</div></div>{estrelas}</section>')
     A(f'tl.fromTo("#fim-card",{{y:300,scale:.7,opacity:0}},{{y:0,scale:1,opacity:1,duration:.5,ease:"back.out(1.5)"}},{fim_voz:.3f});')
     A(f'tl.fromTo("#fim .sol",{{rotation:-90,scale:.3}},{{rotation:0,scale:1,duration:.7,ease:"back.out(2)"}},{fim_voz + .1:.3f});')
     A(f'tl.to("#fim .sol",{{rotation:60,duration:{dur - fim_voz:.3f},ease:"none"}},{fim_voz + .8:.3f});')
     A(f'tl.fromTo("#mao",{{x:220,y:200,opacity:0}},{{x:0,y:0,opacity:1,duration:.45,ease:"power2.out"}},{fim_voz + .7:.3f});')
     A(f'tl.to("#mao",{{scale:.85,duration:.1,yoyo:true,repeat:1}},{fim_voz + 1.2:.3f});')
+    A(f'tl.set("#seguir",{{visibility:"visible"}},{dur - 2:.3f});')
     A(f'tl.to("#seguir",{{scale:.92,backgroundColor:"#3f8a5b",duration:.1,yoyo:true,repeat:1}},{fim_voz + 1.2:.3f});')
     A(f'tl.set("#seguir",{{backgroundColor:"#3f8a5b"}},{fim_voz + 1.42:.3f});')
     A(f'tl.to("#cam",{{scale:1.0,y:0,duration:.6}},{fim_voz:.3f});')

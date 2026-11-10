@@ -44,7 +44,7 @@ import numpy as np
 # peso. Misturar cria vozes que não existem soltas no modelo.
 VOZ_PADRAO = "pm_alex+im_nicola"
 VELOCIDADE = 0.94          # um respiro mais devagar que o natural do modelo
-PRE_ROLL = 0.5             # respiro antes da primeira palavra
+PRE_ROLL = 0.0             # respiro antes da primeira palavra
 CAUDA = 1.3                # o encerramento não pode ser cortado
 PAUSA_SEGMENTO = 0.28      # respiro entre gancho, passagem, reflexão...
 LUFS_ALVO = -16.5
@@ -232,7 +232,7 @@ def _tempos_das_palavras(frase: str, inicio: float, fim: float) -> list[Palavra]
 #  GERAÇÃO
 # =====================================================================
 def gerar(segmentos: list[dict], destino_wav: Path, voz: str = VOZ_PADRAO,
-          mudo: bool = False) -> dict:
+          mudo: bool = False, curto: bool = False) -> dict:
     destino_wav.parent.mkdir(parents=True, exist_ok=True)
     taxa = 24000
 
@@ -305,6 +305,22 @@ def gerar(segmentos: list[dict], destino_wav: Path, voz: str = VOZ_PADRAO,
         "frases": mapa_frases,
         "segmentos": mapa_segmentos,
     }
+    if curto:
+        # O compositor acrescenta sua própria cauda depois do WAV.
+        from estudio.hf_sabio import CAUDA as cauda_visual
+        original = dados["duracao_s"]
+        alvo = min(max(original, 20.2 - cauda_visual), 29.8 - cauda_visual)
+        if alvo != original:
+            ajustado = destino_wav.with_suffix(".ajustado.wav")
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(destino_wav),
+                            "-af", f"atempo={original / alvo:.8f}", str(ajustado)], check=True)
+            ajustado.replace(destino_wav)
+            dados["duracao_s"] = duracao(destino_wav)
+            fator = dados["duracao_s"] / original
+            for grupo in ("frases", "segmentos", "palavras"):
+                for parte in dados[grupo]:
+                    parte["inicio"] = round(parte["inicio"] * fator, 3)
+                    parte["fim"] = round(parte["fim"] * fator, 3)
     destino_wav.with_suffix(".tempos.json").write_text(
         json.dumps(dados, ensure_ascii=False, indent=1), encoding="utf-8"
     )

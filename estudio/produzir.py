@@ -25,10 +25,12 @@ def produzir(item: dict, mudo: bool = False, voz_escolhida: str = voz.VOZ_PADRAO
     trabalho.mkdir(parents=True, exist_ok=True)
 
     wav = trabalho / "narracao.wav"
-    dados_voz = voz.gerar(segmentos, wav, voz=voz_escolhida, mudo=mudo)
+    dados_voz = voz.gerar(segmentos, wav, voz=voz_escolhida, mudo=mudo, curto=item.get("curto", False))
 
     destino = config.REELS / f"{item['id']}.mp4"
     destino.parent.mkdir(parents=True, exist_ok=True)
+    from estudio.carrossel import slide_capa
+    slide_capa(item, 0, 1).convert("RGB").save(destino.with_suffix(".jpg"), quality=92)
     render.renderizar(item, wav, dados_voz, destino)
     # O sabio e a voz Kokoro originais seguem no Reel; quiz opcional só no final.
     if item.get("interatividade"):
@@ -78,11 +80,13 @@ def main() -> int:
     p.add_argument("--pendentes", action="store_true")
     p.add_argument("--mudo", action="store_true", help="silêncio no lugar da voz (só teste de render)")
     p.add_argument("--voz", default=voz.VOZ_PADRAO)
+    p.add_argument("--limite", type=int, default=None)
     args = p.parse_args()
 
     lista = fila.carregar_fila()
     if args.pendentes:
-        alvos = [i for i in lista if i.get("status") in {"rascunho", "em_revisao"} and not (config.RAIZ / str(i.get("arquivo", "x"))).exists()]
+        alvos = [i for i in lista if i.get("status") in {"rascunho", "em_revisao"} and (not i.get("sha256") or not (config.RAIZ / i["arquivo"]).exists())]
+        alvos = alvos[:args.limite]
     else:
         alvos = [i for i in lista if i["id"] in args.id]
 
