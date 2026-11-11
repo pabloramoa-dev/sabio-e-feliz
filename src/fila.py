@@ -14,7 +14,8 @@ CAMPOS_OBRIGATORIOS = [
     "titulo", "gancho", "reflexao", "aplicacao", "cta", "arquivo",
 ]
 STATUS_VALIDOS = {"rascunho", "em_revisao", "aprovado", "publicado", "bloqueado"}
-FORMATOS = {"A", "B", "C", "D"}   # D = leitura: tres versiculos do mesmo capitulo, sem parafrase
+FORMATOS = {"A", "B", "C", "D"}   # D permanece apenas no histórico já publicado
+ESTILO_ATUAL = "aplicado_v1"
 
 # Promessas que o plano mestre proíbe (Seção 5.3).
 PALAVRAS_PROIBIDAS = [
@@ -88,6 +89,13 @@ def validar_item(item: dict, raiz: Path | None = None) -> list[str]:
 
     arquivo = raiz / str(item.get("arquivo", ""))
     status = item.get("status")
+    if status != "publicado" and item.get("origem") == "reserva":
+        # Falhar fechado: nenhuma nova leitura pura pode ser aprovada.
+        if item.get("estilo") != ESTILO_ATUAL:
+            erros.append("Reel novo sem versículo + situação cotidiana + aplicação")
+        if item.get("curto") or len(item.get("referencias", [])) != 1:
+            erros.append("Reel aplicado deve usar um só provérbio e três partes narradas")
+
     if status == "aprovado":
         # Item ainda elegível para publicação precisa manter o MP4 e o hash.
         if not arquivo.exists():
@@ -141,13 +149,10 @@ def proximo_episodio() -> dict:
     fila = carregar_fila()
     publicados_ids = {p["id"] for p in carregar_publicados()}
 
-    from datetime import datetime
-    from zoneinfo import ZoneInfo
-    dia_leitura = datetime.now(ZoneInfo("America/Sao_Paulo")).weekday() in (2, 6)
     elegiveis = [
         i for i in fila
         if i.get("status") == "aprovado"
-        and (dia_leitura or i.get("formato") != "D")
+        and i.get("estilo") == ESTILO_ATUAL
         and not i.get("publicado_em")
         and i.get("id") not in publicados_ids
     ]
@@ -156,7 +161,7 @@ def proximo_episodio() -> dict:
             "Nenhum episódio aprovado disponível. Produza e aprove novos Reels antes do próximo horário."
         )
 
-    elegiveis.sort(key=lambda i: (dia_leitura and i.get("formato") != "D", i.get("prioridade", 100), i["id"]))
+    elegiveis.sort(key=lambda i: (i.get("prioridade", 100), i["id"]))
     escolhido = elegiveis[0]
 
     erros = validar_item(escolhido)
