@@ -4,14 +4,34 @@ Pipeline automatizado do canal de Provérbios — um Reel de manhã e um carross
 
 > Um provérbio. Uma decisão melhor. Todos os dias.
 
+## Formato aprovado para os Reels — 11/11/2026
+
+Os próximos vídeos seguem o piloto aprovado: **leitura literal de um único
+provérbio na primeira fala, uma situação concreta do cotidiano, uma atitude
+prática e um único convite de envio**. O Sábio, o Kokoro `pm_alex+im_nicola`,
+a velocidade de voz 0,94, o cenário e o HyperFrames v2 são preservados.
+
+- Há 42 exemplos editoriais para 21 versículos no arquivo
+  `conteudo/cenas_aplicadas.json`, alternados pelo motor `estudio/aplicado.py`.
+- O reabastecimento só cria Reels nesse padrão e não inventa explicações
+  por IA; um versículo sem aplicação revisada é rejeitado.
+- Os 21 episódios ainda não publicados (EP-071 a EP-091) voltaram a rascunho
+  para nova renderização. Publicados e histórico permanecem como estavam.
+- Só Reels com `estilo=aplicado_v1` entram na fila de publicação.
+- Os carrosséis da tarde não mudam.
+
+A programação e os Secrets do Instagram não foram alterados.
+Documentação detalhada: [formato aplicado](docs/formato-aplicado.md).
+
+
+
 ## Visual HyperFrames aprovado em 30/09/2026
 
 HyperFrames é o padrão para **todos os próximos Reels produzidos** pelo estúdio
 ou pelo reabastecimento automático. Preserva o Sábio, o cenário da manhã e a voz
 `pm_alex+im_nicola` a 0,94, com câmera suave, gestos, transições, cartões,
 legendas destacadas, trilha original discreta, efeitos sonoros e CTA do episódio.
-Os cartões usam o conteúdo editorial de cada item; o formato D mantém a leitura
-bíblica, sem inserir a reflexão do piloto.
+Os cartões usam o conteúdo editorial de cada item. Todos os novos Reels passam pelo formato de versículo, exemplo cotidiano e aplicação.
 
 Os MP4 já prontos na reserva mantêm seu visual até serem renderizados novamente.
 Publicação, carrosséis, horários e credenciais continuam independentes do motor.
@@ -112,11 +132,10 @@ todas as checagens de máquina vira `aprovado` na hora, com
 - a credencial precisa apontar para `@sabioefeliz`, senão a publicação aborta
 
 **Reserva infinita** — workflow `Reabastecer o canal (piloto automático)`,
-todo domingo. Quando a fila escrita à mão está acabando, o `estudio.reserva`
-gera itens do **formato D (leitura)**: três versículos do mesmo capítulo,
-sorteados entre os 509 versículos autocontidos da base, sem nenhuma paráfrase.
-As únicas frases não bíblicas ali são de serviço, fixas e sempre iguais. Um
-rodízio por uso garante que nem versículo nem combinação se repetem tão cedo.
+todo domingo. Quando a fila está baixa, o `estudio.reserva` gera Reels
+com um provérbio literal, um exemplo cotidiano e um conselho prático de um
+banco editorial revisado. Cada tema tem duas situações que se alternam.
+A reserva de carrosséis mantém a seleção de três versículos sem comentário.
 
 **Credencial** — workflow `Renovar a credencial do Instagram`, toda segunda.
 A credencial de longa duração vale 60 dias; num canal que ninguém acompanha,
