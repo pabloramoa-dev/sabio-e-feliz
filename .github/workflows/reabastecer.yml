@@ -3,9 +3,10 @@ name: Reabastecer o canal (piloto automático)
 # Este é o workflow que faz o canal andar sozinho.
 #
 # Todos os dias ele olha as duas filas, gera material novo se a reserva estiver
-# baixa, renderiza, aprova pelo lint e commita. Nenhuma etapa espera por uma
-# pessoa — mas nenhuma etapa também inventa interpretação: o material novo é
-# formato D (leitura), só o texto bíblico em domínio público.
+# baixa, renderiza, aprova pelo lint e commita. Reels novos obrigatoriamente
+# seguem o piloto: versículo literal, situação cotidiana e atitude prática,
+# sempre com cenas previamente escritas em conteudo/cenas_aplicadas.json.
+# O carrossel da tarde não muda.
 
 on:
   schedule:
@@ -17,6 +18,11 @@ on:
       - "src/fila.py"
       - "src/instagram.py"
       - "estudio/reserva.py"
+      - "estudio/aplicado.py"
+      - "estudio/roteiro.py"
+      - "conteudo/cenas_aplicadas.json"
+      - "conteudo/fila.json"
+      - "src/reabastecer.py"
       - ".github/workflows/reabastecer.yml"
   workflow_dispatch:
     inputs:
