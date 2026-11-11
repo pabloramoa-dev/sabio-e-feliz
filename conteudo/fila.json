@@ -2007,11 +2007,11 @@
   "cta": "Manda pra alguém com quem vale a pena conversar com calma.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-071.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 36.43,
+  "sha256": "6f7fe4dd7b9f62a7d8aee3d210036043c32cccd5a27e8f754514e7d49a7cdbcf",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-11T22:31:53+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
@@ -2019,7 +2019,14 @@
   "renderizador": "hyperframes",
   "curto": false,
   "estilo": "aplicado_v1",
-  "variante_aplicada": 0
+  "variante_aplicada": 0,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "e7f6a896bf601c490ec67c78e82b4ad7c9393c6451dbbcb2006c164685aa92e9",
+   "video_sha256": "6f7fe4dd7b9f62a7d8aee3d210036043c32cccd5a27e8f754514e7d49a7cdbcf",
+   "created_at": "2026-11-11T22:26:17.264117+00:00"
+  }
  },
  {
   "id": "EP-072",
@@ -2038,11 +2045,11 @@
   "cta": "Manda pra quem está tentando deixar a procrastinação de lado.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-072.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 35.7,
+  "sha256": "65cde40c4bdb8b68c5ed38d00df67f80bdbf18155be395a72ac37d1e3a20d200",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-11T22:31:53+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
@@ -2050,7 +2057,14 @@
   "renderizador": "hyperframes",
   "curto": false,
   "estilo": "aplicado_v1",
-  "variante_aplicada": 0
+  "variante_aplicada": 0,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "5e70d81f17abc1c1b167505daafad6a05e3247b7d78de0bf2b7f2fc9b698ec1c",
+   "video_sha256": "65cde40c4bdb8b68c5ed38d00df67f80bdbf18155be395a72ac37d1e3a20d200",
+   "created_at": "2026-11-11T22:29:09.897382+00:00"
+  }
  },
  {
   "id": "EP-073",
@@ -2069,11 +2083,11 @@
   "cta": "Manda pra quem sempre esteve por perto.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-073.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 33.2,
+  "sha256": "dc9608ad24a7f402d6d14199056b8554df006c4e70e03bf848f64e8af9f4ec91",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-11T22:31:53+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
@@ -2081,7 +2095,14 @@
   "renderizador": "hyperframes",
   "curto": false,
   "estilo": "aplicado_v1",
-  "variante_aplicada": 0
+  "variante_aplicada": 0,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "f8365b49c8176ee04183fc2225ea4c25e8b752f32163d4830ac4fe7856342aa3",
+   "video_sha256": "dc9608ad24a7f402d6d14199056b8554df006c4e70e03bf848f64e8af9f4ec91",
+   "created_at": "2026-11-11T22:31:53.381720+00:00"
+  }
  },
  {
   "id": "EP-074",
