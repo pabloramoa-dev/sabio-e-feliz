@@ -20,15 +20,18 @@ ALVO_PADRAO = 21      # três semanas de folga em cada fila
 
 def faltando(alvo: int = ALVO_PADRAO) -> dict:
     reels = rfila.carregar_fila()
+    estilo = rfila.ESTILO_ATUAL
     publicados_reels = {p["id"] for p in rfila.carregar_publicados()}
     prontos_reels = [
         i for i in reels
         if i.get("status") == "aprovado"
+        and i.get("estilo") == estilo
         and not i.get("publicado_em")
         and i["id"] not in publicados_reels
     ]
     # o que já está escrito mas ainda não virou vídeo também conta como reserva
-    na_esteira_reels = [i for i in reels if i.get("status") in {"rascunho", "em_revisao"}]
+    na_esteira_reels = [i for i in reels if i.get("status") in {"rascunho", "em_revisao"}
+                        and i.get("estilo") == estilo]
 
     carros = cfila.carregar_fila()
     publicados_carros = cfila.ja_publicados()

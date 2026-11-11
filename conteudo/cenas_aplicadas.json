@@ -1,0 +1,239 @@
+{
+  "descricao": "Cenas editoriais fixas e revisáveis para o formato provérbio + situação cotidiana + ação prática. Cada chave corresponde ao versículo literal na base.",
+  "versao": 1,
+  "cenas": {
+    "PRO-15-01": [
+      {
+        "reflexao": "Imagine que alguém da sua família responde com irritação. Você já está cansado e sente vontade de falar no mesmo tom. Mas isso pode transformar um problema pequeno numa discussão.",
+        "aplicacao": "Experimente dizer: Quero entender o que houve, mas vamos conversar com calma. Você pode estabelecer limites e discordar sem ofender. A resposta tranquila não é fraqueza; é uma escolha."
+      },
+      {
+        "reflexao": "Você recebe uma mensagem atravessada no grupo da família e começa a escrever uma resposta enorme, cheia de acusações. Naquele momento, cada palavra parece necessária. Mas o texto só vai aumentar a tensão.",
+        "aplicacao": "Antes de apertar enviar, leia a mensagem outra vez. Tire a frase que machuca e diga apenas o que precisa ser resolvido. Ser firme não exige ser agressivo."
+      }
+    ],
+    "PRO-06-06": [
+      {
+        "reflexao": "A louça se acumula, a roupa fica por guardar e você pensa: faço tudo amanhã. Quando chega o dia seguinte, a tarefa parece ainda maior. Pequenas obrigações ignoradas acabam pesando demais.",
+        "aplicacao": "Escolha uma tarefa simples que está parada e faça só os primeiros cinco minutos. Depois decida se continua. O importante é começar, mesmo sem vontade."
+      },
+      {
+        "reflexao": "Pense naquele trabalho que você deixa para a última hora. Enquanto espera a motivação aparecer, o prazo se aproxima e a ansiedade aumenta. A formiga ensina a agir um pouco por vez.",
+        "aplicacao": "Separe hoje dez minutos para avançar no que está pendente. Um passo pequeno e constante costuma valer mais do que uma grande promessa para amanhã."
+      }
+    ],
+    "PRO-17-17": [
+      {
+        "reflexao": "Um amigo perdeu o emprego e parou de aparecer nas reuniões. Você percebe, mas pensa que talvez seja melhor não incomodar. Só que, nos dias difíceis, uma presença discreta pode fazer diferença.",
+        "aplicacao": "Mande uma mensagem simples: Lembrei de você. Quer conversar ou tomar um café? Amizade se mostra também quando não há festa nem novidades boas."
+      },
+      {
+        "reflexao": "Quando tudo vai bem, o celular fica cheio de mensagens. Mas, num dia de tristeza, poucas pessoas perguntam de verdade como você está. O provérbio fala dessa amizade que permanece.",
+        "aplicacao": "Pense em alguém que anda mais quieto e faça contato sem cobrar resposta. Pergunte como essa pessoa está e ofereça escuta, não uma solução apressada."
+      }
+    ],
+    "PRO-18-13": [
+      {
+        "reflexao": "Sua filha começa a contar por que chegou atrasada e, antes de ela terminar, você já dá uma bronca. Só depois descobre que aconteceu algo inesperado. Responder cedo demais pode gerar injustiça.",
+        "aplicacao": "Na próxima conversa difícil, deixe a pessoa terminar e pergunte: Entendi direito o que aconteceu? Ouvir primeiro não significa concordar; significa compreender."
+      },
+      {
+        "reflexao": "No trabalho, alguém diz que um pedido saiu errado. Você interrompe para se defender, sem saber o problema inteiro. A conversa esquenta e ninguém consegue explicar os fatos com calma.",
+        "aplicacao": "Espere a explicação completa, repita o que entendeu e só então responda. Uma pergunta sincera pode evitar uma discussão desnecessária."
+      }
+    ],
+    "PRO-25-28": [
+      {
+        "reflexao": "Você sai de uma reunião irritado e sente vontade de descontar em quem não tem nada a ver com o problema. Quando a raiva manda em tudo, a gente perde a proteção dos próprios limites.",
+        "aplicacao": "Faça uma pausa antes da resposta. Respire, tome água e diga: Eu preciso de alguns minutos para conversar melhor. Autocontrole é escolher o momento certo."
+      },
+      {
+        "reflexao": "No trânsito, alguém fecha seu carro e você quase transforma um susto numa briga. Em segundos, uma atitude impulsiva pode trazer consequências que duram muito mais.",
+        "aplicacao": "Afaste-se do conflito e concentre-se em chegar em segurança. Nem toda provocação merece uma resposta; saber recuar também é sabedoria."
+      }
+    ],
+    "PRO-12-25": [
+      {
+        "reflexao": "Uma colega parece cansada e responde tudo com poucas palavras. Você não sabe o que ela está enfrentando. Um comentário duro pode piorar o dia; uma palavra cuidadosa pode abrir espaço.",
+        "aplicacao": "Pergunte sem pressionar: Está tudo bem? Posso ajudar em alguma coisa? Às vezes a pessoa precisa mais de acolhimento do que de um conselho."
+      },
+      {
+        "reflexao": "Seu irmão comenta que está preocupado com as contas e você quase responde: Todo mundo tem problema. Mas essa frase pode fazê-lo se sentir ainda mais sozinho.",
+        "aplicacao": "Em vez de minimizar, diga: Imagino que esteja difícil. Quer pensar comigo numa saída? Uma boa palavra não resolve tudo, mas pode oferecer companhia."
+      }
+    ],
+    "PRO-19-11": [
+      {
+        "reflexao": "Você encontra uma mensagem antiga que ainda incomoda e pensa em responder meses depois. A vontade de vencer aquela discussão volta, mesmo quando a outra pessoa nem lembra mais dela.",
+        "aplicacao": "Pergunte a si mesmo se reabrir o assunto vai ajudar. Se for necessário conversar, faça isso com respeito; se não for, não alimente a briga."
+      },
+      {
+        "reflexao": "Numa reunião de família, alguém faz um comentário desagradável. Você poderia devolver na mesma hora e deixar todos desconfortáveis. Mas nem toda ofensa precisa virar uma disputa.",
+        "aplicacao": "Escolha uma resposta curta e respeitosa ou mude de assunto. Se algo importante ficou mal resolvido, converse depois, em particular."
+      }
+    ],
+    "PRO-27-17": [
+      {
+        "reflexao": "Um amigo comenta que você tem interrompido as pessoas quando elas falam. Dá vontade de rebater, mas talvez ele esteja apontando algo que ninguém mais teve coragem de dizer.",
+        "aplicacao": "Escute até o fim e pergunte por um exemplo concreto. Quem nos ajuda a melhorar nem sempre diz apenas coisas agradáveis."
+      },
+      {
+        "reflexao": "Seu colega revisa um trabalho seu e mostra um erro. Na hora, você fica incomodado, como se a correção diminuísse seu esforço. Mas o cuidado dele pode melhorar o resultado.",
+        "aplicacao": "Agradeça a observação, confira o erro e ajuste o trabalho. Uma boa parceria permite conversas francas sem transformar tudo em ataque pessoal."
+      }
+    ],
+    "PRO-22-01": [
+      {
+        "reflexao": "Um cliente recebe um troco maior por engano, e ninguém perceberia se você ficasse calado. Naquela hora, a escolha é entre uma vantagem rápida e a confiança que as pessoas depositam em você.",
+        "aplicacao": "Avise o erro e devolva o valor. A honestidade nas pequenas decisões ajuda a construir um nome em que os outros podem confiar."
+      },
+      {
+        "reflexao": "No trabalho, alguém pede que você diga que uma tarefa está pronta, mesmo faltando uma parte. Parece um detalhe, mas uma mentira pequena pode comprometer toda a sua credibilidade.",
+        "aplicacao": "Diga com clareza o que falta e quando poderá concluir. Ser confiável vale mais do que parecer perfeito por alguns minutos."
+      }
+    ],
+    "PRO-15-22": [
+      {
+        "reflexao": "Você pensa em mudar de emprego e já está decidido, mas ainda não conversou com ninguém sobre os riscos. Uma decisão importante feita no impulso pode ignorar detalhes essenciais.",
+        "aplicacao": "Antes de escolher, fale com pessoas de confiança que tenham experiências diferentes. Ouça os conselhos e avalie com calma; a decisão continua sendo sua."
+      },
+      {
+        "reflexao": "Sua família planeja uma reforma e cada um imagina um gasto diferente. Sem ouvir quem entende do assunto, o orçamento cresce e começam as discussões.",
+        "aplicacao": "Peça mais de uma opinião, anote os custos e combine prioridades antes de começar. Bons conselhos ajudam a evitar surpresas."
+      }
+    ],
+    "PRO-16-18": [
+      {
+        "reflexao": "Você domina um assunto e começa a tratar as dúvidas dos outros como bobagem. Um dia, comete um erro simples porque achou que não precisava conferir nada.",
+        "aplicacao": "Antes de afirmar que sabe tudo, reveja o trabalho e ouça outra opinião. A humildade abre espaço para aprender mesmo quando temos experiência."
+      },
+      {
+        "reflexao": "Depois de receber elogios, você começa a assumir tarefas demais e ignora quem avisa que o prazo é curto. A confiança vira problema quando deixa de ouvir a realidade.",
+        "aplicacao": "Reconheça os próprios limites, peça ajuda quando necessário e planeje o que realmente consegue fazer. Não é preciso provar valor o tempo todo."
+      }
+    ],
+    "PRO-13-11": [
+      {
+        "reflexao": "Uma oferta promete dinheiro fácil em poucos dias. Parece a solução para todas as contas, mas a pressa faz você deixar de perguntar quais são os riscos.",
+        "aplicacao": "Antes de decidir, confira as informações e desconfie de promessas de lucro garantido. Organizar pequenas economias costuma ser mais seguro do que correr atrás de atalhos."
+      },
+      {
+        "reflexao": "Você quer comprar algo caro e pensa em parcelar sem olhar o orçamento. No entusiasmo, esquece que as parcelas vão acompanhar você por muitos meses.",
+        "aplicacao": "Anote os gastos, escolha uma quantia possível para guardar e avance aos poucos. Constância pode fazer mais diferença que pressa."
+      }
+    ],
+    "PRO-17-22": [
+      {
+        "reflexao": "Depois de um dia difícil, seu filho conta uma história engraçada. Você quase nem escuta, porque ainda está preso nas preocupações. Mas aquele instante leve pode aproximar vocês.",
+        "aplicacao": "Reserve alguns minutos para estar presente e compartilhar a alegria. Rir junto não apaga os problemas, mas ajuda a atravessar o dia com companhia."
+      },
+      {
+        "reflexao": "Uma amiga está passando por uma semana pesada e você tenta resolver tudo por ela. Talvez ela só quisesse conversar e lembrar de algo bom por um momento.",
+        "aplicacao": "Ofereça escuta e convide para uma atividade simples de que ela gosta. Alegria e cuidado podem fazer parte da rotina, sem negar as dificuldades."
+      }
+    ],
+    "PRO-21-23": [
+      {
+        "reflexao": "Numa conversa em família, você descobre um segredo que não deveria espalhar. A vontade de comentar com outra pessoa é grande, mas isso pode ferir uma confiança importante.",
+        "aplicacao": "Antes de falar, pergunte se a informação é sua para contar e se vai ajudar alguém. O silêncio responsável também é uma forma de respeito."
+      },
+      {
+        "reflexao": "Você está irritado e começa a escrever um comentário ofensivo numa rede social. Parece um alívio por alguns segundos, mas a mensagem pode machucar e alimentar outra briga.",
+        "aplicacao": "Saia da tela por alguns minutos e volte quando estiver mais calmo. Se precisar discordar, critique a ideia sem atacar a pessoa."
+      }
+    ],
+    "PRO-14-30": [
+      {
+        "reflexao": "Você abre a rede social e vê as férias, a casa e as conquistas de todo mundo. Em poucos minutos, esquece as coisas boas da própria vida e começa a se comparar.",
+        "aplicacao": "Lembre que a internet mostra recortes, não a história inteira. Faça uma pausa e anote algo pelo qual você é grato hoje."
+      },
+      {
+        "reflexao": "Uma pessoa próxima consegue uma promoção e você percebe uma pontinha de inveja. A conquista dela parece diminuir a sua, mesmo que não tenha tirado nada de você.",
+        "aplicacao": "Parabenize com sinceridade e volte a atenção para suas próprias metas. O sucesso dos outros não precisa se tornar uma derrota sua."
+      }
+    ],
+    "PRO-24-16": [
+      {
+        "reflexao": "Você começou a estudar, errou numa prova e pensou em desistir. O resultado frustrou, mas um tropeço não conta toda a sua história nem define o que vem depois.",
+        "aplicacao": "Revise o que errou, peça orientação e escolha um assunto para estudar novamente. Recomeçar com um passo possível é uma forma de perseverança."
+      },
+      {
+        "reflexao": "Uma receita deu errado e você ficou constrangido diante da família. Dá vontade de dizer que nunca mais vai tentar. Só que aprender envolve experiências que nem sempre funcionam.",
+        "aplicacao": "Descubra o que pode ajustar e tente novamente num dia tranquilo. Errar uma vez não significa que você não consegue melhorar."
+      }
+    ],
+    "PRO-03-27": [
+      {
+        "reflexao": "Uma vizinha precisa de ajuda para levar compras até a porta. Você está com pressa, mas sabe que pode dedicar dois minutos. Às vezes o bem aparece numa oportunidade pequena.",
+        "aplicacao": "Se puder ajudar com segurança, ofereça a mão naquele momento. Um gesto simples pode aliviar o dia de alguém."
+      },
+      {
+        "reflexao": "Um colega pede a informação que você já tem e você pensa em responder só depois. Para ele, porém, aquela resposta pode destravar uma tarefa importante.",
+        "aplicacao": "Se estiver ao seu alcance, responda ou explique quando conseguirá ajudar. Fazer o bem também é não adiar o que podemos resolver."
+      }
+    ],
+    "PRO-29-11": [
+      {
+        "reflexao": "Alguém faz uma crítica e você sente vontade de levantar a voz imediatamente. O que começa como defesa pode virar uma discussão na frente de todos.",
+        "aplicacao": "Diga que precisa pensar antes de responder e retome o assunto com calma. Controlar a reação dá espaço para uma conversa melhor."
+      },
+      {
+        "reflexao": "Você lê um comentário desagradável no celular e começa a digitar tudo o que está sentindo. Em poucos segundos, a raiva escolhe palavras que você talvez não escolheria depois.",
+        "aplicacao": "Feche a conversa por alguns minutos e pergunte o que realmente precisa ser dito. Ter domínio sobre a resposta é mais útil do que desabafar sem filtro."
+      }
+    ],
+    "PRO-12-01": [
+      {
+        "reflexao": "Seu professor mostra um erro no seu trabalho. Você fica com vergonha e pensa em se defender, mas a correção pode ensinar exatamente o que estava faltando.",
+        "aplicacao": "Pergunte qual parte precisa melhorar e tente refazer com atenção. Receber uma crítica útil não diminui o seu esforço."
+      },
+      {
+        "reflexao": "Uma pessoa da equipe aponta que você esqueceu uma etapa. Dá vontade de justificar tudo, mas talvez seja melhor entender o impacto do erro antes.",
+        "aplicacao": "Agradeça o aviso, confirme o que precisa ser corrigido e ajuste o processo. Aprender com a observação evita repetir o mesmo problema."
+      }
+    ],
+    "PRO-10-19": [
+      {
+        "reflexao": "Você tenta resolver uma discussão explicando a mesma coisa de cinco maneiras. Quanto mais fala, mais a outra pessoa se irrita, e ninguém escuta ninguém.",
+        "aplicacao": "Faça uma pausa, diga o ponto principal em uma frase e pergunte o que a outra pessoa entendeu. Às vezes menos palavras trazem mais clareza."
+      },
+      {
+        "reflexao": "No grupo de mensagens, um mal-entendido cresce porque cada pessoa manda textos enormes. A conversa fica cheia de frases atravessadas e ninguém chega ao assunto verdadeiro.",
+        "aplicacao": "Pare de responder a cada mensagem. Quando for possível, converse diretamente com calma e mantenha o foco no que precisa ser resolvido."
+      }
+    ],
+    "PRO-27-02": [
+      {
+        "reflexao": "Você conclui um projeto e passa a conversa inteira repetindo como foi importante. Mesmo quando a conquista é real, as pessoas podem sentir que não há espaço para mais ninguém.",
+        "aplicacao": "Compartilhe a alegria com simplicidade e reconheça quem ajudou. Deixe que o trabalho e as atitudes também falem por você."
+      },
+      {
+        "reflexao": "Depois de ajudar alguém, você pensa em contar para todo mundo o que fez. A vontade de receber reconhecimento é humana, mas o gesto perde delicadeza quando vira propaganda.",
+        "aplicacao": "Faça o bem sem transformar a pessoa ajudada em história para ganhar elogio. A gratidão que importa nem sempre aparece em público."
+      }
+    ]
+  },
+  "convites": {
+    "PRO-15-01": "Manda pra alguém com quem vale a pena conversar com calma.",
+    "PRO-06-06": "Manda pra quem está tentando deixar a procrastinação de lado.",
+    "PRO-17-17": "Manda pra quem sempre esteve por perto.",
+    "PRO-18-13": "Manda pra quem sabe ouvir antes de responder.",
+    "PRO-25-28": "Manda pra quem está aprendendo a ter paciência.",
+    "PRO-12-25": "Manda pra quem precisa de uma boa palavra hoje.",
+    "PRO-19-11": "Manda pra quem está tentando deixar uma mágoa para trás.",
+    "PRO-27-17": "Manda pra quem te ajuda a ser melhor.",
+    "PRO-22-01": "Manda pra quem valoriza a honestidade.",
+    "PRO-15-22": "Manda pra quem está diante de uma decisão importante.",
+    "PRO-16-18": "Manda pra quem reconhece o valor da humildade.",
+    "PRO-13-11": "Manda pra quem está construindo seus planos com paciência.",
+    "PRO-17-22": "Manda pra quem consegue alegrar um dia difícil.",
+    "PRO-21-23": "Manda pra quem sabe que palavras têm consequências.",
+    "PRO-14-30": "Manda pra quem precisa se lembrar do próprio valor.",
+    "PRO-24-16": "Manda pra quem está tentando recomeçar.",
+    "PRO-03-27": "Manda pra quem faz o bem sem esperar nada em troca.",
+    "PRO-29-11": "Manda pra quem está aprendendo a lidar com a raiva.",
+    "PRO-12-01": "Manda pra quem te ensina a melhorar.",
+    "PRO-10-19": "Manda pra quem aprendeu o valor do silêncio.",
+    "PRO-27-02": "Manda pra quem conquista sem precisar se exibir."
+  }
+}

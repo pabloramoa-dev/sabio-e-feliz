@@ -1,17 +1,14 @@
 """Reserva infinita — o canal nunca fica sem o que publicar.
 
-A fila escrita à mão acaba um dia. Quando isso acontece, este módulo produz
-material novo sozinho, e faz isso de um jeito específico: **sem inventar
-interpretação nenhuma**. O conteúdo é o texto bíblico em domínio público,
-sorteado e organizado; as únicas frases que não vêm da Bíblia são as de
-serviço, fixas e sempre iguais ("leia o capítulo inteiro hoje").
+Os novos Reels usam o formato aprovado: um versículo literal, uma
+situação concreta do cotidiano e uma ação prática. As situações vêm de
+conteudo/cenas_aplicadas.json (biblioteca editorial versionada, sem
+interpretação de IA na hora de publicar). A seleção alterna as variações
+revisadas de cada versículo, em rodízio.
 
-É o formato D — leitura. Três versículos do mesmo capítulo:
-  - Reel: o Sábio lê os três, com o capítulo na capa
-  - Carrossel: capa do capítulo, um versículo por slide, assinatura
-
-Assim o pipeline pode rodar por anos sem ninguém escrever nada — e sem
-publicar nenhuma frase que ninguém revisou.
+Os carrosséis continuam com três versículos do mesmo capítulo, sem explicação.
+Versículos novos para Reels exigem exemplo editorial revisado na biblioteca.
+Não gerar vídeo de leitura pura para preencher lacunas.
 
     python -m estudio.reserva --carrosseis 10 --reels 10
 """
@@ -149,41 +146,59 @@ def gerar_carrosseis(quantos: int, semente: str | None = None) -> list[dict]:
     return novos
 
 
-def reel_curto(numero: int, modelo: dict) -> dict:
-    """Adapta uma situação editorial revisada, preservando o versículo literal."""
-    leitura = numero % 7 in (1, 5)
-    verso = modelo["texto_biblico"]
-    abertura = verso.split(";")[0].split(",")[0].rstrip(".")
-    return {
-        "id": f"EP-{numero:03d}", "origem": "reserva", "curto": True,
-        "referencias": modelo["referencias"], "referencia_exibida": modelo["referencia_exibida"],
-        "texto_biblico": verso, "abertura": abertura + ".",
-        "formato": "D" if leitura else modelo["formato"],
-        "tema": modelo["tema"], "titulo": modelo["titulo"], "gancho": modelo["gancho"],
+def reel_curto(numero: int, modelo: dict, indice: int = 0) -> dict:
+    """Compatibilidade: gera o Reel aplicado, não o formato curto de leitura."""
+    from estudio.aplicado import preparar
+
+    novo = {
+        "id": f"EP-{numero:03d}", "origem": "reserva",
+        "referencias": list(modelo["referencias"]),
+        "referencia_exibida": modelo["referencia_exibida"],
+        "texto_biblico": modelo["texto_biblico"],
+        "formato": modelo["formato"], "tema": modelo["tema"],
+        "titulo": modelo["titulo"], "gancho": modelo["gancho"],
         "reflexao": modelo["reflexao"], "aplicacao": modelo["aplicacao"],
-        "cta": "Manda pra quem precisa ouvir isso hoje.", "cta_tipo": "envio",
-        "arquivo": f"reels/EP-{numero:03d}.mp4", "duracao_s": None, "sha256": None,
-        "status": "rascunho", "aprovado_por": None, "aprovado_em": None,
-        "prioridade": 50, "publicado_em": None, "instagram_media_id": None,
+        "cta": modelo["cta"], "cta_tipo": "envio",
+        "arquivo": f"reels/EP-{numero:03d}.mp4",
+        "duracao_s": None, "sha256": None,
+        "status": "rascunho", "aprovado_por": None,
+        "aprovado_em": None, "prioridade": 50,
+        "publicado_em": None, "instagram_media_id": None,
         "criado_em": datetime.now(timezone.utc).isoformat(timespec="seconds"),
     }
+    return preparar(novo, indice)
 
 
 def gerar_reels(quantos: int, semente: str | None = None) -> list[dict]:
+    """Usa só modelos editoriais originais, nunca cópias já geradas."""
+    from estudio.aplicado import ESTILO, carregar
+
     fila = carregar_reels()
-    modelos = [i for i in fila if i["formato"] in ("A", "B", "C") and not i.get("curto")]
+    referencias_revisadas = set(carregar())
+    modelos = [
+        i for i in fila
+        if i.get("origem") != "reserva"
+        and i["formato"] in ("A", "B", "C")
+        and len(i.get("referencias", [])) == 1
+        and i["referencias"][0] in referencias_revisadas
+    ]
+    if not modelos:
+        raise RuntimeError("Nenhum modelo de provérbio possui aplicação revisada")
     proximo = max(int(i["id"].split("-")[-1]) for i in fila) + 1
     rng = random.Random(semente)
     rng.shuffle(modelos)
-    usos = {m["titulo"]: 0 for m in modelos}
+    usos = {m["referencias"][0]: 0 for m in modelos}
     for item in fila:
-        if item.get("curto") and item["titulo"] in usos:
-            usos[item["titulo"]] += 1
+        ref = (item.get("referencias") or [None])[0]
+        if item.get("estilo") == ESTILO and ref in usos:
+            usos[ref] += 1
+
     novos = []
     for numero in range(proximo, proximo + quantos):
-        modelo = min(modelos, key=lambda m: usos[m["titulo"]])
-        novos.append(reel_curto(numero, modelo))
-        usos[modelo["titulo"]] += 1
+        modelo = min(modelos, key=lambda m: usos[m["referencias"][0]])
+        ref = modelo["referencias"][0]
+        novos.append(reel_curto(numero, modelo, usos[ref]))
+        usos[ref] += 1
     if novos:
         salvar_reels(fila + novos)
     return novos
