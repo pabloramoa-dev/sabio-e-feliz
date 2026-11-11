@@ -22,7 +22,6 @@ on:
       - "estudio/roteiro.py"
       - "conteudo/cenas_aplicadas.json"
       - "conteudo/fila.json"
-      - "src/reabastecer.py"
       - ".github/workflows/reabastecer.yml"
   workflow_dispatch:
     inputs:
