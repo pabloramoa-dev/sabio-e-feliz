@@ -5,12 +5,13 @@ on:
     branches:
       - piloto/proverbio-aplicacao-20261111
     paths:
-      - "pilotos/**"
+      - "pilotos/*.py"
+      - "pilotos/README.md"
       - ".github/workflows/piloto-proverbio-aplicacao.yml"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: sabio-piloto-aplicacao
@@ -22,12 +23,14 @@ jobs:
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
 
-      - name: Verificar o roteiro (sem produção)
+      - name: Verificar roteiro sem publicar
         run: python -m pilotos.proverbio_aplicacao --roteiro
 
       - name: Dependências do estúdio
@@ -44,19 +47,22 @@ jobs:
           path: modelos
           key: kokoro-v1.0
 
-      - name: Renderizar MP4 com Seu Ranzinza, Kokoro e HyperFrames
+      - name: Renderizar MP4 com personagem e voz originais
         env:
           PUBLICAR_ATIVO: "false"
           DRY_RUN: "true"
         run: python -m pilotos.proverbio_aplicacao
 
-      - name: Arquivar piloto para revisão (sem Instagram)
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: piloto-sabio-proverbio-aplicado
-          path: |
-            output/pilotos/proverbio-aplicacao/*.mp4
-            output/pilotos/proverbio-aplicacao/resultado.json
-          if-no-files-found: warn
-          retention-days: 3
+      - name: Salvar o MP4 validado na branch de piloto
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p pilotos/arquivos
+          cp output/pilotos/proverbio-aplicacao/sabio-proverbio-aplicado-15-1.mp4 pilotos/arquivos/
+          cp output/pilotos/proverbio-aplicacao/resultado.json pilotos/arquivos/
+          test -s pilotos/arquivos/sabio-proverbio-aplicado-15-1.mp4
+          git config user.name "sabio-piloto-bot"
+          git config user.email "actions@github.com"
+          git add -f pilotos/arquivos/sabio-proverbio-aplicado-15-1.mp4 pilotos/arquivos/resultado.json
+          git diff --cached --quiet || git commit -m "piloto: MP4 validado para revisão [skip ci]"
+          git push origin HEAD:piloto/proverbio-aplicacao-20261111
