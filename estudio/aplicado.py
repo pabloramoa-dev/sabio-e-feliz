@@ -46,6 +46,9 @@ def preparar(item: dict, indice: int = 0) -> dict:
     if item["texto_biblico"].strip() != versiculo["texto"].strip():
         raise ValueError(f"Texto bíblico divergente da fonte em {referencia}")
 
+    convite = json.loads(BANCO.read_text(encoding="utf-8")).get("convites", {}).get(referencia)
+    if not convite or not convite.startswith("Manda pra "):
+        raise ValueError(f"{referencia}: falta convite de envio revisado")
     cena = cenas[indice % len(cenas)]
     for campo in ("reflexao", "aplicacao"):
         if not isinstance(cena.get(campo), str) or len(cena[campo].split()) < 12:
@@ -60,7 +63,7 @@ def preparar(item: dict, indice: int = 0) -> dict:
         "referencia_exibida": versiculo["referencia"],
         "reflexao": cena["reflexao"],
         "aplicacao": cena["aplicacao"],
-        "cta": f"Manda pra quem conversou com você sobre {item.get('tema') or 'esse assunto'}.",
+        "cta": convite,
         "cta_tipo": "envio",
         "variante_aplicada": indice % len(cenas),
     })
