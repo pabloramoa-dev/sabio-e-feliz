@@ -90,6 +90,9 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         if: always()
+        # A disponibilidade da mídia NÃO depende do armazenamento temporário
+        # de artefatos: o MP4 validado será gravado no repositório em "Commitar".
+        continue-on-error: true
         with:
           name: reabastecimento-${{ github.run_id }}
           path: |
