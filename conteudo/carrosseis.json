@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 79,
+ "total": 80,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4296,6 +4296,60 @@
    "instagram_media_id": "17898829311414102",
    "criado_em": "2026-11-11T12:42:12+00:00",
    "produzido_em": "2026-11-11T12:48:37+00:00"
+  },
+  {
+   "id": "CAR-080",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-19-03",
+    "PRO-19-10",
+    "PRO-19-23"
+   ],
+   "referencia_exibida": "Provérbios 19",
+   "capitulo": 19,
+   "texto_biblico": "A estultícia do homem perverte o seu caminho, e o seu coração se irrita contra o Senhor.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 19:3",
+     "texto": "A estultícia do homem perverte o seu caminho, e o seu coração se irrita contra o Senhor."
+    },
+    {
+     "referencia": "Provérbios 19:10",
+     "texto": "Ao tolo não convém o luxo; quanto menos ao servo dominar os príncipes!"
+    },
+    {
+     "referencia": "Provérbios 19:23",
+     "texto": "O temor do Senhor encaminha para a vida; aquele que o tem ficará satisfeito, e mal nenhum o visitará."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 19",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 19 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-080/CAR-080-01.jpg",
+    "carrosseis/CAR-080/CAR-080-02.jpg",
+    "carrosseis/CAR-080/CAR-080-03.jpg",
+    "carrosseis/CAR-080/CAR-080-04.jpg",
+    "carrosseis/CAR-080/CAR-080-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-080/CAR-080-01.jpg": "0889d6ce766ae7ff9f64a41ecb304019c2c2a21a40ca85c2ca46398112fd2aad",
+    "carrosseis/CAR-080/CAR-080-02.jpg": "90d05dbd2e2f79e267f6657c612a6681ebac7d4e353a2c3b51429676ec81e5e8",
+    "carrosseis/CAR-080/CAR-080-03.jpg": "009760db7665ba8332f8282ed558eedd0dd07e8a68e1e0a2461dfa6f1a7fb95a",
+    "carrosseis/CAR-080/CAR-080-04.jpg": "d1d2791844f1c24c4c0a4849cb807266a3c8fd004e04b43ee1d9baf6c8231880",
+    "carrosseis/CAR-080/CAR-080-05.jpg": "0948f934469e34ea8543f7681e4c3e92e2a9c6fcba78ce4b8363e1ec6344f96c"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-12T14:00:14+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-12T13:45:24+00:00",
+   "produzido_em": "2026-11-12T14:00:14+00:00"
   }
  ]
 }

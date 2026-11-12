@@ -2121,11 +2121,11 @@
   "cta": "Manda pra quem sabe ouvir antes de responder.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-074.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 34.63,
+  "sha256": "c3be0baffaf6eda991ad07490a0d4b9ac578f7d50e1c6126916620c5d2581b7b",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-12T14:00:14+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
@@ -2133,7 +2133,14 @@
   "renderizador": "hyperframes",
   "curto": false,
   "estilo": "aplicado_v1",
-  "variante_aplicada": 0
+  "variante_aplicada": 0,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "a51fff946dde53c6d93a9e0380df73485d8551ddeb010bac6a31c86d38d0ac20",
+   "video_sha256": "c3be0baffaf6eda991ad07490a0d4b9ac578f7d50e1c6126916620c5d2581b7b",
+   "created_at": "2026-11-12T13:50:21.987883+00:00"
+  }
  },
  {
   "id": "EP-075",
@@ -2152,11 +2159,11 @@
   "cta": "Manda pra quem está aprendendo a ter paciência.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-075.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 35.53,
+  "sha256": "6e25d989814f5b709b31e1a0690c53c2f5963b6b462fcb18d357a9ac29dd57d8",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-12T14:00:14+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
@@ -2164,7 +2171,14 @@
   "renderizador": "hyperframes",
   "curto": false,
   "estilo": "aplicado_v1",
-  "variante_aplicada": 0
+  "variante_aplicada": 0,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "4944d43dfef31c4dc4b0a6d1ef7af45f62f7b276e7092e45dc322b31e3ac5ad4",
+   "video_sha256": "6e25d989814f5b709b31e1a0690c53c2f5963b6b462fcb18d357a9ac29dd57d8",
+   "created_at": "2026-11-12T13:55:26.976768+00:00"
+  }
  },
  {
   "id": "EP-076",
@@ -2183,11 +2197,11 @@
   "cta": "Manda pra quem precisa de uma boa palavra hoje.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-076.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 33.63,
+  "sha256": "99b13dc35ae3e7947878d185a86ac88ebfd74b576193b0ede9d6def155dee7b5",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-12T14:00:14+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
@@ -2195,7 +2209,14 @@
   "renderizador": "hyperframes",
   "curto": false,
   "estilo": "aplicado_v1",
-  "variante_aplicada": 0
+  "variante_aplicada": 0,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "8da30faff43bbaacd39057e070a7432de2ac9eed6a8e0d8af6819ea8ff653023",
+   "video_sha256": "99b13dc35ae3e7947878d185a86ac88ebfd74b576193b0ede9d6def155dee7b5",
+   "created_at": "2026-11-12T14:00:12.970398+00:00"
+  }
  },
  {
   "id": "EP-077",
