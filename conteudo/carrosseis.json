@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 80,
+ "total": 81,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4350,6 +4350,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-12T13:45:24+00:00",
    "produzido_em": "2026-11-12T14:00:14+00:00"
+  },
+  {
+   "id": "CAR-081",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-13-20",
+    "PRO-13-23",
+    "PRO-13-24"
+   ],
+   "referencia_exibida": "Provérbios 13",
+   "capitulo": 13,
+   "texto_biblico": "Quem anda com os sábios será sábio; mas o companheiro dos tolos sofre aflição.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 13:20",
+     "texto": "Quem anda com os sábios será sábio; mas o companheiro dos tolos sofre aflição."
+    },
+    {
+     "referencia": "Provérbios 13:23",
+     "texto": "Abundância de mantimento há, na lavoura do pobre; mas se perde por falta de juízo."
+    },
+    {
+     "referencia": "Provérbios 13:24",
+     "texto": "Aquele que poupa a vara aborrece a seu filho; mas quem o ama, a seu tempo o castiga."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 13",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 13 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-081/CAR-081-01.jpg",
+    "carrosseis/CAR-081/CAR-081-02.jpg",
+    "carrosseis/CAR-081/CAR-081-03.jpg",
+    "carrosseis/CAR-081/CAR-081-04.jpg",
+    "carrosseis/CAR-081/CAR-081-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-081/CAR-081-01.jpg": "7da34704b5f07436e5ba82a727630100d305a8133b2e8e3b99f8244f270eed54",
+    "carrosseis/CAR-081/CAR-081-02.jpg": "c1c1712e63f43ffd065688b0ddd4ccf8518b53ea351f60841e9de3b8906f975e",
+    "carrosseis/CAR-081/CAR-081-03.jpg": "10747a23c45db0db639227ff3df6e041980e4d5600e9d1f5864e14318c9b4a94",
+    "carrosseis/CAR-081/CAR-081-04.jpg": "544090ecba4c9062bf2a97651aca8eb4d5b54da7c6577bce67edd4359074fb59",
+    "carrosseis/CAR-081/CAR-081-05.jpg": "a9f9f5998722140b96b8aba2bcbfc75cb9e4c730350badfb05a8ebfc216f07ab"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-13T13:18:10+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-13T13:04:03+00:00",
+   "produzido_em": "2026-11-13T13:18:10+00:00"
   }
  ]
 }

@@ -2235,11 +2235,11 @@
   "cta": "Manda pra quem está tentando deixar uma mágoa para trás.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-077.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 35.0,
+  "sha256": "653794ed777fb6a1d00fe6799c111371a00e4bc9d5e71c7973ead0804e56defd",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-13T13:18:10+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
@@ -2247,7 +2247,14 @@
   "renderizador": "hyperframes",
   "curto": false,
   "estilo": "aplicado_v1",
-  "variante_aplicada": 0
+  "variante_aplicada": 0,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "b9c564989ed7b89e9b39b5b922aa57326df64e7c0911d71a2a3e5eaf489bdaed",
+   "video_sha256": "653794ed777fb6a1d00fe6799c111371a00e4bc9d5e71c7973ead0804e56defd",
+   "created_at": "2026-11-13T13:09:03.280256+00:00"
+  }
  },
  {
   "id": "EP-078",
@@ -2266,11 +2273,11 @@
   "cta": "Manda pra quem te ajuda a ser melhor.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-078.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 31.0,
+  "sha256": "7dddee69ad11b9ba193e2530d0932006cf232ba530ab083e28e9eaa878ace21f",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-13T13:18:10+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
@@ -2278,7 +2285,14 @@
   "renderizador": "hyperframes",
   "curto": false,
   "estilo": "aplicado_v1",
-  "variante_aplicada": 0
+  "variante_aplicada": 0,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "584c1b50596d096e25732a40d7370eaa662ad17c912a4ca038534b5a5a6f4cb2",
+   "video_sha256": "7dddee69ad11b9ba193e2530d0932006cf232ba530ab083e28e9eaa878ace21f",
+   "created_at": "2026-11-13T13:13:22.149443+00:00"
+  }
  },
  {
   "id": "EP-079",
@@ -2297,11 +2311,11 @@
   "cta": "Manda pra quem valoriza a honestidade.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-079.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 34.77,
+  "sha256": "d73a39fadbbb2063f1beefe1f837005622b2c23d13cae73c921c735882c5351c",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-13T13:18:10+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
@@ -2309,7 +2323,14 @@
   "renderizador": "hyperframes",
   "curto": false,
   "estilo": "aplicado_v1",
-  "variante_aplicada": 0
+  "variante_aplicada": 0,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "6e1ea5395259bf7a5cf549e9121b9bf1690629f847dc86a4211ab7a8158e3fb7",
+   "video_sha256": "d73a39fadbbb2063f1beefe1f837005622b2c23d13cae73c921c735882c5351c",
+   "created_at": "2026-11-13T13:18:08.860446+00:00"
+  }
  },
  {
   "id": "EP-080",
@@ -2682,5 +2703,35 @@
   "estilo": "aplicado_v1",
   "variante_aplicada": 0,
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-092",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-17-17"
+  ],
+  "referencia_exibida": "Provérbios 17:17",
+  "texto_biblico": "O amigo ama em todo o tempo; e para a angústia nasce o irmão.",
+  "formato": "C",
+  "tema": "amizade",
+  "titulo": "Quem ficou por perto",
+  "gancho": "Quem ficou por perto no seu pior dia?",
+  "reflexao": "Quando tudo vai bem, o celular fica cheio de mensagens. Mas, num dia de tristeza, poucas pessoas perguntam de verdade como você está. O provérbio fala dessa amizade que permanece.",
+  "aplicacao": "Pense em alguém que anda mais quieto e faça contato sem cobrar resposta. Pergunte como essa pessoa está e ofereça escuta, não uma solução apressada.",
+  "cta": "Manda pra quem sempre esteve por perto.",
+  "cta_tipo": "envio",
+  "arquivo": "reels/EP-092.mp4",
+  "duracao_s": null,
+  "sha256": null,
+  "status": "rascunho",
+  "aprovado_por": null,
+  "aprovado_em": null,
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-11-13T13:04:03+00:00",
+  "estilo": "aplicado_v1",
+  "curto": false,
+  "variante_aplicada": 1
  }
 ]
