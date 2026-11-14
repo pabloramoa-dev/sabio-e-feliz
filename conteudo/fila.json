@@ -2349,11 +2349,11 @@
   "cta": "Manda pra quem está diante de uma decisão importante.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-080.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 36.4,
+  "sha256": "d96b066d9e6632b3422580638ead79d7f9c9a0256f9fdfc3e8ff691ff381a3b8",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-14T12:24:08+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
@@ -2361,7 +2361,14 @@
   "renderizador": "hyperframes",
   "curto": false,
   "estilo": "aplicado_v1",
-  "variante_aplicada": 0
+  "variante_aplicada": 0,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "c6582547872724d80c0cf1e9a7aa8a6e26faaee995818465b3303102ee7e7338",
+   "video_sha256": "d96b066d9e6632b3422580638ead79d7f9c9a0256f9fdfc3e8ff691ff381a3b8",
+   "created_at": "2026-11-14T12:14:56.211477+00:00"
+  }
  },
  {
   "id": "EP-081",
@@ -2380,11 +2387,11 @@
   "cta": "Manda pra quem reconhece o valor da humildade.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-081.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 31.73,
+  "sha256": "2d372b1b63cde1ec50452a18a6b3fd4378e008408cdb982f1f3510fb6121eea5",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-14T12:24:08+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
@@ -2392,7 +2399,14 @@
   "renderizador": "hyperframes",
   "curto": false,
   "estilo": "aplicado_v1",
-  "variante_aplicada": 0
+  "variante_aplicada": 0,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "2792c9cbdc9a32af23f41e822c195d7b1424c818d3e62d4a1b3ddab0512da91b",
+   "video_sha256": "2d372b1b63cde1ec50452a18a6b3fd4378e008408cdb982f1f3510fb6121eea5",
+   "created_at": "2026-11-14T12:19:18.530467+00:00"
+  }
  },
  {
   "id": "EP-082",
@@ -2411,11 +2425,11 @@
   "cta": "Manda pra quem está construindo seus planos com paciência.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-082.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 35.13,
+  "sha256": "db4c16def7e1afc7f9be03d8d023e735ff28eaf4a27014b248028ff48e330d79",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-14T12:24:08+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
@@ -2423,7 +2437,14 @@
   "renderizador": "hyperframes",
   "curto": false,
   "estilo": "aplicado_v1",
-  "variante_aplicada": 0
+  "variante_aplicada": 0,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "8c41ba7a89c2dcc8b4d96f026c2bae2e2d2dcf7673030de99a09a3d61546e3cb",
+   "video_sha256": "db4c16def7e1afc7f9be03d8d023e735ff28eaf4a27014b248028ff48e330d79",
+   "created_at": "2026-11-14T12:24:07.049230+00:00"
+  }
  },
  {
   "id": "EP-083",
@@ -2730,6 +2751,36 @@
   "publicado_em": null,
   "instagram_media_id": null,
   "criado_em": "2026-11-13T13:04:03+00:00",
+  "estilo": "aplicado_v1",
+  "curto": false,
+  "variante_aplicada": 1
+ },
+ {
+  "id": "EP-093",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-24-16"
+  ],
+  "referencia_exibida": "Provérbios 24:16",
+  "texto_biblico": "Porque sete vezes cai o justo, e se levanta; mas os ímpios são derribados pela calamidade.",
+  "formato": "C",
+  "tema": "disciplina",
+  "titulo": "Cair não é o fim",
+  "gancho": "Você desistiu de alguma coisa depois de errar uma vez?",
+  "reflexao": "Uma receita deu errado e você ficou constrangido diante da família. Dá vontade de dizer que nunca mais vai tentar. Só que aprender envolve experiências que nem sempre funcionam.",
+  "aplicacao": "Descubra o que pode ajustar e tente novamente num dia tranquilo. Errar uma vez não significa que você não consegue melhorar.",
+  "cta": "Manda pra quem está tentando recomeçar.",
+  "cta_tipo": "envio",
+  "arquivo": "reels/EP-093.mp4",
+  "duracao_s": null,
+  "sha256": null,
+  "status": "rascunho",
+  "aprovado_por": null,
+  "aprovado_em": null,
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-11-14T12:09:50+00:00",
   "estilo": "aplicado_v1",
   "curto": false,
   "variante_aplicada": 1

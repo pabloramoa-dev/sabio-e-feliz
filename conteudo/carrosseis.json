@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 81,
+ "total": 82,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4404,6 +4404,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-13T13:04:03+00:00",
    "produzido_em": "2026-11-13T13:18:10+00:00"
+  },
+  {
+   "id": "CAR-082",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-25-02",
+    "PRO-25-15",
+    "PRO-25-18"
+   ],
+   "referencia_exibida": "Provérbios 25",
+   "capitulo": 25,
+   "texto_biblico": "A glória de Deus é encobrir as coisas; mas a glória dos reis é esquadrinhá-las.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 25:2",
+     "texto": "A glória de Deus é encobrir as coisas; mas a glória dos reis é esquadrinhá-las."
+    },
+    {
+     "referencia": "Provérbios 25:15",
+     "texto": "Pela longanimidade se persuade o príncipe, e a língua branda quebranta os ossos."
+    },
+    {
+     "referencia": "Provérbios 25:18",
+     "texto": "Malho, e espada, e flecha aguda é o homem que levanta falso testemunho contra o seu próximo."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 25",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 25 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-082/CAR-082-01.jpg",
+    "carrosseis/CAR-082/CAR-082-02.jpg",
+    "carrosseis/CAR-082/CAR-082-03.jpg",
+    "carrosseis/CAR-082/CAR-082-04.jpg",
+    "carrosseis/CAR-082/CAR-082-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-082/CAR-082-01.jpg": "d27199e4ad48746d547db32dcc33e03451a1b92baba98fa26afbe853aeff0e76",
+    "carrosseis/CAR-082/CAR-082-02.jpg": "663c98756cd47f0c0fcb5e2893e63de682f46d2563a984635464c85c5ccecee3",
+    "carrosseis/CAR-082/CAR-082-03.jpg": "ed6c0093a491f98689bc3649ecda5189c7c31ede4f68bf60c0b7dc2841f41d53",
+    "carrosseis/CAR-082/CAR-082-04.jpg": "e48fe277c4c5978c127b7e8398077c093712cf91d6a6681d7a151c7a809397e7",
+    "carrosseis/CAR-082/CAR-082-05.jpg": "db67247ac66e1f2002617f00a09e200e73292cdcd2d9e3aa3252f250766f55fb"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-14T12:24:08+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-14T12:09:50+00:00",
+   "produzido_em": "2026-11-14T12:24:08+00:00"
   }
  ]
 }
