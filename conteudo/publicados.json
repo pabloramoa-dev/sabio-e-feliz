@@ -3203,5 +3203,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-074",
+  "referencia": "Provérbios 18:13",
+  "titulo": "Responder antes de ouvir",
+  "formato": "A",
+  "arquivo": "reels/EP-074.mp4",
+  "sha256": "c3be0baffaf6eda991ad07490a0d4b9ac578f7d50e1c6126916620c5d2581b7b",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-074.mp4",
+  "instagram_media_id": "18124375738983092",
+  "publicado_em": "2026-11-15T18:30:57+00:00",
+  "commit": "ca76b1e615e8bc2c758cc0b93969dede3353660e",
+  "execucao": "43747025223",
+  "tecnico": {
+   "duracao_s": 34.63,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 25.82,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
