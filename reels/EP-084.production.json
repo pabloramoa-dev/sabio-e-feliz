@@ -1,7 +1,7 @@
 {
   "version": "cross-channel-2026-10-20-v1",
-  "engine_sha256": "8c533657c51f3325b2e8a98e0046ff7af14b76fadb3ebcf6c87cea44cd00625b",
-  "editorial_sha256": "661b380bc9a9e66f610870b3c4d9fba200cc6f26e6f0c45a714ae3477536670e",
-  "video_sha256": "cec31cdbc5a260b1a863c2c4d7d25d91d6b3cfbfb2f2b338d8a62efb5e076c7b",
-  "created_at": "2026-11-03T12:50:35.175278+00:00"
+  "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+  "editorial_sha256": "4c01eb59c65e0aa976ecf7eadaa75ccf08de8949a77ed7bad8a79a07cad50677",
+  "video_sha256": "7da477163965e8a4db27bd3a03b7f010c861da35e42a72cf82cd375c962c64b5",
+  "created_at": "2026-11-15T12:48:16.027865+00:00"
 }

@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 82,
+ "total": 83,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4458,6 +4458,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-14T12:09:50+00:00",
    "produzido_em": "2026-11-14T12:24:08+00:00"
+  },
+  {
+   "id": "CAR-083",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-17-11",
+    "PRO-17-20",
+    "PRO-17-22"
+   ],
+   "referencia_exibida": "Provérbios 17",
+   "capitulo": 17,
+   "texto_biblico": "O rebelde não busca senão o mal; portanto um mensageiro cruel será enviado contra ele.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 17:11",
+     "texto": "O rebelde não busca senão o mal; portanto um mensageiro cruel será enviado contra ele."
+    },
+    {
+     "referencia": "Provérbios 17:20",
+     "texto": "O perverso de coração nunca achará o bem; e o que tem a língua dobre virá a cair no mal."
+    },
+    {
+     "referencia": "Provérbios 17:22",
+     "texto": "O coração alegre serve de bom remédio; mas o espírito abatido seca os ossos."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 17",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 17 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-083/CAR-083-01.jpg",
+    "carrosseis/CAR-083/CAR-083-02.jpg",
+    "carrosseis/CAR-083/CAR-083-03.jpg",
+    "carrosseis/CAR-083/CAR-083-04.jpg",
+    "carrosseis/CAR-083/CAR-083-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-083/CAR-083-01.jpg": "a479950c751bd2e7ddf367b9fc6ba1a5b0aec083d8cf1138f3b31c5e924d4c3f",
+    "carrosseis/CAR-083/CAR-083-02.jpg": "a463a481a16d2fd75788ede438fec1e64ddc492abdefd5b7193df5758091a8bc",
+    "carrosseis/CAR-083/CAR-083-03.jpg": "37b853b6a63a2131a92e63c815ae330c68935fa4db97f851fbc2e818e1584deb",
+    "carrosseis/CAR-083/CAR-083-04.jpg": "d0bf8b24e2d783cf516189ae7202aa9f10d7b1878eb7a2051e81799ee7dbf531",
+    "carrosseis/CAR-083/CAR-083-05.jpg": "d092ec5fc3818dff0f267a346cf042bbe81d1469a63bdb1273b6cef4b4271be8"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-15T12:50:50+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-15T12:42:55+00:00",
+   "produzido_em": "2026-11-15T12:50:50+00:00"
   }
  ]
 }
