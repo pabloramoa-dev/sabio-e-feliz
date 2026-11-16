@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 83,
+ "total": 84,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4512,6 +4512,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-15T12:42:55+00:00",
    "produzido_em": "2026-11-15T12:50:50+00:00"
+  },
+  {
+   "id": "CAR-084",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-17-01",
+    "PRO-17-12",
+    "PRO-17-27"
+   ],
+   "referencia_exibida": "Provérbios 17",
+   "capitulo": 17,
+   "texto_biblico": "Melhor é um bocado seco, e com ele a tranqüilidade, do que a casa cheia de festins, com rixas.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 17:1",
+     "texto": "Melhor é um bocado seco, e com ele a tranqüilidade, do que a casa cheia de festins, com rixas."
+    },
+    {
+     "referencia": "Provérbios 17:12",
+     "texto": "Encontre-se o homem com a ursa roubada dos filhotes, mas não com o insensato na sua estultícia."
+    },
+    {
+     "referencia": "Provérbios 17:27",
+     "texto": "Refreia as suas palavras aquele que possui o conhecimento; e o homem de entendimento é de espírito sereno."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 17",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 17 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-084/CAR-084-01.jpg",
+    "carrosseis/CAR-084/CAR-084-02.jpg",
+    "carrosseis/CAR-084/CAR-084-03.jpg",
+    "carrosseis/CAR-084/CAR-084-04.jpg",
+    "carrosseis/CAR-084/CAR-084-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-084/CAR-084-01.jpg": "b387a0676bfa1587517a124bfcaf7dd71cb49d6b1123c159795feef6ea4b4e1a",
+    "carrosseis/CAR-084/CAR-084-02.jpg": "127b593c32156964f84fb717c35872840aa09d0da93d5295016d995634377007",
+    "carrosseis/CAR-084/CAR-084-03.jpg": "19e8b8e4810a2b414fba9bcf099dae27837588017b65cbf3eccc4ee726edb806",
+    "carrosseis/CAR-084/CAR-084-04.jpg": "34c81936565f93b12428baa83e246a051a97cb13e00c499157ea14bf3d4dbb91",
+    "carrosseis/CAR-084/CAR-084-05.jpg": "d092ec5fc3818dff0f267a346cf042bbe81d1469a63bdb1273b6cef4b4271be8"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-16T13:46:34+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-16T13:35:54+00:00",
+   "produzido_em": "2026-11-16T13:46:34+00:00"
   }
  ]
 }

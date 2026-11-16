@@ -2577,11 +2577,11 @@
   "cta": "Manda pra quem está tentando recomeçar.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-086.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 32.5,
+  "sha256": "a832527b78b3506a418d5ec1a2951e71d552a01b703468b7c827a5a1706f3e18",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-16T13:46:34+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
@@ -2589,7 +2589,14 @@
   "renderizador": "hyperframes",
   "curto": false,
   "estilo": "aplicado_v1",
-  "variante_aplicada": 0
+  "variante_aplicada": 0,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "0724b53c631815766c93236053f2639b89f044a7fa237b9a254bec82b2fe0ff0",
+   "video_sha256": "a832527b78b3506a418d5ec1a2951e71d552a01b703468b7c827a5a1706f3e18",
+   "created_at": "2026-11-16T13:39:37.396111+00:00"
+  }
  },
  {
   "id": "EP-087",
@@ -2608,11 +2615,11 @@
   "cta": "Manda pra quem faz o bem sem esperar nada em troca.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-087.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 30.83,
+  "sha256": "d5247dd28c500953aa72157612f860e6b4c19aa199ad21ca47ad6b4c81a0fde4",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-16T13:46:34+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
@@ -2620,7 +2627,14 @@
   "renderizador": "hyperframes",
   "curto": false,
   "estilo": "aplicado_v1",
-  "variante_aplicada": 0
+  "variante_aplicada": 0,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "f072046ee41fc967f5ec75b7b2358f29703446d65094e18226edde8ab97541f0",
+   "video_sha256": "d5247dd28c500953aa72157612f860e6b4c19aa199ad21ca47ad6b4c81a0fde4",
+   "created_at": "2026-11-16T13:43:07.156897+00:00"
+  }
  },
  {
   "id": "EP-088",
@@ -2639,11 +2653,11 @@
   "cta": "Manda pra quem está aprendendo a lidar com a raiva.",
   "cta_tipo": "envio",
   "arquivo": "reels/EP-088.mp4",
-  "duracao_s": null,
-  "sha256": null,
-  "status": "rascunho",
-  "aprovado_por": null,
-  "aprovado_em": null,
+  "duracao_s": 30.67,
+  "sha256": "a22e686fc2e739b9b598e4ae7b0bc7d44d7852e33bf3536429d0fe16221cd2e5",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-16T13:46:34+00:00",
   "prioridade": 50,
   "publicado_em": null,
   "instagram_media_id": null,
@@ -2651,7 +2665,14 @@
   "renderizador": "hyperframes",
   "curto": false,
   "estilo": "aplicado_v1",
-  "variante_aplicada": 0
+  "variante_aplicada": 0,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "2ee4adb78f95845e466c50820489added795ff9930bf2cfdd3a441d47c300c8f",
+   "video_sha256": "a22e686fc2e739b9b598e4ae7b0bc7d44d7852e33bf3536429d0fe16221cd2e5",
+   "created_at": "2026-11-16T13:46:33.083873+00:00"
+  }
  },
  {
   "id": "EP-089",
@@ -2832,6 +2853,36 @@
   "publicado_em": null,
   "instagram_media_id": null,
   "criado_em": "2026-11-15T12:42:55+00:00",
+  "estilo": "aplicado_v1",
+  "curto": false,
+  "variante_aplicada": 1
+ },
+ {
+  "id": "EP-095",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-15-01"
+  ],
+  "referencia_exibida": "Provérbios 15:1",
+  "texto_biblico": "A resposta branda desvia o furor, mas a palavra dura suscita a ira.",
+  "formato": "A",
+  "tema": "palavras",
+  "titulo": "Antes de enviar",
+  "gancho": "Você ia mandar essa mensagem com raiva?",
+  "reflexao": "Você recebe uma mensagem atravessada no grupo da família e começa a escrever uma resposta enorme, cheia de acusações. Naquele momento, cada palavra parece necessária. Mas o texto só vai aumentar a tensão.",
+  "aplicacao": "Antes de apertar enviar, leia a mensagem outra vez. Tire a frase que machuca e diga apenas o que precisa ser resolvido. Ser firme não exige ser agressivo.",
+  "cta": "Manda pra alguém com quem vale a pena conversar com calma.",
+  "cta_tipo": "envio",
+  "arquivo": "reels/EP-095.mp4",
+  "duracao_s": null,
+  "sha256": null,
+  "status": "rascunho",
+  "aprovado_por": null,
+  "aprovado_em": null,
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-11-16T13:35:54+00:00",
   "estilo": "aplicado_v1",
   "curto": false,
   "variante_aplicada": 1
