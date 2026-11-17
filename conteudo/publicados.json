@@ -3293,5 +3293,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-076",
+  "referencia": "Provérbios 12:25",
+  "titulo": "Uma boa palavra",
+  "formato": "C",
+  "arquivo": "reels/EP-076.mp4",
+  "sha256": "99b13dc35ae3e7947878d185a86ac88ebfd74b576193b0ede9d6def155dee7b5",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-076.mp4",
+  "instagram_media_id": "17894217840618720",
+  "publicado_em": "2026-11-17T20:30:34+00:00",
+  "commit": "083621b7c2ea890ed07aafbf79f1c575cbdcc55a",
+  "execucao": "44169649411",
+  "tecnico": {
+   "duracao_s": 33.63,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 25.2,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
