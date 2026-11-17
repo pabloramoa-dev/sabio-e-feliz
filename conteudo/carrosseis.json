@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 84,
+ "total": 85,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4566,6 +4566,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-16T13:35:54+00:00",
    "produzido_em": "2026-11-16T13:46:34+00:00"
+  },
+  {
+   "id": "CAR-085",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-06-09",
+    "PRO-06-27",
+    "PRO-06-31"
+   ],
+   "referencia_exibida": "Provérbios 6",
+   "capitulo": 6,
+   "texto_biblico": "o preguiçoso, até quando ficarás deitador? quando te levantarás do teu sono?",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 6:9",
+     "texto": "o preguiçoso, até quando ficarás deitador? quando te levantarás do teu sono?"
+    },
+    {
+     "referencia": "Provérbios 6:27",
+     "texto": "Pode alguém tomar fogo no seu seio, sem que os seus vestidos se queimem?"
+    },
+    {
+     "referencia": "Provérbios 6:31",
+     "texto": "E, se for apanhado, pagará sete vezes tanto, dando até todos os bens de sua casa."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 6",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 6 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-085/CAR-085-01.jpg",
+    "carrosseis/CAR-085/CAR-085-02.jpg",
+    "carrosseis/CAR-085/CAR-085-03.jpg",
+    "carrosseis/CAR-085/CAR-085-04.jpg",
+    "carrosseis/CAR-085/CAR-085-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-085/CAR-085-01.jpg": "4498f290e2a0ef5640db49a84c9f46e05d4b7850aab9658c219e3a3fc8c06372",
+    "carrosseis/CAR-085/CAR-085-02.jpg": "50ad4848f38e47bf25f22c7697a070568fbc189c55c567ed93caaf5c299becd2",
+    "carrosseis/CAR-085/CAR-085-03.jpg": "03654e57cc300ba64794156c3c6da46794240a06ea444470200bda3687913568",
+    "carrosseis/CAR-085/CAR-085-04.jpg": "ebb564faff519f1d6def5fc5e942cd4bb01dfd83d3b02449dae0a53bdc574aa0",
+    "carrosseis/CAR-085/CAR-085-05.jpg": "093b14491727aeca9eb8576e1919b61ab6138c972a643b771c06e492f0e713a0"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-17T14:33:39+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-17T14:20:16+00:00",
+   "produzido_em": "2026-11-17T14:33:39+00:00"
   }
  ]
 }
