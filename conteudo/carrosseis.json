@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 85,
+ "total": 86,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4620,6 +4620,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-17T14:20:16+00:00",
    "produzido_em": "2026-11-17T14:33:39+00:00"
+  },
+  {
+   "id": "CAR-086",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-17-06",
+    "PRO-17-24",
+    "PRO-17-26"
+   ],
+   "referencia_exibida": "Provérbios 17",
+   "capitulo": 17,
+   "texto_biblico": "Coroa dos velhos são os filhos dos filhos; e a glória dos filhos são seus pais.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 17:6",
+     "texto": "Coroa dos velhos são os filhos dos filhos; e a glória dos filhos são seus pais."
+    },
+    {
+     "referencia": "Provérbios 17:24",
+     "texto": "O alvo do inteligente é a sabedoria; mas os olhos do insensato estão nas extremidades da terra."
+    },
+    {
+     "referencia": "Provérbios 17:26",
+     "texto": "Não é bom punir ao justo, nem ferir aos nobres por causa da sua retidão."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 17",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 17 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-086/CAR-086-01.jpg",
+    "carrosseis/CAR-086/CAR-086-02.jpg",
+    "carrosseis/CAR-086/CAR-086-03.jpg",
+    "carrosseis/CAR-086/CAR-086-04.jpg",
+    "carrosseis/CAR-086/CAR-086-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-086/CAR-086-01.jpg": "b387a0676bfa1587517a124bfcaf7dd71cb49d6b1123c159795feef6ea4b4e1a",
+    "carrosseis/CAR-086/CAR-086-02.jpg": "37f7f12177a09d9f8bde2a22f6523b79c803106b8bf6715c3863f8676509c974",
+    "carrosseis/CAR-086/CAR-086-03.jpg": "c7d11b76a5a039fe28bbab5e82f1022d1994e3b4ba6d28a49cf92dc808f67782",
+    "carrosseis/CAR-086/CAR-086-04.jpg": "98dfcddc2e42857835730540868db9e7aa6969f0efed20df4ecd1a56bc486518",
+    "carrosseis/CAR-086/CAR-086-05.jpg": "d092ec5fc3818dff0f267a346cf042bbe81d1469a63bdb1273b6cef4b4271be8"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-18T14:09:05+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-18T13:55:16+00:00",
+   "produzido_em": "2026-11-18T14:09:05+00:00"
   }
  ]
 }
