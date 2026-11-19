@@ -1,0 +1,28 @@
+name: Entregar MP4 piloto para download
+
+on:
+  push:
+    branches: [piloto/proverbio-aplicacao-20261111]
+    paths: [.github/workflows/entregar-piloto.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  anexar_mp4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Conferir piloto já renderizado
+        run: |
+          test -s pilotos/arquivos/sabio-proverbio-aplicado-15-1.mp4
+          stat -c 'MP4 validado previamente: %n (%s bytes)' pilotos/arquivos/sabio-proverbio-aplicado-15-1.mp4
+      - name: Anexar MP4
+        uses: actions/upload-artifact@v4
+        with:
+          name: sabio-feliz-piloto-15-1
+          path: pilotos/arquivos/sabio-proverbio-aplicado-15-1.mp4
+          retention-days: 3
+          compression-level: 0

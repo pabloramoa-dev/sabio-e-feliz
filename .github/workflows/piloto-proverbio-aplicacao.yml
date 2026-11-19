@@ -1,0 +1,68 @@
+name: Piloto — provérbio aplicado (não publicar)
+
+on:
+  push:
+    branches:
+      - piloto/proverbio-aplicacao-20261111
+    paths:
+      - "pilotos/*.py"
+      - "pilotos/README.md"
+      - ".github/workflows/piloto-proverbio-aplicacao.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sabio-piloto-aplicacao-entrega-v2
+  cancel-in-progress: false
+
+jobs:
+  renderizar_piloto:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Verificar roteiro sem publicar
+        run: python -m pilotos.proverbio_aplicacao --roteiro
+
+      - name: Dependências do estúdio
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg pkg-config libcairo2-dev libpango1.0-dev fonts-dejavu-core
+          pip install -r requirements.txt -r requirements-estudio.txt
+
+      - uses: ./.github/actions/setup-hyperframes
+
+      - name: Cache do modelo de voz original
+        uses: actions/cache@v4
+        with:
+          path: modelos
+          key: kokoro-v1.0
+
+      - name: Renderizar MP4 com personagem e voz originais
+        env:
+          PUBLICAR_ATIVO: "false"
+          DRY_RUN: "true"
+        run: python -m pilotos.proverbio_aplicacao
+
+      - name: Salvar o MP4 validado na branch de piloto
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p pilotos/arquivos
+          cp output/pilotos/proverbio-aplicacao/sabio-proverbio-aplicado-15-1.mp4 pilotos/arquivos/
+          cp output/pilotos/proverbio-aplicacao/resultado.json pilotos/arquivos/
+          test -s pilotos/arquivos/sabio-proverbio-aplicado-15-1.mp4
+          git config user.name "sabio-piloto-bot"
+          git config user.email "actions@github.com"
+          git add -f pilotos/arquivos/sabio-proverbio-aplicado-15-1.mp4 pilotos/arquivos/resultado.json
+          git diff --cached --quiet || git commit -m "piloto: MP4 validado para revisão [skip ci]"
+          git push origin HEAD:piloto/proverbio-aplicacao-20261111
