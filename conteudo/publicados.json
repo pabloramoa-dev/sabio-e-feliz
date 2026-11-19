@@ -3383,5 +3383,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-078",
+  "referencia": "Provérbios 27:17",
+  "titulo": "O ferro que afia",
+  "formato": "A",
+  "arquivo": "reels/EP-078.mp4",
+  "sha256": "7dddee69ad11b9ba193e2530d0932006cf232ba530ab083e28e9eaa878ace21f",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-078.mp4",
+  "instagram_media_id": "17896060899616834",
+  "publicado_em": "2026-11-19T19:59:32+00:00",
+  "commit": "1bbef703a1a40dbf7eecd303f4165eee9317f740",
+  "execucao": "44603619256",
+  "tecnico": {
+   "duracao_s": 31.0,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 23.18,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
