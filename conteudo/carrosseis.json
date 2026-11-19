@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 86,
+ "total": 87,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4674,6 +4674,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-18T13:55:16+00:00",
    "produzido_em": "2026-11-18T14:09:05+00:00"
+  },
+  {
+   "id": "CAR-087",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-27-02",
+    "PRO-27-03",
+    "PRO-27-12"
+   ],
+   "referencia_exibida": "Provérbios 27",
+   "capitulo": 27,
+   "texto_biblico": "Seja outro o que te louve, e não a tua boca; o estranho, e não os teus lábios.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 27:2",
+     "texto": "Seja outro o que te louve, e não a tua boca; o estranho, e não os teus lábios."
+    },
+    {
+     "referencia": "Provérbios 27:3",
+     "texto": "Pesada é a pedra, e a areia também; mas a ira do insensato é mais pesada do que elas ambas."
+    },
+    {
+     "referencia": "Provérbios 27:12",
+     "texto": "O prudente vê o mal e se esconde; mas os insensatos passam adiante e sofrem a pena."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 27",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 27 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-087/CAR-087-01.jpg",
+    "carrosseis/CAR-087/CAR-087-02.jpg",
+    "carrosseis/CAR-087/CAR-087-03.jpg",
+    "carrosseis/CAR-087/CAR-087-04.jpg",
+    "carrosseis/CAR-087/CAR-087-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-087/CAR-087-01.jpg": "7e3cc414c1a6fd98581c7b2cf0078b15e30c50fb384869a255d71027b0216c6f",
+    "carrosseis/CAR-087/CAR-087-02.jpg": "5a3f88b29e64f9e9af5ae3dd835054f224c46b668ebef0fcbd473197060ce12e",
+    "carrosseis/CAR-087/CAR-087-03.jpg": "b1a7d3bf34b4e3fc7adaa9e4a64bc97fc6c34933531eb67419725aa4de818e3f",
+    "carrosseis/CAR-087/CAR-087-04.jpg": "f1326727b8fe5da418d28eec54aa402b355b0e91857399f137ac2989bab34aa5",
+    "carrosseis/CAR-087/CAR-087-05.jpg": "ba482e7fdd2a0ece4607c6b08c085e52ef975998a8e3c5c483d6380d4b3966cb"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-19T14:38:09+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-19T14:24:10+00:00",
+   "produzido_em": "2026-11-19T14:38:09+00:00"
   }
  ]
 }
