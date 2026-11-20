@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 87,
+ "total": 88,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4728,6 +4728,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-19T14:24:10+00:00",
    "produzido_em": "2026-11-19T14:38:09+00:00"
+  },
+  {
+   "id": "CAR-088",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-27-06",
+    "PRO-27-08",
+    "PRO-27-13"
+   ],
+   "referencia_exibida": "Provérbios 27",
+   "capitulo": 27,
+   "texto_biblico": "Fiéis são as feridas dum amigo; mas os beijos dum inimigo são enganosos.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 27:6",
+     "texto": "Fiéis são as feridas dum amigo; mas os beijos dum inimigo são enganosos."
+    },
+    {
+     "referencia": "Provérbios 27:8",
+     "texto": "Qual a ave que vagueia longe do seu ninho, tal é o homem que anda vagueando longe do seu lugar."
+    },
+    {
+     "referencia": "Provérbios 27:13",
+     "texto": "Tira a roupa àquele que fica por fiador do estranho, e toma penhor daquele que se obriga por uma estrangeira."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 27",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 27 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-088/CAR-088-01.jpg",
+    "carrosseis/CAR-088/CAR-088-02.jpg",
+    "carrosseis/CAR-088/CAR-088-03.jpg",
+    "carrosseis/CAR-088/CAR-088-04.jpg",
+    "carrosseis/CAR-088/CAR-088-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-088/CAR-088-01.jpg": "fcdeb495bd4ee352d76421afcc37f2bdc5e5d55bc527350bde82fe69f00f068f",
+    "carrosseis/CAR-088/CAR-088-02.jpg": "59f86175a4f38569345dbc710d7d79a7e089d67cf94e2f2883b831fcbe93a973",
+    "carrosseis/CAR-088/CAR-088-03.jpg": "bbaed740f3e33d0712d007fd2dfaf810a3b698e5b99885c8930a73bad9823385",
+    "carrosseis/CAR-088/CAR-088-04.jpg": "433b38384ed719894ac41ecb6b2afb8004669edcc2cd21328b8ca7bccc39b93d",
+    "carrosseis/CAR-088/CAR-088-05.jpg": "ba482e7fdd2a0ece4607c6b08c085e52ef975998a8e3c5c483d6380d4b3966cb"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-20T14:05:57+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-20T13:59:31+00:00",
+   "produzido_em": "2026-11-20T14:05:57+00:00"
   }
  ]
 }
