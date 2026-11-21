@@ -3091,5 +3091,43 @@
    "created_at": "2026-11-20T14:05:55.969553+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-100",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-18-13"
+  ],
+  "referencia_exibida": "Provérbios 18:13",
+  "texto_biblico": "Responder antes de ouvir, é estultícia e vergonha.",
+  "formato": "A",
+  "tema": "prudência",
+  "titulo": "Responder antes de ouvir",
+  "gancho": "Você já respondeu sem deixar a pessoa terminar?",
+  "reflexao": "No trabalho, alguém diz que um pedido saiu errado. Você interrompe para se defender, sem saber o problema inteiro. A conversa esquenta e ninguém consegue explicar os fatos com calma.",
+  "aplicacao": "Espere a explicação completa, repita o que entendeu e só então responda. Uma pergunta sincera pode evitar uma discussão desnecessária.",
+  "cta": "Manda pra quem sabe ouvir antes de responder.",
+  "cta_tipo": "envio",
+  "arquivo": "reels/EP-100.mp4",
+  "duracao_s": 31.7,
+  "sha256": "2e62d0ecba01e50f970d7877bf08389d00384fd5dd854dae96d45bf32683c61a",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-21T13:31:48+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-11-21T13:27:19+00:00",
+  "estilo": "aplicado_v1",
+  "curto": false,
+  "variante_aplicada": 1,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "72cf75c146ac722295a059891f7e01f25dd6041a1e2209f49721219e305debed",
+   "video_sha256": "2e62d0ecba01e50f970d7877bf08389d00384fd5dd854dae96d45bf32683c61a",
+   "created_at": "2026-11-21T13:31:46.530247+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]

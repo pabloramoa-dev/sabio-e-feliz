@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 88,
+ "total": 89,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4782,6 +4782,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-20T13:59:31+00:00",
    "produzido_em": "2026-11-20T14:05:57+00:00"
+  },
+  {
+   "id": "CAR-089",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-11-04",
+    "PRO-11-10",
+    "PRO-11-17"
+   ],
+   "referencia_exibida": "Provérbios 11",
+   "capitulo": 11,
+   "texto_biblico": "De nada aproveitam as riquezas no dia da ira; porém a justiça livra da morte.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 11:4",
+     "texto": "De nada aproveitam as riquezas no dia da ira; porém a justiça livra da morte."
+    },
+    {
+     "referencia": "Provérbios 11:10",
+     "texto": "Quando os justos prosperam, exulta a cidade; e quando perecem os ímpios, há júbilo."
+    },
+    {
+     "referencia": "Provérbios 11:17",
+     "texto": "O homem bondoso faz bem à sua, própria alma; mas o cruel faz mal a si mesmo."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 11",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 11 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-089/CAR-089-01.jpg",
+    "carrosseis/CAR-089/CAR-089-02.jpg",
+    "carrosseis/CAR-089/CAR-089-03.jpg",
+    "carrosseis/CAR-089/CAR-089-04.jpg",
+    "carrosseis/CAR-089/CAR-089-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-089/CAR-089-01.jpg": "deccb5f4907edb773957314459d736bb033ded24488272d145fdf2bbe4e3a21c",
+    "carrosseis/CAR-089/CAR-089-02.jpg": "d2ed8d206b2f957fe8e797733e8a26ac813546cc1cfce68864998af28cb3f4f5",
+    "carrosseis/CAR-089/CAR-089-03.jpg": "0f2fe083a524defb9d27d78493cd15e65e3b5ae081624444be16eced67b25941",
+    "carrosseis/CAR-089/CAR-089-04.jpg": "b48b21abe718c4df1f404677741945e11cbeaf7ccdbf36aee70e88e5a65d72de",
+    "carrosseis/CAR-089/CAR-089-05.jpg": "62f353e649df3379afca77f0e34597c008734af2c2d4068dff830f90a1cc4a7a"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-21T13:31:48+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-21T13:27:19+00:00",
+   "produzido_em": "2026-11-21T13:31:48+00:00"
   }
  ]
 }
