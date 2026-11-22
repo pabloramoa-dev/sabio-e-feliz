@@ -3518,5 +3518,28 @@
   },
   "metricas_24h": null,
   "metricas_72h": null
+ },
+ {
+  "id": "EP-081",
+  "referencia": "Provérbios 16:18",
+  "titulo": "O degrau que ninguém vê",
+  "formato": "B",
+  "arquivo": "reels/EP-081.mp4",
+  "sha256": "2d372b1b63cde1ec50452a18a6b3fd4378e008408cdb982f1f3510fb6121eea5",
+  "url_video": "https://raw.githubusercontent.com/pabloramoa-dev/sabio-e-feliz/main/reels/EP-081.mp4",
+  "instagram_media_id": "18143083951755176",
+  "publicado_em": "2026-11-22T19:05:50+00:00",
+  "commit": "3e2cadeaae26a5b74bb6625b60103591e81cd09c",
+  "execucao": "45058500487",
+  "tecnico": {
+   "duracao_s": 31.73,
+   "resolucao": "1080x1920",
+   "fps": "30/1",
+   "tamanho_mb": 23.68,
+   "codec_video": "h264",
+   "codec_audio": "aac"
+  },
+  "metricas_24h": null,
+  "metricas_72h": null
  }
 ]
