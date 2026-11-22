@@ -3129,5 +3129,43 @@
    "created_at": "2026-11-21T13:31:46.530247+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-101",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-03-27"
+  ],
+  "referencia_exibida": "Provérbios 3:27",
+  "texto_biblico": "Não negues o bem a quem de direito, estando no teu poder fazê-lo.",
+  "formato": "C",
+  "tema": "generosidade",
+  "titulo": "Quando está na sua mão",
+  "gancho": "Você já adiou um favor que levaria cinco minutos?",
+  "reflexao": "Um colega pede a informação que você já tem e você pensa em responder só depois. Para ele, porém, aquela resposta pode destravar uma tarefa importante.",
+  "aplicacao": "Se estiver ao seu alcance, responda ou explique quando conseguirá ajudar. Fazer o bem também é não adiar o que podemos resolver.",
+  "cta": "Manda pra quem faz o bem sem esperar nada em troca.",
+  "cta_tipo": "envio",
+  "arquivo": "reels/EP-101.mp4",
+  "duracao_s": 30.8,
+  "sha256": "9cf673bf64044c4c34a9d1a8e23a567227df4a83d30cba36bd5fe62662516e48",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-22T13:21:52+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-11-22T13:18:26+00:00",
+  "estilo": "aplicado_v1",
+  "curto": false,
+  "variante_aplicada": 1,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "7d513b506c421cb54aefcd7a86a16a3328eddc62bdc943140d952577da1ca085",
+   "video_sha256": "9cf673bf64044c4c34a9d1a8e23a567227df4a83d30cba36bd5fe62662516e48",
+   "created_at": "2026-11-22T13:21:51.302725+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]

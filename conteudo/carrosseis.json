@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 89,
+ "total": 90,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4836,6 +4836,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-21T13:27:19+00:00",
    "produzido_em": "2026-11-21T13:31:48+00:00"
+  },
+  {
+   "id": "CAR-090",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-15-04",
+    "PRO-15-15",
+    "PRO-15-26"
+   ],
+   "referencia_exibida": "Provérbios 15",
+   "capitulo": 15,
+   "texto_biblico": "Uma língua suave é árvore de vida; mas a língua perversa quebranta o espírito.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 15:4",
+     "texto": "Uma língua suave é árvore de vida; mas a língua perversa quebranta o espírito."
+    },
+    {
+     "referencia": "Provérbios 15:15",
+     "texto": "Todos os dias do aflito são maus; mas o coração contente tem um banquete contínuo."
+    },
+    {
+     "referencia": "Provérbios 15:26",
+     "texto": "Os desígnios dos maus são abominação para o Senhor; mas as palavras dos limpos lhe são aprazíveis."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 15",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 15 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-090/CAR-090-01.jpg",
+    "carrosseis/CAR-090/CAR-090-02.jpg",
+    "carrosseis/CAR-090/CAR-090-03.jpg",
+    "carrosseis/CAR-090/CAR-090-04.jpg",
+    "carrosseis/CAR-090/CAR-090-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-090/CAR-090-01.jpg": "175242dbbbd94428891c1546566bcf1840aa0e6783bd0a2c91345bbe68a5877f",
+    "carrosseis/CAR-090/CAR-090-02.jpg": "0cb67117e205e438f708fb41a7c29e153db41dc0f209b4bf392dfed9135d0670",
+    "carrosseis/CAR-090/CAR-090-03.jpg": "06e82c88be2ef406238a4f4f7f441c553e872be5c084296c3b74846c6288cc73",
+    "carrosseis/CAR-090/CAR-090-04.jpg": "9521d348150e9917056e5a936210afbb874d49bcdc670c3a417ec2b797d816c1",
+    "carrosseis/CAR-090/CAR-090-05.jpg": "67b10f514361e672325306b8b133ade0d46f535854feb9e407ddff300784f0c5"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-22T13:21:52+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-22T13:18:26+00:00",
+   "produzido_em": "2026-11-22T13:21:52+00:00"
   }
  ]
 }
