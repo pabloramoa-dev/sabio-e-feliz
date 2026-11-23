@@ -3167,5 +3167,43 @@
    "created_at": "2026-11-22T13:21:51.302725+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-102",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-17-22"
+  ],
+  "referencia_exibida": "Provérbios 17:22",
+  "texto_biblico": "O coração alegre serve de bom remédio; mas o espírito abatido seca os ossos.",
+  "formato": "C",
+  "tema": "ânimo",
+  "titulo": "O que te faz rir",
+  "gancho": "Quando foi a última vez que você riu de verdade?",
+  "reflexao": "Uma amiga está passando por uma semana pesada e você tenta resolver tudo por ela. Talvez ela só quisesse conversar e lembrar de algo bom por um momento.",
+  "aplicacao": "Ofereça escuta e convide para uma atividade simples de que ela gosta. Alegria e cuidado podem fazer parte da rotina, sem negar as dificuldades.",
+  "cta": "Manda pra quem consegue alegrar um dia difícil.",
+  "cta_tipo": "envio",
+  "arquivo": "reels/EP-102.mp4",
+  "duracao_s": 33.17,
+  "sha256": "68e6c850cae90d10c771903ef58ff2f017c7543c6e270ec813e4f9b9337734dc",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-23T16:02:13+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-11-23T15:57:33+00:00",
+  "estilo": "aplicado_v1",
+  "curto": false,
+  "variante_aplicada": 1,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "8f07b775332ce3efd606bd23b444f5c07a602d31441ff2dd5bf05a7d29296006",
+   "video_sha256": "68e6c850cae90d10c771903ef58ff2f017c7543c6e270ec813e4f9b9337734dc",
+   "created_at": "2026-11-23T16:02:12.150392+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]

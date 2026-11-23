@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 90,
+ "total": 91,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4890,6 +4890,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-22T13:18:26+00:00",
    "produzido_em": "2026-11-22T13:21:52+00:00"
+  },
+  {
+   "id": "CAR-091",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-25-15",
+    "PRO-25-17",
+    "PRO-25-24"
+   ],
+   "referencia_exibida": "Provérbios 25",
+   "capitulo": 25,
+   "texto_biblico": "Pela longanimidade se persuade o príncipe, e a língua branda quebranta os ossos.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 25:15",
+     "texto": "Pela longanimidade se persuade o príncipe, e a língua branda quebranta os ossos."
+    },
+    {
+     "referencia": "Provérbios 25:17",
+     "texto": "Põe raramente o teu pé na casa do teu próximo, para que não se enfade de ti, e te aborreça."
+    },
+    {
+     "referencia": "Provérbios 25:24",
+     "texto": "Melhor é morar num canto do eirado, do que com a mulher rixosa numa casa ampla."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 25",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 25 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-091/CAR-091-01.jpg",
+    "carrosseis/CAR-091/CAR-091-02.jpg",
+    "carrosseis/CAR-091/CAR-091-03.jpg",
+    "carrosseis/CAR-091/CAR-091-04.jpg",
+    "carrosseis/CAR-091/CAR-091-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-091/CAR-091-01.jpg": "d27199e4ad48746d547db32dcc33e03451a1b92baba98fa26afbe853aeff0e76",
+    "carrosseis/CAR-091/CAR-091-02.jpg": "9b02f8b3e16cbe494ec340535b5074e1565c326e6ad79053dc27b33e1831f9e9",
+    "carrosseis/CAR-091/CAR-091-03.jpg": "05bd078d20b349fea20dd0196b93998fdad68804590bef4ca499f714b0d609a1",
+    "carrosseis/CAR-091/CAR-091-04.jpg": "4e3bcdf4c91639f1574e10fed42de8a1f119101dfb8efbdc423968e50d2adcb1",
+    "carrosseis/CAR-091/CAR-091-05.jpg": "db67247ac66e1f2002617f00a09e200e73292cdcd2d9e3aa3252f250766f55fb"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-23T16:02:13+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-23T15:57:33+00:00",
+   "produzido_em": "2026-11-23T16:02:13+00:00"
   }
  ]
 }
