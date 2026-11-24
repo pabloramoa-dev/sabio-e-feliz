@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 91,
+ "total": 92,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4944,6 +4944,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-23T15:57:33+00:00",
    "produzido_em": "2026-11-23T16:02:13+00:00"
+  },
+  {
+   "id": "CAR-092",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-04-04",
+    "PRO-04-23",
+    "PRO-04-24"
+   ],
+   "referencia_exibida": "Provérbios 4",
+   "capitulo": 4,
+   "texto_biblico": "ele me ensinava, e me dizia: Retenha o teu coração as minhas palavras; guarda os meus mandamentos, e vive.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 4:4",
+     "texto": "ele me ensinava, e me dizia: Retenha o teu coração as minhas palavras; guarda os meus mandamentos, e vive."
+    },
+    {
+     "referencia": "Provérbios 4:23",
+     "texto": "Guarda com toda a diligência o teu coração, porque dele procedem as fontes da vida."
+    },
+    {
+     "referencia": "Provérbios 4:24",
+     "texto": "Desvia de ti a malignidade da boca, e alonga de ti a perversidade dos lábios."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 4",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 4 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-092/CAR-092-01.jpg",
+    "carrosseis/CAR-092/CAR-092-02.jpg",
+    "carrosseis/CAR-092/CAR-092-03.jpg",
+    "carrosseis/CAR-092/CAR-092-04.jpg",
+    "carrosseis/CAR-092/CAR-092-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-092/CAR-092-01.jpg": "117142d7876a67acfcefa4f12f963f455d34bfb3a957a1c37f854ba15a7c5f1a",
+    "carrosseis/CAR-092/CAR-092-02.jpg": "01a0893271ef99e4c2fc68aaeaff7b63e9298bd7d681b2357b8b4f3a33532a0c",
+    "carrosseis/CAR-092/CAR-092-03.jpg": "3b852a02b93936fac1bc8fa79e8d0c408aec59fa7d828dada3d9f6bf4ad89d2e",
+    "carrosseis/CAR-092/CAR-092-04.jpg": "1903242952987a8b5640f88c0faf9c5e8745ffce6d99525a001d87469cf01bec",
+    "carrosseis/CAR-092/CAR-092-05.jpg": "67d4f35b6a5844fee923b39728d3d0cbcc429129f0e2d2673fbae819198182ce"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-24T15:52:58+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-24T15:49:06+00:00",
+   "produzido_em": "2026-11-24T15:52:58+00:00"
   }
  ]
 }

@@ -3205,5 +3205,43 @@
    "created_at": "2026-11-23T16:02:12.150392+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-103",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-06-06"
+  ],
+  "referencia_exibida": "Provérbios 6:6",
+  "texto_biblico": "Vai ter com a formiga, ó preguiçoso, considera os seus caminhos, e sê sábio;",
+  "formato": "B",
+  "tema": "disciplina",
+  "titulo": "A tarefa pequena",
+  "gancho": "Essa tarefa ficou para amanhã de novo?",
+  "reflexao": "Pense naquele trabalho que você deixa para a última hora. Enquanto espera a motivação aparecer, o prazo se aproxima e a ansiedade aumenta. A formiga ensina a agir um pouco por vez.",
+  "aplicacao": "Separe hoje dez minutos para avançar no que está pendente. Um passo pequeno e constante costuma valer mais do que uma grande promessa para amanhã.",
+  "cta": "Manda pra quem está tentando deixar a procrastinação de lado.",
+  "cta_tipo": "envio",
+  "arquivo": "reels/EP-103.mp4",
+  "duracao_s": 34.47,
+  "sha256": "c448d801e73f8881a9a2635cd00f563fea036780c05b9f2f372e92b8b0d0daf9",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-24T15:52:58+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-11-24T15:49:06+00:00",
+  "estilo": "aplicado_v1",
+  "curto": false,
+  "variante_aplicada": 1,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "f291a6639a00212985679ded9552687f60a5fe6f622a797e2c8210368ac61cc2",
+   "video_sha256": "c448d801e73f8881a9a2635cd00f563fea036780c05b9f2f372e92b8b0d0daf9",
+   "created_at": "2026-11-24T15:52:56.778103+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]
