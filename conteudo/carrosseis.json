@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 92,
+ "total": 93,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -4998,6 +4998,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-24T15:49:06+00:00",
    "produzido_em": "2026-11-24T15:52:58+00:00"
+  },
+  {
+   "id": "CAR-093",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-26-03",
+    "PRO-26-12",
+    "PRO-26-22"
+   ],
+   "referencia_exibida": "Provérbios 26",
+   "capitulo": 26,
+   "texto_biblico": "O açoite é para o cavalo, o freio para o jumento, e a vara para as costas dos tolos.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 26:3",
+     "texto": "O açoite é para o cavalo, o freio para o jumento, e a vara para as costas dos tolos."
+    },
+    {
+     "referencia": "Provérbios 26:12",
+     "texto": "Vês um homem que é sábio a seus próprios olhos? Maior esperança há para o tolo do que para ele."
+    },
+    {
+     "referencia": "Provérbios 26:22",
+     "texto": "As palavras do difamador são como bocados deliciosos, que descem ao íntimo do ventre."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 26",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 26 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-093/CAR-093-01.jpg",
+    "carrosseis/CAR-093/CAR-093-02.jpg",
+    "carrosseis/CAR-093/CAR-093-03.jpg",
+    "carrosseis/CAR-093/CAR-093-04.jpg",
+    "carrosseis/CAR-093/CAR-093-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-093/CAR-093-01.jpg": "54e83f98b1e9db3d55bb21517c0c32daf7cb3ff36a1045da3ea98b239ddbe5d6",
+    "carrosseis/CAR-093/CAR-093-02.jpg": "63436ee62ed9183ee33b25f37affa1af7ebef77bd8b459c0a8557aeeeab69018",
+    "carrosseis/CAR-093/CAR-093-03.jpg": "8e5c06c15761741fd386e5dce11273851273649601ea777075f509d9fd7b9da9",
+    "carrosseis/CAR-093/CAR-093-04.jpg": "c7c2140dc4b706cf71003f0ea5e7bc175ae0c3a31bb4c523aba89e9925361771",
+    "carrosseis/CAR-093/CAR-093-05.jpg": "4617aade5da582f0e7f7b5a451ef25466660f32bd31adf6bc32da259eff22e5c"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-25T15:37:44+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-25T15:33:00+00:00",
+   "produzido_em": "2026-11-25T15:37:44+00:00"
   }
  ]
 }

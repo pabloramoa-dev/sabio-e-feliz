@@ -3243,5 +3243,43 @@
    "created_at": "2026-11-24T15:52:56.778103+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-104",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-15-22"
+  ],
+  "referencia_exibida": "Provérbios 15:22",
+  "texto_biblico": "Onde não há conselho, frustram-se os projetos; mas com a multidão de conselheiros se estabelecem.",
+  "formato": "A",
+  "tema": "prudência",
+  "titulo": "Antes de decidir sozinho",
+  "gancho": "Você já tomou uma decisão grande sem falar com ninguém?",
+  "reflexao": "Sua família planeja uma reforma e cada um imagina um gasto diferente. Sem ouvir quem entende do assunto, o orçamento cresce e começam as discussões.",
+  "aplicacao": "Peça mais de uma opinião, anote os custos e combine prioridades antes de começar. Bons conselhos ajudam a evitar surpresas.",
+  "cta": "Manda pra quem está diante de uma decisão importante.",
+  "cta_tipo": "envio",
+  "arquivo": "reels/EP-104.mp4",
+  "duracao_s": 33.17,
+  "sha256": "825cd96fbd66857df370b0a106de8468073372bfecf1e66f3bffdeb58fa47b29",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-25T15:37:44+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-11-25T15:33:00+00:00",
+  "estilo": "aplicado_v1",
+  "curto": false,
+  "variante_aplicada": 1,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "d109ebb670978f2d095c8f2f72f9d3990b35135567147fe466b41762587a0b92",
+   "video_sha256": "825cd96fbd66857df370b0a106de8468073372bfecf1e66f3bffdeb58fa47b29",
+   "created_at": "2026-11-25T15:37:42.828218+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]
