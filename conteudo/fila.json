@@ -3281,5 +3281,43 @@
    "created_at": "2026-11-25T15:37:42.828218+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-105",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-21-23"
+  ],
+  "referencia_exibida": "Provérbios 21:23",
+  "texto_biblico": "O que guarda a sua boca e a sua língua, guarda das angústias a sua alma.",
+  "formato": "A",
+  "tema": "palavras",
+  "titulo": "O que não precisava ser dito",
+  "gancho": "Você já falou uma coisa e passou a semana pensando nela?",
+  "reflexao": "Você está irritado e começa a escrever um comentário ofensivo numa rede social. Parece um alívio por alguns segundos, mas a mensagem pode machucar e alimentar outra briga.",
+  "aplicacao": "Saia da tela por alguns minutos e volte quando estiver mais calmo. Se precisar discordar, critique a ideia sem atacar a pessoa.",
+  "cta": "Manda pra quem sabe que palavras têm consequências.",
+  "cta_tipo": "envio",
+  "arquivo": "reels/EP-105.mp4",
+  "duracao_s": 32.47,
+  "sha256": "63aaada383686fff6164ca1b62030b8b1b004d7124af5fb2534a7e4eb66ed6f2",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-26T15:12:21+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-11-26T15:07:45+00:00",
+  "estilo": "aplicado_v1",
+  "curto": false,
+  "variante_aplicada": 1,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "bbdbb80b2776816baee9c6a87526fbd8f2d8a9fcef4b138e7b5572ff34a92fce",
+   "video_sha256": "63aaada383686fff6164ca1b62030b8b1b004d7124af5fb2534a7e4eb66ed6f2",
+   "created_at": "2026-11-26T15:12:19.446750+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]

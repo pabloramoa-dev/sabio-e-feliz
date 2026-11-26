@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 93,
+ "total": 94,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -5052,6 +5052,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-25T15:33:00+00:00",
    "produzido_em": "2026-11-25T15:37:44+00:00"
+  },
+  {
+   "id": "CAR-094",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-15-02",
+    "PRO-15-11",
+    "PRO-15-17"
+   ],
+   "referencia_exibida": "Provérbios 15",
+   "capitulo": 15,
+   "texto_biblico": "A língua dos sábios destila o conhecimento; porém a boca dos tolos derrama a estultícia.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 15:2",
+     "texto": "A língua dos sábios destila o conhecimento; porém a boca dos tolos derrama a estultícia."
+    },
+    {
+     "referencia": "Provérbios 15:11",
+     "texto": "O Seol e o Abadom estão abertos perante o Senhor; quanto mais o coração dos filhos dos homens!"
+    },
+    {
+     "referencia": "Provérbios 15:17",
+     "texto": "Melhor é um prato de hortaliça, onde há amor, do que o boi gordo, e com ele o ódio."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 15",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 15 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-094/CAR-094-01.jpg",
+    "carrosseis/CAR-094/CAR-094-02.jpg",
+    "carrosseis/CAR-094/CAR-094-03.jpg",
+    "carrosseis/CAR-094/CAR-094-04.jpg",
+    "carrosseis/CAR-094/CAR-094-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-094/CAR-094-01.jpg": "175242dbbbd94428891c1546566bcf1840aa0e6783bd0a2c91345bbe68a5877f",
+    "carrosseis/CAR-094/CAR-094-02.jpg": "ee73971865ade013f65fc3dfc87cd9c7f7af3ed21ec4fe51f78fd5e6b511f6b2",
+    "carrosseis/CAR-094/CAR-094-03.jpg": "ef8d49a76aa2b6b22643832325d0272a58777e2c0d76e47e88c50379a7a1d267",
+    "carrosseis/CAR-094/CAR-094-04.jpg": "14dd1a0a39ae041cce781a46736d95c660502355364e252b8dabdc3faff2a79e",
+    "carrosseis/CAR-094/CAR-094-05.jpg": "67b10f514361e672325306b8b133ade0d46f535854feb9e407ddff300784f0c5"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-26T15:12:21+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-26T15:07:45+00:00",
+   "produzido_em": "2026-11-26T15:12:21+00:00"
   }
  ]
 }
