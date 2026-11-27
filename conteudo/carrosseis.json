@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 94,
+ "total": 95,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -5106,6 +5106,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-26T15:07:45+00:00",
    "produzido_em": "2026-11-26T15:12:21+00:00"
+  },
+  {
+   "id": "CAR-095",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-19-19",
+    "PRO-19-25",
+    "PRO-19-28"
+   ],
+   "referencia_exibida": "Provérbios 19",
+   "capitulo": 19,
+   "texto_biblico": "Homem de grande ira tem de sofrer o castigo; porque se o livrares, terás de o fazer de novo.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 19:19",
+     "texto": "Homem de grande ira tem de sofrer o castigo; porque se o livrares, terás de o fazer de novo."
+    },
+    {
+     "referencia": "Provérbios 19:25",
+     "texto": "Fere ao escarnecedor, e o simples aprenderá a prudência; repreende ao que tem entendimento, e ele crescerá na ciencia."
+    },
+    {
+     "referencia": "Provérbios 19:28",
+     "texto": "A testemunha vil escarnece da justiça; e a boca dos ímpios engole a iniqüidade."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 19",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 19 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-095/CAR-095-01.jpg",
+    "carrosseis/CAR-095/CAR-095-02.jpg",
+    "carrosseis/CAR-095/CAR-095-03.jpg",
+    "carrosseis/CAR-095/CAR-095-04.jpg",
+    "carrosseis/CAR-095/CAR-095-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-095/CAR-095-01.jpg": "38e08ad4d3fc2a5b132820af6c9f894e4b7fcdd7fc44216d87347c05097983c3",
+    "carrosseis/CAR-095/CAR-095-02.jpg": "44f82797a7518de5eb3a35d27a99838400b60aedd8c2acc7aebeff0081fce413",
+    "carrosseis/CAR-095/CAR-095-03.jpg": "323c9b25b96bae972fde66aa8940c859fecc19b9631b1e2eaf269317fa537997",
+    "carrosseis/CAR-095/CAR-095-04.jpg": "908ae61612f67aef1590a877aa4eaee32b4f13837d997697a286577a9bdfe758",
+    "carrosseis/CAR-095/CAR-095-05.jpg": "0948f934469e34ea8543f7681e4c3e92e2a9c6fcba78ce4b8363e1ec6344f96c"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-27T15:04:54+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-27T14:59:54+00:00",
+   "produzido_em": "2026-11-27T15:04:54+00:00"
   }
  ]
 }
