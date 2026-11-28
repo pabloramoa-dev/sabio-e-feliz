@@ -1,7 +1,7 @@
 {
  "fonte": "João Ferreira de Almeida — domínio público (Open Bibles)",
  "aviso": "As explicações são paráfrases editoriais, não tradução nem comentário confessional.",
- "total": 95,
+ "total": 96,
  "carrosseis": [
   {
    "id": "CAR-001",
@@ -5160,6 +5160,60 @@
    "instagram_media_id": null,
    "criado_em": "2026-11-27T14:59:54+00:00",
    "produzido_em": "2026-11-27T15:04:54+00:00"
+  },
+  {
+   "id": "CAR-096",
+   "origem": "reserva",
+   "formato": "D",
+   "referencias": [
+    "PRO-16-24",
+    "PRO-16-27",
+    "PRO-16-33"
+   ],
+   "referencia_exibida": "Provérbios 16",
+   "capitulo": 16,
+   "texto_biblico": "Palavras suaves são como favos de mel, doçura para a alma e saúde para o corpo.",
+   "versiculos": [
+    {
+     "referencia": "Provérbios 16:24",
+     "texto": "Palavras suaves são como favos de mel, doçura para a alma e saúde para o corpo."
+    },
+    {
+     "referencia": "Provérbios 16:27",
+     "texto": "O homem vil suscita o mal; e nos seus lábios há como que um fogo ardente."
+    },
+    {
+     "referencia": "Provérbios 16:33",
+     "texto": "A sorte se lança no regaço; mas do Senhor procede toda a disposição dela."
+    }
+   ],
+   "tema": "leitura",
+   "titulo": "Três de Provérbios 16",
+   "gancho": "Três versículos do mesmo capítulo, sem comentário. Só o texto.",
+   "pergunta": "Qual dos três você leva para hoje?",
+   "cta": "Leia Provérbios 16 inteiro hoje.",
+   "rosto": "assets/marca/sabio-rosto.png",
+   "arquivos": [
+    "carrosseis/CAR-096/CAR-096-01.jpg",
+    "carrosseis/CAR-096/CAR-096-02.jpg",
+    "carrosseis/CAR-096/CAR-096-03.jpg",
+    "carrosseis/CAR-096/CAR-096-04.jpg",
+    "carrosseis/CAR-096/CAR-096-05.jpg"
+   ],
+   "sha256": {
+    "carrosseis/CAR-096/CAR-096-01.jpg": "fdb3c32193fdb42ad703015aa254eaaa1bbae5a20c7c7fca83ffa00c307a58e7",
+    "carrosseis/CAR-096/CAR-096-02.jpg": "3a2bcda79ec88df8c08eb9519b4dafa682dac63fd1516ec2e48769e7e033de5d",
+    "carrosseis/CAR-096/CAR-096-03.jpg": "43629bd15ef64dfbadbb28083db765b40b17048b1e3be3bad4d96585100e7010",
+    "carrosseis/CAR-096/CAR-096-04.jpg": "9f082f7e17509052b73f7c5fc1ca3e3696fb5dcc9995423b001d8bb1176b65d3",
+    "carrosseis/CAR-096/CAR-096-05.jpg": "340196ef37b272f15133b158c25535f066b3803d805856c62a6416da2620bccb"
+   },
+   "status": "aprovado",
+   "aprovado_por": "automatico",
+   "aprovado_em": "2026-11-28T14:12:39+00:00",
+   "publicado_em": null,
+   "instagram_media_id": null,
+   "criado_em": "2026-11-28T14:08:54+00:00",
+   "produzido_em": "2026-11-28T14:12:39+00:00"
   }
  ]
 }

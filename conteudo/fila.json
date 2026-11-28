@@ -3357,5 +3357,43 @@
    "created_at": "2026-11-27T15:04:52.506907+00:00"
   },
   "renderizador": "hyperframes"
+ },
+ {
+  "id": "EP-107",
+  "origem": "reserva",
+  "referencias": [
+   "PRO-27-02"
+  ],
+  "referencia_exibida": "Provérbios 27:2",
+  "texto_biblico": "Seja outro o que te louve, e não a tua boca; o estranho, e não os teus lábios.",
+  "formato": "C",
+  "tema": "caráter",
+  "titulo": "Quem fala bem de você",
+  "gancho": "Você já se pegou contando a própria vitória para alguém?",
+  "reflexao": "Depois de ajudar alguém, você pensa em contar para todo mundo o que fez. A vontade de receber reconhecimento é humana, mas o gesto perde delicadeza quando vira propaganda.",
+  "aplicacao": "Faça o bem sem transformar a pessoa ajudada em história para ganhar elogio. A gratidão que importa nem sempre aparece em público.",
+  "cta": "Manda pra quem conquista sem precisar se exibir.",
+  "cta_tipo": "envio",
+  "arquivo": "reels/EP-107.mp4",
+  "duracao_s": 32.43,
+  "sha256": "ff14a0b4127fbbdf6e8de3e27c95d6d0cd854550d973c7808e13bb0ef06e3680",
+  "status": "aprovado",
+  "aprovado_por": "automatico",
+  "aprovado_em": "2026-11-28T14:12:39+00:00",
+  "prioridade": 50,
+  "publicado_em": null,
+  "instagram_media_id": null,
+  "criado_em": "2026-11-28T14:08:54+00:00",
+  "estilo": "aplicado_v1",
+  "curto": false,
+  "variante_aplicada": 1,
+  "render_receipt": {
+   "version": "cross-channel-2026-10-20-v1",
+   "engine_sha256": "bcb0c3dba29b6a4107b02273b5a494e74551e0457cd6172a36e8e0892b7346b6",
+   "editorial_sha256": "1cac36ac6db898e6d61841c78910eb9defcafe15c3a0f55d1577ddfa36a96dc0",
+   "video_sha256": "ff14a0b4127fbbdf6e8de3e27c95d6d0cd854550d973c7808e13bb0ef06e3680",
+   "created_at": "2026-11-28T14:12:38.106412+00:00"
+  },
+  "renderizador": "hyperframes"
  }
 ]
